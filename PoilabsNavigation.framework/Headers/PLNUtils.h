@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <PoilabsAnalysis/PLAFHTTPSessionManager.h>
 
-
 @interface PLNUtils : NSObject
 + (instancetype)sharedInstance;
 

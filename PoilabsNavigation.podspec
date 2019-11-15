@@ -16,7 +16,7 @@ s.summary = "Poilabs Indoor Navigation Framework"
 s.requires_arc = true
 
 #2
-s.version = "1.0.2"
+s.version = "1.0.3"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -34,6 +34,7 @@ s.source = { :git => "https://bitbucket.org/poiteam/ios-navigation-pod.git",
 
 # 7 dependency
 s.dependency 'Mapbox-iOS-SDK'
+s.dependency 'PoilabsAnalysis'
 
 s.ios.vendored_frameworks = 'PoilabsNavigation.framework'
 s.resources = 'PoilabsNavigationResources.bundle'
