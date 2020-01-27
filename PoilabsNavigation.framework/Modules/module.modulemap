@@ -1,0 +1,6 @@
+framework module PoilabsNavigation {
+  umbrella header "PoilabsNavigation.h"
+
+  export *
+  module * { export * }
+}
