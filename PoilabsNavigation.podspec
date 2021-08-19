@@ -10,13 +10,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 s.name = "PoilabsNavigation"
 s.summary = "Poilabs Indoor Navigation Framework"
-s.requires_arc = true
+#s.requires_arc = true
 
 #2
-s.version = "1.0.6"
+s.version = "1.0.7"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -28,13 +28,14 @@ s.author = { "Emre Kuru" => "emre@poilabs.com" }
 s.homepage = "https://bitbucket.org/poiteam/ios-navigation-pod"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://bitbucket.org/poiteam/ios-navigation-pod.git", 
+s.source = { :git => "https://bitbucket.org/poiteam/ios-navigation-pod.git",
              :tag => "#{s.version}" }
 
+s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-# 7 dependency
-s.dependency 'Mapbox-iOS-SDK'
-s.dependency 'PoilabsAnalysis'
 
 s.ios.vendored_frameworks = 'PoilabsNavigation.framework'
 s.resources = 'PoilabsNavigationResources.bundle'

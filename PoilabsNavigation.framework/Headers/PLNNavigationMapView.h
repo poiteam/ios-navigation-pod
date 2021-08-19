@@ -131,9 +131,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
-
-
-
 #pragma mark - Floors 
 @property (weak, nonatomic) IBOutlet UIView *floorSelectionBaseView;
 

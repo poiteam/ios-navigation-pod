@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface PLNNavigationSettings : NSObject
 
@@ -28,6 +29,10 @@
 @property(assign, nonatomic) float backButtonWidth;
 
 @property(assign, nonatomic) float searchCancelWidth;
+
+@property(strong, nonatomic) UIImage *customUserIcon;
+
+@property(assign, nonatomic) BOOL isCompassActive;
 
 
 

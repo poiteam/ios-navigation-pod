@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <Mapbox/Mapbox.h>
-#import <PoiLabsAnalysis/PoiLabsAnalysis.h>
+//#import <PoiLabsAnalysis/PoiLabsAnalysis.h>
 //#import <PoilabsNavigation/AFNetworking.h>
 
 //#import <PoilabsNavigation/PoiLGPlusButtonsView/LGPlusButtonsView.h>
 
-
+#import <PoilabsNavigation/PLAFHTTPSessionManager.h>
+#import <PoilabsNavigation/PLAFNetworking.h>
 
 #import <PoilabsNavigation/LGPlusButtonsView.h>
 #import <PoilabsNavigation/LGPlusButtonDescription.h>

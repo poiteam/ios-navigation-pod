@@ -16,5 +16,6 @@
 
 -(void)treePoiSelected:(NSString *)poiId;
 
+-(void)childsAreReady;
 
 @end

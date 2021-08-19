@@ -14,7 +14,6 @@
 - (nullable instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier size:(CGFloat)size;
 
 @property(strong, nonatomic, nullable) UIImageView *imageView;
-
 -(void)changeLocationToNewCoordinate:(CLLocationCoordinate2D)newCoordinate;
 -(void)rotateAnnotationToDegree:(float)degree;
 

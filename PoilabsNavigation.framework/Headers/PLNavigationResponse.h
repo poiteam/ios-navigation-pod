@@ -39,6 +39,8 @@
 
 @property(strong, nonatomic) NSString *elevatorPoiId;
 @property(strong, nonatomic) NSString *toiletPoiId;
+@property(strong, nonatomic) NSString *toiletMenPoiId;
+@property(strong, nonatomic) NSString *toiletWomenPoiId;
 @property(strong, nonatomic) NSString *infoPoiId;
 @property(strong, nonatomic) NSString *prayPoiId;
 

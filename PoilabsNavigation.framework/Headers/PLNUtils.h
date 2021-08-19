@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PoilabsAnalysis/PLAFHTTPSessionManager.h>
+#import "PLAFHTTPSessionManager.h"
 
 
 @interface PLNUtils : NSObject
