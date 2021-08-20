@@ -1,6 +1,9 @@
-![Alamofire: Elegant Networking in Swift](https://www.poilabs.com/public/img/poi-labs-logo.png)
+![Poilabs](https://www.poilabs.com/public/img/poi-labs-logo.png)
 
 # PoilabsNavigation Sdk
+[![Version](https://img.shields.io/cocoapods/v/PoilabsNavigation.svg?style=flat)](https://cocoapods.org/pods/PoilabsNavigation)
+[![License](https://img.shields.io/cocoapods/l/PoilabsNavigation.svg?style=flat)](https://cocoapods.org/pods/PoilabsNavigation)
+[![Platform](https://img.shields.io/cocoapods/p/PoilabsNavigation.svg?style=flat)](https://cocoapods.org/pods/PoilabsNavigation)
 
 ## Instalation
 
@@ -9,7 +12,7 @@
 To integrate PoilabsNavigation into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PoilabsNavigation', '~> 2.5.16'
+pod 'PoilabsNavigation', '~> 2.5.17'
 ```
 
 ### Manually
@@ -101,3 +104,7 @@ PLNavigationManager.sharedInstance()?.getReadyForStoreMap(completionHandler: { (
 +Privacy - Location Always and When In Use Usage Description: ‘Sizin açıklamanız’
 
 +Privacy - Bluetooth Peripheral Usage Description: ‘Sizin açıklamanız’
+
+## License
+
+PoilabsNavigation is available under the MIT license. See the LICENSE file for more info.
