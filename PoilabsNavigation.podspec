@@ -37,6 +37,6 @@ s.pod_target_xcconfig = {
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
-s.ios.vendored_frameworks = 'PoilabsNavigation.framework'
+s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
 s.resources = 'PoilabsNavigationResources.bundle'
 end
