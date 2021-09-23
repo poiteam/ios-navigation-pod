@@ -12,7 +12,7 @@
 To integrate PoilabsNavigation into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PoilabsNavigation', '~> 2.5.18'
+pod 'PoilabsNavigation'
 ```
 
 ### Manually
