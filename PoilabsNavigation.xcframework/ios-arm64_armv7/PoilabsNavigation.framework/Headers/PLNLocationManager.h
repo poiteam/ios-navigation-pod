@@ -38,7 +38,7 @@
 
 @property(strong, nonatomic) PLPoi *userLocationPoi;
 
-@property(strong, nonatomic) NSMutableArray *poiIdsArray;
+@property(strong, nonatomic) NSMutableArray *userLocationPoiIds;
 
 @property(strong, nonatomic) PESGraphNode *userLocationNode;
 

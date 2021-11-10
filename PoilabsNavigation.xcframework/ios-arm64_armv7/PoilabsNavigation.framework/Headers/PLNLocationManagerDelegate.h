@@ -20,7 +20,7 @@
 
 -(void)navigationLocationManagerStatusChanged;
 
--(void)locationManagerDidUpdateLocationCoordinate:(CLLocationCoordinate2D )coordinate didUpdatePoi:(PLPoi *)poi didUpdateNode:(PESGraphNode *)node;
+-(void)locationManagerDidUpdateLocationCoordinate:(PLPoi *)poi;
 
 
 @end

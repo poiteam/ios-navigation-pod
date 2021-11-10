@@ -31,10 +31,6 @@ To Integrate this framework you should add some features to your project info.pl
 
 +Privacy - Location When In Use Usage Description
 
-+Privacy - Location Always Usage Description
-
-+Privacy - Location Always and When In Use Usage Description
-
 +Privacy - Bluetooth Peripheral Usage Description
 
 +Privacy - Bluetooth Always Usage Description

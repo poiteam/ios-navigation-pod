@@ -40,5 +40,5 @@
 
 
 -(CLLocationCoordinate2D)getCoordinates;
-
+-(int)getSegmentsCount;
 @end

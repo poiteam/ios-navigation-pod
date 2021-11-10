@@ -21,7 +21,7 @@
 +(NSString *)getLocaleStringForQueryFullTarget:(NSString *)comingStr route:(float )route target:(NSString *)target difFloor:(int )difFloor;
 
 @property(strong, nonatomic) NSString *navigationUniqueIdentifier;
-+(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message;
++(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder;
 
 
 @end
