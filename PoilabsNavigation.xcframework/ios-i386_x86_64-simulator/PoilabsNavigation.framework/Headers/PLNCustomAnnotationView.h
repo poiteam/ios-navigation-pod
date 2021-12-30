@@ -16,6 +16,6 @@
 @property(strong, nonatomic, nullable) UIImageView *imageView;
 -(void)changeLocationToNewCoordinate:(CLLocationCoordinate2D)newCoordinate;
 -(void)rotateAnnotationToDegree:(float)degree;
-
+-(void)changeLocationWithAnimation:(CLLocationCoordinate2D)newCoordinate;
 
 @end
