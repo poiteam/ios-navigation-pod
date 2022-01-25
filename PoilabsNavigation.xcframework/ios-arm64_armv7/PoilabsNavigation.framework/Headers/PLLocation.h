@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "PLGeometry.h"
-
+#import <CoreLocation/CoreLocation.h>
 
 @interface PLLocation : NSObject
 
@@ -20,7 +20,7 @@
 
 @property(assign, nonatomic) int floorLevel;
 
-
+@property(assign, nonatomic) CLLocationCoordinate2D shopCenterPoint;
 
 
 

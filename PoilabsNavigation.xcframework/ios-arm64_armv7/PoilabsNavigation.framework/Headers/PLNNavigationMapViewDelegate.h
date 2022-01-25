@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "PLLocationStatus.h"
 
 @protocol PLNNavigationMapViewDelegate  <NSObject>
 
@@ -19,5 +19,7 @@
 -(void)childsAreReady;
 
 -(void)routeIsRequestedFrom:(NSString *)storeId;
+
+-(void)didLocationStatusChange:(PLLocationStatus) status;
 
 @end

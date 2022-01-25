@@ -49,7 +49,6 @@ var currentCarrier: PLNNavigationMapView?
 PLNNavigationSettings.sharedInstance().mallId = PLACE_TITLE
 PLNNavigationSettings.sharedInstance().applicationId = APPLICATION_ID         
 PLNNavigationSettings.sharedInstance().applicationSecret = APPLICATION_SECRET_KEY
-PLNNavigationSettings.sharedInstance()?.navigationUniqueIdentifier = "UNIQUE_ID"
 
 PLNavigationManager.sharedInstance()?.getReadyForStoreMap(completionHandler: { (error) in
 	if error == nil {

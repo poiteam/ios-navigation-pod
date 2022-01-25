@@ -16,6 +16,8 @@
 #import "PLNNavigationMapViewDelegate.h"
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import "PLFloor.h"
+#import "PLNCustomCalloutView.h"
 
 
 
@@ -96,7 +98,7 @@
 @property(strong,nonatomic) PLPoi *startLocationPoi;
 @property(strong,nonatomic) PESGraphNode *startLocationNode;
 
-
+@property(strong,nonatomic) PLFloor *currentFloor;
 @property(strong,nonatomic) PESGraphRoute *currentRoute;
 
 
