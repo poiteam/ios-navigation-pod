@@ -83,6 +83,23 @@ You can change colors of top bar and cancel button text according to your applic
     }
 ```
 
+**didLocationStatusChanged** callback is triggered when found, waiting or lost user location.
+
+```swift
+    func didLocationStatusChange(_ status: PLLocationStatus) {
+        switch status {
+        case PLLocationStatusWaiting:
+            break
+        case PLLocationStatusNotFound:
+            break
+        case PLLocationStatusFound:
+            break
+        default:
+            break
+        }
+    }
+```
+
 ### Using custom user location icon
 
 PoilabsNavigation will show a user icon for default. But if you want to use another icon for user location, before calling -getReadyForStoreMap method, you should set **customUserIcon** with your image.
@@ -125,3 +142,10 @@ After **-childsAreReady** method is triggered, you can get route on map with des
 	self.currentCarrier?.navigateWithStoreId(to: "store_id")
 ```
 
+### Getting route with multiple points
+
+After **-childsAreReady** method is triggered, you can get route on map with a list of store ids. Pass decimal storeIds as **Array of Strings** to **-getRouteWithMultiplePoints** method.
+
+```swift
+	self.currentCarrier?.getRouteWithMultiplePoints(["store_id1", "store_id2", "store_id3"])
+```

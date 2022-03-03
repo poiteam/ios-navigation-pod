@@ -18,7 +18,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "PLFloor.h"
 #import "PLNCustomCalloutView.h"
-
+#import "MultiPointRouteAlert.h"
 
 
 
@@ -100,7 +100,8 @@
 
 @property(strong,nonatomic) PLFloor *currentFloor;
 @property(strong,nonatomic) PESGraphRoute *currentRoute;
-
+@property(strong, nonatomic) NSMutableArray<PESGraphRoute *> *routes;
+@property(strong, nonatomic) NSArray<NSString *> *pointsToGoStoreIds;
 
 #pragma mark - Search Bar
 @property (weak, nonatomic) IBOutlet UIView *searchBarBaseView;
@@ -256,8 +257,12 @@
 // Otopark isimleri kisma
 @property(strong, nonatomic) NSMutableArray *autoparkingDisable;
 
+
+@property (strong, nonatomic) MultiPointRouteAlert *multiPointRouteAlert;
+
 //bir noktadan baska noktaya rota almasi icin
 -(void)getRouteFrom:(PLPoi *)startPoi toEnd:(PLPoi *)endPoi;
+-(void)navigateForMultiplePointRoute:(PLPoi *)startPoi;
 -(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
-
+-(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
 @end

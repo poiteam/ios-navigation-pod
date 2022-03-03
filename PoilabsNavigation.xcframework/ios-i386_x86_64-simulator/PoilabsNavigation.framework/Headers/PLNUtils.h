@@ -19,7 +19,7 @@
 
 +(NSString *)getLocaleStringForQuery:(NSString *)comingStr;
 +(NSString *)getLocaleStringForQueryFullTarget:(NSString *)comingStr route:(float )route target:(NSString *)target destinationFloor:(int )difFloor;
-
++(NSString *)getLocaleStringForMultiPointRoute:(NSString *)comingStr distance:(int)distance;
 @property(strong, nonatomic) NSString *navigationUniqueIdentifier;
 +(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder;
 
