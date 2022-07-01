@@ -54,4 +54,7 @@
 @property(strong, nonatomic) PESGraph *disableGraph;
 
 -(PESGraphNode *)grapNodeFinderWithNodeId:(NSString *)nodeId;
+-(BOOL)hasWc;
+-(BOOL)hasMenWc;
+-(BOOL)hasWomanWc;
 @end
