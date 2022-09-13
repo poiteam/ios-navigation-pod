@@ -12,6 +12,7 @@
 #import "PLFilter.h"
 #import "PLMap.h"
 #import "PLPoiNavigation.h"
+#import "PLNFacility.h"
 
 
 @interface PLPoi : NSObject
@@ -37,6 +38,8 @@
 @property(strong, nonatomic) PLMap *map;
 
 @property(strong, nonatomic) PLPoiNavigation *navigation;
+
+@property(strong, nonatomic) NSMutableArray<PLNFacility *> *facilities;
 
 
 -(CLLocationCoordinate2D)getCoordinates;

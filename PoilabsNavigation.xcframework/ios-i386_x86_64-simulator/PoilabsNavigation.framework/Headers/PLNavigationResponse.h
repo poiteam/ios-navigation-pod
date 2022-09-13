@@ -32,21 +32,6 @@
 
 @property(strong, nonatomic) NSMutableArray *allGraphEdgesForDisablePerson;
 
-
-//@property(strong, nonatomic) NSMutableArray *elevatorGrapNodes;
-//
-//@property(strong, nonatomic) NSMutableArray *toiletGraphNodes;
-
-@property(strong, nonatomic) NSString *elevatorPoiId;
-@property(strong, nonatomic) NSString *toiletPoiId;
-@property(strong, nonatomic) NSString *toiletMenPoiId;
-@property(strong, nonatomic) NSString *toiletWomenPoiId;
-@property(strong, nonatomic) NSString *infoPoiId;
-@property(strong, nonatomic) NSString *prayPoiId;
-
-
-
-
 @property(strong, nonatomic) PESGraph *mainGraph;
 
 @property(strong, nonatomic) PESGraph *onlyPassByFilterIncludedMainGraph;
@@ -54,8 +39,4 @@
 @property(strong, nonatomic) PESGraph *disableGraph;
 
 -(PESGraphNode *)grapNodeFinderWithNodeId:(NSString *)nodeId;
--(PESGraph *)createSameLevelPoisGraph:(int)level;
--(BOOL)hasWc;
--(BOOL)hasMenWc;
--(BOOL)hasWomanWc;
 @end

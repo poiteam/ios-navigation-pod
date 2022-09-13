@@ -19,7 +19,7 @@
 #import "PLFloor.h"
 #import "PLNCustomCalloutView.h"
 #import "MultiPointRouteAlert.h"
-
+#import "PLNFacility.h"
 
 
 @interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate, PLNLocationManagerDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -259,6 +259,8 @@
 
 
 @property (strong, nonatomic) MultiPointRouteAlert *multiPointRouteAlert;
+
+@property(strong, nonatomic) NSMutableArray<PLNFacility *> *facilities;
 
 //bir noktadan baska noktaya rota almasi icin
 -(void)getRouteFrom:(PLPoi *)startPoi toEnd:(PLPoi *)endPoi;
