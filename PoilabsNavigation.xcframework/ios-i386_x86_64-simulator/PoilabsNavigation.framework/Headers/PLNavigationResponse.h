@@ -39,4 +39,7 @@
 @property(strong, nonatomic) PESGraph *disableGraph;
 
 -(PESGraphNode *)grapNodeFinderWithNodeId:(NSString *)nodeId;
+
+- (PESGraph *)createSameLevelPoisGraph:(int)level;
+
 @end
