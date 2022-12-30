@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '11.0'
 s.name = "PoilabsNavigation"
 s.summary = "Poilabs Indoor Navigation Framework"
 #s.requires_arc = true
@@ -39,4 +39,10 @@ s.pod_target_xcconfig = {
 
 s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
 s.resources = 'PoilabsNavigationResources.bundle'
+
+s.dependency 'PoilabsPositioning', '1.0.6'
+s.dependency 'PoilabsSdkAnalytics', '~> 1.0.4'
+s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
+s.dependency 'MapboxMobileEvents'
+
 end
