@@ -254,9 +254,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *removeRouteBottomHeight;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomFloorSelectionBaseViewWidthLayoutConstraint;
-
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomFloorSelectionBaseViewHeightLayoutConstraint;
 @property (weak, nonatomic) IBOutlet UICollectionView *CollecitonViewfloorChangeSlider;
 
 

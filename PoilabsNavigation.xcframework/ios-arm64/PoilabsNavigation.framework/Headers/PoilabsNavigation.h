@@ -45,8 +45,8 @@
 #import <PoilabsNavigation/PLNCustomAnnotationView.h>
 #import <PoilabsNavigation/SearchFirstTableViewCell.h>
 #import <PoilabsNavigation/SearchMainTableViewCell.h>
-
-
+#import <PoilabsNavigation/PLNParkingSlot.h>
+#import <PoilabsNavigation/SearchKeywordLogManager.h>
 
 //! Project version number for PoilabsNavigation.
 FOUNDATION_EXPORT double PoilabsNavigationVersionNumber;
