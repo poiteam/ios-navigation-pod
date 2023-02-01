@@ -96,7 +96,6 @@
 
 @property(strong, nonatomic) NSMutableArray *upPointAnnotationsMutableArrayLenght;
 @property(strong, nonatomic) NSMutableArray *downPointAnnotationsMutableArrayLenght;
-@property(strong, nonatomic) NSMutableArray *allFloorsPolylineMutableArrayLenght;
 @property(strong, nonatomic) NSMutableArray *allFloorsPolylineMutableArray;
 @property(strong, nonatomic) NSMutableArray *dashedLineLocations;
 @property(strong,nonatomic) PLPoi *targetLocationPoi;

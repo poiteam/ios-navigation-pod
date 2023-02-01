@@ -75,6 +75,14 @@ You can change colors of top bar and cancel button text according to your applic
 
 ### PLNNavigationMapViewDelegate
 
+**didUserLocationChange** callback is triggered when location change.
+
+```swift
+    func didUserLocationChange(_ coordinate: CLLocationCoordinate2D) {
+        
+    }
+```
+
 **childsAreReady** callback is triggered when location list is ready. You can show any location or navigate to any location after it is triggered.
 
 ```swift

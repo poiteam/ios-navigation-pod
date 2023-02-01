@@ -14,12 +14,12 @@
 
 @optional
 
--(void)treePoiSelected:(NSString *)poiId;
-
 -(void)childsAreReady;
 
 -(void)routeIsRequestedFrom:(NSString *)storeId;
 
 -(void)didLocationStatusChange:(PLLocationStatus) status;
+
+-(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate;
 
 @end

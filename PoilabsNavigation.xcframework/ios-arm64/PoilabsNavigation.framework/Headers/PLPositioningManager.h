@@ -12,6 +12,7 @@
 #import "PLNavigationManager.h"
 #import "PLNPositioningManagerDelegate.h"
 #import "Mapbox/Mapbox.h"
+#import "PLFloor.h"
 #import "PLNPositioningManagerDelegate.h"
 
 @interface PLPositioningManager: NSObject<MGLLocationManager, PoilabsPositioningDelegate>

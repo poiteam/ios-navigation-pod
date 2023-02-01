@@ -32,6 +32,8 @@
 
 @property(assign, nonatomic) float mapRotateAngle;
 
+@property(assign, nonatomic) double conversionFactor;
+
 @property(strong, nonatomic) NSString *floorType;
 
 @property(strong, nonatomic) NSDictionary *parkingLabels;
