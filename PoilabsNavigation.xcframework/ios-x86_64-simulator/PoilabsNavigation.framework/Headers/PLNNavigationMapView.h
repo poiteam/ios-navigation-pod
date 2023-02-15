@@ -272,6 +272,7 @@
 
 //bir noktadan baska noktaya rota almasi icin
 -(void)getRouteFrom:(PLPoi *)startPoi toEnd:(PLPoi *)endPoi;
+-(void) getRouteToFacility:(PLPoi *)startPoi toFacilityType:(NSString *)facilityType;
 -(void)navigateForMultiplePointRoute:(PLPoi *)startPoi;
 -(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
 -(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
@@ -281,5 +282,7 @@
 -(PLPoi *)getNearestPoiTo: (CLLocationCoordinate2D)coordinate;
 
 -(void)logSearchKeyword:(NSString *)keyword;
+
+@property(strong, nonatomic) NSTimer *readyForRouteTimer;
 
 @end

@@ -40,6 +40,12 @@
 
 @property(strong, nonatomic) PLNCategory *category;
 
+@property(strong, nonatomic) NSArray<NSString *> *tags;
+
+-(NSString *)getTitleForCategoryOrSubcategory;
+
+- (BOOL)containsKeyword:(NSString *)str;
+
 -(CLLocationCoordinate2D)getCoordinates;
 -(int)getSegmentsCount;
 -(bool)hasSegment;

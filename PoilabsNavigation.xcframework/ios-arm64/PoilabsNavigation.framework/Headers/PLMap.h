@@ -28,4 +28,6 @@
 
 @property(assign, nonatomic) bool hideParkingIcon;
 
+@property(assign, nonatomic) float routeConversionFactorDividend;
+
 @end

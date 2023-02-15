@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "PLNPositioning.h"
 
 @interface PLNNavigationConfig : NSObject
 
@@ -32,6 +32,8 @@
 @property(assign, nonatomic) int decideUnavailableLocationServiceLimit;
 
 @property(strong, nonatomic) NSDictionary *walkways;
+
+@property(strong, nonatomic) PLNPositioning *positioning;
 
 //@property(strong, nonatomic) NSString *floorPassBy;
 

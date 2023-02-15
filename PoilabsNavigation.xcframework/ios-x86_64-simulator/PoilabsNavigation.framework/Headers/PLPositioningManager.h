@@ -32,6 +32,8 @@
 
 @property(strong, nonatomic) NSTimer * _Nullable outOfRouteTimer;
 
+@property(strong, nonatomic) NSMutableArray<NSDictionary *> * _Nonnull signalsInWindow;
+
 -(void) startPositioningWith:(NSArray<PLPBeaconNode*>*_Nonnull)beacons;
 
 -(void)getFirstLocation;

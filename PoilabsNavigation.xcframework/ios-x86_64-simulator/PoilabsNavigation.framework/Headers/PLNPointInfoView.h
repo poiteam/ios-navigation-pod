@@ -8,8 +8,10 @@
 #import <UIKit/UIKit.h>
 #import "PLPoi.h"
 #import "PLNUtils.h"
+#import "PLNPointTagsCollectionView.h"
+#import "PLNPointTagsCollectionViewCell.h"
 
-@interface PLNPointInfoView : UIView
+@interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 - (void)addAssSubviewTo: (UIView *)view;
 - (void)present;
@@ -23,8 +25,12 @@
 @property(strong, nonatomic) UIButton *navigationButton;
 @property(strong, nonatomic) UIStackView *labelsStackView;
 @property(strong, nonatomic) UIView *topView;
+@property(strong, nonatomic) UIView *smallModeContainerView;
+
+@property(strong, nonatomic) PLNPointTagsCollectionView *tagsCollectionView;
 @property (strong, nonatomic) void (^actionHandler)(void);
 -(void)navigateButtonPressed;
 
 @end
+
 

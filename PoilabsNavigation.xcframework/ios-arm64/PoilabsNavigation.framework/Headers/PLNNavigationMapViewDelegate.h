@@ -22,4 +22,6 @@
 
 -(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate;
 
+-(void)poilabsNavigationReadyForRouting;
+
 @end

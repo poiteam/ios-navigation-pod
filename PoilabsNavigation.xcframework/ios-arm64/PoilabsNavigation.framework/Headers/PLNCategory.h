@@ -8,6 +8,7 @@
 
 #ifndef PLNCategory_h
 #define PLNCategory_h
+#import "PLNSubcategory.h"
 
 @interface PLNCategory : NSObject
 
@@ -16,6 +17,8 @@
 @property(strong, nonatomic) NSString *iconUrl;
 
 @property(strong, nonatomic) NSString *title;
+
+@property(strong, nonatomic) PLNSubcategory *subcategory;
 
 @end
 

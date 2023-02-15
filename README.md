@@ -75,6 +75,15 @@ You can change colors of top bar and cancel button text according to your applic
 
 ### PLNNavigationMapViewDelegate
 
+
+**poilabsNavigationReadyForRouting** 
+
+```swift
+    func poilabsNavigationReadyForRouting() {
+        //Now you can route with store_id
+    }
+```
+
 **didUserLocationChange** callback is triggered when location change.
 
 ```swift
@@ -87,7 +96,7 @@ You can change colors of top bar and cancel button text according to your applic
 
 ```swift
     func childsAreReady() {
-        //konum gösterme ve rota alma işlemleri için PoilabsNavigation Sdk hazır
+        
     }
 ```
 

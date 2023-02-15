@@ -12,6 +12,7 @@
 #import "PLNavigationResponse.h"
 #import "PLNNavigationConfig.h"
 #import "PLPositioningManager.h"
+#import <sys/utsname.h>
 
 @interface PLNavigationManager : NSObject
 
@@ -24,5 +25,9 @@
 @property (strong, nonatomic) PLPoi *childsPlace;
 
 @property(strong, nonatomic) PLNNavigationConfig *config;
+
+-(void)postSignals:(NSArray<NSDictionary*> *) signals;
+
+-(NSString *)getFacilityTitleFor:(NSString *)type;
 
 @end
