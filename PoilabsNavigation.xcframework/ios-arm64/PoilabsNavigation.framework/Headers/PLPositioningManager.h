@@ -10,6 +10,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "PoilabsPositioning/PoilabsPositioning.h"
 #import "PLNavigationManager.h"
+#import "PLNNavigationSettings.h"
+#import "PoilabsSdkAnalytics/PoilabsSdkAnalytics.h"
 #import "PLNPositioningManagerDelegate.h"
 #import "Mapbox/Mapbox.h"
 #import "PLFloor.h"
@@ -24,7 +26,7 @@
 
 @property (nonatomic, readonly) CLAuthorizationStatus authorizationStatus;
 
-@property(assign, nonatomic, nullable) CLLocation *lastLocation;
+@property(strong, nonatomic, nullable) CLLocation *lastLocation;
 
 @property(strong, nonatomic, nullable) CLHeading *heading;
 
@@ -43,4 +45,6 @@
 @property(strong, nonatomic) NSMutableArray<CLLocation*> * _Nullable routeCoordinates;
 
 -(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location;
+
+-(void)setPlaceProperties;
 @end

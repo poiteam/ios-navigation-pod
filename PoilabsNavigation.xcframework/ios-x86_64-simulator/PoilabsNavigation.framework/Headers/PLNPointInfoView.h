@@ -15,8 +15,8 @@
 
 - (void)addAssSubviewTo: (UIView *)view;
 - (void)present;
-- (void)dismiss;
-- (instancetype)init:(PLPoi *)point completionHandler:(void(^)(void)) handler;
+- (void)dismiss:(BOOL)callHandler ;
+- (instancetype)init:(PLPoi *)point completionHandler:(void(^)(void)) handler didDismiss:(void(^)(void)) dismiss;
 @property(strong, nonatomic) PLPoi *point;
 @property(strong, nonatomic) UIImageView *imageView;
 @property(strong, nonatomic) UIImageView *navigateIcon;
@@ -29,6 +29,7 @@
 
 @property(strong, nonatomic) PLNPointTagsCollectionView *tagsCollectionView;
 @property (strong, nonatomic) void (^actionHandler)(void);
+@property (strong, nonatomic) void (^didDismiss)(void);
 -(void)navigateButtonPressed;
 
 @end

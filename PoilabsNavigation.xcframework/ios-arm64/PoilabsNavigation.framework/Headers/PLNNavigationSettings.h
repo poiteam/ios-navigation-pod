@@ -19,8 +19,6 @@
 
 @property(strong, nonatomic) NSString *navigationUniqueIdentifier;
 
-@property(strong, nonatomic) NSString *mallId;
-
 // set tr or en, default is tr
 @property(strong, nonatomic) NSString *applicationLanguage; 
 

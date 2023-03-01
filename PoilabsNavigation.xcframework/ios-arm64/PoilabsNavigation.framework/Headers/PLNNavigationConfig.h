@@ -35,6 +35,8 @@
 
 @property(strong, nonatomic) PLNPositioning *positioning;
 
+@property(assign, nonatomic) int topPoiCount;
+
 //@property(strong, nonatomic) NSString *floorPassBy;
 
 @end

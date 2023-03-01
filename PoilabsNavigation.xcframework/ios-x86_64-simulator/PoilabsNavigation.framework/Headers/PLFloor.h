@@ -45,4 +45,8 @@
 @property(strong, nonatomic) NSMutableArray *parkingSlotsMutableArray;
 
 @property(assign, nonatomic) BOOL showOnNavigationMenu;
+
+@property(assign, nonatomic) double shiftDistance;
+
+@property(assign, nonatomic) double shiftAngle;
 @end

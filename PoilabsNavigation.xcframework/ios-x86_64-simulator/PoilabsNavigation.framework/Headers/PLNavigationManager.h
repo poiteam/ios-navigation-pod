@@ -13,18 +13,25 @@
 #import "PLNNavigationConfig.h"
 #import "PLPositioningManager.h"
 #import <sys/utsname.h>
+#import "PLNNavigationMapViewDelegate.h"
 
 @interface PLNavigationManager : NSObject
 
 + (instancetype)sharedInstance;
 
+@property(strong, nonatomic) id<PLNNavigationMapViewDelegate> delegate;
+
 -(void)getReadyForStoreMapWithCompletionHandler:(void (^)(PLNError *error))completionHandler;
+
+-(void)initWithAppId:(NSString *)appId andSecret:(NSString *)secret uniqueId:(NSString *)uniqueId;
 
 @property (strong, nonatomic) PLNavigationResponse *navigationResponse;
 
 @property (strong, nonatomic) PLPoi *childsPlace;
 
 @property(strong, nonatomic) PLNNavigationConfig *config;
+
+@property(strong, nonatomic) NSMutableDictionary<NSNumber*, NSDictionary<NSString*, NSNumber*>*> *shiftParameters;
 
 -(void)postSignals:(NSArray<NSDictionary*> *) signals;
 

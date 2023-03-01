@@ -16,7 +16,7 @@ s.summary = "Poilabs Indoor Navigation Framework"
 #s.requires_arc = true
 
 #2
-s.version = "2.10.4"
+s.version = "2.10.5"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

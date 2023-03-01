@@ -14,6 +14,7 @@
 #import "PLPoiNavigation.h"
 #import "PLNFacility.h"
 #import "PLNCategory.h"
+#import "PLSegment.h"
 
 
 @interface PLPoi : NSObject
@@ -32,7 +33,6 @@
 
 @property(strong, nonatomic) PLMap *map;
 
-@property(strong, nonatomic) PLPoiNavigation *navigation;
 
 @property(strong, nonatomic) NSMutableArray<PLNFacility *> *facilities;
 
@@ -42,6 +42,9 @@
 
 @property(strong, nonatomic) NSArray<NSString *> *tags;
 
+//It can be floorname or floorlabel. Depend on its value, on floor change slider, show floor level or floor name for elevator cases
+@property(strong, nonatomic) NSString *routeSummaryParameter;
+
 -(NSString *)getTitleForCategoryOrSubcategory;
 
 - (BOOL)containsKeyword:(NSString *)str;
@@ -49,5 +52,9 @@
 -(CLLocationCoordinate2D)getCoordinates;
 -(int)getSegmentsCount;
 -(bool)hasSegment;
+
+@property(assign, readonly) bool isVisibleOnMap;
+@property(assign, readonly) bool isVisibleOnList;
+@property(strong, nonatomic) NSArray<PLSegment *> *segments;
 
 @end

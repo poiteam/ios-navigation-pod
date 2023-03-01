@@ -16,7 +16,7 @@
 
 @property(assign, nonatomic) BOOL isVisibleOnList;
 
-//@property(assign, nonatomic) BOOL isVisibleOnMap;
+@property(assign, nonatomic) BOOL isVisibleOnMap;
 
 
 @end
