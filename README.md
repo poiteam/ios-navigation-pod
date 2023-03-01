@@ -46,10 +46,9 @@ This method works asynchronously. You can add loading hud while waiting completi
 ```swift
 @IBOutlet weak var navigationView: UIView!
 var currentCarrier: PLNNavigationMapView?
-PLNNavigationSettings.sharedInstance().mallId = PLACE_TITLE
 PLNNavigationSettings.sharedInstance().applicationId = APPLICATION_ID         
 PLNNavigationSettings.sharedInstance().applicationSecret = APPLICATION_SECRET_KEY
-
+PLNNavigationSettings.sharedInstance().navigationUniqueIdentifier = UNIQUE_IDENTIFIER
 PLNavigationManager.sharedInstance()?.getReadyForStoreMap(completionHandler: { (error) in
 	if error == nil {
     	let carrierView = PLNNavigationMapView(frame: CGRect(x: 0, y: 0, width: self.navigationView.bounds.size.width, height: self.navigationView.bounds.size.height))
@@ -64,6 +63,14 @@ PLNavigationManager.sharedInstance()?.getReadyForStoreMap(completionHandler: { (
     	//show error
     }
 })
+```
+
+or you can init sdk without mapview and you can get user location update
+
+
+```swift
+    PLNavigationManager.sharedInstance().initWithAppId(APPLICATION_ID, andSecret: APPLICATION_SECRET_KEY, uniqueId: UNIQUE_IDENTIFIER)
+    PLNavigationManager.sharedInstance().delegate = self //PLNNavigationMapViewDelegate
 ```
 
 You can change colors of top bar and cancel button text according to your application theme.
