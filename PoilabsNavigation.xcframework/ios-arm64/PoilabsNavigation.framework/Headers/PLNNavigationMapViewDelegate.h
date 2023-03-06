@@ -20,7 +20,9 @@
 
 -(void)didLocationStatusChange:(PLLocationStatus) status;
 
--(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate;
+-(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate __deprecated_msg("Use didUserLocationChange:floorLevel: instead.");
+
+-(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate floorLevel:(NSInteger)floorLevel;
 
 -(void)poilabsNavigationReadyForRouting;
 
