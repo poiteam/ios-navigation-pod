@@ -94,7 +94,7 @@ You can change colors of top bar and cancel button text according to your applic
 **didUserLocationChange** callback is triggered when location change.
 
 ```swift
-    func didUserLocationChange(_ coordinate: CLLocationCoordinate2D, floorLevel: Int) {
+    func poilabsVdNavigation(didUpdate userLocation: CLLocationCoordinate2D, floorLevel: Int, floorName: String) {
         
     }
 ```

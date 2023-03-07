@@ -24,6 +24,8 @@
 
 -(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate floorLevel:(NSInteger)floorLevel;
 
+-(void)didUserLocationChange:(CLLocationCoordinate2D)coordinate floorLevel:(NSInteger)floorLevel floorName:(nonnull NSString*)floorName;
+
 -(void)poilabsNavigationReadyForRouting;
 
 @end
