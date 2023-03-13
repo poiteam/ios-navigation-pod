@@ -45,6 +45,8 @@
 //It can be floorname or floorlabel. Depend on its value, on floor change slider, show floor level or floor name for elevator cases
 @property(strong, nonatomic) NSString *routeSummaryParameter;
 
+@property(assign, nonatomic) double weinbergConstant;
+
 -(NSString *)getTitleForCategoryOrSubcategory;
 
 - (BOOL)containsKeyword:(NSString *)str;
