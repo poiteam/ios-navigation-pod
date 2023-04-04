@@ -19,6 +19,8 @@
 
 @property(assign, nonatomic) float weight;
 
+@property(assign, nonatomic) float routeWeight;
+
 @property(assign, nonatomic) BOOL isAvailableForDisabledPerson;
 
 @property(assign, nonatomic) BOOL isPromotedForFloorChange;

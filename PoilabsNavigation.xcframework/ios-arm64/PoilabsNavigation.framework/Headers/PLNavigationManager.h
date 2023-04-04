@@ -14,6 +14,7 @@
 #import "PLPositioningManager.h"
 #import <sys/utsname.h>
 #import "PLNNavigationMapViewDelegate.h"
+#import "PLNPlace.h"
 
 @interface PLNavigationManager : NSObject
 
@@ -27,7 +28,7 @@
 
 @property (strong, nonatomic) PLNavigationResponse *navigationResponse;
 
-@property (strong, nonatomic) PLPoi *childsPlace;
+@property (strong, nonatomic) PLNPlace *childsPlace;
 
 @property(strong, nonatomic) PLNNavigationConfig *config;
 

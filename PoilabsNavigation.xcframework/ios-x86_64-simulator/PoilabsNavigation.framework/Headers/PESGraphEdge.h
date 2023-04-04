@@ -24,6 +24,7 @@
 }
 
 @property (nonatomic, strong) NSNumber *weight;
+@property (nonatomic, strong) NSNumber *distance;
 @property (nonatomic, unsafe_unretained) NSString *name;
 
 /**
@@ -34,7 +35,7 @@
 	@param aNumber the weight to assign to this edge
 	@returns an initialized and un-retained edge
  */
-+ (PESGraphEdge *)edgeWithName:(NSString *)aName andWeight:(NSNumber *)aNumber;
++ (PESGraphEdge *)edgeWithName:(NSString *)aName andWeight:(NSNumber *)aNumber realDistance:(NSNumber *)distance;
 
 /**
     Convenience initializer that allows for setting the edge's name at initilization

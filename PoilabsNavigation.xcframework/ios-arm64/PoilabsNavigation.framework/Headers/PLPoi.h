@@ -31,21 +31,13 @@
 
 @property(strong, nonatomic) PLFilter *filters;
 
-@property(strong, nonatomic) PLMap *map;
-
-
-@property(strong, nonatomic) NSMutableArray<PLNFacility *> *facilities;
-
 @property(strong, nonatomic) NSString *restrictionWarning;
 
 @property(strong, nonatomic) PLNCategory *category;
 
 @property(strong, nonatomic) NSArray<NSString *> *tags;
 
-//It can be floorname or floorlabel. Depend on its value, on floor change slider, show floor level or floor name for elevator cases
-@property(strong, nonatomic) NSString *routeSummaryParameter;
-
-@property(assign, nonatomic) double weinbergConstant;
+@property(strong, nonatomic) NSString *zoneId;
 
 -(NSString *)getTitleForCategoryOrSubcategory;
 
