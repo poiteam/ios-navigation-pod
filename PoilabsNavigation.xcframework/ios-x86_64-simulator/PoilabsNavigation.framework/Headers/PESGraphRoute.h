@@ -67,5 +67,7 @@
  */
 - (float)length;
 
+- (float)distance;
+
 
 @end
