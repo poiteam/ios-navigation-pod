@@ -7,6 +7,7 @@
 //
 #import "PLMap.h"
 #import "PLNFacility.h"
+#import "PLNPositioning.h"
 
 #ifndef PLNPlace_h
 #define PLNPlace_h
@@ -28,6 +29,8 @@
 @property(strong, nonatomic) NSDictionary<NSString*, NSArray*> *zonePassList;
 
 -(BOOL)isZoneReachableFromZone:(NSString *)startZone toZone:(NSString *)endZone;
+
+@property(strong, nonatomic) PLNPositioning *positioning;
 
 @end
 

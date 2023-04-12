@@ -10,24 +10,30 @@
 #import "PLNUtils.h"
 #import "PLNPointTagsCollectionView.h"
 #import "PLNPointTagsCollectionViewCell.h"
+#import "PLNPointInfoDetailView.h"
 
-@interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 
 - (void)addAssSubviewTo: (UIView *)view;
 - (void)present;
 - (void)dismiss:(BOOL)callHandler ;
 - (instancetype)init:(PLPoi *)point completionHandler:(void(^)(void)) handler didDismiss:(void(^)(void)) dismiss;
 @property(strong, nonatomic) PLPoi *point;
-@property(strong, nonatomic) UIImageView *imageView;
+@property(strong, nonatomic) UIImageView *categoryIconImageView;
 @property(strong, nonatomic) UIImageView *navigateIcon;
 @property(strong, nonatomic) UILabel *placeTitleLabel;
 @property(strong, nonatomic) UILabel *placeTypeLabel;
 @property(strong, nonatomic) UIButton *navigationButton;
 @property(strong, nonatomic) UIStackView *labelsStackView;
-@property(strong, nonatomic) UIView *topView;
+@property(strong, nonatomic) UIView *topLineView;
+@property(strong, nonatomic) UIImageView *workingHoursImageView;
+@property(strong, nonatomic) UILabel *workingHoursLabel;
 @property(strong, nonatomic) UIView *smallModeContainerView;
+@property(strong, nonatomic) UIScrollView *scrollView;
 
 @property(strong, nonatomic) PLNPointTagsCollectionView *tagsCollectionView;
+@property(strong, nonatomic) PLNPointInfoDetailView *detailsView;
+
 @property (strong, nonatomic) void (^actionHandler)(void);
 @property (strong, nonatomic) void (^didDismiss)(void);
 -(void)navigateButtonPressed;

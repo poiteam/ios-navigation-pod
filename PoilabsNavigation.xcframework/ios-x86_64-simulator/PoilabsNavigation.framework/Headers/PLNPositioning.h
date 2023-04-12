@@ -15,8 +15,6 @@
 
 @property(assign, nonatomic) float beaconScanInterval;
 
-@property(assign, nonatomic) float locationUpdateInterval;
-
 @property(assign, nonatomic) float requestInterval;
 
 @end

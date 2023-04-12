@@ -147,6 +147,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *popularSearchTitleLabelHeightConstraint;
+
+@property (weak, nonatomic) IBOutlet UILabel *popularSearchesLabel;
 
 #pragma mark - Floors 
 @property (weak, nonatomic) IBOutlet UIView *floorSelectionBaseView;

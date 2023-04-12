@@ -15,7 +15,7 @@
 #import "PLNFacility.h"
 #import "PLNCategory.h"
 #import "PLSegment.h"
-
+#import "PLPoiProperties.h"
 
 @interface PLPoi : NSObject
 
@@ -31,13 +31,16 @@
 
 @property(strong, nonatomic) PLFilter *filters;
 
-@property(strong, nonatomic) NSString *restrictionWarning;
-
 @property(strong, nonatomic) PLNCategory *category;
+
+@property(strong, nonatomic) PLPoiProperties *properties;
 
 @property(strong, nonatomic) NSArray<NSString *> *tags;
 
+@property(strong, nonatomic) NSString *restrictionWarning;
+
 @property(strong, nonatomic) NSString *zoneId;
+
 
 -(NSString *)getTitleForCategoryOrSubcategory;
 
