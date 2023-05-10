@@ -11,6 +11,7 @@
 #import "PLNPointTagsCollectionView.h"
 #import "PLNPointTagsCollectionViewCell.h"
 #import "PLNPointInfoDetailView.h"
+#import "PLNLeftAlignedCollectionViewFlowLayout.h"
 
 @interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 

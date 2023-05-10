@@ -30,12 +30,14 @@
         Optional further key-value pairs describing the node
      */
     NSMutableDictionary *additionalData;
+    
+    int distance;
 }
 
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSMutableDictionary *additionalData;
-
+@property (assign, nonatomic) int distance;
 /**
 	Convenience method to return an initialized and un-retained node
 	@param anIdentifier a unique identifier for the node.  Must be unique for all nodes in a graph

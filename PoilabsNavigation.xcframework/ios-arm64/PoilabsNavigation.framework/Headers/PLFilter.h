@@ -24,8 +24,8 @@
 
 //@property(strong, nonatomic) NSString *category;
 
-@property(strong, nonatomic) NSString *store_id;
+//@property(strong, nonatomic) NSString *store_id;
 
-
+@property(strong, nonatomic) NSArray *store_ids;
 
 @end

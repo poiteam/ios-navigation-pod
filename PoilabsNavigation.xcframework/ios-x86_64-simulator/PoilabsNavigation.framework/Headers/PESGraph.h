@@ -143,4 +143,6 @@
 - (id)keyOfSmallestValue:(NSDictionary *)aDictionary withInKeys:(NSArray *)anArray;
 
 
+- (PESGraphNode *)findNearestNodeOfType:(NSString *)targetType fromNode:(PESGraphNode *)startNode;
+
 @end

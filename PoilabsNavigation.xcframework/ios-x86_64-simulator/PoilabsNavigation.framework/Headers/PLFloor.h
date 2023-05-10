@@ -24,6 +24,8 @@
 
 @property(assign, nonatomic) double minZoomLevel;
 
+@property(assign, nonatomic) double navigationZoomLevel;
+
 @property(assign, nonatomic) CLLocationCoordinate2D centerPoint;
 
 @property(assign, nonatomic) CLLocationCoordinate2D swForBounds;
