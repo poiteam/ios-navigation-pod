@@ -12,16 +12,6 @@ To integrate PoilabsNavigation into your Xcode project using CocoaPods, specify 
 pod 'PoilabsNavigation'
 ```
 
-### Manually
-
-* Add **PoilabsNavigation.xcframework** file to your "Frameworks, Libaries, and Embedded Content" in your Project’s General Tab.
-
-* Add **PoilabsNavigationResources.bundle** file to your Copy bundle Resources in Build Phases tab.
-
-
-PoilabsNavigation uses Mapbox SDK. You should add **Mapbox.framework**.  
-[MapBox iOS Sdk](https://www.mapbox.com/ios-sdk/)
-
 ## PRE-REQUIREMENTS
 To Integrate this framework you should add some features to your project info.plist file.
 
@@ -91,7 +81,7 @@ You can change colors of top bar and cancel button text according to your applic
 **didUserLocationChange** callback is triggered when location change.
 
 ```swift
-    func poilabsVdNavigation(didUpdate userLocation: CLLocationCoordinate2D, floorLevel: Int, floorName: String) {
+    func poilabsNavigation(didUpdate userLocation: CLLocationCoordinate2D, floorLevel: Int, floorName: String) {
         
     }
 ```
