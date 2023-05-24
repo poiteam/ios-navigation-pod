@@ -13,30 +13,39 @@
 
 -(id)initWithData:(NSDictionary*)data;
 
-@property(strong, nonatomic) NSString *messageUrl;
+
 
 @property(strong, nonatomic) NSString *uuidString;
 
-@property(strong, nonatomic) NSString *childsUrl;
+
 
 @property(strong, nonatomic) NSMutableArray *majorList;
 
-@property(assign, nonatomic) int timeInterval;
-
 @property(strong, nonatomic) NSString *placeId;
 
-@property(assign, nonatomic) int beaconCount;
-
 @property(assign,nonatomic) int minimumRssiLimit;
-
-@property(assign, nonatomic) int decideUnavailableLocationServiceLimit;
 
 @property(strong, nonatomic) NSDictionary *walkways;
 
 @property(strong, nonatomic) PLNPositioning *positioning;
 
-@property(assign, nonatomic) int topPoiCount;
+@property(strong, nonatomic) NSNumber *topPoiCount;
 
-//@property(strong, nonatomic) NSString *floorPassBy;
+//MARK: Urls
+
+@property(strong, nonatomic) NSString *positioningSignalsUrl;
+
+@property(strong, nonatomic) NSString *placeUrl;
+
+@property(strong, nonatomic) NSString *childsUrl;
+
+@property(strong, nonatomic) NSString *walkwaysUrl;
+
+@property(strong, nonatomic) NSString *beaconListUrl;
+
+@property(strong, nonatomic) NSString *eventsUrl;
+
+@property(strong, nonatomic) NSString *logsUrl;
+
 
 @end

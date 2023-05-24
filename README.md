@@ -54,9 +54,6 @@ PLNavigationManager.sharedInstance()?.getReadyForStoreMap(completionHandler: { (
     	let carrierView = PLNNavigationMapView(frame: CGRect(x: 0, y: 0, width: self.navigationView.bounds.size.width, height: self.navigationView.bounds.size.height))
     	carrierView.awakeFromNib()
     	carrierView.delegate = self
-    	carrierView.curretLocationBottomLabel.text = "place.title"
-    	carrierView.searchBarBaseView.backgroundColor = UIColor.black
-    	carrierView.searchCancelButton.setTitleColor(.white, for: .normal)
     	self.currentCarrier = carrierView
     	self.navigationView.addSubview(carrierView)
     } else {

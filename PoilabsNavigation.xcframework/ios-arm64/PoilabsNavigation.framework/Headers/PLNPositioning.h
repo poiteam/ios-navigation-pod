@@ -17,5 +17,9 @@
 
 @property(assign, nonatomic) float requestInterval;
 
+@property(assign, nonatomic) float rerouteDuration;
+
+@property(assign, nonatomic) float rerouteDistance;
+
 @end
 #endif /* PLNPositioning_h */
