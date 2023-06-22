@@ -34,6 +34,6 @@
 
 @property(assign, nonatomic) BOOL isSearchBarHidden;
 
-
+- (void)setApplicationLanguage:(NSString *)applicationLanguage;
 
 @end

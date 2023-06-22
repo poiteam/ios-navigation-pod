@@ -13,13 +13,13 @@
 
 -(id)initWithData:(NSDictionary*)data;
 
-@property(assign, nonatomic) float beaconScanInterval;
+- (float) rerouteDuration;
 
-@property(assign, nonatomic) float requestInterval;
+- (float) rerouteDistance;
 
-@property(assign, nonatomic) float rerouteDuration;
+- (float) requestInterval;
 
-@property(assign, nonatomic) float rerouteDistance;
+- (float) beaconScanInterval;
 
 @end
 #endif /* PLNPositioning_h */

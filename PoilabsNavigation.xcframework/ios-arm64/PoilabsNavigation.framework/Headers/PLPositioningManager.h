@@ -28,6 +28,8 @@
 
 @property(strong, nonatomic, nullable) CLLocation *lastLocation;
 
+@property(strong, nonatomic, nullable) NSNumber *lastFloorLevel;
+
 @property(strong, nonatomic, nullable) CLHeading *heading;
 
 @property(strong,nonatomic) PLPositioning * _Nullable positioningManager;
@@ -42,9 +44,9 @@
 
 @property(assign, nonatomic) bool isRouteActive;
 
-@property(strong, nonatomic) NSMutableArray<CLLocation*> * _Nullable routeCoordinates;
+@property(strong, nonatomic) NSMutableDictionary<NSNumber*, NSMutableArray<CLLocation*> *> * _Nullable routeCoordinates;
 
--(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location;
+-(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location inFloorLevel:(int)floorLevel;
 
 -(void)setPlaceProperties;
 @end
