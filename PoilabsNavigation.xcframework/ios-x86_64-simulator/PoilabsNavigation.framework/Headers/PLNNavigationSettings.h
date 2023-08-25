@@ -12,6 +12,7 @@
 @interface PLNNavigationSettings : NSObject
 
 + (instancetype)sharedInstance;
++ (void)destroySharedInstance;
 
 @property(strong, nonatomic) NSString *applicationId;
 

@@ -19,7 +19,7 @@
 @interface PLNavigationManager : NSObject
 
 + (instancetype)sharedInstance;
-
++ (void)destroySharedInstance;
 @property(strong, nonatomic) id<PLNNavigationMapViewDelegate> delegate;
 
 -(void)getReadyForStoreMapWithCompletionHandler:(void (^)(PLNError *error))completionHandler;

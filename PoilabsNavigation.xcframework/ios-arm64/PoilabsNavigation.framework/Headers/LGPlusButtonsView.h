@@ -182,9 +182,10 @@ typedef NS_ENUM(NSUInteger, LGPlusButtonAnimationType)
 - (void)setButtonsLayerShadowRadius:(CGFloat)shadowRadius;
 - (void)setButtonsLayerShadowOpacity:(CGFloat)shadowOpacity;
 - (void)setButtonsLayerShadowOffset:(CGSize)shadowOffset;
+- (void)removeAllNotificationCircles;
 
 #pragma mark - Button at index
-
+- (void)addNotificationIconAtIndex:(NSUInteger)index;
 - (void)setButtonAtIndex:(NSUInteger)index title:(NSString *)title                    forState:(UIControlState)state;
 - (void)setButtonAtIndex:(NSUInteger)index titleColor:(UIColor *)titleColor           forState:(UIControlState)state;
 - (void)setButtonAtIndex:(NSUInteger)index backgroundImage:(UIImage *)backgroundImage forState:(UIControlState)state;

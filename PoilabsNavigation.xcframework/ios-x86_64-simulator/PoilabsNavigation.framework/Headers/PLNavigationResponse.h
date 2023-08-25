@@ -8,13 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "PLPoi.h"
-#import "PESGraph.h"
-#import "PESGraphNode.h"
-#import "PESGraphEdge.h"
-#import "PESGraphRoute.h"
-#import "PESGraphRouteStep.h"
-
-
 
 @interface PLNavigationResponse : NSObject
 
@@ -25,21 +18,5 @@
 @property(strong, nonatomic) NSMutableArray *allPointsForParking;
 
 @property(strong, nonatomic) NSMutableArray *allPointsForMap;
-
-@property(strong, nonatomic) NSMutableArray *allGraphNodes;
-
-@property(strong, nonatomic) NSMutableArray *allGraphEdgesForEveryOne;
-
-@property(strong, nonatomic) NSMutableArray *allGraphEdgesForDisablePerson;
-
-@property(strong, nonatomic) PESGraph *mainGraph;
-
-@property(strong, nonatomic) PESGraph *onlyPassByFilterIncludedMainGraph;
-
-@property(strong, nonatomic) PESGraph *disableGraph;
-
--(PESGraphNode *)grapNodeFinderWithNodeId:(NSString *)nodeId;
-
-- (PESGraph *)createSameLevelPoisGraph:(int)level;
 
 @end
