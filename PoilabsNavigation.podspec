@@ -41,8 +41,9 @@ s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
 s.resources = 'PoilabsNavigationResources.bundle'
 
 s.dependency 'PoilabsPositioning', '1.0.13'
-s.dependency 'PoilabsSdkAnalytics', '~> 1.0.7'
+s.dependency 'PoilabsSdkAnalytics', '~> 1.0.8'
 s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
 s.dependency 'MapboxMobileEvents'
+s.dependency 'PoilabsCore', '1.0.0'
 
 end
