@@ -12,13 +12,11 @@
 
 
 - (nullable instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier size:(CGFloat)size;
+-(nullable instancetype)initSharedLocationAnnotationView:(nullable UIImage *)icon title:(nullable NSString *) title;
 
-@property(strong, nonatomic, nullable) UIImageView *imageView;
-@property(strong, nonatomic, nullable) UIImageView *background;
--(void)changeLocationToNewCoordinate:(CLLocationCoordinate2D)newCoordinate;
--(void)rotateAnnotationToDegree:(float)degree;
 -(void)changeLocationWithAnimation:(CLLocationCoordinate2D)newCoordinate;
 
--(void)changeSize: (float) size;
+@property(strong, nonatomic, nullable) UIImageView *imageView;
+@property(strong, nonatomic, nullable) UILabel *descriptionLabel;
 
 @end

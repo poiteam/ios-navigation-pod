@@ -250,6 +250,7 @@
 
 -(void)getShowonMapPin:(NSString *)poiId;
 -(void)showMultiplePins:(NSArray *)storeIds;
+-(void)addSharedLocationPinToCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(int)floorLevel withIcon:(UIImage*)icon withTitle:(NSString*)title;
 
 -(void) selectStartPoiForRoute:(NSString *)senderPoiId;
 
