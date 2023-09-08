@@ -18,5 +18,7 @@
 
 @property(assign, nonatomic) BOOL isVisibleOnMap;
 
+@property(assign, nonatomic) BOOL routePrivilage;
+
 
 @end
