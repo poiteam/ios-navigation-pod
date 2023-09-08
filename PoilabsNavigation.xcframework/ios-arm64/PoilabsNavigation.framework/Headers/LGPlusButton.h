@@ -83,4 +83,7 @@
 /** Unavailable, use titleOffset and imageOffset instead */
 - (UIEdgeInsets)imageEdgeInsets                                                                       __attribute__((unavailable("Use titleOffset and imageOffset instead")));
 
+- (void)addNotificationCircle;
+- (void)removeNotificationCircle;
+
 @end

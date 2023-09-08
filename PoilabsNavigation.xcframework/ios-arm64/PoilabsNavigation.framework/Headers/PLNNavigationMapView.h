@@ -11,8 +11,6 @@
 #import <Mapbox/Mapbox.h>
 #import "PLNLocationManager.h"
 #import "PLNCustomAnnotationView.h"
-#import "PESGraphRoute.h"
-#import "PESGraphRouteStep.h"
 #import "PLNNavigationMapViewDelegate.h"
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
@@ -26,8 +24,10 @@
 #import "PLNTextFieldTint.h"
 #import "PLNShowAllTableViewCell.h"
 #import "PoilabsSdkAnalytics/PoilabsSdkAnalytics.h"
+#import "PoilabsCore/PLCoreWrapper.h"
+#import "PLNOtherFloorsPopUp.h"
 
-@interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate>
+@interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate, PLNPointInfoViewDelegate>
 {
     NSInteger selectedIndexPathRow;
     CGFloat selectedCellSize;
@@ -58,8 +58,6 @@
 @property(assign, nonatomic) float currentMapHeadingValue;
 
 @property(assign, nonatomic) float currentDeviceHeadingValue;
-
-@property(assign, nonatomic) int elevatorCounter;
 
 @property(strong, nonatomic) PLNCustomAnnotationView *userLocationAnnotationView;
 
@@ -105,12 +103,11 @@
 @property(strong, nonatomic) PLNPointInfoView *pointInfoView;
 
 @property(strong,nonatomic) PLPoi *startLocationPoi;
-@property(strong,nonatomic) PESGraphNode *startLocationNode;
 
 @property(strong,nonatomic) PLFloor *showingFloor;
 @property(strong,nonatomic) PLFloor *userLocationFloor;
-@property(strong,nonatomic) PESGraphRoute *currentRoute;
-@property(strong, nonatomic) NSMutableArray<PESGraphRoute *> *routes;
+@property(strong,nonatomic) PLNRoute *currentRoute;
+@property(strong, nonatomic) NSMutableArray<PLNRoute *> *routes;
 @property(strong, nonatomic) NSArray<NSString *> *pointsToGoStoreIds;
 
 #pragma mark - Search Bar
@@ -157,6 +154,8 @@
 @property(strong, nonatomic) LGPlusButtonsView *floorsPlusButtonsView;
 
 @property (weak, nonatomic) IBOutlet UIButton *floorSelectionButton;
+
+@property (strong, nonatomic) UIImageView *floorSelectionButtonNotificationCircle;
 
 
 @property(assign, nonatomic) BOOL bluetoothStatus;
@@ -251,6 +250,7 @@
 
 -(void)getShowonMapPin:(NSString *)poiId;
 -(void)showMultiplePins:(NSArray *)storeIds;
+-(void)addSharedLocationPinToCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(int)floorLevel withIcon:(UIImage*)icon withTitle:(NSString*)title;
 
 -(void) selectStartPoiForRoute:(NSString *)senderPoiId;
 
@@ -287,5 +287,9 @@
 -(void)logSearchKeyword:(NSString *)keyword;
 
 @property(strong, nonatomic) NSTimer *readyForRouteTimer;
+
+@property(strong, nonatomic) PLNOtherFloorsPopUp *otherFloorsPopUp;
+
+@property(strong, nonatomic) NSMutableArray<MGLPointFeature*> *showingPointFeatures;
 
 @end

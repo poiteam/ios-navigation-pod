@@ -15,27 +15,9 @@
 @interface PLNLocationManager : NSObject
 
 + (instancetype)sharedInstance;
-
-
-//@property(strong, nonatomic) id<PLNLocationManagerDelegate> delegate;
-//
-//@property(strong, nonatomic) NSDate *lastBeaconRequestDate;
-//
-//@property(strong,nonatomic) NSMutableArray *foundedBeaconsInPeriod;
-//
-//@property(assign, nonatomic) NSInteger decideUnavailableLocation;
-//
-//@property(assign, nonatomic) BOOL bluetoothStatus;
-//
-//@property(assign, nonatomic) BOOL locationManagerFailed;
-//
-//@property(assign, nonatomic) BOOL locationServicesStatus;
++ (void)destroySharedInstance;
 
 @property(strong, nonatomic) PLPoi *userLocationPoi;
-
-@property(strong, nonatomic) NSMutableArray *userLocationPoiIds;
-
-//@property(strong, nonatomic) PESGraphNode *userLocationNode;
 
 @property(assign, nonatomic) CLLocationCoordinate2D userLocationCoordinate;
 

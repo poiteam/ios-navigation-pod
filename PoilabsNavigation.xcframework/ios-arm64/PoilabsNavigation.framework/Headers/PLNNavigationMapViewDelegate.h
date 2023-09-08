@@ -28,4 +28,7 @@
 
 -(void)poilabsNavigationReadyForRouting;
 
+- (void)didLongPressAtCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(NSInteger)floorLevel;
+
+
 @end

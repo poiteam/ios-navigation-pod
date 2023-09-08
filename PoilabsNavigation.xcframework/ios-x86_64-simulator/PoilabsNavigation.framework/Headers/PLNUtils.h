@@ -12,6 +12,7 @@
 
 @interface PLNUtils : NSObject
 + (instancetype)sharedInstance;
++ (void)destroySharedInstance;
 
 +(void)logDebugInformations:(NSString *)string priority:(int)priorityLevel inManagerType:(NSString *)comingType;
 

@@ -13,6 +13,11 @@
 #import "PLNPointInfoDetailView.h"
 #import "PLNLeftAlignedCollectionViewFlowLayout.h"
 
+@protocol PLNPointInfoViewDelegate <NSObject>
+@optional
+-(void)pointInfoViewDidSelectTagWithTitle:(NSString *)tagTitle;
+@end
+
 @interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 
 - (void)addAssSubviewTo: (UIView *)view;
@@ -34,6 +39,8 @@
 
 @property(strong, nonatomic) PLNPointTagsCollectionView *tagsCollectionView;
 @property(strong, nonatomic) PLNPointInfoDetailView *detailsView;
+
+@property(strong, nonatomic) id<PLNPointInfoViewDelegate> delegate;
 
 @property (strong, nonatomic) void (^actionHandler)(void);
 @property (strong, nonatomic) void (^didDismiss)(void);
