@@ -20,5 +20,7 @@
 
 @property(assign, nonatomic) BOOL routePrivilage;
 
+@property(assign, nonatomic) int bufferWithShortest;
+
 
 @end

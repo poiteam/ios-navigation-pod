@@ -53,6 +53,7 @@
 @property(assign, readonly) bool isVisibleOnMap;
 @property(assign, readonly) bool isVisibleOnList;
 @property(assign, readonly) bool isPrivileged;
+@property(assign, readonly) int bufferWithShortest;
 @property(strong, nonatomic) NSArray<PLSegment *> *segments;
 
 @end

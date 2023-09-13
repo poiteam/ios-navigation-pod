@@ -20,4 +20,6 @@
 
 @property(strong, nonatomic) PLPoiProperties *poiProperties;
 
+@property bool isLoaded;
+
 @end
