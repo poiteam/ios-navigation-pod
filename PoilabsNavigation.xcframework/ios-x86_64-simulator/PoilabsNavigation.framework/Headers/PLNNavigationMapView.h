@@ -39,76 +39,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *mapBaseView;
 
-//@property(strong, nonatomic) MGLMapView *mapView;
-
-@property(strong, nonatomic) MGLMapCamera *mapCamera;
-
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *FloorChooseHeight;
-
-#pragma mark - Algorithm
-
-@property (nonatomic) MGLCoordinateBounds colorado;
-
-@property(strong, nonatomic) NSMutableArray *polylineAnnotationsMutableArray;
-
-@property(strong, nonatomic) NSMutableArray *tableViewStoresMutableArray;
-
-@property (nonatomic) MGLShapeSource *polylineSource;
-
-@property(assign, nonatomic) float currentMapHeadingValue;
-
-@property(assign, nonatomic) float currentDeviceHeadingValue;
-
-@property(strong, nonatomic) PLNCustomAnnotationView *userLocationAnnotationView;
-
-@property(strong, nonatomic) MGLPointAnnotation *userPointAnnotation;
-
-@property(strong, nonatomic) NSMutableArray *upCustomPointAnnotationsMutableArray;
-@property(strong, nonatomic) NSMutableArray *downCustomPointAnnotationsMutableArray;
-@property(strong, nonatomic) NSMutableArray *upPointAnnotationsMutableArray;
-@property(strong, nonatomic) NSMutableArray *downPointAnnotationsMutableArray;
-@property(strong, nonatomic) PLNCustomAnnotationView *placeCustomAnnotationView;
-@property(strong, nonatomic) MGLPointAnnotation *placePointAnnotation;
-@property(strong, nonatomic) NSMutableArray *placePointAnnotationArray;
-
-@property(strong, nonatomic) PLNCustomAnnotationView *startCustomAnnotationView;
-@property(strong, nonatomic) MGLPointAnnotation *startPointAnnotation;
-
-@property(strong, nonatomic) PLNCustomAnnotationView *finishCustomAnnotationView;
-@property(strong, nonatomic) MGLPointAnnotation *finishPointAnnotation;
-
-
-
-#pragma mark - Trees
-//@property(strong, nonatomic) NSMutableArray *selectedCustomAnnotationViewArray;
-@property(strong, nonatomic) NSMutableArray *selectedPointAnnotationArray;
-
-//@property(strong, nonatomic) NSMutableArray *unselectedCustomAnnotationViewArray;
-@property(strong, nonatomic) NSMutableArray *unselectedPointAnnotationArray;
-
-@property(strong, nonatomic) NSMutableArray *descriptionArray;
-
-@property(strong, nonatomic) NSMutableArray *imageArray;
-
-
-
-@property(strong, nonatomic) NSMutableArray *upPointAnnotationsMutableArrayLenght;
-@property(strong, nonatomic) NSMutableArray *downPointAnnotationsMutableArrayLenght;
-@property(strong, nonatomic) NSMutableArray *allFloorsPolylineMutableArray;
-@property(strong, nonatomic) NSMutableArray *dashedLineLocations;
-@property(strong,nonatomic) PLPoi *targetLocationPoi;
-
--(void)setTargetLocationPoi:(PLPoi *)targetLocationPoi;
-
-@property(strong, nonatomic) PLNPointInfoView *pointInfoView;
-
-@property(strong,nonatomic) PLPoi *startLocationPoi;
-
-@property(strong,nonatomic) PLFloor *showingFloor;
-@property(strong,nonatomic) PLFloor *userLocationFloor;
-@property(strong,nonatomic) PLNRoute *currentRoute;
-@property(strong, nonatomic) NSMutableArray<PLNRoute *> *routes;
-@property(strong, nonatomic) NSArray<NSString *> *pointsToGoStoreIds;
 
 #pragma mark - Search Bar
 @property (weak, nonatomic) IBOutlet UIView *searchBarBaseView;
@@ -151,17 +82,7 @@
 #pragma mark - Floors 
 @property (weak, nonatomic) IBOutlet UIView *floorSelectionBaseView;
 
-@property(strong, nonatomic) LGPlusButtonsView *floorsPlusButtonsView;
-
 @property (weak, nonatomic) IBOutlet UIButton *floorSelectionButton;
-
-@property (strong, nonatomic) UIImageView *floorSelectionButtonNotificationCircle;
-
-
-@property(assign, nonatomic) BOOL bluetoothStatus;
-
-@property(assign, nonatomic) BOOL locationServicesStatus;
-
 
 #pragma mark - Left Buttons
 @property (weak, nonatomic) IBOutlet UIButton *babyButton;
@@ -213,13 +134,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *floorChangeDescriptionViewTopLayoutConstraint;
 
-
-#pragma mark - Car Actions
-
-@property(strong, nonatomic) UIAlertController *autoParkCarSectionAlertController;
-@property(strong, nonatomic) UIAlertController *manualCarSelectOptionAlertController;
-
-
 #pragma mark - Choose Manual Parking Area
 
 @property (weak, nonatomic) IBOutlet UIView *chooseManualParkingAreaBaseView;
@@ -246,13 +160,10 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *thirdPickerView;
 
--(void)addSelectedTrees:(NSArray *)comingSelectedTrees andUnselectedTrees:(NSArray *)comingUnselectedTrees;
-
 -(void)getShowonMapPin:(NSString *)poiId;
 -(void)showMultiplePins:(NSArray *)storeIds;
 -(void)addSharedLocationPinToCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(int)floorLevel withIcon:(UIImage*)icon withTitle:(NSString*)title;
-
--(void) selectStartPoiForRoute:(NSString *)senderPoiId;
+-(void)removeSharedLocationPin;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *removeRouteBottomHeight;
 
@@ -265,31 +176,15 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *cancelLabelAction;
-// Otopark isimleri kisma
-@property(strong, nonatomic) NSMutableArray *autoparkingDisable;
-
-
-@property (strong, nonatomic) MultiPointRouteAlert *multiPointRouteAlert;
-
-@property(strong, nonatomic) NSMutableArray<PLNFacility *> *facilities;
 
 //bir noktadan baska noktaya rota almasi icin
 -(void)getRouteFrom:(PLPoi *)startPoi toEnd:(PLPoi *)endPoi;
 -(void) getRouteToFacility:(PLPoi *)startPoi toFacilityType:(NSString *)facilityType;
 -(void)navigateForMultiplePointRoute:(PLPoi *)startPoi;
--(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
--(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
--(PLFloor *)getFloorWithLevel:(int)level;
--(void)changeCurrentFloor;
--(PLPoi *)getNearestPoiWithSegmentTo: (CLLocationCoordinate2D)coordinate;
--(PLPoi *)getNearestPoiTo: (CLLocationCoordinate2D)coordinate;
 
 -(void)logSearchKeyword:(NSString *)keyword;
 
-@property(strong, nonatomic) NSTimer *readyForRouteTimer;
-
-@property(strong, nonatomic) PLNOtherFloorsPopUp *otherFloorsPopUp;
-
-@property(strong, nonatomic) NSMutableArray<MGLPointFeature*> *showingPointFeatures;
+-(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
+-(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
 
 @end
