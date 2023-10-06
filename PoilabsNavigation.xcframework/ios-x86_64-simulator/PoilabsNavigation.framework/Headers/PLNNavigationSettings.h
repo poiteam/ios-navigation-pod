@@ -37,4 +37,5 @@
 
 - (void)setApplicationLanguage:(NSString *)applicationLanguage;
 
+-(NSString *)getpoilabsNavigationVersionNumber;
 @end
