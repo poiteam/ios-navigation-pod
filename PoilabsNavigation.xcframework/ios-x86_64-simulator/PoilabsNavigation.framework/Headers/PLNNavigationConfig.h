@@ -47,5 +47,7 @@
 
 @property(strong, nonatomic) NSString *logsUrl;
 
+-(NSString *)eventsUrl;
+
 
 @end
