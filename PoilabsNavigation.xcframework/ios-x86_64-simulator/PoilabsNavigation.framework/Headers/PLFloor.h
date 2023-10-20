@@ -51,4 +51,6 @@
 @property(assign, nonatomic) double shiftDistance;
 
 @property(assign, nonatomic) double shiftAngle;
+
+@property(assign, nonatomic) double reversedShiftAngle;
 @end
