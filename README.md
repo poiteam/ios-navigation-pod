@@ -86,6 +86,14 @@ You can change colors of top bar and cancel button text according to your applic
     }
 ```
 
+**didUserVisitPointWithStoreIds** callback is triggered when if there is any point having store_id near user.
+
+```swift
+    func didUserVisitPoint(with storeIds: [String]) {
+
+    }
+```
+
 **childsAreReady** callback is triggered when location list is ready. You can show any location or navigate to any location after it is triggered.
 
 ```swift

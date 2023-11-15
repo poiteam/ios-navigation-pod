@@ -30,5 +30,6 @@
 
 - (void)didLongPressAtCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(NSInteger)floorLevel;
 
+-(void)didUserVisitPointWithStoreIds:(NSArray<NSString *> *_Nonnull)storeIds;
 
 @end

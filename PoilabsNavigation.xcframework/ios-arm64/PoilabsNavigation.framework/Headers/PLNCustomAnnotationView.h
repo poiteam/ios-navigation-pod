@@ -15,8 +15,6 @@
 -(nullable instancetype)initSharedLocationAnnotationView:(nullable UIImage *)icon title:(nullable NSString *) title;
 
 -(void)changeLocationWithAnimation:(CLLocationCoordinate2D)newCoordinate;
-
-@property(strong, nonatomic, nullable) UIImageView *imageView;
-@property(strong, nonatomic, nullable) UILabel *descriptionLabel;
+-(void)rotateToDegree:(double)degree;
 
 @end
