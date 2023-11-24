@@ -46,7 +46,7 @@
 
 @property(strong, nonatomic) NSMutableDictionary<NSNumber*, NSMutableArray<CLLocation*> *> * _Nullable routeCoordinates;
 
--(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location inFloorLevel:(int)floorLevel;
+-(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location inFloorLevel:(int)floorLevel includeFirstStep:(bool)containsFirstStep;
 
 -(void)setPlaceProperties;
 @end
