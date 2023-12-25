@@ -23,6 +23,6 @@
 +(NSString *)getLocaleStringForMultiPointRoute:(NSString *)comingStr distance:(int)distance;
 @property(strong, nonatomic) NSString *navigationUniqueIdentifier;
 +(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder;
-
++ (NSString *)correctSuffixForWord:(NSString *)word;
 
 @end

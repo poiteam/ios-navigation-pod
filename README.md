@@ -94,7 +94,7 @@ You can change colors of top bar and cancel button text according to your applic
     }
 ```
 
-**childsAreReady** callback is triggered when location list is ready. You can show any location or navigate to any location after it is triggered.
+**childsAreReady** callback is triggered when location list is ready. You can show any location on map after it is triggered.
 
 ```swift
     func childsAreReady() {
@@ -154,7 +154,7 @@ After **-childsAreReady** method is triggered, you can show locations on map wit
 
 ### Getting route on map
 
-After **-childsAreReady** method is triggered, you can get route on map with destination location's store id. Pass decimal storeId as **String** to **-navigateWithStoreId** method. If user location exists, route will be shown from current location to destination. But if there is no user location and location list is controlled by PoiLabs, user select start location on list. But if location list is under your control and there is no user location, route cannot be taken.
+After **-poilabsNavigationReadyForRouting** method is triggered, you can get route on map with destination location's store id. Pass decimal storeId as **String** to **-navigateWithStoreId** method. If user location exists, route will be shown from current location to destination. But if there is no user location and location list is controlled by PoiLabs, user select start location on list. But if location list is under your control and there is no user location, route cannot be taken.
 
 
 ```swift
@@ -163,7 +163,7 @@ After **-childsAreReady** method is triggered, you can get route on map with des
 
 ### Getting route with multiple points
 
-After **-childsAreReady** method is triggered, you can get route on map with a list of store ids. Pass decimal storeIds as **Array of Strings** to **-getRouteWithMultiplePoints** method.
+After **-poilabsNavigationReadyForRouting** method is triggered, you can get route on map with a list of store ids. Pass decimal storeIds as **Array of Strings** to **-getRouteWithMultiplePoints** method.
 
 ```swift
 	self.currentCarrier?.getRouteWithMultiplePoints(["store_id1", "store_id2", "store_id3"])

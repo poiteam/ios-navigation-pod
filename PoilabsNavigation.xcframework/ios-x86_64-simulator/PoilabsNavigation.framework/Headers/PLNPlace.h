@@ -32,6 +32,8 @@
 
 @property(strong, nonatomic) PLNPositioning *positioning;
 
+@property(strong, nonatomic) NSArray<NSString *> *routePointTypes;
+
 @end
 
 #endif /* PLNPlace_h */

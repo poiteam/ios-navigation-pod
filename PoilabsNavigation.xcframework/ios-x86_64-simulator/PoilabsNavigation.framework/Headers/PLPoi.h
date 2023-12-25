@@ -49,6 +49,8 @@
 -(CLLocationCoordinate2D)getCoordinates;
 -(int)getSegmentsCount;
 -(bool)hasSegment;
+-(NSNumber *)getQmsTime;
+-(PLSegment *)getSegmentTo:(PLPoi *)poi;
 
 @property(assign, readonly) bool isVisibleOnMap;
 @property(assign, readonly) bool isVisibleOnList;

@@ -26,4 +26,6 @@
 
 @property(strong, nonatomic) NSString *informationText;
 
+@property(strong, nonatomic, nullable) NSNumber *qmsTime;
+
 @end
