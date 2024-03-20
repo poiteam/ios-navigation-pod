@@ -21,5 +21,7 @@
 
 - (float) beaconScanInterval;
 
+- (BOOL) isMultilaterationAllowed;
+
 @end
 #endif /* PLNPositioning_h */
