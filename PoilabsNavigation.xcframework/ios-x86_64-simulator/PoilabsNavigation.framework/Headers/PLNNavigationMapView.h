@@ -27,7 +27,7 @@
 #import "PoilabsCore/PLCoreWrapper.h"
 #import "PLNOtherFloorsPopUp.h"
 
-@interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate, PLNPointInfoViewDelegate>
+@interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate, PLNPointInfoViewDelegate, PLCoreDelegate>
 {
     NSInteger selectedIndexPathRow;
     CGFloat selectedCellSize;
@@ -178,7 +178,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *cancelLabelAction;
 
 //bir noktadan baska noktaya rota almasi icin
--(void)getRouteFrom:(PLPoi *)startPoi toEnd:(PLPoi *)endPoi;
+-(void)getRouteFrom:(PLPoi *)startPoi toEnd:(PLPoi *)endPoi type:(PLRouteLogType)type;
 -(void) getRouteToFacility:(PLPoi *)startPoi toFacilityType:(NSString *)facilityType;
 -(void)navigateForMultiplePointRoute:(PLPoi *)startPoi;
 
@@ -186,5 +186,7 @@
 
 -(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
 -(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
+
+@property (strong, nonatomic) UIColor *clickedColor;
 
 @end

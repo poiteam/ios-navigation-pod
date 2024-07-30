@@ -22,5 +22,6 @@
 +(NSString *)getLocaleStringForKey:(NSString *) key;
 +(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder;
 + (NSString *)correctSuffixForWord:(NSString *)word;
++ (NSString *)correctSuffixForBuildingPassWord:(NSString *)word;
 
 @end
