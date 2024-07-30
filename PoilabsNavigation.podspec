@@ -16,7 +16,7 @@ s.summary = "Poilabs Indoor Navigation Framework"
 #s.requires_arc = true
 
 #2
-s.version = "2.14.0"
+s.version = "4.0.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -41,9 +41,9 @@ s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
 s.resources = 'PoilabsNavigationResources.bundle'
 
 s.dependency 'PoilabsPositioning', '1.0.17'
-s.dependency 'PoilabsSdkAnalytics', '~> 1.0.10'
+s.dependency 'PoilabsSdkAnalytics', '~> 1.0.11'
 s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
 s.dependency 'MapboxMobileEvents'
-s.dependency 'PoilabsCore', '1.0.9'
+s.dependency 'PoilabsCore', '1.0.10'
 
 end
