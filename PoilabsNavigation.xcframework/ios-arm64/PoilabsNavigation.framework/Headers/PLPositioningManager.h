@@ -49,4 +49,6 @@
 -(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location inFloorLevel:(int)floorLevel includeFirstStep:(bool)containsFirstStep;
 
 -(void)setPlaceProperties;
+
+@property(strong, nonatomic, nonnull) NSString *sessionId;
 @end
