@@ -44,6 +44,6 @@ s.dependency 'PoilabsPositioning', '1.1.0'
 s.dependency 'PoilabsSdkAnalytics', '~> 1.0.12'
 s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
 s.dependency 'MapboxMobileEvents'
-s.dependency 'PoilabsCore', '1.0.10'
+s.dependency 'PoilabsCore', '1.0.11'
 
 end
