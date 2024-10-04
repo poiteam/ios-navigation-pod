@@ -16,7 +16,6 @@
 #import <CoreLocation/CoreLocation.h>
 #import "PLFloor.h"
 #import "PLNCustomCalloutView.h"
-#import "MultiPointRouteAlert.h"
 #import "PLNFacility.h"
 #import "PLPositioningManager.h"
 #import "PLNPositioningManagerDelegate.h"
