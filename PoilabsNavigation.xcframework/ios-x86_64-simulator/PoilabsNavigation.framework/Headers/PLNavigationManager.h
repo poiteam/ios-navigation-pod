@@ -37,5 +37,6 @@
 -(void)postSignals:(NSArray<NSDictionary*> *) signals;
 
 -(NSString *)getFacilityTitleFor:(NSString *)type;
+- (void) getStyleDetailsWithcompletionHandler:(void (^)(double, double))completionHandler;
 
 @end

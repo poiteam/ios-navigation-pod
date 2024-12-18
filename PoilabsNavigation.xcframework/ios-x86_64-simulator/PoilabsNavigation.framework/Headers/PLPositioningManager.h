@@ -51,4 +51,6 @@
 -(void)setPlaceProperties;
 
 @property(strong, nonatomic, nonnull) NSString *sessionId;
+
++ (void)destroySharedInstance;
 @end
