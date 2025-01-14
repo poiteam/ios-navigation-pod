@@ -41,11 +41,11 @@ s.pod_target_xcconfig = {
 
 
 s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
-s.ios.vendored_frameworks = 'MapboxMobileEvents.xcframework'
 s.resources = 'PoilabsNavigationResources.bundle'
 
 s.dependency 'PoilabsPositioning', '1.1.1'
 s.dependency 'PoilabsSdkAnalytics', '~> 1.0.12'
 s.dependency 'PoilabsCore', '1.0.11'
 s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
+s.dependency 'MapboxMobileEvents'
 end
