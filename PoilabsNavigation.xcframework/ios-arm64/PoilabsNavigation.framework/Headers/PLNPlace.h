@@ -8,6 +8,7 @@
 #import "PLMap.h"
 #import "PLNFacility.h"
 #import "PLNPositioning.h"
+#import "PLNHexColorConverter.h"
 
 #ifndef PLNPlace_h
 #define PLNPlace_h
@@ -33,6 +34,8 @@
 @property(strong, nonatomic) PLNPositioning *positioning;
 
 @property(strong, nonatomic) NSArray<NSString *> *routePointTypes;
+
+-(UIColor *)getClickedColor;
 
 @end
 

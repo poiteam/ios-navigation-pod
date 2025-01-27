@@ -186,6 +186,4 @@
 -(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
 -(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
 
-@property (strong, nonatomic) UIColor *clickedColor;
-
 @end
