@@ -49,5 +49,7 @@
 
 -(NSString *)eventsUrl;
 
+-(NSString *_Nullable)getRemovedLayerPrefix;
+
 
 @end
