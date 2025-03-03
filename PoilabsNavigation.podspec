@@ -16,7 +16,7 @@ s.summary = "Poilabs Indoor Navigation Framework"
 #s.requires_arc = true
 
 #2
-s.version = "4.3.2"
+s.version = "4.4.0"
 
 # 3
 s.license = { :type => "Proprietary", :file => "LICENSE" }
@@ -25,10 +25,10 @@ s.license = { :type => "Proprietary", :file => "LICENSE" }
 s.author = { "Emre Kuru" => "emre@poilabs.com" }
 
 # 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://bitbucket.org/poiteam/ios-navigation-pod"
+s.homepage = "https://github.com/poiteam/ios-navigation-pod"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://bitbucket.org/poiteam/ios-navigation-pod.git",
+s.source = { :git => "https://github.com/poiteam/ios-navigation-pod.git",
              :tag => "#{s.version}" }
 
 s.pod_target_xcconfig = {
