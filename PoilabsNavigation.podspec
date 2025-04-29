@@ -13,10 +13,9 @@ s.platform = :ios
 s.ios.deployment_target = '12.0'
 s.name = "PoilabsNavigation"
 s.summary = "Poilabs Indoor Navigation Framework"
-#s.requires_arc = true
 
 #2
-s.version = "4.4.1"
+s.version = "5.0.0"
 
 # 3
 s.license = { :type => "Proprietary", :file => "LICENSE" }
@@ -43,9 +42,9 @@ s.pod_target_xcconfig = {
 s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
 s.resources = 'PoilabsNavigationResources.bundle'
 
-s.dependency 'PoilabsPositioning', '1.1.1'
-s.dependency 'PoilabsSdkAnalytics', '~> 1.0.12'
-s.dependency 'PoilabsCore', '1.0.11'
+s.dependency 'PoilabsPositioning', '1.2.0'
+s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
+s.dependency 'PoilabsCore', '1.0.15'
 s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
 s.dependency 'MapboxMobileEvents'
 end
