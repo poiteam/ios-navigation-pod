@@ -16,6 +16,7 @@
 #import "Mapbox/Mapbox.h"
 #import "PLFloor.h"
 #import "PLNPositioningManagerDelegate.h"
+#import "PoilabsLocation.h"
 
 @interface PLPositioningManager: NSObject<MGLLocationManager, PoilabsPositioningDelegate>
 
@@ -25,10 +26,6 @@
 @property (nonatomic, weak) id<PLNPositioningManagerDelegate> _Nullable errorDelegate;
 
 @property (nonatomic, readonly) CLAuthorizationStatus authorizationStatus;
-
-@property(strong, nonatomic, nullable) CLLocation *lastLocation;
-
-@property(strong, nonatomic, nullable) NSNumber *lastFloorLevel;
 
 @property(strong, nonatomic, nullable) CLHeading *heading;
 
@@ -46,9 +43,11 @@
 
 @property(strong, nonatomic) NSMutableDictionary<NSNumber*, NSMutableArray<CLLocation*> *> * _Nullable routeCoordinates;
 
--(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location inFloorLevel:(int)floorLevel includeFirstStep:(bool)containsFirstStep;
+-(double)getDistanceBetweenRouteAndLocation:(CLLocationCoordinate2D)location inFloorLevel:(int)floorLevel forPlaceId:(NSString *)placeId includeFirstStep:(bool)containsFirstStep;
 
 -(void)setPlaceProperties;
+
+- (PoilabsLocation *)getPoilabsLocation;
 
 @property(strong, nonatomic, nonnull) NSString *sessionId;
 

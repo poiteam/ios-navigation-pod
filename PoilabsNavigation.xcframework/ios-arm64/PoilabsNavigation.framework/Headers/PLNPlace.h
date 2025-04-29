@@ -8,6 +8,7 @@
 #import "PLMap.h"
 #import "PLNFacility.h"
 #import "PLNPositioning.h"
+#import "PLFloor.h"
 #import "PLNHexColorConverter.h"
 
 #ifndef PLNPlace_h
@@ -17,6 +18,10 @@
 @interface PLNPlace : NSObject
 
 -(id)initWithData:(NSDictionary*)data;
+
+@property(strong, nonatomic) NSString *placeId;
+
+@property(strong, nonatomic) NSString *title;
 
 @property(strong, nonatomic) PLMap *map;
 
@@ -34,6 +39,12 @@
 @property(strong, nonatomic) PLNPositioning *positioning;
 
 @property(strong, nonatomic) NSArray<NSString *> *routePointTypes;
+
+@property(strong, nonatomic) NSMutableArray<PLNPlace *> *childPlaces;
+
+-(PLNPlace *)getPlaceWithId:(NSString *)placeId;
+
+-(NSArray<PLFloor *>*)getFloors;
 
 -(UIColor *)getClickedColor;
 

@@ -12,7 +12,9 @@
 
 @interface PLFloor : NSObject
 
--(id)initWithData:(NSDictionary*)data;
+-(id)initWithData:(NSDictionary*)data andPlaceId: (NSString *)placeId;
+
+@property(strong, nonatomic) NSString *placeId;
 
 @property(strong, nonatomic) NSString *title;
 
@@ -53,4 +55,6 @@
 @property(assign, nonatomic) double shiftAngle;
 
 @property(assign, nonatomic) double reversedShiftAngle;
+
+-(BOOL)isEqual:(id)object;
 @end

@@ -41,6 +41,7 @@
 
 @property(strong, nonatomic) NSString *zoneId;
 
+@property(strong, nonatomic) NSString *placeId;
 
 -(NSString *)getTitleForCategoryOrSubcategory;
 

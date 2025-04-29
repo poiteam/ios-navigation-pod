@@ -17,9 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *floorNameLabel;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *showOnMapLabel;
 @property (weak, nonatomic) IBOutlet UIButton *showOnMapButton;
-@property (weak, nonatomic) IBOutlet UILabel *getNavigationLabel;
 @property (weak, nonatomic) IBOutlet UIButton *getNavigationButton;
 
 

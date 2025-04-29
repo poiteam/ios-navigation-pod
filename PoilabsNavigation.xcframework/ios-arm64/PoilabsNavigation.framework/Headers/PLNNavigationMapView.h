@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LGPlusButtonsView.h"
 #import <Mapbox/Mapbox.h>
 #import "PLNLocationManager.h"
 #import "PLNCustomAnnotationView.h"
@@ -25,6 +24,7 @@
 #import "PoilabsSdkAnalytics/PoilabsSdkAnalytics.h"
 #import "PoilabsCore/PLCoreWrapper.h"
 #import "PLNOtherFloorsPopUp.h"
+#import "PLNFloorsMenu.h"
 
 @interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate, PLNPointInfoViewDelegate, PLCoreDelegate>
 {
@@ -78,11 +78,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *popularSearchesLabel;
 
-#pragma mark - Floors 
-@property (weak, nonatomic) IBOutlet UIView *floorSelectionBaseView;
-
-@property (weak, nonatomic) IBOutlet UIButton *floorSelectionButton;
-
 #pragma mark - Left Buttons
 @property (weak, nonatomic) IBOutlet UIButton *babyButton;
 
@@ -110,10 +105,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *removeRouteBaseViewWidthLayoutConstraint;
 
 - (IBAction)removeRouteAction:(id)sender;
-
-@property (weak, nonatomic) IBOutlet UILabel *currentFloorName;
-
-
 
 #pragma mark - RED Alert View
 @property (weak, nonatomic) IBOutlet UIView *redAlertBaseView;

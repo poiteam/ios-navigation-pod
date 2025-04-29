@@ -10,7 +10,7 @@
 
 @interface PLMap : NSObject
 
--(id)initWithData:(NSDictionary*)data;
+-(id)initWithData:(NSDictionary*)data andPlaceId:(NSString *)placeId;
 
 //@property(strong, nonatomic) NSString *vendor;
 

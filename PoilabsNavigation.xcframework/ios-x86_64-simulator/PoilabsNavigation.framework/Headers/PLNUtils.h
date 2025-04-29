@@ -11,6 +11,12 @@
 
 
 @interface PLNUtils : NSObject
+
+typedef NS_ENUM(NSInteger, FloorNameSuffixType) {
+    FloorNameSuffixTypeFloorChange,
+    FloorNameSuffixTypeTargetFloor
+};
+
 + (instancetype)sharedInstance;
 + (void)destroySharedInstance;
 
@@ -23,5 +29,6 @@
 +(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder;
 + (NSString *)correctSuffixForWord:(NSString *)word;
 + (NSString *)correctSuffixForBuildingPassWord:(NSString *)word;
++ (NSString *)correctSuffixForFloorTitle:(NSString *)title suffixType:(FloorNameSuffixType)suffixType;
 
 @end
