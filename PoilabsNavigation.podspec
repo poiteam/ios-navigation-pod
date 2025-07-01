@@ -33,11 +33,7 @@ s.source = { :git => "https://github.com/poiteam/ios-navigation-pod.git",
 s.ios.vendored_frameworks = [
                             'PoilabsNavigation.xcframework',
                             'PoilabsMapView.xcframework',
-                            'PoilabsCommon.xcframework',
-                            'MapboxCommon.xcframework',
-                            'MapboxCoreMaps.xcframework',
-                            'MapboxMaps.xcframework',
-                            'Turf.xcframework'
+                            'PoilabsCommon.xcframework'
                             ]
 
 s.resources = 'PoilabsNavigationResources.bundle'
@@ -45,4 +41,5 @@ s.resources = 'PoilabsNavigationResources.bundle'
 s.dependency 'PoilabsPositioning', '1.2.0'
 s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
 s.dependency 'PoilabsCore', '1.0.15'
+s.dependency 'MapboxMaps', '11.9.0'
 end
