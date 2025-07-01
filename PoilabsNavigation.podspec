@@ -7,39 +7,36 @@
 #
 
 Pod::Spec.new do |s|
+  s.name             = "PoilabsNavigation"
+  s.version          = "6.0.2"
+  s.summary          = "Poilabs Indoor Navigation Framework"
+  s.description      = "PoilabsNavigation is a framework for indoor navigation."
+  s.homepage         = "https://github.com/poiteam/ios-navigation-pod"
+  s.license          = { :type => "Proprietary", :file => "LICENSE" }
+  s.author           = { "Emre Kuru" => "emre@poilabs.com" }
 
-# 1
-s.platform = :ios
-s.ios.deployment_target = '12.0'
-s.name = "PoilabsNavigation"
-s.summary = "Poilabs Indoor Navigation Framework"
+  s.platform         = :ios, '12.0'
+  s.swift_versions   = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7', '5.8', '5.9']
 
-#2
-s.version = "6.0.1"
+  s.source           = { :git => "https://github.com/poiteam/ios-navigation-pod.git", :tag => "#{s.version}" }
 
-# 3
-s.license = { :type => "Proprietary", :file => "LICENSE" }
+  s.vendored_frameworks = [
+    'PoilabsNavigation.xcframework',
+    'PoilabsMapView.xcframework',
+    'PoilabsCommon.xcframework',
+    'MapboxCommon.xcframework',
+    'MapboxCoreMaps.xcframework',
+    'MapboxMaps.xcframework',
+    'Turf.xcframework'
+  ]
 
-# 4 - Replace with your name and e-mail address
-s.author = { "Emre Kuru" => "emre@poilabs.com" }
+  s.resources = 'PoilabsNavigationResources.bundle'
 
-# 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/poiteam/ios-navigation-pod"
+  # Optional: Silence modulemap warnings
+  s.module_map = nil
 
-# 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/poiteam/ios-navigation-pod.git",
-             :tag => "#{s.version}" }
-
-s.ios.vendored_frameworks = [
-                            'PoilabsNavigation.xcframework',
-                            'PoilabsMapView.xcframework',
-                            'PoilabsCommon.xcframework'
-                            ]
-
-s.resources = 'PoilabsNavigationResources.bundle'
-
-s.dependency 'PoilabsPositioning', '1.2.0'
-s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
-s.dependency 'PoilabsCore', '1.0.15'
-s.dependency 'MapboxMaps', '11.9.0'
+  s.dependency 'PoilabsPositioning', '1.2.0'
+  s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
+  s.dependency 'PoilabsCore', '1.0.15'
 end
+
