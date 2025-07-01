@@ -24,10 +24,7 @@ Pod::Spec.new do |s|
     'PoilabsNavigation.xcframework',
     'PoilabsMapView.xcframework',
     'PoilabsCommon.xcframework',
-    'MapboxCommon.xcframework',
-    'MapboxCoreMaps.xcframework',
-    'MapboxMaps.xcframework',
-    'Turf.xcframework'
+    'MapboxMaps.xcframework'
   ]
 
   s.resources = 'PoilabsNavigationResources.bundle'
@@ -38,5 +35,8 @@ Pod::Spec.new do |s|
   s.dependency 'PoilabsPositioning', '1.2.0'
   s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
   s.dependency 'PoilabsCore', '1.0.15'
+  s.dependency 'MapboxCommon', '24.9.0'
+  s.dependency 'MapboxCoreMaps', '11.9.0'
+  s.dependency 'Turf', '4.0.0'
 end
 
