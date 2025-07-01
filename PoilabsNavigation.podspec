@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PoilabsNavigation"
-  s.version          = "6.0.2"
+  s.version          = "6.0.3"
   s.summary          = "Poilabs Indoor Navigation Framework"
   s.description      = "PoilabsNavigation is a framework for indoor navigation."
   s.homepage         = "https://github.com/poiteam/ios-navigation-pod"
@@ -24,7 +24,10 @@ Pod::Spec.new do |s|
     'PoilabsNavigation.xcframework',
     'PoilabsMapView.xcframework',
     'PoilabsCommon.xcframework',
-    'MapboxMaps.xcframework'
+    'MapboxCommon.xcframework',
+    'MapboxCoreMaps.xcframework',
+    'MapboxMaps.xcframework',
+    'Turf.xcframework'
   ]
 
   s.resources = 'PoilabsNavigationResources.bundle'
@@ -35,8 +38,5 @@ Pod::Spec.new do |s|
   s.dependency 'PoilabsPositioning', '1.2.0'
   s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
   s.dependency 'PoilabsCore', '1.0.15'
-  s.dependency 'MapboxCommon', '24.9.0'
-  s.dependency 'MapboxCoreMaps', '11.9.0'
-  s.dependency 'Turf', '4.0.0'
 end
 

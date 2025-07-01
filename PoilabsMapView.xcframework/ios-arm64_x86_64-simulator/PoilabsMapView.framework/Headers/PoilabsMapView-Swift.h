@@ -407,18 +407,17 @@ enum PLMapViewFollowState : NSInteger;
 - (void)hideLayersWithPrefix:(NSString * _Nonnull)prefix;
 @end
 
-
-
-@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
-- (void)deselectPolygon;
-- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
-@end
-
 @class CLLocation;
 @class CLHeading;
 
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
 - (void)updateUserLocationWithLocation:(CLLocation * _Nonnull)location heading:(CLHeading * _Nonnull)heading;
+@end
+
+
+@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
+- (void)deselectPolygon;
+- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 
@@ -869,18 +868,17 @@ enum PLMapViewFollowState : NSInteger;
 - (void)hideLayersWithPrefix:(NSString * _Nonnull)prefix;
 @end
 
-
-
-@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
-- (void)deselectPolygon;
-- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
-@end
-
 @class CLLocation;
 @class CLHeading;
 
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
 - (void)updateUserLocationWithLocation:(CLLocation * _Nonnull)location heading:(CLHeading * _Nonnull)heading;
+@end
+
+
+@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
+- (void)deselectPolygon;
+- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 

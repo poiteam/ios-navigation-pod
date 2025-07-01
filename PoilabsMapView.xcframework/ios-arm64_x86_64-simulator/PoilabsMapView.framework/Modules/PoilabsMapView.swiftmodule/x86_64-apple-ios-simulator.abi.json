@@ -1418,6 +1418,23 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
@@ -2889,158 +2906,6 @@
           },
           {
             "kind": "Function",
-            "name": "viewportStatusDidChange",
-            "printedName": "viewportStatusDidChange(from:to:reason:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ViewportStatus",
-                "printedName": "MapboxMaps.ViewportStatus",
-                "usr": "s:10MapboxMaps14ViewportStatusO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ViewportStatus",
-                "printedName": "MapboxMaps.ViewportStatus",
-                "usr": "s:10MapboxMaps14ViewportStatusO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ViewportStatusChangeReason",
-                "printedName": "MapboxMaps.ViewportStatusChangeReason",
-                "usr": "s:10MapboxMaps26ViewportStatusChangeReasonV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14PoilabsMapView05PLMapC0C23viewportStatusDidChange4from2to6reasony10MapboxMaps08ViewportF0O_AjH0nfH6ReasonVtF",
-            "mangledName": "$s14PoilabsMapView05PLMapC0C23viewportStatusDidChange4from2to6reasony10MapboxMaps08ViewportF0O_AjH0nfH6ReasonVtF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "gestureManager",
-            "printedName": "gestureManager(_:didBegin:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GestureManager",
-                "printedName": "MapboxMaps.GestureManager",
-                "usr": "s:10MapboxMaps14GestureManagerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GestureType",
-                "printedName": "MapboxMaps.GestureType",
-                "usr": "s:10MapboxMaps11GestureTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14PoilabsMapView05PLMapC0C14gestureManager_8didBeginy10MapboxMaps07GestureF0C_AF0K4TypeOtF",
-            "mangledName": "$s14PoilabsMapView05PLMapC0C14gestureManager_8didBeginy10MapboxMaps07GestureF0C_AF0K4TypeOtF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "gestureManager",
-            "printedName": "gestureManager(_:didEnd:willAnimate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GestureManager",
-                "printedName": "MapboxMaps.GestureManager",
-                "usr": "s:10MapboxMaps14GestureManagerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GestureType",
-                "printedName": "MapboxMaps.GestureType",
-                "usr": "s:10MapboxMaps11GestureTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14PoilabsMapView05PLMapC0C14gestureManager_6didEnd11willAnimatey10MapboxMaps07GestureF0C_AG0M4TypeOSbtF",
-            "mangledName": "$s14PoilabsMapView05PLMapC0C14gestureManager_6didEnd11willAnimatey10MapboxMaps07GestureF0C_AG0M4TypeOSbtF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "gestureManager",
-            "printedName": "gestureManager(_:didEndAnimatingFor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GestureManager",
-                "printedName": "MapboxMaps.GestureManager",
-                "usr": "s:10MapboxMaps14GestureManagerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GestureType",
-                "printedName": "MapboxMaps.GestureType",
-                "usr": "s:10MapboxMaps11GestureTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14PoilabsMapView05PLMapC0C14gestureManager_18didEndAnimatingFory10MapboxMaps07GestureF0C_AF0M4TypeOtF",
-            "mangledName": "$s14PoilabsMapView05PLMapC0C14gestureManager_18didEndAnimatingFory10MapboxMaps07GestureF0C_AF0M4TypeOtF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "hideLayersWithPrefix",
             "printedName": "hideLayersWithPrefix(_:)",
             "children": [
@@ -3173,20 +3038,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewportStatusObserver",
-            "printedName": "ViewportStatusObserver",
-            "usr": "s:10MapboxMaps22ViewportStatusObserverP",
-            "mangledName": "$s10MapboxMaps22ViewportStatusObserverP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "GestureManagerDelegate",
-            "printedName": "GestureManagerDelegate",
-            "usr": "s:10MapboxMaps22GestureManagerDelegateP",
-            "mangledName": "$s10MapboxMaps22GestureManagerDelegateP"
           }
         ]
       }
@@ -3645,14 +3496,14 @@
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1841,
+      "offset": 1894,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5451,
+      "offset": 5452,
       "length": 5,
       "value": "false"
     }

@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PoilabsMapView
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreLocation
+import Foundation
 import MapboxMaps
 import Swift
 import UIKit
@@ -104,14 +105,6 @@ extension PoilabsMapView.PLMapView {
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func deselectPolygon()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func selectPolygon(forCoordinate coordinate: CoreLocation.CLLocationCoordinate2D)
-}
-extension PoilabsMapView.PLMapView : MapboxMaps.ViewportStatusObserver {
-  @_Concurrency.MainActor @preconcurrency public func viewportStatusDidChange(from fromStatus: MapboxMaps.ViewportStatus, to toStatus: MapboxMaps.ViewportStatus, reason: MapboxMaps.ViewportStatusChangeReason)
-}
-extension PoilabsMapView.PLMapView : MapboxMaps.GestureManagerDelegate {
-  @_Concurrency.MainActor @preconcurrency public func gestureManager(_ gestureManager: MapboxMaps.GestureManager, didBegin gestureType: MapboxMaps.GestureType)
-  @_Concurrency.MainActor @preconcurrency public func gestureManager(_ gestureManager: MapboxMaps.GestureManager, didEnd gestureType: MapboxMaps.GestureType, willAnimate: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func gestureManager(_ gestureManager: MapboxMaps.GestureManager, didEndAnimatingFor gestureType: MapboxMaps.GestureType)
 }
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func hideLayersWithPrefix(_ prefix: Swift.String)
