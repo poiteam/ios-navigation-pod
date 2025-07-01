@@ -15,7 +15,7 @@ s.name = "PoilabsNavigation"
 s.summary = "Poilabs Indoor Navigation Framework"
 
 #2
-s.version = "6.0.0"
+s.version = "6.0.1"
 
 # 3
 s.license = { :type => "Proprietary", :file => "LICENSE" }
@@ -30,17 +30,9 @@ s.homepage = "https://github.com/poiteam/ios-navigation-pod"
 s.source = { :git => "https://github.com/poiteam/ios-navigation-pod.git",
              :tag => "#{s.version}" }
 
-s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
-s.ios.vendored_frameworks = 'PoilabsMapView.xcframework'
-s.ios.vendored_frameworks = 'PoilabsCommon.xcframework'
+s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework', 'PoilabsMapView.xcframework', 'PoilabsCommon.xcframework', 'MapboxCommon.xcframework', 'MapboxCoreMaps.xcframework', 'MapboxMaps.xcframework', 'Turf.xcframework'
 
 s.resources = 'PoilabsNavigationResources.bundle'
-
-s.ios.vendored_frameworks = 'MapboxCommon.xcframework'
-s.ios.vendored_frameworks = 'MapboxCoreMaps.xcframework'
-s.ios.vendored_frameworks = 'MapboxMaps.xcframework'
-s.ios.vendored_frameworks = 'Turf.xcframework'
-
 
 s.dependency 'PoilabsPositioning', '1.2.0'
 s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
