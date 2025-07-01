@@ -6,12 +6,13 @@
 //  Copyright © 2022 poilabs. All rights reserved.
 //
 #import <UIKit/UIKit.h>
-#import "PLPoi.h"
 #import "PLNUtils.h"
 #import "PLNPointTagsCollectionView.h"
 #import "PLNPointTagsCollectionViewCell.h"
 #import "PLNPointInfoDetailView.h"
 #import "PLNLeftAlignedCollectionViewFlowLayout.h"
+
+#import "PoilabsCommon/PoilabsCommon-Swift.h"
 
 @protocol PLNPointInfoViewDelegate <NSObject>
 @optional

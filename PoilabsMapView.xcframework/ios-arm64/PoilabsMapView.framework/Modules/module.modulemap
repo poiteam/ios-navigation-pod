@@ -1,0 +1,4 @@
+framework module PoilabsMapView {
+  header "PoilabsMapView-Swift.h"
+  requires objc
+}

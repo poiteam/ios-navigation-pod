@@ -7,18 +7,20 @@
 //
 
 #import "UIKit/UIKit.h"
-#import "PLPoiProperties.h"
 
 @interface PLNPointInfoDetailView : UIView
 
-- (instancetype)initWithProperties:(PLPoiProperties *)properties;
+- (instancetype)initWithInformationText:(NSString *)text phoneNumber:(NSString *)number webSite:(NSURL *)webSite andImage:(NSString *)image;
 
 @property(strong, nonatomic) UIImageView *pointDetailImageView;
 @property(strong, nonatomic) UILabel *infoLabel;
 @property(strong, nonatomic) UIStackView *stackView;
 @property(strong, nonatomic) UIStackView *buttonsStackView;
 
-@property(strong, nonatomic) PLPoiProperties *poiProperties;
+@property(strong, nonatomic) NSString *informationText;
+@property(strong, nonatomic) NSString *phoneNumber;
+@property(strong, nonatomic) NSURL *webSite;
+@property(strong, nonatomic) NSString *image;
 
 @property bool isLoaded;
 

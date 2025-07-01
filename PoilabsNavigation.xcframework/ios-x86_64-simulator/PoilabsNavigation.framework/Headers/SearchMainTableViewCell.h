@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PLPoi.h"
+#import "PoilabsCommon/PoilabsCommon-Swift.h"
 
 @interface SearchMainTableViewCell : UITableViewCell
 

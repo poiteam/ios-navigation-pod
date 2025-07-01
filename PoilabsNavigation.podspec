@@ -15,7 +15,7 @@ s.name = "PoilabsNavigation"
 s.summary = "Poilabs Indoor Navigation Framework"
 
 #2
-s.version = "5.0.0"
+s.version = "6.0.0"
 
 # 3
 s.license = { :type => "Proprietary", :file => "LICENSE" }
@@ -30,21 +30,19 @@ s.homepage = "https://github.com/poiteam/ios-navigation-pod"
 s.source = { :git => "https://github.com/poiteam/ios-navigation-pod.git",
              :tag => "#{s.version}" }
 
-s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'ONLY_ACTIVE_ARCH' => 'YES'
-  }
-  s.user_target_xcconfig = {
-  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-
-
 s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework'
+s.ios.vendored_frameworks = 'PoilabsMapView.xcframework'
+s.ios.vendored_frameworks = 'PoilabsCommon.xcframework'
+
 s.resources = 'PoilabsNavigationResources.bundle'
+
+s.ios.vendored_frameworks = 'MapboxCommon.xcframework'
+s.ios.vendored_frameworks = 'MapboxCoreMaps.xcframework'
+s.ios.vendored_frameworks = 'MapboxMaps.xcframework'
+s.ios.vendored_frameworks = 'Turf.xcframework'
+
 
 s.dependency 'PoilabsPositioning', '1.2.0'
 s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
 s.dependency 'PoilabsCore', '1.0.15'
-s.dependency 'Mapbox-iOS-SDK', '~> 5.9'
-s.dependency 'MapboxMobileEvents'
 end

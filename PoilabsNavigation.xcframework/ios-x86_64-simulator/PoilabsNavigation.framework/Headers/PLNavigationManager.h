@@ -9,28 +9,27 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "PLNError.h"
-#import "PLNavigationResponse.h"
-#import "PLNNavigationConfig.h"
 #import "PLPositioningManager.h"
 #import <sys/utsname.h>
 #import "PLNNavigationMapViewDelegate.h"
-#import "PLNPlace.h"
+#import "PoilabsCommon/PoilabsCommon-Swift.h"
 
 @interface PLNavigationManager : NSObject
 
 + (instancetype)sharedInstance;
-+ (void)destroySharedInstance;
 @property(strong, nonatomic) id<PLNNavigationMapViewDelegate> delegate;
 
 -(void)getReadyForStoreMapWithCompletionHandler:(void (^)(PLNError *error))completionHandler;
 
 -(void)initWithAppId:(NSString *)appId andSecret:(NSString *)secret uniqueId:(NSString *)uniqueId;
 
-@property (strong, nonatomic) PLNavigationResponse *navigationResponse;
+//@property (strong, nonatomic) PLNavigationResponse *navigationResponse;
 
 @property (strong, nonatomic) PLNPlace *childsPlace;
 
 @property(strong, nonatomic) PLNNavigationConfig *config;
+
+@property(strong, nonatomic) NSArray<PLPoi *> *pois;
 
 @property(strong, nonatomic) NSMutableDictionary<NSNumber*, NSDictionary<NSString*, NSNumber*>*> *shiftParameters;
 

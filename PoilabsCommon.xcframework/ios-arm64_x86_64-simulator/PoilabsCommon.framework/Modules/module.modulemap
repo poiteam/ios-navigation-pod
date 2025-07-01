@@ -1,0 +1,11 @@
+framework module PoilabsCommon {
+  umbrella header "PoilabsCommon.h"
+  export *
+
+  module * { export * }
+}
+
+module PoilabsCommon.Swift {
+  header "PoilabsCommon-Swift.h"
+  requires objc
+}

@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import "PLNLocationManagerDelegate.h"
+
+#import "PoilabsCommon/PoilabsCommon-Swift.h"
 
 
 @interface PLNLocationManager : NSObject

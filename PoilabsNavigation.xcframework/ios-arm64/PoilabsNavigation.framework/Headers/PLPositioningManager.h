@@ -13,16 +13,13 @@
 #import "PLNNavigationSettings.h"
 #import "PoilabsSdkAnalytics/PoilabsSdkAnalytics.h"
 #import "PLNPositioningManagerDelegate.h"
-#import "Mapbox/Mapbox.h"
-#import "PLFloor.h"
 #import "PLNPositioningManagerDelegate.h"
 #import "PoilabsLocation.h"
 
-@interface PLPositioningManager: NSObject<MGLLocationManager, PoilabsPositioningDelegate>
+@interface PLPositioningManager: NSObject
 
 + (instancetype _Nonnull )sharedInstance;
 
-@property (nonatomic, weak) id<MGLLocationManagerDelegate> _Nullable delegate;
 @property (nonatomic, weak) id<PLNPositioningManagerDelegate> _Nullable errorDelegate;
 
 @property (nonatomic, readonly) CLAuthorizationStatus authorizationStatus;

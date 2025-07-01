@@ -20,5 +20,6 @@ typedef enum positioningManagerError
 -(void)positioningManagerDidFail: (PoilabsPositioningManagerError)error;
 -(void)positioningManagerDidStart;
 -(void)positioningManagerDidOutOfRoute;
+-(void)positioningManagerDidUpdateUserLocation: (CLLocation *) location andHeading:(CLHeading *)heading inFloorLevel:(int)floorLevel;
 
 @end

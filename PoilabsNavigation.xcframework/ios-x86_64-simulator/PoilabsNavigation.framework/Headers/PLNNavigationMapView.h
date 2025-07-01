@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Mapbox/Mapbox.h>
 #import "PLNLocationManager.h"
-#import "PLNCustomAnnotationView.h"
 #import "PLNNavigationMapViewDelegate.h"
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "PLFloor.h"
-#import "PLNCustomCalloutView.h"
-#import "PLNFacility.h"
 #import "PLPositioningManager.h"
 #import "PLNPositioningManagerDelegate.h"
 #import "PLNPointInfoView.h"
@@ -26,11 +21,15 @@
 #import "PLNOtherFloorsPopUp.h"
 #import "PLNFloorsMenu.h"
 
-@interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource, MGLMapViewDelegate,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate, PLNPointInfoViewDelegate, PLCoreDelegate>
+#import "PoilabsMapView/PoilabsMapView-Swift.h"
+
+@interface PLNNavigationMapView : UIView<UITableViewDelegate, UITableViewDataSource,UIGestureRecognizerDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, PLNPositioningManagerDelegate, UITextFieldDelegate, PLNPointInfoViewDelegate, PLCoreDelegate, PLMapViewDelegate>
 {
     NSInteger selectedIndexPathRow;
     CGFloat selectedCellSize;
 }
+
+@property (strong, nonatomic) PLMapView *poilabsMapView;
 
 @property(strong, nonatomic) id<PLNNavigationMapViewDelegate> delegate;
 

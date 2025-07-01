@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PLAFHTTPSessionManager.h"
-
+#import <UIKit/UIKit.h>
 
 @interface PLNUtils : NSObject
 
@@ -21,8 +20,6 @@ typedef NS_ENUM(NSInteger, FloorNameSuffixType) {
 + (void)destroySharedInstance;
 
 +(void)logDebugInformations:(NSString *)string priority:(int)priorityLevel inManagerType:(NSString *)comingType;
-
-+(PLAFHTTPSessionManager*)getNavigationSessionManager;
 
 +(NSString *)getLocaleStringForQuery:(NSString *)comingStr;
 +(NSString *)getLocaleStringForKey:(NSString *) key;
