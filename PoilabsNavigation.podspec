@@ -30,7 +30,15 @@ s.homepage = "https://github.com/poiteam/ios-navigation-pod"
 s.source = { :git => "https://github.com/poiteam/ios-navigation-pod.git",
              :tag => "#{s.version}" }
 
-s.ios.vendored_frameworks = 'PoilabsNavigation.xcframework', 'PoilabsMapView.xcframework', 'PoilabsCommon.xcframework', 'MapboxCommon.xcframework', 'MapboxCoreMaps.xcframework', 'MapboxMaps.xcframework', 'Turf.xcframework'
+s.ios.vendored_frameworks = [
+                            'PoilabsNavigation.xcframework',
+                            'PoilabsMapView.xcframework',
+                            'PoilabsCommon.xcframework',
+                            'MapboxCommon.xcframework',
+                            'MapboxCoreMaps.xcframework',
+                            'MapboxMaps.xcframework',
+                            'Turf.xcframework'
+                            ]
 
 s.resources = 'PoilabsNavigationResources.bundle'
 
