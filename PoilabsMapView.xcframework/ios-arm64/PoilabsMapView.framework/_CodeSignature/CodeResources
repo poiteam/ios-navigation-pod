@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kCCJOOHOKmSrP/QrIP+lXKT6+zw=
+		DnPlbXK+II8mgbcH/O/qyuGGdtM=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HG7queJhfU1nhjaYQAUy6GiEuVU=
+		9RGwyA2dMle4IIKjJzQbP7n3rc4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZE6Vt5p+W/s1+7ax5bEKEDQpLyuW9cC8f9icG2dVwLA=
+			BW8cb2m3pfe9JtbcpAXJVhkf8hpR2ojgyUOZ9q3Oc4g=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qyarxTshSc4xzM8zppUDnm5Ek3v7r5B1QPturLvet5k=
+			ZHASTcaUiwzapqQngyfWmeCOIvm1zn8KZtD7Jon2TLA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

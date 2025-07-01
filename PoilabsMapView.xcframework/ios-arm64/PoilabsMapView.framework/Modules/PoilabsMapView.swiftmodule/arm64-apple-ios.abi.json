@@ -26,6 +26,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
@@ -33,6 +40,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -53,6 +67,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -401,6 +422,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "TypeDecl",
@@ -1338,13 +1366,10 @@
       },
       {
         "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -1355,6 +1380,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -1378,13 +1427,10 @@
       },
       {
         "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -1405,6 +1451,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -3062,147 +3132,147 @@
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "FloatLiteral",
-      "offset": 268,
+      "offset": 281,
       "length": 5,
       "value": "168.0"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 274,
+      "offset": 287,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "FloatLiteral",
-      "offset": 286,
+      "offset": 299,
       "length": 5,
       "value": "168.0"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 292,
+      "offset": 305,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "FloatLiteral",
-      "offset": 303,
+      "offset": 316,
       "length": 5,
       "value": "168.0"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 309,
+      "offset": 322,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "FloatLiteral",
-      "offset": 321,
+      "offset": 334,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 381,
+      "offset": 394,
       "length": 2,
       "value": "57"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 397,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 396,
+      "offset": 409,
       "length": 3,
       "value": "166"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 413,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 411,
+      "offset": 424,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 414,
+      "offset": 427,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
       "kind": "FloatLiteral",
-      "offset": 426,
+      "offset": 439,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 237,
+      "offset": 250,
       "length": 2,
       "value": "57"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 240,
+      "offset": 253,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 252,
+      "offset": 265,
       "length": 3,
       "value": "166"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 256,
+      "offset": 269,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 267,
+      "offset": 280,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 270,
+      "offset": 283,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "FloatLiteral",
-      "offset": 282,
+      "offset": 295,
       "length": 3,
       "value": "0.6"
     },
@@ -3251,210 +3321,210 @@
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 183,
+      "offset": 196,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 237,
+      "offset": 250,
       "length": 15,
       "value": "\"line-layer-id\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 280,
+      "offset": 293,
       "length": 23,
       "value": "\"dashed-line-source-id\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 365,
+      "offset": 378,
       "length": 3,
       "value": "192"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 369,
+      "offset": 382,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 381,
+      "offset": 394,
       "length": 3,
       "value": "192"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 385,
+      "offset": 398,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 396,
+      "offset": 409,
       "length": 3,
       "value": "192"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 413,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 412,
+      "offset": 425,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 414,
+      "offset": 427,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 460,
+      "offset": 473,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "Array",
-      "offset": 390,
+      "offset": 403,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 492,
       "length": 14,
       "value": "\"red-pin-icon\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 521,
+      "offset": 534,
       "length": 31,
       "value": "\"multi-point-annotation-source\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 594,
+      "offset": 607,
       "length": 24,
       "value": "\"clustered-circle-layer\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 661,
+      "offset": 674,
       "length": 25,
       "value": "\"unclustered-point-layer\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "StringLiteral",
-      "offset": 725,
+      "offset": 738,
       "length": 21,
       "value": "\"cluster-count-layer\""
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 5001,
+      "offset": 5014,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 5065,
+      "offset": 5078,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 5084,
+      "offset": 5097,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 211,
+      "offset": 224,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1823,
+      "offset": 1836,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1833,
+      "offset": 1846,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1845,
+      "offset": 1858,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1856,
+      "offset": 1869,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2516,
+      "offset": 2529,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2526,
+      "offset": 2539,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2538,
+      "offset": 2551,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2549,
+      "offset": 2562,
       "length": 2,
       "value": "30"
     },
