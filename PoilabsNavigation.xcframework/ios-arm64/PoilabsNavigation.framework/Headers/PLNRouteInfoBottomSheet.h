@@ -1,36 +1,38 @@
 //
-//  PLNPointInfoView.h
+//  PLNRouteInfoBottomSheet.h
 //  PoilabsNavigation
 //
-//  Created by Emre Kuru on 18.11.2022.
-//  Copyright © 2022 poilabs. All rights reserved.
+//  Created by Burak on 8.12.2025.
+//  Copyright © 2025 poilabs. All rights reserved.
 //
 #import <UIKit/UIKit.h>
 #import "PLNUtils.h"
-#import "PLNPointTagsCollectionView.h"
 #import "PLNPointTagsCollectionViewCell.h"
 #import "PLNPointInfoDetailView.h"
 #import "PLNLeftAlignedCollectionViewFlowLayout.h"
 #import "PLNavigationManager.h"
+#import "PLNRouteInfoDetailView.h"
 
 #import "PoilabsCommon/PoilabsCommon-Swift.h"
 
-@protocol PLNPointInfoViewDelegate <NSObject>
-@optional
--(void)pointInfoViewDidSelectTagWithTitle:(NSString *)tagTitle;
+@protocol PLNRouteInfoBottomSheetDelegate;
+
+@protocol PLNRouteInfoBottomSheetDelegate <NSObject>
+-(void)startRouteAction;
+-(void)expandAction;
 @end
 
-@interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
+@interface PLNRouteInfoBottomSheet : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,
+UIScrollViewDelegate>
 
 - (void)addSubviewTo: (UIView *)view;
 - (void)present;
 - (void)dismiss:(BOOL)callHandler ;
 - (instancetype)initWithPoi:(PLPoi *)poi
                   topHeight:(CGFloat)topHeight
-           disableNavButton:(BOOL) disableNavButton
+               isRestricted:(BOOL) isRectricted
                    totalMin:(int) totalMin
                 totalLength:(int) totalLength
-          completionHandler:(void (^)(void))completionHandler
                  didDismiss:(void (^)(void))didDismiss;
 
 @property (nonatomic, assign) CGFloat selfCornerRadius;
@@ -47,31 +49,45 @@
 
 @property(strong, nonatomic) PLPoi *selectedPoi;
 @property(strong, nonatomic) UIImageView *categoryIconImageView;
-@property(strong, nonatomic) UIImageView *navigateIcon;
 @property(strong, nonatomic) UILabel *placeTitleLabel;
 @property(strong, nonatomic) UILabel *placeTypeLabel;
-@property(strong, nonatomic) UIButton *navigationButton;
+@property(strong, nonatomic) UIButton *startButton;
+@property(strong, nonatomic) UIButton *routeInfoButton;
 @property(strong, nonatomic) UIStackView *labelsStackView;
 @property(strong, nonatomic) UIView *topLineView;
-@property(strong, nonatomic) UIImageView *workingHoursImageView;
-@property(strong, nonatomic) UILabel *workingHoursLabel;
 @property(strong, nonatomic) UIView *smallModeContainerView;
-@property(strong, nonatomic) UIScrollView *scrollView;
+@property(strong, nonatomic) UIView *mainView;
 @property (nonatomic,strong) UILabel *routeInfoLabel;
 
-@property(strong, nonatomic) PLNPointTagsCollectionView *tagsCollectionView;
-@property(strong, nonatomic) PLNPointInfoDetailView *detailsView;
+@property(strong, nonatomic) PLNRouteInfoDetailView *routeInfoDetailView;
 
-@property(strong, nonatomic) id<PLNPointInfoViewDelegate> delegate;
+@property (nonatomic, strong) UIImageView *startIcon;
+@property (nonatomic, strong) UIImageView *dirIcon;
+
+@property(strong, nonatomic) id<PLNRouteInfoBottomSheetDelegate> delegate;
+
+@property (nonatomic, strong) UIImageView *warningIcon;
+@property (nonatomic, strong) UILabel *warningLabel;
+@property (strong, nonatomic) UIView *warningContainer;
+@property (strong, nonatomic) UIView *buttonsContainerView;
+@property (nonatomic, assign) BOOL isRestricted;
+@property (nonatomic, assign) BOOL disableButtons;
 
 @property(nonatomic, assign) int totalMin;
 @property(nonatomic, assign) int totalLength;
-@property(nonatomic, assign) bool disableNavButton;
+@property (nonatomic) CGRect originalFrame;
+@property (nonatomic) CGFloat maxHeight;
 
-@property (strong, nonatomic) void (^actionHandler)(void);
+@property (nonatomic, strong) NSLayoutConstraint *sheetTopConstraint;
+@property (nonatomic, strong) NSLayoutConstraint *sheetHeightConstraint;
+
 @property (strong, nonatomic) void (^didDismiss)(void);
 -(void)navigateButtonPressed;
-
+-(void)updateInfoValues;
+-(void)showButtons;
+-(void)setRestrictionInfo:(BOOL) isRestricted;
+-(void)configureRouteSteps:(NSArray<NSDictionary *> *)stepsInfo;
 @end
+
 
 

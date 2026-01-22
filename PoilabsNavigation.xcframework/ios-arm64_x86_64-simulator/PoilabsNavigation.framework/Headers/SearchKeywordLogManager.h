@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "PLNNavigationMapView.h"
 
+
+@protocol SearchKeywordLogManagerDelegate;
+
+@protocol SearchKeywordLogManagerDelegate <NSObject>
+@optional
+- (void)logSearchKeyword:(NSString *)searchText;
+@end
+
 @interface SearchKeywordLogManager : NSObject
 
-- (instancetype)initWith:(PLNNavigationMapView *)mapView;
-
+@property (nonatomic, weak) id<SearchKeywordLogManagerDelegate> delegate;
 @property(strong, nonatomic) NSString *searchText;
 
 - (void)startSearchKeywordLogTimer;
