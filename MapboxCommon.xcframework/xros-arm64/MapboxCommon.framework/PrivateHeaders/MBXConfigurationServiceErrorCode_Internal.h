@@ -12,7 +12,8 @@ typedef NS_ENUM(NSInteger, MBXConfigurationServiceErrorCode)
     MBXConfigurationServiceErrorCodeIOError,
     MBXConfigurationServiceErrorCodeUpdateInProgress,
     MBXConfigurationServiceErrorCodeUnexpectedHTTPResponseCode,
-    MBXConfigurationServiceErrorCodeExpiredConfiguration
+    MBXConfigurationServiceErrorCodeExpiredConfiguration,
+    MBXConfigurationServiceErrorCodeTokenChanged
 } NS_SWIFT_NAME(ConfigurationServiceErrorCode);
 
 NSString* MBXConfigurationServiceErrorCodeToString(MBXConfigurationServiceErrorCode configuration_service_error_code);

@@ -3,6 +3,10 @@
 #import <Foundation/Foundation.h>
 @class MBXDataRef;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Image type.
+ */
 NS_SWIFT_NAME(__Image)
 __attribute__((visibility ("default")))
 @interface MBMImage : NSObject
@@ -17,8 +21,20 @@ __attribute__((visibility ("default")))
                                height:(uint32_t)height
                                  data:(nonnull MBXDataRef *)data;
 
+/** The width of the image, in screen pixels. */
 @property (nonatomic, readonly) uint32_t width;
+
+/** The height of the image, in screen pixels. */
 @property (nonatomic, readonly) uint32_t height;
+
+/**
+ * 32-bit premultiplied RGBA image data.
+ *
+ * An uncompressed image data encoded in 32-bit RGBA format with premultiplied
+ * alpha channel. This field should contain exactly `4 * width * height` bytes. It
+ * should consist of a sequence of scanlines.
+ */
 @property (nonatomic, readonly, nonnull) MBXDataRef *data;
+
 
 @end

@@ -1,8 +1,13 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTransferErrorCode_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXTransferErrorCode);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Structure to hold error information about transfer request.
+ */
 NS_SWIFT_NAME(TransferError)
 __attribute__((visibility ("default")))
 @interface MBXTransferError : NSObject
@@ -16,7 +21,12 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithCode:(MBXTransferErrorCode)code
                              message:(nonnull NSString *)message;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Transfer error code.
+ */
 @property (nonatomic, readonly) MBXTransferErrorCode code;
+
 /** Human readable string describing an error. */
 @property (nonatomic, readonly, nonnull, copy) NSString *message;
 

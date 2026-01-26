@@ -11,6 +11,13 @@ typedef NS_ENUM(NSInteger, MBMColorThemeType)
     MBMColorThemeTypeStylePropertyValue
 } NS_SWIFT_NAME(ColorThemeType);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Color theme can be used as a global modifier for the colors of the style and style imports.
+ * In order to use custom color theme you need to provide an image that will represent LUT (color grading lookup table).
+ * Image height must be less or equal to 32 pixels and width of the image should be equal to the height squared.
+ * Either image or base64 image representation should be provided.
+ */
 NS_SWIFT_NAME(ColorTheme)
 __attribute__((visibility ("default")))
 @interface MBMColorTheme : NSObject

@@ -1,7 +1,9 @@
 #import <MapboxCoreMaps/MBMMetalViewProvider.h>
 #import <MapboxCoreMaps/AsyncOperationResultCallback_Internal.h>
 #import <MapboxCoreMaps/CameraManager_Internal.h>
+#import <MapboxCoreMaps/CameraState_Internal.h>
 #import <MapboxCoreMaps/Image_Internal.h>
+#import <MapboxCoreMaps/IndoorManager_Internal.h>
 #import <MapboxCoreMaps/Interactions_Internal.h>
 #import <MapboxCoreMaps/LayerPosition_Internal.h>
 #import <MapboxCoreMaps/Map_Internal.h>

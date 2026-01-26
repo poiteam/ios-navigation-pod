@@ -4,6 +4,10 @@
 
 @protocol MBXReadStream;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * For testing only. Factory class for creating streams using platform implementation.
+ */
 NS_SWIFT_NAME(PlatformStreamFactory)
 __attribute__((visibility ("default")))
 @interface MBXPlatformStreamFactory : NSObject
@@ -14,7 +18,15 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns a ReadStream that reads data from the provided string.
+ */
 + (nonnull id<MBXReadStream>)memoryReadStreamForStr:(nonnull NSString *)str __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns a ReadStream that reads data from the provided file.
+ */
 + (nonnull id<MBXReadStream>)fileReadStreamForPath:(nonnull NSString *)path __attribute((ns_returns_retained));
 
 @end

@@ -2,10 +2,26 @@
 
 #import <Foundation/Foundation.h>
 #import <MapboxCoreMaps/MBMAsyncOperationResultCallback_Internal.h>
-#import <MapboxCoreMaps/MBMTileStoreUsageMode.h>
 
 @class MBXTileStore;
+typedef NS_ENUM(NSInteger, MBMTileStoreUsageMode);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * This class manages configuration options for the external
+ * resources that are used by the Maps API objects, such as maps data
+ * directory and base URL.
+ *
+ * The Maps API objects include instances of Map, Snapshotter, OfflineManager and OfflineRegionManager classes.
+ *
+ * The resource options changes are taken into consideration by the Maps API objects during their construction phase.
+ * Any changes made to the resource options during runtime will not impact objects that have already been created.
+ *
+ * Every resource option has a default value, which does not have to be overridden by the client most of the time.
+ * If the default resource options need to be overridden, it is recommended to do it once at the application start and before
+ * any of the Maps API objects are constructed. Although it is technically possible to run Maps API objects that use different
+ * resource options, such a setup might cause performance implications.
+ */
 NS_SWIFT_NAME(MapsResourceOptions)
 __attribute__((visibility ("default")))
 @interface MBMMapsResourceOptions : NSObject
@@ -92,6 +108,17 @@ __attribute__((visibility ("default")))
  * @return tile store or null if store usage is not enabled
  */
 + (nullable MBXTileStore *)getTileStore __attribute((ns_returns_retained)) NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Clears temporary Maps data.
+ *
+ * Clears temporary Maps data from the data path defined in the current resource options.
+ * Useful to reduce the disk usage or in case the disk cache contains invalid data.
+ * Note that calling this API will affect all Maps API objects that use the same data path.
+ * Note that calling this API does not affect persistent map data like offline style packages.
+ *
+ * @param callback Called once the request is complete or an error occurred.
+ */
 + (void)clearDataForCallback:(nonnull MBMAsyncOperationResultCallback)callback NS_REFINED_FOR_SWIFT;
 
 @end

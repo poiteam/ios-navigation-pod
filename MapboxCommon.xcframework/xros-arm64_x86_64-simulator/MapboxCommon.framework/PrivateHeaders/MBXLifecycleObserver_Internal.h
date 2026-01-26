@@ -1,12 +1,31 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXLifecycleMonitoringState_Internal.h>
-#import <MapboxCommon/MBXLifecycleState_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXLifecycleMonitoringState);
+typedef NS_ENUM(NSInteger, MBXLifecycleState);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An interface to listen for app's lifecycle changes.
+ */
 NS_SWIFT_NAME(LifecycleObserver)
 @protocol MBXLifecycleObserver
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when lifecycle monitoring is starting, started, stopping or stopped.
+ * @param state A new state of the monitor.
+ * @param error A error accompanying the state change: for example if the start
+ *              was not successful then this method will report about the stop with
+ *              clarifying error.
+ */
 - (void)onMonitoringStateChangedForState:(MBXLifecycleMonitoringState)state
                                    error:(nullable NSString *)error;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called on app's lifecycle state transition
+ *
+ * @param state Current lifecycle state of an app.
+ */
 - (void)onLifecycleStateChangedForState:(MBXLifecycleState)state;
 @end

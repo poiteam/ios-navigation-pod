@@ -1,13 +1,13 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXBillingSessionStatus_Internal.h>
-#import <MapboxCommon/MBXMaploadSKUIdentifier_Internal.h>
 #import <MapboxCommon/MBXOnBillingServiceError_Internal.h>
-#import <MapboxCommon/MBXSessionSKUIdentifier_Internal.h>
-#import <MapboxCommon/MBXUserSKUIdentifier_Internal.h>
 
 @class MBXSdkInformation;
+typedef NS_ENUM(NSInteger, MBXBillingSessionStatus);
+typedef NS_ENUM(NSInteger, MBXMaploadSKUIdentifier);
+typedef NS_ENUM(NSInteger, MBXSessionSKUIdentifier);
+typedef NS_ENUM(NSInteger, MBXUserSKUIdentifier);
 
 NS_SWIFT_NAME(BillingService)
 __attribute__((visibility ("default")))

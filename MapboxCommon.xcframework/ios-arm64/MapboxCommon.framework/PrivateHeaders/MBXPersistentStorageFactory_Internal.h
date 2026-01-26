@@ -6,6 +6,10 @@
 @class MBXPersistentStorageError;
 @protocol MBXPersistentStorageInterface;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Factory class for persistent storage services.
+ */
 NS_SWIFT_NAME(PersistentStorageFactory)
 __attribute__((visibility ("default")))
 @interface MBXPersistentStorageFactory : NSObject
@@ -16,7 +20,15 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets or creates the persistent storage interface corresponding to a given unique key
+ */
 + (nonnull MBXExpected<id<MBXPersistentStorageInterface>, MBXPersistentStorageError *> *)getOrCreateByKeyForKey:(nonnull NSString *)key __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets or creates a persistent storage interface that is stored in the given file
+ */
 + (nonnull MBXExpected<id<MBXPersistentStorageInterface>, MBXPersistentStorageError *> *)getOrCreateByFileForFilePath:(nonnull NSString *)filePath __attribute((ns_returns_retained));
 
 @end

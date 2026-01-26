@@ -1,8 +1,11 @@
-// This file is generated and will be overwritten automatically.
+// Generated file was replaced by non-generated.
 
 #import <Foundation/Foundation.h>
 
 // NOLINTNEXTLINE(modernize-use-using)
+/**
+ * Type is deprecated, please use MBMTracingBackendType and MBMTracing from Common SDK
+ */
 typedef NS_ENUM(NSInteger, MBMTracingBackendType)
 {
     /**

@@ -1,0 +1,15 @@
+// This file is generated and will be overwritten automatically.
+
+#import <MapboxCommon/MBXTileStoreOfflineArchiveView.h>
+
+@interface MBXTileStoreOfflineArchiveView ()
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Creates a TileStoreOfflineArchiveView instance.
+ *
+ * @param descriptors List of archive file descriptors from the export package. Exported package is a collection of
+ *                    tile store data package files (extension .tsdp). Each file descriptor should point to a valid
+ *                    ".tsdp" file opened in read-only mode.
+ */
++ (nonnull MBXExpected<MBXTileStoreOfflineArchiveView *, MBXTileStoreImportError *> *)makeForDescriptors:(nonnull NSArray<NSNumber *> *)descriptors __attribute((ns_returns_retained));
+@end

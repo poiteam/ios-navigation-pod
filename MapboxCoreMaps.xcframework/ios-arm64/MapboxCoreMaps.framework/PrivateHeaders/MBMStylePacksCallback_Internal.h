@@ -6,5 +6,11 @@
 @class MBMStylePack;
 @class MBMStylePackError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked when returning existing style packages.
+ *
+ * @param regions A list of existing style packages. Otherwise, an `style pack error` describing the error.
+ */
 NS_SWIFT_NAME(StylePacksCallback)
 typedef void (^MBMStylePacksCallback)(MBXExpected<NSArray<MBMStylePack *> *, MBMStylePackError *> * _Nonnull regions); // NOLINT(modernize-use-using)

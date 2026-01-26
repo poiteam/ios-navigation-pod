@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents a connection between a view annotation and specific features within a designated layer source.
+ */
 NS_SWIFT_NAME(AnnotatedLayerFeature)
 __attribute__((visibility ("default")))
 @interface MBMAnnotatedLayerFeature : NSObject

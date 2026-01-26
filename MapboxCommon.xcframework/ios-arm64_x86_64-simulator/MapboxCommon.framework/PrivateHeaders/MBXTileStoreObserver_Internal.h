@@ -8,11 +8,19 @@
 @class MBXTileRegionError;
 @class MBXTileRegionLoadProgress;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Observer for getting notified about changes to TileRegions.
+ */
 NS_SWIFT_NAME(TileStoreObserver)
 @protocol MBXTileStoreObserver
 /** Called whenever the load progress of a TileRegion changes. */
 - (void)onRegionLoadProgressForId:(nonnull NSString *)id_
                          progress:(nonnull MBXTileRegionLoadProgress *)progress;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called once a TileRegion load completes successfully, or is aborted due to cancellation or errors.
+ */
 - (void)onRegionLoadFinishedForId:(nonnull NSString *)id_
                            region:(nonnull MBXExpected<MBXTileRegion *, MBXTileRegionError *> *)region;
 /** Called when a TileRegion was removed. */

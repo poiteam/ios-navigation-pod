@@ -21,43 +21,257 @@
 @class MBMScreenCoordinate;
 @class MBMTileCoverOptions;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Interface for managing camera.
+ */
 NS_SWIFT_NAME(CameraManager)
 __attribute__((visibility ("default")))
 @interface MBMCameraManager : MBMStyleManager
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Convenience method that returns the `camera options` object for given parameters.
+ * This method takes into account the current map padding in addition to the padding provided in parameters.
+ *
+ * @param bounds The `coordinate bounds` of the camera.
+ * @param padding The amount of padding in pixels to add to the given `coordinate bounds`.
+ * @param bearing The bearing of the camera.
+ * @param pitch The pitch of the camera.
+ * @param maxZoom The maximum zoom level allowed in the returned camera options.
+ * @param offset The center of the given bounds relative to map center in pixels.
+ *
+ * @return The `camera options` object representing the provided parameters. Padding is absent in the returned `camera options` as the zoom level already accounts for the padding.
+ */
 - (nonnull MBMCameraOptions *)cameraForCoordinateBoundsForBounds:(nonnull MBMCoordinateBounds *)bounds
                                                          padding:(nullable MBMEdgeInsets *)padding
                                                          bearing:(nullable NSNumber *)bearing
                                                            pitch:(nullable NSNumber *)pitch
                                                          maxZoom:(nullable NSNumber *)maxZoom
                                                           offset:(nullable MBMScreenCoordinate *)offset __attribute((ns_returns_retained)) __attribute__((deprecated("Please use: '-cameraForCoordinatesForCoordinates:camera:coordinatesPadding:maxZoom:offset:' instead.", "-cameraForCoordinatesForCoordinates:camera:coordinatesPadding:maxZoom:offset:")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Convenience method that returns the `camera options` object for given parameters.
+ * This method takes into account the current map padding in addition to the padding provided in parameters.
+ *
+ * @param coordinates The `coordinates` representing the bounds of the camera.
+ * @param padding The amount of padding in pixels to add to the given `coordinates`.
+ * @param bearing The bearing of the camera.
+ * @param pitch The pitch of the camera.
+ *
+ * @return The `camera options` object representing the provided parameters. Padding is absent in the returned `camera options` as the zoom level already accounts for the padding.
+ */
 - (nonnull MBMCameraOptions *)cameraForCoordinatesForCoordinates:(nonnull NSArray<MBXCoordinate2D *> *)coordinates
                                                          padding:(nullable MBMEdgeInsets *)padding
                                                          bearing:(nullable NSNumber *)bearing
                                                            pitch:(nullable NSNumber *)pitch __attribute((ns_returns_retained)) __attribute__((deprecated("Please use: '-cameraForCoordinatesForCoordinates:camera:coordinatesPadding:maxZoom:offset:' instead.", "-cameraForCoordinatesForCoordinates:camera:coordinatesPadding:maxZoom:offset:")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Convenience method that returns the `camera options` object for given parameters.
+ *
+ * @param coordinates The `coordinates` representing the bounds of the camera.
+ * @param camera The `camera options` which will be applied before calculating the camera for the coordinates.
+ *               if any of the fields in camera options is not provided then the current value from the map for that field will be used.
+ * @param coordinatesPadding The amount of padding in pixels to add to the given `coordinates`.
+ *                           Note: This padding is not applied to the map but to the coordinates provided. If you want to apply padding to the map use @param `camera`.
+ * @param maxZoom The maximum zoom level allowed in the returned camera options.
+ * @param offset The center of the given bounds relative to map center in pixels.
+ *
+ * @return The `camera options` object representing the provided parameters.
+ */
 - (nonnull MBXExpected<MBMCameraOptions *, NSString *> *)cameraForCoordinatesForCoordinates:(nonnull NSArray<MBXCoordinate2D *> *)coordinates
                                                                                      camera:(nullable MBMCameraOptions *)camera
                                                                          coordinatesPadding:(nullable MBMEdgeInsets *)coordinatesPadding
                                                                                     maxZoom:(nullable NSNumber *)maxZoom
                                                                                      offset:(nullable MBMScreenCoordinate *)offset __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Convenience method that adjusts the provided `camera options` object for given parameters.
+ *
+ * Returns the provided `camera` options with zoom adjusted to fit `coordinates` into the `box`, so that `coordinates` on the left,
+ * top, right, and bottom of the effective `camera` center at the principal point of the projection (defined by `padding`) fit into the `box`.
+ * Returns the provided `camera` options object unchanged upon an error.
+ *
+ * The method fails if the principal point is positioned outside of the `box`
+ * or if there is no sufficient screen space, defined by principal point and the `box`, to fit the geometry.
+ * Additionally, in cases when the principal point is positioned exactly on one of the edges of the `box`,
+ * any geometry point that spans further than that edge on the same axis cannot possibly be framed and is ignored for zoom level calculation purposes.
+ *
+ * This API isn't supported by Globe projection.
+ *
+ * @param coordinates The `coordinates` representing the bounds of the camera.
+ * @param camera The `camera options` for which zoom should be adjusted. Note that the `camera.center`, and `camera.zoom` (as fallback) is required.
+ * @param box The `screen box` into which `coordinates` should fit.
+ *
+ * @return The `camera options` object with the zoom level adjusted to fit `coordinates` into the `box`.
+ */
 - (nonnull MBMCameraOptions *)cameraForCoordinatesForCoordinates:(nonnull NSArray<MBXCoordinate2D *> *)coordinates
                                                           camera:(nonnull MBMCameraOptions *)camera
                                                              box:(nonnull MBMScreenBox *)box __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Convenience method that returns the `camera options` object for given parameters.
+ * This method takes into account the current map padding in addition to the padding provided in parameters.
+ *
+ * @param geometry The `geometry` representing the bounds of the camera.
+ * @param padding The amount of padding in pixels to add to the given `geometry`.
+ * @param bearing The bearing of the camera.
+ * @param pitch The pitch of the camera.
+ *
+ * @return The `camera options` object representing the provided parameters. Padding is absent in the returned `camera options` as the zoom level already accounts for the padding provided.
+ */
 - (nonnull MBMCameraOptions *)cameraForGeometryForGeometry:(nonnull MBXGeometry *)geometry
                                                    padding:(nullable MBMEdgeInsets *)padding
                                                    bearing:(nullable NSNumber *)bearing
                                                      pitch:(nullable NSNumber *)pitch __attribute((ns_returns_retained)) __attribute__((deprecated("Please use: '-cameraForCoordinatesForCoordinates:camera:coordinatesPadding:maxZoom:offset:' instead.", "-cameraForCoordinatesForCoordinates:camera:coordinatesPadding:maxZoom:offset:")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the `coordinate bounds` for a given camera.
+ *
+ * Note that if the given `camera` shows the antimeridian, the returned wrapped `coordinate bounds`
+ * might not represent the minimum bounding box.
+ *
+ * @param camera The `camera options` to use for calculating `coordinate bounds`.
+ *
+ * @return The `coordinate bounds` object representing a given `camera`.
+ *
+ */
 - (nonnull MBMCoordinateBounds *)coordinateBoundsForCameraForCamera:(nonnull MBMCameraOptions *)camera __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the `coordinate bounds` for a given camera.
+ *
+ * This method is useful if the `camera` shows the antimeridian.
+ *
+ * @param camera The `camera options` to use for calculating `coordinate bounds`.
+ *
+ * @return The `coordinate bounds` object representing a given `camera`.
+ *
+ */
 - (nonnull MBMCoordinateBounds *)coordinateBoundsForCameraUnwrappedForCamera:(nonnull MBMCameraOptions *)camera __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the `coordinate bounds` and the `zoom` for a given `camera`.
+ *
+ * Note that if the given `camera` shows the antimeridian, the returned wrapped `coordinate bounds`
+ * might not represent the minimum bounding box.
+ *
+ * @param camera The `camera options` to use for calculating `coordinate bounds` and `zoom`.
+ *
+ * @return The object representing `coordinate bounds` and `zoom` for a given `camera`.
+ *
+ */
 - (nonnull MBMCoordinateBoundsZoom *)coordinateBoundsZoomForCameraForCamera:(nonnull MBMCameraOptions *)camera __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the unwrapped `coordinate bounds` and `zoom` for a given `camera`.
+ *
+ * This method is useful if the `camera` shows the antimeridian.
+ *
+ * @param camera The `camera options` to use for calculating `coordinate bounds` and `zoom`.
+ *
+ * @return The object representing `coordinate bounds` and `zoom` for a given `camera`.
+ *
+ */
 - (nonnull MBMCoordinateBoundsZoom *)coordinateBoundsZoomForCameraUnwrappedForCamera:(nonnull MBMCameraOptions *)camera __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculates a `screen coordinate` that corresponds to a geographical coordinate
+ * (i.e., longitude-latitude pair).
+ *
+ * The `screen coordinate` is in `platform pixels` relative to the top left corner
+ * of the map (not of the whole screen).
+ *
+ * @param coordinate A geographical `coordinate` on the map to convert to a `screen coordinate`.
+ *
+ * @return A `screen coordinate` on the screen in `platform pixels`.
+ */
 - (nonnull MBMScreenCoordinate *)pixelForCoordinateForCoordinate:(CLLocationCoordinate2D)coordinate __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculates a geographical `coordinate` (i.e., longitude-latitude pair) that corresponds
+ * to a `screen coordinate`.
+ *
+ * The screen coordinate is in `platform pixels`relative to the top left corner
+ * of the map (not of the whole screen).
+ *
+ * @param pixel A `screen coordinate` on the screen in `platform pixels`.
+ *
+ * @return A geographical `coordinate` corresponding to a given `screen coordinate`.
+ */
 - (CLLocationCoordinate2D)coordinateForPixelForPixel:(nonnull MBMScreenCoordinate *)pixel;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculates the geographical coordinate information that corresponds to a given screen coordinate.
+ *
+ * The screen coordinate is in platform pixels, relative to the top left corner of the map (not the whole screen).
+ *
+ * The returned coordinate will be the closest position projected onto the map surface,
+ * in case the screen coordinate does not intersect with the map surface.
+ *
+ * @param pixel The screen coordinate on the map, in platform pixels.
+ *
+ * @return A CoordinateInfo record containing information about the geographical coordinate corresponding to the given screen coordinate, including whether it is on the map surface.
+ *
+ */
 - (nonnull MBMCoordinateInfo *)coordinateInfoForPixelForPixel:(nonnull MBMScreenCoordinate *)pixel __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculates `screen coordinates` that correspond to geographical `coordinates`
+ * (i.e., longitude-latitude pairs).
+ *
+ * The `screen coordinates` are in `platform pixels` relative to the top left corner
+ * of the map (not of the whole screen).
+ *
+ * @param coordinates A geographical `coordinates` on the map to convert to `screen coordinates`.
+ *
+ * @return A `screen coordinates` in `platform pixels` for a given geographical `coordinates`.
+ */
 - (nonnull NSArray<MBMScreenCoordinate *> *)pixelsForCoordinatesForCoordinates:(nonnull NSArray<MBXCoordinate2D *> *)coordinates __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculates geographical `coordinates` (i.e., longitude-latitude pairs) that correspond
+ * to `screen coordinates`.
+ *
+ * The screen coordinates are in `platform pixels` relative to the top left corner
+ * of the map (not of the whole screen).
+ *
+ * @param pixels A `screen coordinates` in `platform pixels`.
+ *
+ * @return A `geographical coordinates` that correspond to a given `screen coordinates`.
+ */
 - (nonnull NSArray<MBXCoordinate2D *> *)coordinatesForPixelsForPixels:(nonnull NSArray<MBMScreenCoordinate *> *)pixels __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculates the geographical coordinates information that corresponds to the given screen coordinates.
+ *
+ * The screen coordinates are in platform pixels, relative to the top left corner of the map (not the whole screen).
+ *
+ * The returned coordinate will be the closest position projected onto the map surface,
+ * in case the screen coordinate does not intersect with the map surface.
+ *
+ * @param pixels The screen coordinate on the map, in platform pixels.
+ *
+ * @return The CoordinateInfo records containing information about the geographical coordinates corresponding to the given screen coordinates, including whether they are on the map surface.
+ *
+ */
 - (nonnull NSArray<MBMCoordinateInfo *> *)coordinatesInfoForPixelsForPixels:(nonnull NSArray<MBMScreenCoordinate *> *)pixels __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Changes the map view by any combination of center, zoom, bearing, and pitch, without an animated transition.
+ * The map will retain its current values for any details not passed via the camera options argument.
+ * It is not guaranteed that the provided `camera options` will be set, the map may apply constraints resulting in a
+ * different `camera state`.
+ *
+ * @param cameraOptions The new `camera options` to be set.
+ */
 - (void)setCameraForCameraOptions:(nonnull MBMCameraOptions *)cameraOptions;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the current `camera state`.
+ *
+ * @return The current `camera state`.
+ */
 - (nonnull MBMCameraState *)getCameraState __attribute((ns_returns_retained));
 /**
  * Sets the map view with the free camera options.
@@ -77,7 +291,23 @@ __attribute__((visibility ("default")))
  * @return The current `free camera options`.
  */
 - (nonnull MBMFreeCameraOptions *)getFreeCameraOptions __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets the `camera bounds options` of the map. The map will retain its current values for any
+ * details not passed via the camera bounds options arguments.
+ * When camera bounds options are set, the camera center is constrained by these bounds, as well as the minimum
+ * zoom level of the camera, to prevent out of bounds areas to be visible.
+ * Note that tilting or rotating the map, or setting stricter minimum and maximum zoom within `options` may still cause some out of bounds areas to become visible.
+ *
+ * @param options The `camera bounds options` to set.
+ * @return A string describing an error if the operation was not successful, expected with `void` value otherwise.
+ */
 - (nonnull MBXExpected<NSNull *, NSString *> *)setBoundsForOptions:(nonnull MBMCameraBoundsOptions *)options __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the `camera bounds` of the map.
+ * @return A `camera bounds` of the map.
+ */
 - (nonnull MBMCameraBounds *)getBounds __attribute((ns_returns_retained));
 /**
  * Sets whether multiple copies of the world will be rendered side by side beyond -180 and 180 degrees longitude.
@@ -95,10 +325,37 @@ __attribute__((visibility ("default")))
  * @return `true` if rendering world copies is enabled, `false` otherwise.
  */
 - (BOOL)getRenderWorldCopies;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Convenience method that returns the `camera options` object for given parameters.
+ *
+ * Computes a new target location where the camera would end up after dragging the map from a screen coordinate `startCoordinate` to
+ * another coordinate `endCoordinate`. All subsequent `cameraForDrag` calls considered to be part of a single "gesture" should be
+ * performed with the map center altitude mode set to `Sea` by calling `setCenterAltitudeMode` with parameter `Sea` before the gesture and
+ * with parameter `Terrain` after the gesture.
+ *
+ * @param startCoordinate The `screen coordinate` to drag the map from, measured in `platform pixels` from top to bottom and from left to right.
+ * @param endCoordinate The `screen coordinate` to drag the map to, measured in `platform pixels` from top to bottom and from left to right.
+ *
+ * @return The `camera options` object with the center variable set to the computed target location.
+ */
 - (nonnull MBMCameraOptions *)cameraForDragForStartCoordinate:(nonnull MBMScreenCoordinate *)startCoordinate
                                                 endCoordinate:(nonnull MBMScreenCoordinate *)endCoordinate __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns tileIDs that cover current map camera
+ *
+ * Note! This is an experimental API and behavior might change in future.
+ *
+ * @param tileCoverOptions Options for the tile cover method
+ * @param cameraOptions This is an extra parameter for future use. Has no effect for now.
+ */
 - (nonnull NSArray<MBMCanonicalTileID *> *)tileCoverForTileCoverOptions:(nonnull MBMTileCoverOptions *)tileCoverOptions
                                                           cameraOptions:(nullable MBMCameraOptions *)cameraOptions __attribute((ns_returns_retained)) NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Detects when a pixel is above the horizon when map projection in Mercator mode.
+ */
 - (BOOL)isPixelAboveHorizonForPixel:(nonnull MBMScreenCoordinate *)pixel;
 
 @end

@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Set of commonly used HTTP header strings.
+ */
 NS_SWIFT_NAME(HttpHeaders)
 __attribute__((visibility ("default")))
 @interface MBXHttpHeaders : NSObject
@@ -56,5 +60,7 @@ __attribute__((visibility ("default")))
     @property (nonatomic, class, readonly) NSString * XReprDigest;
     /** Provides a digest of the selected data of the target resource. */
     @property (nonatomic, class, readonly) NSString * XCanonicalDigest;
+    /** The maximum time a resource can be used while offline, in seconds. */
+    @property (nonatomic, class, readonly) NSString * XMapboxOfflineTtl;
 
 @end

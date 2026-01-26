@@ -2,12 +2,38 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Use these non persistent settings to configure behavior of MetricsService for logging.
+ * These settings will be used if start() and stop() methods are not called to control logging.
+ */
 NS_SWIFT_NAME(MetricsServiceForLoggingOptions)
 __attribute__((visibility ("default")))
 @interface MBXMetricsServiceForLoggingOptions : NSObject
 
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * How often to dump collected data to the log.
+     * Value should be uint64_t - how many Seconds between writing to log.
+     * This setting can be used to enable logging of metrics without access to internal classes.
+     * This setting allows to set default dumping interval but calling start method overwrites it.
+     * Defaults to no value, which means you need to call start() methods to do the dumping.
+     */
     @property (nonatomic, class, readonly) NSString * DumpPeriod;
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Prefixes to include into logged metrics.
+     * When this setting is not empty, only metrics with these prefixes will be logged.
+     * Value should contain array of strings. For example: ["mapbox/common/network/all", "mapbox/common/tile_store"]
+     * Defaults to no value, which means everything is logged.
+     */
     @property (nonatomic, class, readonly) NSString * IncludedMetrics;
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Some systems don't support long log lines so we split metrics to several messages to keep each log line
+     * less than max log line size.
+     * Default max log line length is 1000.
+     */
     @property (nonatomic, class, readonly) NSString * MaxLogLineLength;
 
 @end

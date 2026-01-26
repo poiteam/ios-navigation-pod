@@ -4,6 +4,10 @@
 #import <MapboxCoreMaps/MBMStyleManagerCallback_Internal.h>
 #import <MapboxCoreMaps/MBMStyleManagerErrorCallback_Internal.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Interface for applying changes to the style runtime.
+ */
 NS_SWIFT_NAME(RuntimeStylingOptions)
 __attribute__((visibility ("default")))
 @interface MBMRuntimeStylingOptions : NSObject
@@ -21,11 +25,47 @@ __attribute__((visibility ("default")))
                                canceledCallback:(nullable MBMStyleManagerCallback)canceledCallback
                                   errorCallback:(nullable MBMStyleManagerErrorCallback)errorCallback;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets a callback that will be invoked when all sources have finished loading
+ * so that source properties can be read and modified.
+ */
 @property (nonatomic, readonly, nullable) MBMStyleManagerCallback sourcesCallback;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets a callback that will be invoked when:
+ * - root properties of the style can be read and modified
+ * - layers can be added or removed and their properties are accessible
+ * - list of sources can be checked
+ */
 @property (nonatomic, readonly, nullable) MBMStyleManagerCallback layersCallback;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets a callback that will be invoked when style sprite sheets are parsed and
+ * user can read list of available images, add new ones or update exising.
+ */
 @property (nonatomic, readonly, nullable) MBMStyleManagerCallback imagesCallback;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets a callback that will be invoked when style document is fully parsed as
+ * well as it's dependencies have finished loading.
+ */
 @property (nonatomic, readonly, nullable) MBMStyleManagerCallback completedCallback;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets a callback that will be invoked when style document loading is canceled.
+ */
 @property (nonatomic, readonly, nullable) MBMStyleManagerCallback canceledCallback;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets a callback that will be invoked when style document loading fails.
+ */
 @property (nonatomic, readonly, nullable) MBMStyleManagerErrorCallback errorCallback;
+
 
 @end

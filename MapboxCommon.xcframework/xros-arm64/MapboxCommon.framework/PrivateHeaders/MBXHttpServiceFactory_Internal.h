@@ -5,5 +5,13 @@
 @interface MBXHttpServiceFactory ()
 + (void)setUserDefinedForCustom:(nonnull id<MBXHttpServiceInterface>)custom;
 + (void)reset;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns an instance of the HTTP service.
+ *
+ * If a user defined implementation has been set with setUserDefined(), it will be returned.
+ * Otherwise, a default implementation is allocated on the first call of after a call to reset().
+ * The default implementation is kept until a call to reset() or setUserDefined() releases it.
+ */
 + (nonnull id<MBXHttpServiceInterface>)getInstance __attribute((ns_returns_retained));
 @end

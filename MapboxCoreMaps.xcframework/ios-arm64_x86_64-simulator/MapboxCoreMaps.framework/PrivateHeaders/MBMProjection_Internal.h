@@ -7,6 +7,10 @@
 @class MBMProjectedMeters;
 @class MBMVec2;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Collection of [Spherical Mercator](http://docs.openlayers.org/library/spherical_mercator.html) projection methods.
+ */
 NS_SWIFT_NAME(Projection)
 __attribute__((visibility ("default")))
 @interface MBMProjection : NSObject

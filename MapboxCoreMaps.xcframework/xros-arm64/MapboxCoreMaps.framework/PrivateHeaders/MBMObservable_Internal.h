@@ -19,6 +19,80 @@
 
 @protocol MBXCancelable;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The `observable` class provides Publish&Subscribe functionality for `map` and
+ * `map snapshotter` objects. The dedicated methods return a cancellable object
+ * whose `cancel` method can be used to cancel an active subscription.
+ *
+ * <pre>
+ * ``` text
+ * Simplified diagram for events emitted by the map object.
+ *
+ * ┌─────────────┐               ┌─────────┐                   ┌──────────────┐
+ * │ Application │               │   Map   │                   │ResourceLoader│
+ * └──────┬──────┘               └────┬────┘                   └───────┬──────┘
+ *        │                           │                                │
+ *        ├───────setStyleURI────────▶│                                │
+ *        │                           ├───────────get style───────────▶│
+ *        │                           │                                │
+ *        │                           │◀─────────style data────────────┤
+ *        │                           │                                │
+ *        │                           ├─parse style─┐                  │
+ *        │                           │             │                  │
+ *        │      StyleDataLoaded      ◀─────────────┘                  │
+ *        │◀───────type: Style────────┤                                │
+ *        │                           ├─────────get sprite────────────▶│
+ *        │                           │                                │
+ *        │                           │◀────────sprite data────────────┤
+ *        │                           │                                │
+ *        │                           ├──────parse sprite───────┐      │
+ *        │                           │                         │      │
+ *        │      StyleDataLoaded      ◀─────────────────────────┘      │
+ *        │◀──────type: Sprite────────┤                                │
+ *        │                           ├─────get source TileJSON(s)────▶│
+ *        │                           │                                │
+ *        │     SourceDataLoaded      │◀─────parse TileJSON data───────┤
+ *        │◀─────type: Metadata───────┤                                │
+ *        │                           │                                │
+ *        │                           │                                │
+ *        │      StyleDataLoaded      │                                │
+ *        │◀──────type: Sources───────┤                                │
+ *        │                           ├──────────get tiles────────────▶│
+ *        │                           │                                │
+ *        │◀───────StyleLoaded────────┤                                │
+ *        │                           │                                │
+ *        │     SourceDataLoaded      │◀─────────tile data─────────────┤
+ *        │◀───────type: Tile─────────┤                                │
+ *        │                           │                                │
+ *        │                           │                                │
+ *        │◀────RenderFrameStarted────┤                                │
+ *        │                           ├─────render─────┐               │
+ *        │                           │                │               │
+ *        │                           ◀────────────────┘               │
+ *        │◀───RenderFrameFinished────┤                                │
+ *        │                           ├──render, all tiles loaded──┐   │
+ *        │                           │                            │   │
+ *        │                           ◀────────────────────────────┘   │
+ *        │◀────────MapLoaded─────────┤                                │
+ *        │                           │                                │
+ *        │                           │                                │
+ *        │◀─────────MapIdle──────────┤                                │
+ *        │                    ┌ ─── ─┴─ ─── ┐                         │
+ *        │                    │   offline   │                         │
+ *        │                    └ ─── ─┬─ ─── ┘                         │
+ *        │                           │                                │
+ *        ├─────────setCamera────────▶│                                │
+ *        │                           ├───────────get tiles───────────▶│
+ *        │                           │                                │
+ *        │                           │┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─   │
+ *        │◀─────────MapIdle──────────┤   waiting for connectivity  │  │
+ *        │                           ││  Map renders cached data      │
+ *        │                           │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘  │
+ *        │                           │                                │
+ * ```
+ * </pre>
+ */
 NS_SWIFT_NAME(Observable)
 __attribute__((visibility ("default")))
 @interface MBMObservable : NSObject

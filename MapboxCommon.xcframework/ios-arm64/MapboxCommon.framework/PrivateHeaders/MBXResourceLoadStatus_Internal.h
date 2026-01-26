@@ -2,10 +2,26 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The result of a resource load operation.
+ */
 // NOLINTNEXTLINE(modernize-use-using)
 typedef NS_ENUM(NSInteger, MBXResourceLoadStatus)
 {
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The resource load was fulfilled
+     */
     MBXResourceLoadStatusAvailable,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The resource does not exist on the server
+     */
     MBXResourceLoadStatusNotFound,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The resource couldn't be loaded because the server didn't accept the credentials
+     */
     MBXResourceLoadStatusUnauthorized
 } NS_SWIFT_NAME(ResourceLoadStatus);

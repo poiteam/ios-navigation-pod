@@ -8,6 +8,10 @@
 @class MBMMapSnapshotOptions;
 @class MBMSize;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapSnapshotter exposes functionality to capture static map images.
+ */
 NS_SWIFT_NAME(MapSnapshotter)
 __attribute__((visibility ("default")))
 @interface MBMMapSnapshotter : MBMCameraManager
@@ -18,6 +22,12 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Construct a new snapshotter.
+ *
+ * @param options The `map snapshot options` to configure the snapshotter.
+ */
 - (nonnull instancetype)initWithOptions:(nonnull MBMMapSnapshotOptions *)options;
 
 /**
@@ -32,6 +42,15 @@ __attribute__((visibility ("default")))
  * @return Snapshot `size` in `platform pixels`.
  */
 - (nonnull MBMSize *)getSize __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Start the rendering of a snapshot.
+ *
+ * Request that a new snapshot be rendered. If there is a pending snapshot request, it
+ * is cancelled automatically.
+ *
+ * @param callback The `snapshot complete callback` to call once the snapshot is complete or an error occurred.
+ */
 - (void)startForCallback:(nonnull MBMSnapshotCompleteCallback)callback;
 /**
  * Cancel the current snapshot operation.
@@ -49,6 +68,10 @@ __attribute__((visibility ("default")))
  * @return Elevation (in meters) multiplied by current terrain exaggeration, or empty if elevation for the coordinate is not available.
  */
 - (nullable NSNumber *)getElevationForCoordinate:(CLLocationCoordinate2D)coordinate __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Reduces memory use. Useful to call when the application gets paused or sent to background.
+ */
 - (void)reduceMemoryUse;
 
 @end

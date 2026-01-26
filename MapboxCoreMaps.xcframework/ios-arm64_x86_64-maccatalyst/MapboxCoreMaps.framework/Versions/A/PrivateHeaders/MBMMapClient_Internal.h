@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Interface for the MapClient.
+ */
 NS_SWIFT_NAME(MapClient)
 @protocol MBMMapClient
 /**

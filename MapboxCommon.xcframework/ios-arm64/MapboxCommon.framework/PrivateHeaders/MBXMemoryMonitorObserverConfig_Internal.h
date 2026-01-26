@@ -2,6 +2,11 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * This record holds configuration for the observer. This configuration defines when and how observer must be triggered.
+ * Use MemoryMonitorFactory::getDefaultObserverConfig to get the default configurable notification behavior
+ */
 NS_SWIFT_NAME(MemoryMonitorObserverConfig)
 __attribute__((visibility ("default")))
 @interface MBXMemoryMonitorObserverConfig : NSObject

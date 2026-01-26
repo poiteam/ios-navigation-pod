@@ -4,6 +4,10 @@
 
 @class MBMFeaturesetDescriptor;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Defines the parameters for querying features from a Featureset with an optional filter and id.
+ */
 NS_SWIFT_NAME(FeaturesetQueryTarget)
 __attribute__((visibility ("default")))
 @interface MBMFeaturesetQueryTarget : NSObject
@@ -18,7 +22,12 @@ __attribute__((visibility ("default")))
                                     filter:(nullable id)filter
                                         id:(nullable NSNumber *)id_;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The FeaturesetDescriptor that specifies the featureset to be included in the query.
+ */
 @property (nonatomic, readonly, nonnull) MBMFeaturesetDescriptor *featureset;
+
 /** An optional filter expression used to refine the query results based on conditions related to the specified featureset. */
 @property (nonatomic, readonly, nullable, copy) id filter;
 

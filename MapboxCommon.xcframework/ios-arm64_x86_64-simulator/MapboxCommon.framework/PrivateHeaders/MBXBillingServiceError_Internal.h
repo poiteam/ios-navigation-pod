@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXBillingServiceErrorCode_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXBillingServiceErrorCode);
 
 NS_SWIFT_NAME(BillingServiceError)
 __attribute__((visibility ("default")))

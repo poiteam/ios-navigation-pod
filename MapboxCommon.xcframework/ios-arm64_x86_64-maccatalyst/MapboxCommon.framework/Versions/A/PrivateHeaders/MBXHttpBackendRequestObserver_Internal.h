@@ -5,8 +5,16 @@
 @class MBXHttpBackendResponseData;
 @class MBXHttpRequestError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Observes request updates, including HTTP response, data and success or failure status.
+ */
 NS_SWIFT_NAME(RequestObserver)
 @protocol MBXHttpBackendRequestObserver
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called once after the HTTP response has been received by the backend
+ */
 - (void)onResponseForId:(uint64_t)id_
                    data:(nonnull MBXHttpBackendResponseData *)data;
 /** Called after the backend has written data to the data stream passed in onResponse. */

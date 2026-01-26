@@ -2,12 +2,32 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * NetworkStatus defines a set of connectivity statuses.
+ */
 // NOLINTNEXTLINE(modernize-use-using)
 typedef NS_ENUM(NSInteger, MBXNetworkStatus)
 {
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Not reachable via any devices
+     */
     MBXNetworkStatusNotReachable,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Reachable via WiFi
+     */
     MBXNetworkStatusReachableViaWiFi,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Reachable via Ethernet
+     */
     MBXNetworkStatusReachableViaEthernet,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Reachable via Wireless Wide Area Network (WWAN) interface such as 3G or 4G.
+     */
     MBXNetworkStatusReachableViaWWAN
 } NS_SWIFT_NAME(NetworkStatus);
 

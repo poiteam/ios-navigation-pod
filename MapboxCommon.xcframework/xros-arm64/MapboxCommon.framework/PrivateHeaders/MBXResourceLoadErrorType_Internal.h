@@ -2,12 +2,41 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes the reason for a resource load error.
+ */
 // NOLINTNEXTLINE(modernize-use-using)
 typedef NS_ENUM(NSInteger, MBXResourceLoadErrorType)
 {
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The resource couldn't be downloaded despite several retries.
+     */
     MBXResourceLoadErrorTypeErrored,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The resource request couldn't be satisfied because not all sources were allowed.
+     */
     MBXResourceLoadErrorTypeUnsatisfied,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The request was canceled.
+     */
     MBXResourceLoadErrorTypeCanceled,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The request could not be executed due to an invalid argument.
+     */
     MBXResourceLoadErrorTypeInvalidArgument,
-    MBXResourceLoadErrorTypeInsufficientStorage
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The request could not be completed because tile store disk quota reached or disk is full.
+     */
+    MBXResourceLoadErrorTypeInsufficientStorage,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * The resource could not be loaded because it did not pass the integrity verification.
+     */
+    MBXResourceLoadErrorTypeIntegrityCheckError
 } NS_SWIFT_NAME(ResourceLoadErrorType);

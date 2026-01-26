@@ -4,6 +4,10 @@
 
 @class MBMCoordinateBounds;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Holds information about `camera bounds`.
+ */
 NS_SWIFT_NAME(CameraBounds)
 __attribute__((visibility ("default")))
 @interface MBMCameraBounds : NSObject

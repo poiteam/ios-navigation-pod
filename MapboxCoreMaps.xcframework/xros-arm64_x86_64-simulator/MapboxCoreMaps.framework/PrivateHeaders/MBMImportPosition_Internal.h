@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Specifies position of an import that is added via addStyleImport method.
+ */
 NS_SWIFT_NAME(ImportPosition)
 __attribute__((visibility ("default")))
 @interface MBMImportPosition : NSObject

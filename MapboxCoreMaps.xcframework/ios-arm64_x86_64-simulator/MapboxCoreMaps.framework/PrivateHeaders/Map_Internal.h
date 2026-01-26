@@ -1,6 +1,5 @@
 // This file is generated and will be overwritten automatically.
 
-#import "MBMScreenCoordinate_Internal.h"
 #import "MBMScreenBox_Internal.h"
 #import "MBMFeaturesetQueryTarget_Internal.h"
 #import "MBMAnnotatedLayerFeature_Internal.h"

@@ -5,5 +5,11 @@
 
 @class MBXMemoryMonitorStatus;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A callback to get the current memory status.
+ *
+ * @param result MemoryMonitorStatus or an error string otherwise.
+ */
 NS_SWIFT_NAME(MemoryMonitorStatusCallback)
 typedef void (^MBXMemoryMonitorStatusCallback)(MBXExpected<MBXMemoryMonitorStatus *, NSString *> * _Nonnull result); // NOLINT(modernize-use-using)

@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Provides the MapboxCoreMaps SDK version in major.minor.patch format.
+ */
 NS_SWIFT_NAME(Version)
 __attribute__((visibility ("default")))
 @interface MBMVersion : NSObject
@@ -12,10 +16,30 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapboxCoreMaps SDK major version number.
+ */
 + (uint32_t)getMajorVersion;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapboxCoreMaps SDK minor version number.
+ */
 + (uint32_t)getMinorVersion;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapboxCoreMaps SDK patch version number.
+ */
 + (uint32_t)getPatchVersion;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapboxCoreMaps SDK version string (e.g. major.minor.patch).
+ */
 + (nonnull NSString *)getVersionString __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapboxCoreMaps SDK revision string.
+ */
 + (nonnull NSString *)getRevisionString __attribute((ns_returns_retained));
 
 @end

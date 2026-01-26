@@ -4,6 +4,13 @@
 @class MBXDataRef;
 @class MBXExpected<__covariant Value, __covariant Error>;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * MapboxSupport class provides functions which give access to the support files.
+ * These files include logs and other important information about the app and the device.
+ * You can use this class to collect Mapbox support package into a single file which you can upload
+ * or save and give it to user to upload.
+ */
 NS_SWIFT_NAME(__MapboxSupport)
 __attribute__((visibility ("default")))
 @interface MBXExperimentalMapboxSupport : NSObject
@@ -14,8 +21,23 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns support package as a memory buffer.
+ * Format of the support package is a binary buffer and can change at any moment so you should not try parsing it.
+ *
+ * @return Returns a memory buffer with support data package.
+ *   In case of an error, returns unexpected with error description.
+ */
 + (nonnull MBXExpected<MBXDataRef *, NSString *> *)getSupportPackageData __attribute((ns_returns_retained))
 __attribute__((swift_name("getSupportPackageData()")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Save support package to a file.
+ *
+ * @param fileName Full path to the file to save support package to.
+ * @return In case of an error, returns unexpected with error description.
+ */
 + (nonnull MBXExpected<NSNull *, NSString *> *)saveSupportPackageToFileForFileName:(nonnull NSString *)fileName __attribute((ns_returns_retained))
 __attribute__((swift_name("saveSupportPackageToFile(fileName:)")));
 

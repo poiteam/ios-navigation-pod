@@ -2,7 +2,13 @@
 
 #import <Foundation/Foundation.h>
 
-NS_SWIFT_NAME(EdgeInsets)
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The distance on each side between rectangles, when one is contained into other.
+ *
+ * All fields' values are in `platform pixel` units.
+ */
+NS_SWIFT_NAME(__EdgeInsets)
 __attribute__((visibility ("default")))
 @interface MBMEdgeInsets : NSObject
 

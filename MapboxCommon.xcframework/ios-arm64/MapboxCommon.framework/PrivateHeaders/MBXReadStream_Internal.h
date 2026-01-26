@@ -5,10 +5,34 @@
 
 @class MBXBuffer;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An interface for reading data in a streaming way.
+ */
 NS_SWIFT_NAME(ReadStream)
 @protocol MBXReadStream
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the total number of bytes read from the stream.
+ */
 - (uint64_t)readBytes;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns true if there's data that can be read from the stream. Note that it's possible for a stream to not be
+ * readable without being exhausted, e.g. because there's more data coming. However, once a stream is exhausted,
+ * it is also not readable anymore.
+ */
 - (BOOL)isReadable;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns true if all of the data has been read, and there is no more data coming. Once this method returns
+ * true, you must not read from this stream anymore.
+ */
 - (BOOL)isExhausted;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Reads data from the stream into the provided buffer. Returns the number of bytes written to the buffer or a
+ * string indicating an error ocurred.
+ */
 - (nonnull MBXExpected<NSNumber *, NSString *> *)readForBuffer:(nonnull MBXBuffer *)buffer;
 @end

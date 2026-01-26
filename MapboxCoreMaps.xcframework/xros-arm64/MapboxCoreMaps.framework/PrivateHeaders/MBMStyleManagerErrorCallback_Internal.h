@@ -5,5 +5,12 @@
 @class MBMMapLoadingError;
 @class MBMStyleManager;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback that is invoked to notify of error.
+ *
+ * @param styleManager The StyleManager object to be used by the callback.
+ * @param error The error object
+ */
 NS_SWIFT_NAME(StyleManagerErrorCallback)
 typedef void (^MBMStyleManagerErrorCallback)(MBMStyleManager * _Nonnull styleManager, MBMMapLoadingError * _Nonnull error); // NOLINT(modernize-use-using)

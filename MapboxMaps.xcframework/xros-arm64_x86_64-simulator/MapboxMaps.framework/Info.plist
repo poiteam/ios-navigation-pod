@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>24F74</string>
+	<string>24G222</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,13 +17,13 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>11.13.1</string>
+	<string>11.18.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>XRSimulator</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>188</string>
+	<string>318</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -43,20 +43,20 @@
 	<key>MBXBuildInfo</key>
 	<dict>
 		<key>BuildDate</key>
-		<string>2025-06-19T08:24:20Z</string>
+		<string>2026-01-15T14:52:24Z</string>
 		<key>Git Branch</key>
-		<string>release/v0.13</string>
+		<string>release/v0.18</string>
 		<key>Git SHA</key>
-		<string>60e2e560fd10333ee840b25f22e2c3416d1c2b95</string>
+		<string>e253af6fe3b43d12feb70f8b4d93135532055d83</string>
 		<key>SDK version</key>
-		<string>11.13.1</string>
+		<string>11.18.0</string>
 		<key>Swift version</key>
 		<string>6.0.3</string>
 		<key>Xcode version</key>
 		<string>16.2</string>
 	</dict>
 	<key>MBXBundleVersion</key>
-	<string>11.13.1</string>
+	<string>11.18.0</string>
 	<key>MinimumOSVersion</key>
 	<string>1.0</string>
 	<key>UIDeviceFamily</key>

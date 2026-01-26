@@ -4,6 +4,10 @@
 
 @class MBXMetricsService;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Factory that allows to create metrics service instance.
+ */
 NS_SWIFT_NAME(MetricsServiceFactory)
 __attribute__((visibility ("default")))
 @interface MBXMetricsServiceFactory : NSObject
@@ -14,8 +18,25 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Reset method that allows to clean up metrics service allocated resources. After
+ * this call, already created instances of metrics service are invalidated and user
+ * has to call `getInstance` method again to get a new instance of metrics service.
+ */
 + (void)reset;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Create a new instance of the metrics service if it doesn't exist already, or
+ * return already created instance.
+ */
 + (nonnull MBXMetricsService *)getInstance __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Create a new instance of the metrics service if it doesn't exist already, or
+ * return already created instance. This instance does not send it's metrics to Telemetry
+ * but logs them to a log instead.
+ */
 + (nonnull MBXMetricsService *)getInstanceForLogging __attribute((ns_returns_retained));
 
 @end

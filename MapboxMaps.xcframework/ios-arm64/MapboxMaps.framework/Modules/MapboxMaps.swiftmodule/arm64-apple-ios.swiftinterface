@@ -1,12 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MapboxMaps
-import CoreFoundation.CFCGTypes
 import CoreImage.CIFilterBuiltins
-import CoreLocation.CLLocation
 import CarPlay
 import Combine
-import CoreFoundation
 import CoreGraphics
 import CoreImage
 import CoreLocation
@@ -20,11 +17,9 @@ import MapboxCommon.MBXCoordinate2D
 import Metal
 import MetalKit
 import QuartzCore
-import RegexBuilder
 import Swift
 import SwiftUI
 @_exported import Turf
-import UIKit.UIGeometry
 import UIKit.UIGestureRecognizerSubclass
 import UIKit
 import WebKit
@@ -113,6 +108,7 @@ extension MapboxMaps.Exp {
     public static let sin: MapboxMaps.Exp.Operator
     public static let skyRadialProgress: MapboxMaps.Exp.Operator
     public static let slice: MapboxMaps.Exp.Operator
+    public static let split: MapboxMaps.Exp.Operator
     public static let sqrt: MapboxMaps.Exp.Operator
     public static let step: MapboxMaps.Exp.Operator
     public static let string: MapboxMaps.Exp.Operator
@@ -227,7 +223,9 @@ extension MapboxMaps.PointAnnotation {
   public struct Image : Swift.Hashable, Swift.Sendable {
     public var image: UIKit.UIImage
     public var name: Swift.String
+    public var sdf: Swift.Bool
     public init(image: UIKit.UIImage, name: Swift.String)
+    public init(image: UIKit.UIImage, name: Swift.String, sdf: Swift.Bool)
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: MapboxMaps.PointAnnotation.Image, b: MapboxMaps.PointAnnotation.Image) -> Swift.Bool
     public var hashValue: Swift.Int {
@@ -305,8 +303,7 @@ public protocol AppleLocationProviderDelegate : AnyObject {
   final public var onLocationUpdate: MapboxMaps.Signal<[MapboxCommon.Location]> {
     get
   }
-  @available(visionOS, unavailable)
-  final public var onHeadingUpdate: MapboxMaps.Signal<MapboxMaps.Heading> {
+  final public var onHeadingUpdate: MapboxMaps.Signal<MapboxCommon.Heading> {
     get
   }
   final public var latestLocation: MapboxCommon.Location? {
@@ -324,7 +321,7 @@ extension MapboxMaps.AppleLocationProvider : MapboxCommon.LocationProvider {
 @available(visionOS, unavailable)
 extension MapboxMaps.AppleLocationProvider : MapboxMaps.HeadingProvider {
   @available(visionOS, unavailable)
-  final public var latestHeading: MapboxMaps.Heading? {
+  final public var latestHeading: MapboxCommon.Heading? {
     get
   }
   @available(visionOS, unavailable)
@@ -492,9 +489,9 @@ extension MapboxMaps.BackgroundLayer : MapboxMaps.MapStyleContent {
   }
   final public func cancelAnimations()
   @discardableResult
-  final public func fly(to: MapboxMaps.CameraOptions, duration: Foundation.TimeInterval? = nil, curve: MapboxMaps.TimingCurve = .easeOut, completion: MapboxMaps.AnimationCompletion? = nil) -> any MapboxCommon.Cancelable
+  final public func fly(to: MapboxCoreMaps.CameraOptions, duration: Foundation.TimeInterval? = nil, curve: MapboxMaps.TimingCurve = .easeOut, completion: MapboxMaps.AnimationCompletion? = nil) -> any MapboxCommon.Cancelable
   @discardableResult
-  final public func ease(to: MapboxMaps.CameraOptions, duration: Foundation.TimeInterval, curve: UIKit.UIView.AnimationCurve = .easeOut, completion: MapboxMaps.AnimationCompletion? = nil) -> any MapboxCommon.Cancelable
+  final public func ease(to: MapboxCoreMaps.CameraOptions, duration: Foundation.TimeInterval, curve: UIKit.UIView.AnimationCurve = .easeOut, completion: MapboxMaps.AnimationCompletion? = nil) -> any MapboxCommon.Cancelable
   final public func makeAnimator(duration: Foundation.TimeInterval, timingParameters: any UIKit.UITimingCurveProvider, animationOwner: MapboxMaps.AnimationOwner = .unspecified, animations: @escaping (inout MapboxMaps.CameraTransition) -> Swift.Void) -> MapboxMaps.BasicCameraAnimator
   final public func makeAnimator(duration: Foundation.TimeInterval, curve: UIKit.UIView.AnimationCurve, animationOwner: MapboxMaps.AnimationOwner = .unspecified, animations: @escaping (inout MapboxMaps.CameraTransition) -> Swift.Void) -> MapboxMaps.BasicCameraAnimator
   final public func makeAnimator(duration: Foundation.TimeInterval, controlPoint1: CoreFoundation.CGPoint, controlPoint2: CoreFoundation.CGPoint, animationOwner: MapboxMaps.AnimationOwner = .unspecified, animations: @escaping (inout MapboxMaps.CameraTransition) -> Swift.Void) -> MapboxMaps.BasicCameraAnimator
@@ -545,53 +542,6 @@ public struct CameraBoundsOptions : Swift.Hashable {
 }
 extension MapboxMaps.CameraBoundsOptions {
   public init(cameraBounds: MapboxMaps.CameraBounds)
-}
-public struct CameraOptions : Swift.Codable, Swift.Hashable, Swift.Sendable {
-  public var center: CoreLocation.CLLocationCoordinate2D? {
-    get
-    set
-  }
-  public var padding: UIKit.UIEdgeInsets? {
-    get
-    set
-  }
-  public var anchor: CoreFoundation.CGPoint? {
-    get
-    set
-  }
-  public var zoom: CoreFoundation.CGFloat?
-  public var bearing: CoreLocation.CLLocationDirection?
-  public var pitch: CoreFoundation.CGFloat?
-  public init(center: CoreLocation.CLLocationCoordinate2D? = nil, padding: UIKit.UIEdgeInsets? = nil, anchor: CoreFoundation.CGPoint? = nil, zoom: CoreFoundation.CGFloat? = nil, bearing: CoreLocation.CLLocationDirection? = nil, pitch: CoreFoundation.CGFloat? = nil)
-  public init(cameraState: MapboxMaps.CameraState, anchor: CoreFoundation.CGPoint? = nil)
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: MapboxMaps.CameraOptions, b: MapboxMaps.CameraOptions) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CameraState : Swift.Codable, Swift.Hashable, Swift.Sendable {
-  public var center: CoreLocation.CLLocationCoordinate2D {
-    get
-    set
-  }
-  public var padding: UIKit.UIEdgeInsets {
-    get
-    set
-  }
-  public var zoom: CoreFoundation.CGFloat
-  public var bearing: CoreLocation.CLLocationDirection
-  public var pitch: CoreFoundation.CGFloat
-  public init(center: CoreLocation.CLLocationCoordinate2D, padding: UIKit.UIEdgeInsets, zoom: CoreFoundation.CGFloat, bearing: CoreLocation.CLLocationDirection, pitch: CoreFoundation.CGFloat)
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: MapboxMaps.CameraState, b: MapboxMaps.CameraState) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CameraTransition : Swift.Equatable, Swift.Sendable {
   public var center: MapboxMaps.CameraTransition.Change<CoreLocation.CLLocationCoordinate2D>
@@ -1026,10 +976,10 @@ extension MapboxCoreMaps.MapLoadingError : Foundation.LocalizedError {
   }
 }
 extension MapboxCoreMaps.CameraChanged {
-  public var cameraState: MapboxMaps.CameraState {
+  public var cameraState: MapboxCoreMaps.CameraState {
     get
   }
-  convenience public init(cameraState: MapboxMaps.CameraState, timestamp: Foundation.Date)
+  convenience public init(cameraState: MapboxCoreMaps.CameraState, timestamp: Foundation.Date)
 }
 extension MapboxCoreMaps.SourceDataLoaded {
   public var loaded: Swift.Bool? {
@@ -1165,6 +1115,11 @@ public struct Exp : Swift.Codable, Swift.CustomStringConvertible, Swift.Equatabl
 }
 @_functionBuilder public struct ExpressionArgumentBuilder {
   public static func buildBlock(_ arguments: any MapboxMaps.ExpressionArgumentConvertible...) -> [MapboxMaps.Exp.Argument]
+  public static func buildOptional(_ component: (any MapboxMaps.ExpressionArgumentConvertible)?) -> [MapboxMaps.Exp.Argument]
+  public static func buildEither(first argument: any MapboxMaps.ExpressionArgumentConvertible) -> [MapboxMaps.Exp.Argument]
+  public static func buildEither(second argument: any MapboxMaps.ExpressionArgumentConvertible) -> [MapboxMaps.Exp.Argument]
+  public static func buildArray(_ arguments: [any MapboxMaps.ExpressionArgumentConvertible]) -> [MapboxMaps.Exp.Argument]
+  public static func buildLimitedAvailability(_ argument: any MapboxMaps.ExpressionArgumentConvertible) -> [MapboxMaps.Exp.Argument]
 }
 public protocol ExpressionArgumentConvertible {
   var expressionArguments: [MapboxMaps.Exp.Argument] { get }
@@ -1288,6 +1243,7 @@ extension MapboxCoreMaps.FeatureExtensionValue {
 }
 public struct FeatureState<T> : Swift.Equatable, MapboxMaps.MapContent where T : MapboxMaps.FeaturesetFeatureType {
   public init(_ featureset: MapboxMaps.FeaturesetDescriptor<T>, id: MapboxMaps.FeaturesetFeatureId, state: T.State)
+  public init(_ featureset: MapboxMaps.FeaturesetDescriptor<T>, expression: MapboxMaps.Exp, state: T.State)
   public init(_ feature: T, _ state: T.State)
   public static func == (a: MapboxMaps.FeatureState<T>, b: MapboxMaps.FeatureState<T>) -> Swift.Bool
   public typealias Body = Swift.Never
@@ -1355,6 +1311,7 @@ public struct FillExtrusionLayer : MapboxMaps.Layer, Swift.Equatable {
   public var fillExtrusionAmbientOcclusionRadiusTransition: MapboxMaps.StyleTransition?
   public var fillExtrusionBase: MapboxMaps.Value<Swift.Double>?
   public var fillExtrusionBaseTransition: MapboxMaps.StyleTransition?
+  public var fillExtrusionCastShadows: MapboxMaps.Value<Swift.Bool>?
   public var fillExtrusionColor: MapboxMaps.Value<MapboxMaps.StyleColor>?
   public var fillExtrusionColorTransition: MapboxMaps.StyleTransition?
   public var fillExtrusionCutoffFadeRange: MapboxMaps.Value<Swift.Double>?
@@ -1365,6 +1322,7 @@ public struct FillExtrusionLayer : MapboxMaps.Layer, Swift.Equatable {
   public var fillExtrusionOpacity: MapboxMaps.Value<Swift.Double>?
   public var fillExtrusionOpacityTransition: MapboxMaps.StyleTransition?
   public var fillExtrusionPattern: MapboxMaps.Value<MapboxMaps.ResolvedImage>?
+  public var fillExtrusionPatternCrossFade: MapboxMaps.Value<Swift.Double>?
   public var fillExtrusionTranslate: MapboxMaps.Value<[Swift.Double]>?
   public var fillExtrusionTranslateTransition: MapboxMaps.StyleTransition?
   public var fillExtrusionTranslateAnchor: MapboxMaps.Value<MapboxMaps.FillExtrusionTranslateAnchor>?
@@ -1390,6 +1348,8 @@ extension MapboxMaps.FillExtrusionLayer {
   public func fillExtrusionBase(_ constant: Swift.Double) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionBaseTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionBase(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillExtrusionLayer
+  public func fillExtrusionCastShadows(_ constant: Swift.Bool) -> MapboxMaps.FillExtrusionLayer
+  public func fillExtrusionCastShadows(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionColor(_ constant: MapboxMaps.StyleColor) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionColor(_ color: UIKit.UIColor) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.FillExtrusionLayer
@@ -1407,6 +1367,8 @@ extension MapboxMaps.FillExtrusionLayer {
   public func fillExtrusionOpacity(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionPattern(_ constant: Swift.String) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionPattern(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillExtrusionLayer
+  public func fillExtrusionPatternCrossFade(_ constant: Swift.Double) -> MapboxMaps.FillExtrusionLayer
+  public func fillExtrusionPatternCrossFade(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionTranslate(x: Swift.Double, y: Swift.Double) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionTranslateTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.FillExtrusionLayer
   public func fillExtrusionTranslate(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillExtrusionLayer
@@ -1439,6 +1401,7 @@ public struct FillLayer : MapboxMaps.Layer, Swift.Equatable {
   public var fillOutlineColor: MapboxMaps.Value<MapboxMaps.StyleColor>?
   public var fillOutlineColorTransition: MapboxMaps.StyleTransition?
   public var fillPattern: MapboxMaps.Value<MapboxMaps.ResolvedImage>?
+  public var fillPatternCrossFade: MapboxMaps.Value<Swift.Double>?
   public var fillTranslate: MapboxMaps.Value<[Swift.Double]>?
   public var fillTranslateTransition: MapboxMaps.StyleTransition?
   public var fillTranslateAnchor: MapboxMaps.Value<MapboxMaps.FillTranslateAnchor>?
@@ -1474,6 +1437,8 @@ extension MapboxMaps.FillLayer {
   public func fillOutlineColor(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillLayer
   public func fillPattern(_ constant: Swift.String) -> MapboxMaps.FillLayer
   public func fillPattern(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillLayer
+  public func fillPatternCrossFade(_ constant: Swift.Double) -> MapboxMaps.FillLayer
+  public func fillPatternCrossFade(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillLayer
   public func fillTranslate(x: Swift.Double, y: Swift.Double) -> MapboxMaps.FillLayer
   public func fillTranslateTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.FillLayer
   public func fillTranslate(_ expression: MapboxMaps.Exp) -> MapboxMaps.FillLayer
@@ -1542,7 +1507,7 @@ extension MapboxMaps.FlatLight : MapboxMaps.MapStyleContent {
   @objc deinit
 }
 extension MapboxMaps.FollowPuckViewportState : MapboxMaps.ViewportState {
-  final public func observeDataSource(with handler: @escaping (MapboxMaps.CameraOptions) -> Swift.Bool) -> any MapboxCommon.Cancelable
+  final public func observeDataSource(with handler: @escaping (MapboxCoreMaps.CameraOptions) -> Swift.Bool) -> any MapboxCommon.Cancelable
   final public func startUpdatingCamera()
   final public func stopUpdatingCamera()
 }
@@ -1597,6 +1562,7 @@ public struct GeoJSONSource : MapboxMaps.Source {
   public let id: Swift.String
   public var data: MapboxMaps.GeoJSONSourceData?
   public var maxzoom: Swift.Double?
+  public var minzoom: Swift.Double?
   public var attribution: Swift.String?
   public var buffer: Swift.Double?
   public var tolerance: Swift.Double?
@@ -1748,20 +1714,11 @@ extension MapboxCoreMaps.GlyphsRasterizationOptions {
     @objc get
   }
 }
-public struct Heading : Swift.Equatable, Swift.Sendable {
-  public var direction: CoreLocation.CLLocationDirection
-  public var accuracy: CoreLocation.CLLocationDirection
-  public var timestamp: Foundation.Date
-  public init(direction: CoreLocation.CLLocationDirection, accuracy: CoreLocation.CLLocationDirection, timestamp: Foundation.Date = Date())
-  @available(visionOS, unavailable)
-  public init(from clHeading: CoreLocation.CLHeading)
-  public static func == (a: MapboxMaps.Heading, b: MapboxMaps.Heading) -> Swift.Bool
-}
 public protocol HeadingObserver : AnyObject {
-  func onHeadingUpdate(_ heading: MapboxMaps.Heading)
+  func onHeadingUpdate(_ heading: MapboxCommon.Heading)
 }
 public protocol HeadingProvider {
-  var latestHeading: MapboxMaps.Heading? { get }
+  var latestHeading: MapboxCommon.Heading? { get }
   func add(headingObserver: any MapboxMaps.HeadingObserver)
   func remove(headingObserver: any MapboxMaps.HeadingObserver)
 }
@@ -2020,6 +1977,7 @@ public struct LineLayer : MapboxMaps.Layer, Swift.Equatable {
   public var lineOpacity: MapboxMaps.Value<Swift.Double>?
   public var lineOpacityTransition: MapboxMaps.StyleTransition?
   public var linePattern: MapboxMaps.Value<MapboxMaps.ResolvedImage>?
+  public var linePatternCrossFade: MapboxMaps.Value<Swift.Double>?
   public var lineTranslate: MapboxMaps.Value<[Swift.Double]>?
   public var lineTranslateTransition: MapboxMaps.StyleTransition?
   public var lineTranslateAnchor: MapboxMaps.Value<MapboxMaps.LineTranslateAnchor>?
@@ -2087,6 +2045,8 @@ extension MapboxMaps.LineLayer {
   public func lineOpacity(_ expression: MapboxMaps.Exp) -> MapboxMaps.LineLayer
   public func linePattern(_ constant: Swift.String) -> MapboxMaps.LineLayer
   public func linePattern(_ expression: MapboxMaps.Exp) -> MapboxMaps.LineLayer
+  public func linePatternCrossFade(_ constant: Swift.Double) -> MapboxMaps.LineLayer
+  public func linePatternCrossFade(_ expression: MapboxMaps.Exp) -> MapboxMaps.LineLayer
   public func lineTranslate(x: Swift.Double, y: Swift.Double) -> MapboxMaps.LineLayer
   public func lineTranslateTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.LineLayer
   public func lineTranslate(_ expression: MapboxMaps.Exp) -> MapboxMaps.LineLayer
@@ -2199,11 +2159,16 @@ extension MapboxMaps.LocationIndicatorLayer {
 extension MapboxMaps.LocationIndicatorLayer : MapboxMaps.MapStyleContent {
   public typealias Body = Swift.Never
 }
+public class LocationDataModel {
+  public init(location: Combine.AnyPublisher<[MapboxCommon.Location], Swift.Never>, heading: Combine.AnyPublisher<MapboxCommon.Heading, Swift.Never>? = nil)
+  public static func createDefault(_ options: MapboxMaps.AppleLocationProvider.Options? = nil) -> MapboxMaps.LocationDataModel
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers final public class LocationManager {
   final public var onLocationChange: MapboxMaps.Signal<[MapboxCommon.Location]> {
     get
   }
-  final public var onHeadingChange: MapboxMaps.Signal<MapboxMaps.Heading> {
+  final public var onHeadingChange: MapboxMaps.Signal<MapboxCommon.Heading> {
     get
   }
   final public let onPuckRender: MapboxMaps.Signal<MapboxMaps.PuckRenderingData>
@@ -2211,8 +2176,15 @@ extension MapboxMaps.LocationIndicatorLayer : MapboxMaps.MapStyleContent {
     get
     set
   }
-  final public func override(locationProvider: MapboxMaps.Signal<[MapboxCommon.Location]>, headingProvider: MapboxMaps.Signal<MapboxMaps.Heading>? = nil)
+  final public var dataModel: MapboxMaps.LocationDataModel {
+    get
+    set
+  }
+  @available(*, deprecated, message: "Use dataModel instead")
+  final public func override(locationProvider: MapboxMaps.Signal<[MapboxCommon.Location]>, headingProvider: MapboxMaps.Signal<MapboxCommon.Heading>? = nil)
+  @available(*, deprecated, message: "Use dataModel instead")
   final public func override(locationProvider: any MapboxCommon.LocationProvider, headingProvider: (any MapboxMaps.HeadingProvider)? = nil)
+  @available(*, deprecated, message: "Use dataModel instead")
   final public func override(provider: any MapboxCommon.LocationProvider & MapboxMaps.HeadingProvider)
   final public var latestLocation: MapboxCommon.Location? {
     get
@@ -2342,6 +2314,7 @@ extension MapboxMaps.Map {
   @_Concurrency.MainActor @preconcurrency public func additionalSafeAreaInsets(_ insets: SwiftUICore.EdgeInsets) -> MapboxMaps.Map
   @_Concurrency.MainActor @preconcurrency public func collectPerformanceStatistics(_ options: MapboxCoreMaps.PerformanceStatisticsOptions?, callback: @escaping (MapboxCoreMaps.PerformanceStatistics) -> Swift.Void) -> MapboxMaps.Map
   @_Concurrency.MainActor @preconcurrency public func additionalSafeAreaInsets(_ edges: SwiftUICore.Edge.Set = .all, _ length: CoreFoundation.CGFloat) -> MapboxMaps.Map
+  @_Concurrency.MainActor @preconcurrency public func locationDataModel(_ model: MapboxMaps.LocationDataModel) -> MapboxMaps.Map
 }
 extension MapboxMaps.Map {
   @_hasMissingDesignatedInitializers final public class Coordinator {
@@ -2518,11 +2491,18 @@ extension MapboxCoreMaps.ResourceRequest {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class MapInitOptions : ObjectiveC.NSObject {
   final public let mapOptions: MapboxCoreMaps.MapOptions
-  final public let styleURI: MapboxMaps.StyleURI?
-  final public let styleJSON: Swift.String?
-  final public let cameraOptions: MapboxMaps.CameraOptions?
+  final public var styleURI: MapboxMaps.StyleURI? {
+    get
+  }
+  final public var styleJSON: Swift.String? {
+    get
+  }
+  final public let mapStyle: MapboxMaps.MapStyle?
+  final public let cameraOptions: MapboxCoreMaps.CameraOptions?
   final public let antialiasingSampleCount: Swift.Int
-  public init(mapOptions: MapboxCoreMaps.MapOptions = MapOptions(), cameraOptions: MapboxMaps.CameraOptions? = nil, styleURI: MapboxMaps.StyleURI? = .standard, styleJSON: Swift.String? = nil, antialiasingSampleCount: Swift.Int = 1)
+  final public let locationDataModel: MapboxMaps.LocationDataModel?
+  convenience public init(mapOptions: MapboxCoreMaps.MapOptions = MapOptions(), cameraOptions: MapboxCoreMaps.CameraOptions? = nil, styleURI: MapboxMaps.StyleURI? = .standard, styleJSON: Swift.String? = nil, antialiasingSampleCount: Swift.Int = 1, locationDataModel: MapboxMaps.LocationDataModel? = nil)
+  public init(mapStyle: MapboxMaps.MapStyle?, mapOptions: MapboxCoreMaps.MapOptions = MapOptions(), cameraOptions: MapboxCoreMaps.CameraOptions? = nil, antialiasingSampleCount: Swift.Int = 1, locationDataModel: MapboxMaps.LocationDataModel? = nil)
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
   @objc override final public var hash: Swift.Int {
     @objc get
@@ -2532,7 +2512,7 @@ extension MapboxCoreMaps.ResourceRequest {
 extension MapboxCoreMaps.MapOptions {
   @available(*, unavailable, message: "'optimizeForTerrain' is obsolete and has no effect. Layer order is automatically adjusted for better performance based on the presence of terrain.")
   convenience public init(constrainMode: MapboxCoreMaps.ConstrainMode = .heightOnly, viewportMode: MapboxCoreMaps.ViewportMode = .default, orientation: MapboxCoreMaps.NorthOrientation = .upwards, crossSourceCollisions: Swift.Bool = true, optimizeForTerrain: Swift.Bool = true, size: CoreFoundation.CGSize? = nil, pixelRatio: CoreFoundation.CGFloat? = nil, glyphsRasterizationOptions: MapboxCoreMaps.GlyphsRasterizationOptions = GlyphsRasterizationOptions(fontFamilies: []))
-  convenience public init(constrainMode: MapboxCoreMaps.ConstrainMode = .heightOnly, viewportMode: MapboxCoreMaps.ViewportMode = .default, orientation: MapboxCoreMaps.NorthOrientation = .upwards, crossSourceCollisions: Swift.Bool = true, size: CoreFoundation.CGSize? = nil, pixelRatio: CoreFoundation.CGFloat? = nil, glyphsRasterizationOptions: MapboxCoreMaps.GlyphsRasterizationOptions = GlyphsRasterizationOptions(fontFamilies: []))
+  convenience public init(constrainMode: MapboxCoreMaps.ConstrainMode = .heightOnly, viewportMode: MapboxCoreMaps.ViewportMode = .default, orientation: MapboxCoreMaps.NorthOrientation = .upwards, crossSourceCollisions: Swift.Bool = true, size: CoreFoundation.CGSize? = nil, pixelRatio: CoreFoundation.CGFloat? = nil, glyphsRasterizationOptions: MapboxCoreMaps.GlyphsRasterizationOptions = GlyphsRasterizationOptions(fontFamilies: []), scaleFactor: CoreFoundation.CGFloat = 1.0)
   public var constrainMode: MapboxCoreMaps.ConstrainMode {
     get
   }
@@ -2594,10 +2574,10 @@ public struct MapSnapshotOptions : Swift.Sendable {
   public var glyphsRasterizationOptions: MapboxCoreMaps.GlyphsRasterizationOptions
   public var showsLogo: Swift.Bool
   public var showsAttribution: Swift.Bool
-  public init(size: CoreFoundation.CGSize, pixelRatio: CoreFoundation.CGFloat, glyphsRasterizationOptions: MapboxCoreMaps.GlyphsRasterizationOptions = GlyphsRasterizationOptions(), showsLogo: Swift.Bool = true, showsAttribution: Swift.Bool = true)
+  public init(size: CoreFoundation.CGSize, pixelRatio: CoreFoundation.CGFloat, glyphsRasterizationOptions: MapboxCoreMaps.GlyphsRasterizationOptions = GlyphsRasterizationOptions(), showsLogo: Swift.Bool = true, showsAttribution: Swift.Bool = true, scaleFactor: CoreFoundation.CGFloat = 1.0)
 }
 extension MapboxMaps.MapStyle {
-  public static func standard(theme: MapboxMaps.StandardTheme? = nil, lightPreset: MapboxMaps.StandardLightPreset? = nil, font: MapboxMaps.StandardFont? = nil, showPointOfInterestLabels: Swift.Bool? = nil, showTransitLabels: Swift.Bool? = nil, showPlaceLabels: Swift.Bool? = nil, showRoadLabels: Swift.Bool? = nil, showPedestrianRoads: Swift.Bool? = nil, show3dObjects: Swift.Bool? = nil, colorBuildingHighlight: MapboxMaps.StyleColor? = nil, colorBuildingSelect: MapboxMaps.StyleColor? = nil, colorMotorways: MapboxMaps.StyleColor? = nil, colorPlaceLabelHighlight: MapboxMaps.StyleColor? = nil, colorPlaceLabelSelect: MapboxMaps.StyleColor? = nil, colorRoads: MapboxMaps.StyleColor? = nil, colorTrunks: MapboxMaps.StyleColor? = nil, showLandmarkIcons: Swift.Bool? = nil, themeData: Swift.String? = nil) -> MapboxMaps.MapStyle
+  public static func standard(theme: MapboxMaps.StandardTheme? = nil, lightPreset: MapboxMaps.StandardLightPreset? = nil, font: MapboxMaps.StandardFont? = nil, showPointOfInterestLabels: Swift.Bool? = nil, showTransitLabels: Swift.Bool? = nil, showPlaceLabels: Swift.Bool? = nil, showRoadLabels: Swift.Bool? = nil, showPedestrianRoads: Swift.Bool? = nil, show3dObjects: Swift.Bool? = nil, backgroundPointOfInterestLabels: MapboxMaps.StandardBackgroundPointOfInterestLabels? = nil, colorAdminBoundaries: MapboxMaps.StyleColor? = nil, colorBuildingHighlight: MapboxMaps.StyleColor? = nil, colorBuildings: MapboxMaps.StyleColor? = nil, colorBuildingSelect: MapboxMaps.StyleColor? = nil, colorCommercial: MapboxMaps.StyleColor? = nil, colorEducation: MapboxMaps.StyleColor? = nil, colorGreenspace: MapboxMaps.StyleColor? = nil, colorIndustrial: MapboxMaps.StyleColor? = nil, colorLand: MapboxMaps.StyleColor? = nil, colorMedical: MapboxMaps.StyleColor? = nil, colorModePointOfInterestLabels: MapboxMaps.StandardColorModePointOfInterestLabels? = nil, colorMotorways: MapboxMaps.StyleColor? = nil, colorPlaceLabelHighlight: MapboxMaps.StyleColor? = nil, colorPlaceLabels: MapboxMaps.StyleColor? = nil, colorPlaceLabelSelect: MapboxMaps.StyleColor? = nil, colorPointOfInterestLabels: MapboxMaps.StyleColor? = nil, colorRoadLabels: MapboxMaps.StyleColor? = nil, colorRoads: MapboxMaps.StyleColor? = nil, colorTrunks: MapboxMaps.StyleColor? = nil, colorWater: MapboxMaps.StyleColor? = nil, densityPointOfInterestLabels: Swift.Double? = nil, fuelingStationModePointOfInterestLabels: MapboxMaps.StandardFuelingStationModePointOfInterestLabels? = nil, roadsBrightness: Swift.Double? = nil, show3dBuildings: Swift.Bool? = nil, show3dFacades: Swift.Bool? = nil, show3dLandmarks: Swift.Bool? = nil, show3dTrees: Swift.Bool? = nil, showAdminBoundaries: Swift.Bool? = nil, showLandmarkIconLabels: Swift.Bool? = nil, showLandmarkIcons: Swift.Bool? = nil, themeData: Swift.String? = nil) -> MapboxMaps.MapStyle
   public static var standard: MapboxMaps.MapStyle {
     get
   }
@@ -2655,8 +2635,31 @@ public struct StandardFont : Swift.RawRepresentable, Swift.Hashable, Swift.Senda
   public static let ubuntu: MapboxMaps.StandardFont
   public typealias RawValue = Swift.String
 }
+public struct StandardBackgroundPointOfInterestLabels : Swift.RawRepresentable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let circle: MapboxMaps.StandardBackgroundPointOfInterestLabels
+  public static let noBackground: MapboxMaps.StandardBackgroundPointOfInterestLabels
+  public typealias RawValue = Swift.String
+}
+public struct StandardColorModePointOfInterestLabels : Swift.RawRepresentable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let `default`: MapboxMaps.StandardColorModePointOfInterestLabels
+  public static let single: MapboxMaps.StandardColorModePointOfInterestLabels
+  public typealias RawValue = Swift.String
+}
+public struct StandardFuelingStationModePointOfInterestLabels : Swift.RawRepresentable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let `default`: MapboxMaps.StandardFuelingStationModePointOfInterestLabels
+  public static let fuel: MapboxMaps.StandardFuelingStationModePointOfInterestLabels
+  public static let electric: MapboxMaps.StandardFuelingStationModePointOfInterestLabels
+  public static let none: MapboxMaps.StandardFuelingStationModePointOfInterestLabels
+  public typealias RawValue = Swift.String
+}
 extension MapboxMaps.MapStyle {
-  public static func standardSatellite(lightPreset: MapboxMaps.StandardLightPreset? = nil, font: MapboxMaps.StandardFont? = nil, showPointOfInterestLabels: Swift.Bool? = nil, showTransitLabels: Swift.Bool? = nil, showPlaceLabels: Swift.Bool? = nil, showRoadLabels: Swift.Bool? = nil, showRoadsAndTransit: Swift.Bool? = nil, showPedestrianRoads: Swift.Bool? = nil, colorMotorways: MapboxMaps.StyleColor? = nil, colorPlaceLabelHighlight: MapboxMaps.StyleColor? = nil, colorPlaceLabelSelect: MapboxMaps.StyleColor? = nil, colorRoads: MapboxMaps.StyleColor? = nil, colorTrunks: MapboxMaps.StyleColor? = nil) -> MapboxMaps.MapStyle
+  public static func standardSatellite(lightPreset: MapboxMaps.StandardLightPreset? = nil, font: MapboxMaps.StandardFont? = nil, showPointOfInterestLabels: Swift.Bool? = nil, showTransitLabels: Swift.Bool? = nil, showPlaceLabels: Swift.Bool? = nil, showRoadLabels: Swift.Bool? = nil, showRoadsAndTransit: Swift.Bool? = nil, showPedestrianRoads: Swift.Bool? = nil, backgroundPointOfInterestLabels: MapboxMaps.StandardBackgroundPointOfInterestLabels? = nil, colorAdminBoundaries: MapboxMaps.StyleColor? = nil, colorModePointOfInterestLabels: MapboxMaps.StandardColorModePointOfInterestLabels? = nil, colorMotorways: MapboxMaps.StyleColor? = nil, colorPlaceLabelHighlight: MapboxMaps.StyleColor? = nil, colorPlaceLabels: MapboxMaps.StyleColor? = nil, colorPlaceLabelSelect: MapboxMaps.StyleColor? = nil, colorPointOfInterestLabels: MapboxMaps.StyleColor? = nil, colorRoadLabels: MapboxMaps.StyleColor? = nil, colorRoads: MapboxMaps.StyleColor? = nil, colorTrunks: MapboxMaps.StyleColor? = nil, densityPointOfInterestLabels: Swift.Double? = nil, fuelingStationModePointOfInterestLabels: MapboxMaps.StandardFuelingStationModePointOfInterestLabels? = nil, roadsBrightness: Swift.Double? = nil, showAdminBoundaries: Swift.Bool? = nil) -> MapboxMaps.MapStyle
   public static var standardSatellite: MapboxMaps.MapStyle {
     get
   }
@@ -2667,8 +2670,8 @@ extension MapboxMaps.StyleURI {
   }
 }
 public struct MapStyle : Swift.Equatable, Swift.Sendable {
-  public init(json: Swift.String, configuration: Turf.JSONObject? = nil)
-  public init(uri: MapboxMaps.StyleURI, configuration: Turf.JSONObject? = nil)
+  public init(json: Swift.String, configuration: Turf.JSONObject? = nil, reloadPolicy: MapboxMaps.StyleReloadPolicy? = nil)
+  public init(uri: MapboxMaps.StyleURI, configuration: Turf.JSONObject? = nil, reloadPolicy: MapboxMaps.StyleReloadPolicy? = nil)
   public static var streets: MapboxMaps.MapStyle {
     get
   }
@@ -2742,6 +2745,20 @@ extension MapboxMaps.MapView {
   @_Concurrency.MainActor @preconcurrency public var mapboxMap: MapboxMaps.MapboxMap! {
     get
   }
+  public struct DisplayState : Swift.OptionSet {
+    public static let foregroundActive: MapboxMaps.MapView.DisplayState
+    public static let foregroundInactive: MapboxMaps.MapView.DisplayState
+    public static let background: MapboxMaps.MapView.DisplayState
+    public let rawValue: Swift.Int
+    public init(rawValue: Swift.Int)
+    public typealias ArrayLiteralElement = MapboxMaps.MapView.DisplayState
+    public typealias Element = MapboxMaps.MapView.DisplayState
+    public typealias RawValue = Swift.Int
+  }
+  @_Concurrency.MainActor @preconcurrency public var displayState: MapboxMaps.MapView.DisplayState {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency public var gestures: MapboxMaps.GestureManager! {
     get
   }
@@ -2787,7 +2804,7 @@ extension MapboxMaps.MapView {
     set
   }
   @available(*, deprecated, renamed: "mapboxMap.cameraState")
-  @_Concurrency.MainActor @preconcurrency public var cameraState: MapboxMaps.CameraState {
+  @_Concurrency.MainActor @preconcurrency public var cameraState: MapboxCoreMaps.CameraState {
     get
   }
   @available(*, deprecated, renamed: "mapboxMap.anchor")
@@ -2822,6 +2839,7 @@ extension MapboxMaps.MapView {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
 }
 public struct MapViewAnnotation {
   public init<Content>(coordinate: CoreLocation.CLLocationCoordinate2D, @SwiftUICore.ViewBuilder content: @escaping () -> Content) where Content : SwiftUICore.View
@@ -2871,10 +2889,10 @@ public struct MapViewDebugOptions : Swift.OptionSet, Swift.Hashable, Swift.Senda
   }
   @objc deinit
   final public func triggerRepaint()
-  final public func loadStyle(_ styleURI: MapboxMaps.StyleURI, transition: MapboxMaps.TransitionOptions? = nil, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+  final public func loadStyle(_ styleURI: MapboxMaps.StyleURI, transition: MapboxMaps.TransitionOptions? = nil, reloadPolicy: MapboxMaps.StyleReloadPolicy? = nil, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   @available(*, deprecated, renamed: "loadStyle")
   final public func loadStyleURI(_ styleURI: MapboxMaps.StyleURI, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-  final public func loadStyle(_ JSON: Swift.String, transition: MapboxMaps.TransitionOptions? = nil, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
+  final public func loadStyle(_ JSON: Swift.String, transition: MapboxMaps.TransitionOptions? = nil, reloadPolicy: MapboxMaps.StyleReloadPolicy? = nil, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   @available(*, deprecated, renamed: "loadStyle")
   final public func loadStyleJSON(_ JSON: Swift.String, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   final public var prefetchZoomDelta: Swift.UInt8 {
@@ -2904,25 +2922,25 @@ public struct MapViewDebugOptions : Swift.OptionSet, Swift.Hashable, Swift.Senda
   final public func setConstrainMode(_ constrainMode: MapboxCoreMaps.ConstrainMode)
   final public func setViewportMode(_ viewportMode: MapboxCoreMaps.ViewportMode)
   @available(*, deprecated, renamed: "camera(for:camera:coordinatesPadding:maxZoom:offset:)", message: "Use camera(for:camera:coordinatesPadding:maxZoom:offset:) instead.")
-  final public func camera(for coordinateBounds: MapboxCoreMaps.CoordinateBounds, padding: UIKit.UIEdgeInsets?, bearing: Swift.Double?, pitch: Swift.Double?, maxZoom: Swift.Double?, offset: CoreFoundation.CGPoint?) -> MapboxMaps.CameraOptions
+  final public func camera(for coordinateBounds: MapboxCoreMaps.CoordinateBounds, padding: UIKit.UIEdgeInsets?, bearing: Swift.Double?, pitch: Swift.Double?, maxZoom: Swift.Double?, offset: CoreFoundation.CGPoint?) -> MapboxCoreMaps.CameraOptions
   @available(*, deprecated, renamed: "camera(for:camera:coordinatesPadding:maxZoom:offset:)", message: "Use camera(for:camera:coordinatesPadding:maxZoom:offset:) instead.")
-  final public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], padding: UIKit.UIEdgeInsets?, bearing: Swift.Double?, pitch: Swift.Double?) -> MapboxMaps.CameraOptions
-  final public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], camera: MapboxMaps.CameraOptions, rect: CoreFoundation.CGRect) -> MapboxMaps.CameraOptions
-  final public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], camera: MapboxMaps.CameraOptions, coordinatesPadding: UIKit.UIEdgeInsets?, maxZoom: Swift.Double?, offset: CoreFoundation.CGPoint?) throws -> MapboxMaps.CameraOptions
+  final public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], padding: UIKit.UIEdgeInsets?, bearing: Swift.Double?, pitch: Swift.Double?) -> MapboxCoreMaps.CameraOptions
+  final public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], camera: MapboxCoreMaps.CameraOptions, rect: CoreFoundation.CGRect) -> MapboxCoreMaps.CameraOptions
+  final public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], camera: MapboxCoreMaps.CameraOptions, coordinatesPadding: UIKit.UIEdgeInsets?, maxZoom: Swift.Double?, offset: CoreFoundation.CGPoint?) throws -> MapboxCoreMaps.CameraOptions
   @available(*, deprecated, renamed: "camera(for:camera:coordinatesPadding:maxZoom:offset:)", message: "Use camera(for:camera:coordinatesPadding:maxZoom:offset:) method instead.")
-  final public func camera(for geometry: MapboxMaps.Geometry, padding: UIKit.UIEdgeInsets, bearing: CoreFoundation.CGFloat?, pitch: CoreFoundation.CGFloat?) -> MapboxMaps.CameraOptions
-  final public func coordinateBounds(for camera: MapboxMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBounds
-  final public func coordinateBoundsUnwrapped(for camera: MapboxMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBounds
-  final public func coordinateBoundsZoom(for camera: MapboxMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBoundsZoom
-  final public func coordinateBoundsZoomUnwrapped(for camera: MapboxMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBoundsZoom
+  final public func camera(for geometry: MapboxMaps.Geometry, padding: UIKit.UIEdgeInsets, bearing: CoreFoundation.CGFloat?, pitch: CoreFoundation.CGFloat?) -> MapboxCoreMaps.CameraOptions
+  final public func coordinateBounds(for camera: MapboxCoreMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBounds
+  final public func coordinateBoundsUnwrapped(for camera: MapboxCoreMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBounds
+  final public func coordinateBoundsZoom(for camera: MapboxCoreMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBoundsZoom
+  final public func coordinateBoundsZoomUnwrapped(for camera: MapboxCoreMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBoundsZoom
   final public func coordinate(for point: CoreFoundation.CGPoint) -> CoreLocation.CLLocationCoordinate2D
   final public func point(for coordinate: CoreLocation.CLLocationCoordinate2D) -> CoreFoundation.CGPoint
   final public func points(for coordinates: [CoreLocation.CLLocationCoordinate2D]) -> [CoreFoundation.CGPoint]
   final public func coordinates(for points: [CoreFoundation.CGPoint]) -> [CoreLocation.CLLocationCoordinate2D]
   final public func coordinateInfo(for point: CoreFoundation.CGPoint) -> MapboxCoreMaps.CoordinateInfo
   final public func coordinatesInfo(for points: [CoreFoundation.CGPoint]) -> [MapboxCoreMaps.CoordinateInfo]
-  final public func setCamera(to cameraOptions: MapboxMaps.CameraOptions)
-  final public var cameraState: MapboxMaps.CameraState {
+  final public func setCamera(to cameraOptions: MapboxCoreMaps.CameraOptions)
+  final public var cameraState: MapboxCoreMaps.CameraState {
     get
   }
   final public var freeCameraOptions: MapboxCoreMaps.FreeCameraOptions {
@@ -2933,7 +2951,7 @@ public struct MapViewDebugOptions : Swift.OptionSet, Swift.Hashable, Swift.Senda
     get
   }
   final public func setCameraBounds(with options: MapboxMaps.CameraBoundsOptions) throws
-  final public func dragCameraOptions(from: CoreFoundation.CGPoint, to: CoreFoundation.CGPoint) -> MapboxMaps.CameraOptions
+  final public func dragCameraOptions(from: CoreFoundation.CGPoint, to: CoreFoundation.CGPoint) -> MapboxCoreMaps.CameraOptions
   final public var isAnimationInProgress: Swift.Bool {
     get
   }
@@ -3068,6 +3086,104 @@ public enum MapboxMapsOptions {
     set
   }
 }
+public struct ModelLayer : MapboxMaps.Layer, Swift.Equatable {
+  public var id: Swift.String
+  public let type: MapboxMaps.LayerType
+  public var filter: MapboxMaps.Exp?
+  public var source: Swift.String?
+  public var sourceLayer: Swift.String?
+  public var slot: MapboxMaps.Slot?
+  public var minZoom: Swift.Double?
+  public var maxZoom: Swift.Double?
+  public var visibility: MapboxMaps.Value<MapboxMaps.Visibility>
+  public var modelId: MapboxMaps.Value<Swift.String>?
+  public var modelAmbientOcclusionIntensity: MapboxMaps.Value<Swift.Double>?
+  public var modelAmbientOcclusionIntensityTransition: MapboxMaps.StyleTransition?
+  public var modelCastShadows: MapboxMaps.Value<Swift.Bool>?
+  public var modelColor: MapboxMaps.Value<MapboxMaps.StyleColor>?
+  public var modelColorTransition: MapboxMaps.StyleTransition?
+  public var modelColorMixIntensity: MapboxMaps.Value<Swift.Double>?
+  public var modelColorMixIntensityTransition: MapboxMaps.StyleTransition?
+  public var modelCutoffFadeRange: MapboxMaps.Value<Swift.Double>?
+  public var modelElevationReference: MapboxMaps.Value<MapboxMaps.ModelElevationReference>?
+  public var modelEmissiveStrength: MapboxMaps.Value<Swift.Double>?
+  public var modelEmissiveStrengthTransition: MapboxMaps.StyleTransition?
+  public var modelHeightBasedEmissiveStrengthMultiplier: MapboxMaps.Value<[Swift.Double]>?
+  public var modelHeightBasedEmissiveStrengthMultiplierTransition: MapboxMaps.StyleTransition?
+  public var modelOpacity: MapboxMaps.Value<Swift.Double>?
+  public var modelOpacityTransition: MapboxMaps.StyleTransition?
+  public var modelReceiveShadows: MapboxMaps.Value<Swift.Bool>?
+  public var modelRotation: MapboxMaps.Value<[Swift.Double]>?
+  public var modelRotationTransition: MapboxMaps.StyleTransition?
+  public var modelRoughness: MapboxMaps.Value<Swift.Double>?
+  public var modelRoughnessTransition: MapboxMaps.StyleTransition?
+  public var modelScale: MapboxMaps.Value<[Swift.Double]>?
+  public var modelScaleTransition: MapboxMaps.StyleTransition?
+  public var modelScaleMode: MapboxMaps.Value<MapboxMaps.ModelScaleMode>?
+  public var modelTranslation: MapboxMaps.Value<[Swift.Double]>?
+  public var modelTranslationTransition: MapboxMaps.StyleTransition?
+  public var modelType: MapboxMaps.Value<MapboxMaps.ModelType>?
+  public init(id: Swift.String, source: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public static func == (a: MapboxMaps.ModelLayer, b: MapboxMaps.ModelLayer) -> Swift.Bool
+}
+extension MapboxMaps.ModelLayer {
+  public func filter(_ newValue: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func source(_ newValue: Swift.String) -> MapboxMaps.ModelLayer
+  public func sourceLayer(_ newValue: Swift.String) -> MapboxMaps.ModelLayer
+  public func slot(_ newValue: MapboxMaps.Slot?) -> MapboxMaps.ModelLayer
+  public func minZoom(_ newValue: Swift.Double) -> MapboxMaps.ModelLayer
+  public func maxZoom(_ newValue: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelId(_ constant: Swift.String) -> MapboxMaps.ModelLayer
+  public func modelId(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelAmbientOcclusionIntensity(_ constant: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelAmbientOcclusionIntensityTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelAmbientOcclusionIntensity(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelCastShadows(_ constant: Swift.Bool) -> MapboxMaps.ModelLayer
+  public func modelCastShadows(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelColor(_ constant: MapboxMaps.StyleColor) -> MapboxMaps.ModelLayer
+  public func modelColor(_ color: UIKit.UIColor) -> MapboxMaps.ModelLayer
+  public func modelColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelColor(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelColorMixIntensity(_ constant: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelColorMixIntensityTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelColorMixIntensity(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelCutoffFadeRange(_ constant: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelCutoffFadeRange(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelElevationReference(_ constant: MapboxMaps.ModelElevationReference) -> MapboxMaps.ModelLayer
+  public func modelElevationReference(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelEmissiveStrength(_ constant: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelEmissiveStrengthTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelEmissiveStrength(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelHeightBasedEmissiveStrengthMultiplier(gradientBegin: Swift.Double, gradientEnd: Swift.Double, valueAtBegin: Swift.Double, valueAtEnd: Swift.Double, gradientCurvePower: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelHeightBasedEmissiveStrengthMultiplierTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelHeightBasedEmissiveStrengthMultiplier(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelOpacity(_ constant: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelOpacityTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelOpacity(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelReceiveShadows(_ constant: Swift.Bool) -> MapboxMaps.ModelLayer
+  public func modelReceiveShadows(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelRotation(x: Swift.Double, y: Swift.Double, z: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelRotationTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelRotation(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelRoughness(_ constant: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelRoughnessTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelRoughness(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelScale(x: Swift.Double, y: Swift.Double, z: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelScaleTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelScale(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelScaleMode(_ constant: MapboxMaps.ModelScaleMode) -> MapboxMaps.ModelLayer
+  public func modelScaleMode(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelTranslation(x: Swift.Double, y: Swift.Double, z: Swift.Double) -> MapboxMaps.ModelLayer
+  public func modelTranslationTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.ModelLayer
+  public func modelTranslation(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+  public func modelType(_ constant: MapboxMaps.ModelType) -> MapboxMaps.ModelLayer
+  public func modelType(_ expression: MapboxMaps.Exp) -> MapboxMaps.ModelLayer
+}
+extension MapboxMaps.ModelLayer : MapboxMaps.MapStyleContent {
+  public typealias Body = Swift.Never
+}
 public struct Model : Swift.Equatable, Swift.Codable, Swift.Sendable {
   public var id: Swift.String?
   public var uri: Foundation.URL?
@@ -3148,11 +3264,27 @@ public struct OrnamentOptions : Swift.Equatable, Swift.Sendable {
   public static func == (a: MapboxMaps.OrnamentOptions, b: MapboxMaps.OrnamentOptions) -> Swift.Bool
 }
 public struct ScaleBarViewOptions : Swift.Equatable, Swift.Sendable {
+  public struct Units : Swift.RawRepresentable, Swift.Equatable, Swift.Sendable {
+    public let rawValue: Swift.String
+    public init(rawValue: Swift.String)
+    public static let imperial: MapboxMaps.ScaleBarViewOptions.Units
+    public static let metric: MapboxMaps.ScaleBarViewOptions.Units
+    public static let nautical: MapboxMaps.ScaleBarViewOptions.Units
+    public typealias RawValue = Swift.String
+  }
   public var position: MapboxMaps.OrnamentPosition
   public var margins: CoreFoundation.CGPoint
   public var visibility: MapboxMaps.OrnamentVisibility
-  public var useMetricUnits: Swift.Bool
-  public init(position: MapboxMaps.OrnamentPosition = .topLeading, margins: CoreFoundation.CGPoint = .init(x: 8.0, y: 8.0), visibility: MapboxMaps.OrnamentVisibility = .adaptive, useMetricUnits: Swift.Bool = Locale.current.usesMetricSystem)
+  @available(*, deprecated, renamed: "units", message: "Use `units` instead.")
+  public var useMetricUnits: Swift.Bool {
+    get
+    set
+  }
+  public var units: MapboxMaps.ScaleBarViewOptions.Units {
+    get
+    set
+  }
+  public init(position: MapboxMaps.OrnamentPosition = .topLeading, margins: CoreFoundation.CGPoint = .init(x: 8.0, y: 8.0), visibility: MapboxMaps.OrnamentVisibility = .adaptive, useMetricUnits: Swift.Bool = Locale.current.usesMetricSystem, units: MapboxMaps.ScaleBarViewOptions.Units? = nil)
   public static func == (a: MapboxMaps.ScaleBarViewOptions, b: MapboxMaps.ScaleBarViewOptions) -> Swift.Bool
 }
 public struct CompassViewOptions : Swift.Equatable, Swift.Sendable {
@@ -3166,7 +3298,8 @@ public struct CompassViewOptions : Swift.Equatable, Swift.Sendable {
 public struct AttributionButtonOptions : Swift.Equatable, Swift.Sendable {
   public var position: MapboxMaps.OrnamentPosition
   public var margins: CoreFoundation.CGPoint
-  public init(position: MapboxMaps.OrnamentPosition = .bottomTrailing, margins: CoreFoundation.CGPoint = .init(x: 8.0, y: 8.0))
+  public var tintColor: UIKit.UIColor?
+  public init(position: MapboxMaps.OrnamentPosition = .bottomTrailing, margins: CoreFoundation.CGPoint = .init(x: 8.0, y: 8.0), tintColor: UIKit.UIColor? = nil)
   public static func == (a: MapboxMaps.AttributionButtonOptions, b: MapboxMaps.AttributionButtonOptions) -> Swift.Bool
 }
 public struct LogoViewOptions : Swift.Equatable, Swift.Sendable {
@@ -3227,7 +3360,7 @@ public enum OrnamentVisibility : Swift.String, Swift.Equatable, Swift.Sendable {
   @objc deinit
 }
 extension MapboxMaps.OverviewViewportState : MapboxMaps.ViewportState {
-  final public func observeDataSource(with handler: @escaping (MapboxMaps.CameraOptions) -> Swift.Bool) -> any MapboxCommon.Cancelable
+  final public func observeDataSource(with handler: @escaping (MapboxCoreMaps.CameraOptions) -> Swift.Bool) -> any MapboxCommon.Cancelable
   final public func startUpdatingCamera()
   final public func stopUpdatingCamera()
 }
@@ -3424,6 +3557,7 @@ extension MapboxMaps.PointAnnotation {
   public func textOpacity(_ newValue: Swift.Double) -> MapboxMaps.PointAnnotation
   public func image(_ image: MapboxMaps.PointAnnotation.Image?) -> MapboxMaps.PointAnnotation
   public func image(named name: Swift.String) -> MapboxMaps.PointAnnotation
+  public func image(named name: Swift.String, sdf: Swift.Bool) -> MapboxMaps.PointAnnotation
 }
 extension MapboxMaps.PointAnnotation : MapboxMaps.MapContent {
   public typealias Body = Swift.Never
@@ -3483,6 +3617,9 @@ public struct PointAnnotationGroup<Data, ID> where Data : Swift.RandomAccessColl
   public func iconColor(_ color: UIKit.UIColor) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconColor(_ newValue: MapboxMaps.StyleColor) -> MapboxMaps.PointAnnotationGroup<Data, ID>
+  public func iconColorBrightnessMax(_ newValue: Swift.Double) -> MapboxMaps.PointAnnotationGroup<Data, ID>
+  public func iconColorBrightnessMin(_ newValue: Swift.Double) -> MapboxMaps.PointAnnotationGroup<Data, ID>
+  public func iconColorContrast(_ newValue: Swift.Double) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconColorSaturationTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconColorSaturation(_ newValue: Swift.Double) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconEmissiveStrengthTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PointAnnotationGroup<Data, ID>
@@ -3503,6 +3640,7 @@ public struct PointAnnotationGroup<Data, ID> where Data : Swift.RandomAccessColl
   public func iconTranslateTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconTranslate(x: Swift.Double, y: Swift.Double) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func iconTranslateAnchor(_ newValue: MapboxMaps.IconTranslateAnchor) -> MapboxMaps.PointAnnotationGroup<Data, ID>
+  public func occlusionOpacityMode(_ newValue: MapboxMaps.OcclusionOpacityMode) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func textColor(_ color: UIKit.UIColor) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func textColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PointAnnotationGroup<Data, ID>
   public func textColor(_ newValue: MapboxMaps.StyleColor) -> MapboxMaps.PointAnnotationGroup<Data, ID>
@@ -3738,6 +3876,18 @@ extension MapboxMaps.PointAnnotationGroup : MapboxMaps.MapContent {
     get
     set
   }
+  public var iconColorBrightnessMax: Swift.Double? {
+    get
+    set
+  }
+  public var iconColorBrightnessMin: Swift.Double? {
+    get
+    set
+  }
+  public var iconColorContrast: Swift.Double? {
+    get
+    set
+  }
   public var iconColorSaturationTransition: MapboxMaps.StyleTransition? {
     get
     set
@@ -3811,6 +3961,10 @@ extension MapboxMaps.PointAnnotationGroup : MapboxMaps.MapContent {
     set
   }
   public var iconTranslateAnchor: MapboxMaps.IconTranslateAnchor? {
+    get
+    set
+  }
+  public var occlusionOpacityMode: MapboxMaps.OcclusionOpacityMode? {
     get
     set
   }
@@ -3974,6 +4128,7 @@ public struct PolygonAnnotationGroup<Data, ID> where Data : Swift.RandomAccessCo
   public func fillOutlineColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
   public func fillOutlineColor(_ newValue: MapboxMaps.StyleColor) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
   public func fillPattern(_ newValue: Swift.String) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
+  public func fillPatternCrossFade(_ newValue: Swift.Double) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
   public func fillTranslateTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
   public func fillTranslate(x: Swift.Double, y: Swift.Double) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
   public func fillTranslateAnchor(_ newValue: MapboxMaps.FillTranslateAnchor) -> MapboxMaps.PolygonAnnotationGroup<Data, ID>
@@ -4050,6 +4205,10 @@ extension MapboxMaps.PolygonAnnotationGroup : MapboxMaps.MapContent {
     get
     set
   }
+  public var fillPatternCrossFade: Swift.Double? {
+    get
+    set
+  }
   public var fillTranslateTransition: MapboxMaps.StyleTransition? {
     get
     set
@@ -4116,6 +4275,8 @@ public struct PolylineAnnotation : MapboxMaps.Annotation, Swift.Equatable {
   public var lineBorderWidth: Swift.Double?
   public var lineColorTransition: MapboxMaps.StyleTransition?
   public var lineColor: MapboxMaps.StyleColor?
+  public var lineEmissiveStrengthTransition: MapboxMaps.StyleTransition?
+  public var lineEmissiveStrength: Swift.Double?
   public var lineGapWidthTransition: MapboxMaps.StyleTransition?
   public var lineGapWidth: Swift.Double?
   public var lineOffsetTransition: MapboxMaps.StyleTransition?
@@ -4146,6 +4307,8 @@ extension MapboxMaps.PolylineAnnotation {
   public func lineColor(_ color: UIKit.UIColor) -> MapboxMaps.PolylineAnnotation
   public func lineColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolylineAnnotation
   public func lineColor(_ newValue: MapboxMaps.StyleColor) -> MapboxMaps.PolylineAnnotation
+  public func lineEmissiveStrengthTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolylineAnnotation
+  public func lineEmissiveStrength(_ newValue: Swift.Double) -> MapboxMaps.PolylineAnnotation
   public func lineGapWidthTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolylineAnnotation
   public func lineGapWidth(_ newValue: Swift.Double) -> MapboxMaps.PolylineAnnotation
   public func lineOffsetTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolylineAnnotation
@@ -4192,6 +4355,7 @@ public struct PolylineAnnotationGroup<Data, ID> where Data : Swift.RandomAccessC
   public func lineOpacityTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
   public func lineOpacity(_ newValue: Swift.Double) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
   public func linePattern(_ newValue: Swift.String) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
+  public func linePatternCrossFade(_ newValue: Swift.Double) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
   public func lineTranslateTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
   public func lineTranslate(x: Swift.Double, y: Swift.Double) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
   public func lineTranslateAnchor(_ newValue: MapboxMaps.LineTranslateAnchor) -> MapboxMaps.PolylineAnnotationGroup<Data, ID>
@@ -4332,6 +4496,10 @@ extension MapboxMaps.PolylineAnnotationGroup : MapboxMaps.MapContent {
     set
   }
   public var linePattern: Swift.String? {
+    get
+    set
+  }
+  public var linePatternCrossFade: Swift.Double? {
     get
     set
   }
@@ -4563,6 +4731,13 @@ public struct IconTranslateAnchor : Swift.RawRepresentable, Swift.Codable, Swift
   public static let viewport: MapboxMaps.IconTranslateAnchor
   public typealias RawValue = Swift.String
 }
+public struct OcclusionOpacityMode : Swift.RawRepresentable, Swift.Codable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let anchor: MapboxMaps.OcclusionOpacityMode
+  public static let pixel: MapboxMaps.OcclusionOpacityMode
+  public typealias RawValue = Swift.String
+}
 public struct TextTranslateAnchor : Swift.RawRepresentable, Swift.Codable, Swift.Hashable, Swift.Sendable {
   public let rawValue: Swift.String
   public init(rawValue: Swift.String)
@@ -4610,6 +4785,28 @@ public struct HillshadeIlluminationAnchor : Swift.RawRepresentable, Swift.Codabl
   public init(rawValue: Swift.String)
   public static let map: MapboxMaps.HillshadeIlluminationAnchor
   public static let viewport: MapboxMaps.HillshadeIlluminationAnchor
+  public typealias RawValue = Swift.String
+}
+public struct ModelElevationReference : Swift.RawRepresentable, Swift.Codable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let sea: MapboxMaps.ModelElevationReference
+  public static let ground: MapboxMaps.ModelElevationReference
+  public static let hdRoadMarkup: MapboxMaps.ModelElevationReference
+  public typealias RawValue = Swift.String
+}
+public struct ModelScaleMode : Swift.RawRepresentable, Swift.Codable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let map: MapboxMaps.ModelScaleMode
+  public static let viewport: MapboxMaps.ModelScaleMode
+  public typealias RawValue = Swift.String
+}
+public struct ModelType : Swift.RawRepresentable, Swift.Codable, Swift.Hashable, Swift.Sendable {
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public static let common3d: MapboxMaps.ModelType
+  public static let locationIndicator: MapboxMaps.ModelType
   public typealias RawValue = Swift.String
 }
 public struct SkyType : Swift.RawRepresentable, Swift.Codable, Swift.Hashable, Swift.Sendable {
@@ -4682,8 +4879,8 @@ public struct Puck3D : MapboxMaps.MapContent {
 }
 public struct PuckRenderingData : Swift.Equatable {
   public var location: MapboxCommon.Location
-  public var heading: MapboxMaps.Heading?
-  public init(location: MapboxCommon.Location, heading: MapboxMaps.Heading? = nil)
+  public var heading: MapboxCommon.Heading?
+  public init(location: MapboxCommon.Location, heading: MapboxCommon.Heading? = nil)
   public static func == (a: MapboxMaps.PuckRenderingData, b: MapboxMaps.PuckRenderingData) -> Swift.Bool
 }
 public enum PuckType : Swift.Equatable {
@@ -5062,18 +5259,18 @@ public typealias SnapshotOverlayHandler = ((MapboxMaps.SnapshotOverlay) -> Swift
     get
     set(newSize)
   }
-  public var cameraState: MapboxMaps.CameraState {
+  public var cameraState: MapboxCoreMaps.CameraState {
     get
   }
-  public func setCamera(to cameraOptions: MapboxMaps.CameraOptions)
+  public func setCamera(to cameraOptions: MapboxCoreMaps.CameraOptions)
   public func start(overlayHandler: MapboxMaps.SnapshotOverlayHandler?, completion: @escaping (Swift.Result<UIKit.UIImage, MapboxMaps.Snapshotter.SnapshotError>) -> Swift.Void)
   public func cancel()
   public enum SnapshotError : Swift.Error, Swift.Sendable {
     case unknown
     case snapshotFailed(reason: Swift.String?)
   }
-  public func coordinateBounds(for camera: MapboxMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBounds
-  public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], padding: UIKit.UIEdgeInsets?, bearing: Swift.Double?, pitch: Swift.Double?) -> MapboxMaps.CameraOptions
+  public func coordinateBounds(for camera: MapboxCoreMaps.CameraOptions) -> MapboxCoreMaps.CoordinateBounds
+  public func camera(for coordinates: [CoreLocation.CLLocationCoordinate2D], padding: UIKit.UIEdgeInsets?, bearing: Swift.Double?, pitch: Swift.Double?) -> MapboxCoreMaps.CameraOptions
   @objc deinit
 }
 extension MapboxMaps.Snapshotter {
@@ -5187,6 +5384,58 @@ extension MapboxMaps.FeaturesetDescriptor where FeatureType == MapboxMaps.Standa
     get
   }
   public static func standardBuildings(importId: Swift.String) -> MapboxMaps.FeaturesetDescriptor<FeatureType>
+}
+final public class StandardLandmarkIconsFeature : MapboxMaps.FeaturesetFeatureType {
+  public struct State : Swift.Codable, Swift.Equatable {
+    public init()
+    public static func == (a: MapboxMaps.StandardLandmarkIconsFeature.State, b: MapboxMaps.StandardLandmarkIconsFeature.State) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct StateKey : Swift.CustomStringConvertible {
+    public let description: Swift.String
+  }
+  final public var landmarkId: Swift.String? {
+    get
+  }
+  final public var name: Swift.String? {
+    get
+  }
+  final public var nameEn: Swift.String? {
+    get
+  }
+  final public var shortName: Swift.String? {
+    get
+  }
+  final public var shortNameEn: Swift.String? {
+    get
+  }
+  final public var type: Swift.String? {
+    get
+  }
+  final public var id: MapboxMaps.FeaturesetFeatureId? {
+    get
+  }
+  final public var featureset: MapboxMaps.FeaturesetDescriptor<MapboxMaps.StandardLandmarkIconsFeature> {
+    get
+  }
+  final public var state: MapboxMaps.StandardLandmarkIconsFeature.State {
+    get
+  }
+  final public var geometry: MapboxMaps.Geometry {
+    get
+  }
+  final public var properties: Turf.JSONObject {
+    get
+  }
+  public init?(from other: MapboxMaps.FeaturesetFeature)
+  @objc deinit
+}
+extension MapboxMaps.FeaturesetDescriptor where FeatureType == MapboxMaps.StandardLandmarkIconsFeature {
+  public static var standardLandmarkIcons: MapboxMaps.FeaturesetDescriptor<MapboxMaps.StandardLandmarkIconsFeature> {
+    get
+  }
+  public static func standardLandmarkIcons(importId: Swift.String) -> MapboxMaps.FeaturesetDescriptor<FeatureType>
 }
 final public class StandardPlaceLabelsFeature : MapboxMaps.FeaturesetFeatureType {
   public struct State : Swift.Codable, Swift.Equatable {
@@ -5316,7 +5565,7 @@ extension MapboxMaps.FeaturesetDescriptor where FeatureType == MapboxMaps.Standa
     get
   }
   @available(*, deprecated, renamed: "styleDefaultCamera")
-  public var defaultCamera: MapboxMaps.CameraOptions {
+  public var defaultCamera: MapboxCoreMaps.CameraOptions {
     get
   }
 }
@@ -5437,7 +5686,7 @@ public struct StyleImport : Swift.Sendable {
     set
   }
   public func load(mapStyle: MapboxMaps.MapStyle, transition: MapboxMaps.TransitionOptions? = nil, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
-  public var styleDefaultCamera: MapboxMaps.CameraOptions {
+  public var styleDefaultCamera: MapboxCoreMaps.CameraOptions {
     get
   }
   public var styleTransition: MapboxMaps.TransitionOptions {
@@ -5559,6 +5808,11 @@ public struct StyleProjection : Swift.Hashable, Swift.Codable, MapboxMaps.StyleE
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct StyleReloadPolicy : Swift.Equatable, Swift.Sendable {
+  public static let onlyIfChanged: MapboxMaps.StyleReloadPolicy
+  public static let always: MapboxMaps.StyleReloadPolicy
+  public static func == (a: MapboxMaps.StyleReloadPolicy, b: MapboxMaps.StyleReloadPolicy) -> Swift.Bool
+}
 public struct StyleURI : Swift.Hashable, Swift.RawRepresentable, Swift.Sendable {
   public typealias RawValue = Swift.String
   public let rawValue: Swift.String
@@ -5625,6 +5879,9 @@ public struct SymbolLayer : MapboxMaps.Layer, Swift.Equatable {
   public var textWritingMode: MapboxMaps.Value<[MapboxMaps.TextWritingMode]>?
   public var iconColor: MapboxMaps.Value<MapboxMaps.StyleColor>?
   public var iconColorTransition: MapboxMaps.StyleTransition?
+  public var iconColorBrightnessMax: MapboxMaps.Value<Swift.Double>?
+  public var iconColorBrightnessMin: MapboxMaps.Value<Swift.Double>?
+  public var iconColorContrast: MapboxMaps.Value<Swift.Double>?
   public var iconColorSaturation: MapboxMaps.Value<Swift.Double>?
   public var iconColorSaturationTransition: MapboxMaps.StyleTransition?
   public var iconEmissiveStrength: MapboxMaps.Value<Swift.Double>?
@@ -5644,6 +5901,7 @@ public struct SymbolLayer : MapboxMaps.Layer, Swift.Equatable {
   public var iconTranslate: MapboxMaps.Value<[Swift.Double]>?
   public var iconTranslateTransition: MapboxMaps.StyleTransition?
   public var iconTranslateAnchor: MapboxMaps.Value<MapboxMaps.IconTranslateAnchor>?
+  public var occlusionOpacityMode: MapboxMaps.Value<MapboxMaps.OcclusionOpacityMode>?
   public var textColor: MapboxMaps.Value<MapboxMaps.StyleColor>?
   public var textColorTransition: MapboxMaps.StyleTransition?
   public var textEmissiveStrength: MapboxMaps.Value<Swift.Double>?
@@ -5761,6 +6019,12 @@ extension MapboxMaps.SymbolLayer {
   public func iconColor(_ color: UIKit.UIColor) -> MapboxMaps.SymbolLayer
   public func iconColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.SymbolLayer
   public func iconColor(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
+  public func iconColorBrightnessMax(_ constant: Swift.Double) -> MapboxMaps.SymbolLayer
+  public func iconColorBrightnessMax(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
+  public func iconColorBrightnessMin(_ constant: Swift.Double) -> MapboxMaps.SymbolLayer
+  public func iconColorBrightnessMin(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
+  public func iconColorContrast(_ constant: Swift.Double) -> MapboxMaps.SymbolLayer
+  public func iconColorContrast(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
   public func iconColorSaturation(_ constant: Swift.Double) -> MapboxMaps.SymbolLayer
   public func iconColorSaturationTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.SymbolLayer
   public func iconColorSaturation(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
@@ -5791,6 +6055,8 @@ extension MapboxMaps.SymbolLayer {
   public func iconTranslate(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
   public func iconTranslateAnchor(_ constant: MapboxMaps.IconTranslateAnchor) -> MapboxMaps.SymbolLayer
   public func iconTranslateAnchor(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
+  public func occlusionOpacityMode(_ constant: MapboxMaps.OcclusionOpacityMode) -> MapboxMaps.SymbolLayer
+  public func occlusionOpacityMode(_ expression: MapboxMaps.Exp) -> MapboxMaps.SymbolLayer
   public func textColor(_ constant: MapboxMaps.StyleColor) -> MapboxMaps.SymbolLayer
   public func textColor(_ color: UIKit.UIColor) -> MapboxMaps.SymbolLayer
   public func textColorTransition(_ transition: MapboxMaps.StyleTransition) -> MapboxMaps.SymbolLayer
@@ -6087,9 +6353,9 @@ public protocol ViewAnnotationUpdateObserver : AnyObject {
   final public func addViewAnnotationUpdateObserver(_ observer: any MapboxMaps.ViewAnnotationUpdateObserver)
   @available(*, deprecated, message: "Use ViewAnnotation")
   final public func removeViewAnnotationUpdateObserver(_ observer: any MapboxMaps.ViewAnnotationUpdateObserver)
-  final public func camera(forAnnotations annotations: [MapboxMaps.ViewAnnotation], padding: UIKit.UIEdgeInsets = .zero, bearing: CoreFoundation.CGFloat? = nil, pitch: CoreFoundation.CGFloat? = nil) -> MapboxMaps.CameraOptions?
+  final public func camera(forAnnotations annotations: [MapboxMaps.ViewAnnotation], padding: UIKit.UIEdgeInsets = .zero, bearing: CoreFoundation.CGFloat? = nil, pitch: CoreFoundation.CGFloat? = nil) -> MapboxCoreMaps.CameraOptions?
   @available(*, deprecated, message: "Use camera(forAnnotations:...) that works with array of ViewAnnotation")
-  final public func camera(forAnnotations identifiers: [Swift.String], padding: UIKit.UIEdgeInsets = .zero, bearing: CoreFoundation.CGFloat? = nil, pitch: CoreFoundation.CGFloat? = nil) -> MapboxMaps.CameraOptions?
+  final public func camera(forAnnotations identifiers: [Swift.String], padding: UIKit.UIEdgeInsets = .zero, bearing: CoreFoundation.CGFloat? = nil, pitch: CoreFoundation.CGFloat? = nil) -> MapboxCoreMaps.CameraOptions?
 }
 public struct ViewAnnotationOptions : Swift.Equatable {
   @available(*, unavailable, message: "Use annotatedFeature instead.")
@@ -6171,7 +6437,7 @@ public struct Viewport : Swift.Equatable, Swift.Sendable {
   public var isStyleDefault: Swift.Bool {
     get
   }
-  public var camera: MapboxMaps.CameraOptions? {
+  public var camera: MapboxCoreMaps.CameraOptions? {
     get
   }
   public var overview: MapboxMaps.Viewport.OverviewOptions? {
@@ -6231,7 +6497,7 @@ public struct ViewportOptions : Swift.Hashable, Swift.Sendable {
   }
 }
 public protocol ViewportState : AnyObject {
-  func observeDataSource(with handler: @escaping (_ camera: MapboxMaps.CameraOptions) -> Swift.Bool) -> any MapboxCommon.Cancelable
+  func observeDataSource(with handler: @escaping (_ camera: MapboxCoreMaps.CameraOptions) -> Swift.Bool) -> any MapboxCommon.Cancelable
   func startUpdatingCamera()
   func stopUpdatingCamera()
 }

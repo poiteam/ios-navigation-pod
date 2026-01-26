@@ -4,6 +4,11 @@
 
 @protocol MBXBatteryMonitorInterface;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A factory class used to instantiate a platform-specific interface
+ * to obtain the battery monitor.
+ */
 NS_SWIFT_NAME(BatteryMonitorFactory)
 __attribute__((visibility ("default")))
 @interface MBXBatteryMonitorFactory : NSObject
@@ -14,7 +19,21 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A method used to instantiate platform-specific battery monitor.
+ *
+ * @return A device's battery monitor.
+ */
 + (nonnull id<MBXBatteryMonitorInterface>)getOrCreate __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Releases the implementation of the Battery Monitor API.
+ *
+ * The strong reference from the factory to a custom implementation will be released. This can be
+ * used to release the implementation once it is no longer needed. It may otherwise be kept until
+ * the end of the program.
+ */
 + (void)reset;
 + (void)setUserDefinedForCustom:(nonnull id<MBXBatteryMonitorInterface>)custom;
 

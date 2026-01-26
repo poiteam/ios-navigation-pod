@@ -1,0 +1,43 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+
+@protocol MBXRegionsMonitorService;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Region monitor service factory.
+ *
+ * This class is used to instantiate a platform-specific implementation
+ * of region monitor service.
+ *
+ */
+NS_SWIFT_NAME(RegionsMonitorServiceFactory)
+__attribute__((visibility ("default")))
+@interface MBXRegionsMonitorServiceFactory : NSObject
+
+// This class provides custom init which should be called
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+// This class provides custom init which should be called
++ (nonnull instancetype)new NS_UNAVAILABLE;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Releases the implementation of the Region monitor service.
+ *
+ * The strong reference from the factory to a custom Region monitor service implementation will be released. This can be
+ * used to release the Region monitor service implementation once it is no longer needed. It may otherwise be kept until
+ * the end of the program.
+ */
++ (void)reset;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns an instance of the Region monitor service.
+ *
+ * RegionsMonitorService is allocated on the first call of after a call to reset().
+ * It is kept until a call to reset() releases it.
+ */
++ (nonnull id<MBXRegionsMonitorService>)getOrCreate __attribute((ns_returns_retained));
+
+@end

@@ -2,8 +2,22 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An interface for listening to the device's battery status.
+ */
 NS_SWIFT_NAME(BatteryMonitorObserver)
 @protocol MBXBatteryMonitorObserver
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when battery charging status changes.
+ * @param isCharging: True if the battery is charging, false otherwise.
+ */
 - (void)onBatteryChargingStatusChangedForIsCharging:(BOOL)isCharging;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when an error occurs while attempting to obtain the battery status.
+ * @param error An error accompanying the battery status change.
+ */
 - (void)onBatteryStatusErrorForError:(nonnull NSString *)error;
 @end

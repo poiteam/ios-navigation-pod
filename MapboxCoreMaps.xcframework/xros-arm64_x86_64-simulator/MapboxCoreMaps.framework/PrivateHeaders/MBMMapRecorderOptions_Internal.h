@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Options for recording.
+ */
 NS_SWIFT_NAME(MapRecorderOptions)
 __attribute__((visibility ("default")))
 @interface MBMMapRecorderOptions : NSObject

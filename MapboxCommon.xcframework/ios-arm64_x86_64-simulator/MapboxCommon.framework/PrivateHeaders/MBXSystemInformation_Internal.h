@@ -1,8 +1,15 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXPlatform_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXPlatform);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Record which holds information about the system and application where
+ *        the current SDK is used, like platform name or application
+ *        package. Not all are provided on all platforms.
+ */
 NS_SWIFT_NAME(SystemInformation)
 __attribute__((visibility ("default")))
 @interface MBXSystemInformation : NSObject
@@ -47,18 +54,109 @@ __attribute__((visibility ("default")))
  */
 - (uint64_t)totalMemory;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The platform.
+ */
 @property (nonatomic, readonly) MBXPlatform platform;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Name of the platform where SDK is currently running.
+ * Possible values: "Linux", "Android Q", "iOS", etc.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *platformName;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Version of the platform.
+ * Possible values: Linux: "Ubuntu 20.04", Android: "29", iOS: "1.2"
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *platformVersion;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Name of the application which is using the SDK.
+ * Possible value: Linux: "executable name", Android "TestApp", iOS: "MapboxCommonTestApp"
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *applicationName;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Application package name if applicable.
+ * Possible value: Android "com.mapbox.common.testapp", iOS: "com.mapbox.common.app"
+ */
 @property (nonatomic, readonly, nullable, copy) NSString *applicationPackage;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Semver compliant application version.
+ * Possible value: "1.0.0"
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *applicationVersion;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Usually a positive integer used as an internal version number.
+ * This number is used only to determine whether one version is more recent than another,
+ * with higher numbers indicating more recent versions.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *applicationBuildNumber;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Device model name where SDK is currently running.
+ * Possible value: Linux: "" Android: "generic_x86" iOS: "iPhone 12"
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *device;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Architecture on which the SDK is currently running or what is what compiled for.
+ * Possible values: Linux: "x86_64" Android: "armeabi-v7a" iOS: "x86_64"
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *architecture;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Additional informarion about device.
+ * Possible value iOS: "Simulator" Android: "Pixel 5", "Android SDK built for x86", "sdk_gphone64_arm64"
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *deviceInfo;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Filesystem path that SDK can use for reading/writing operations. That
+ * path should ideally be inside the application sandbox, so other
+ * applications running on the same operating system won't have
+ * access to it. This path contains Mapbox specific folder at the end
+ * so the users of this API can avoid creating Mapbox specific folder and care only about
+ * a service specific folder/file structure.
+ * Please keep in mind that on iOS platform this path is under `Application Support` directory, so
+ * all files and dirs going there are counting as part of an iCloud quota.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *applicationDataPath;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Flag which indicates if the SDK is currently running on
+ * a physical device or on simulator/emulator.
+ */
 @property (nonatomic, readonly) BOOL isPhysicalDevice;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The absolute path to the application-specific cache directory on the filesystem.
+ * Generally speaking, the application does not require cache data to operate properly,
+ * but it can use cache data to improve performance. Examples of cache data include
+ * (but are not limited to) database cache files and transient, downloadable content.
+ * Note that the system may delete the cache directory to free up disk space,
+ * so SDKs/Apps must be able to re-create or download these files as needed.
+ * This path contains Mapbox specific folder at the end so the users of this API
+ * can avoid creating Mapbox specific folder and care only about a service-specific
+ * folder/file structure.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *applicationCachePath;
+
 
 @end

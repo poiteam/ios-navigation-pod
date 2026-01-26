@@ -5,10 +5,35 @@
 @class MBMInteractionContext;
 @class MBMQueriedFeature;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An interaction handling interface.
+ */
 NS_SWIFT_NAME(InteractionHandler)
 @protocol MBMInteractionHandler
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when interaction begins.
+ * For `Click` and `LongClick` only the handleBegin interaction is called.
+ *
+ * This method will be called with each potential feature that handles that interaction.
+ * If `true` is returned, the interaction is treated as handled, meaning that no other features will handle it.
+ * If `false` is returned, the features that rendered below the feature will receive `handleBegin`.
+ *
+ * @param feature A feature that handleds the interaction. It can be null if interaction is added to the map itsef (without a featureset).
+ * @param context Context of interaction.
+ * @return A `bool` value representing if the interaction was handled.
+ */
 - (BOOL)handleBeginForFeature:(nullable MBMQueriedFeature *)feature
                       context:(nonnull MBMInteractionContext *)context;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when continous interaction (e.g. `Drag`) updates the position.
+ */
 - (void)handleChangeForContext:(nonnull MBMInteractionContext *)context;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when continous interaction (e.g. `Drag`) finishes.
+ */
 - (void)handleEndForContext:(nonnull MBMInteractionContext *)context;
 @end

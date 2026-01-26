@@ -5,6 +5,10 @@
 @class MBMCoordinateInfo;
 @class MBMScreenCoordinate;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A context of interaction containing the geographical and screen coordinate info.
+ */
 NS_SWIFT_NAME(InteractionContext)
 __attribute__((visibility ("default")))
 @interface MBMInteractionContext : NSObject
@@ -21,6 +25,11 @@ __attribute__((visibility ("default")))
 /** The geographical coordinate at which interaction has happened. */
 @property (nonatomic, readonly, nonnull) MBMCoordinateInfo *coordinateInfo;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The screen coordinate at which interaction has happened.
+ */
 @property (nonatomic, readonly, nonnull) MBMScreenCoordinate *screenCoordinate;
+
 
 @end

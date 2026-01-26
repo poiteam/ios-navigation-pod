@@ -5,6 +5,12 @@
 
 @class MBMOfflineRegion;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked when creating a new region.
+ *
+ * @param regions The region that was created. Otherwise, a string describing an error.
+ */
 NS_SWIFT_NAME(OfflineRegionCreateCallback)
 __attribute__((deprecated))
 typedef void (^MBMOfflineRegionCreateCallback)(MBXExpected<MBMOfflineRegion *, NSString *> * _Nonnull region); // NOLINT(modernize-use-using)

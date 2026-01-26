@@ -1,13 +1,17 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTransferState_Internal.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
 @class MBXHttpRequestError;
 @class MBXHttpResponseData;
 @class MBXTransferError;
+typedef NS_ENUM(NSInteger, MBXTransferState);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Structure to hold current status information about an ongoing upload.
+ */
 NS_SWIFT_NAME(UploadStatus)
 __attribute__((visibility ("default")))
 @interface MBXUploadStatus : NSObject
@@ -26,12 +30,50 @@ __attribute__((visibility ("default")))
                           totalSentBytes:(uint64_t)totalSentBytes
                               httpResult:(nullable MBXExpected<MBXHttpResponseData *, MBXHttpRequestError *> *)httpResult;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * ID for the upload.
+ */
 @property (nonatomic, readwrite) uint64_t uploadId;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * State of the upload process.
+ */
 @property (nonatomic, readwrite) MBXTransferState state;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Optional. Contains error information in case of failure when state is set to TransferState::Failed.
+ */
 @property (nonatomic, readwrite, nullable) MBXTransferError *error;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The size of the upload (file + metadata).
+ */
 @property (nonatomic, readwrite, nullable) NSNumber *totalBytes NS_REFINED_FOR_SWIFT;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Amount of bytes uploaded since the last time the progress callback reported.
+ */
 @property (nonatomic, readwrite) uint64_t sentBytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Total amount of bytes uploaded for this request, subtract totalBytes (i.e. filesize and metadata) to get overhead of request.
+ */
 @property (nonatomic, readwrite) uint64_t totalSentBytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Optional. Upload result. This field is set for TransferState::Failed and TransferState::Finished.
+ * For TransferState::Failed expect HttpRequestError to be provided for cases when TransferErrorCode is
+ * NetworkError.
+ * For TransferState::Finished expect HttpResponseData.
+ */
 @property (nonatomic, readwrite, nullable) MBXExpected<MBXHttpResponseData *, MBXHttpRequestError *> *httpResult NS_REFINED_FOR_SWIFT;
+
 
 @end

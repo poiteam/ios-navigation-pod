@@ -2,11 +2,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import <MapboxCommon/MBXNetworkRestriction.h>
 @class MBXCoordinate2D;
 @class MBXGeometry;
 
 @class MBXTilesetDescriptor;
+typedef NS_ENUM(NSInteger, MBXNetworkRestriction);
 
 /** Describes the tile region load option values. */
 NS_SWIFT_NAME(TileRegionLoadOptions)

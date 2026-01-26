@@ -3,5 +3,12 @@
 #import <Foundation/Foundation.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked once an asynchronous operation completes.
+ *
+ * @param result An expected `result` which contains string describing an error if the operation was not successful,
+ * empty otherwise.
+ */
 NS_SWIFT_NAME(AsyncOperationResultCallback)
 typedef void (^MBMAsyncOperationResultCallback)(MBXExpected<NSNull *, NSString *> * _Nonnull result); // NOLINT(modernize-use-using)

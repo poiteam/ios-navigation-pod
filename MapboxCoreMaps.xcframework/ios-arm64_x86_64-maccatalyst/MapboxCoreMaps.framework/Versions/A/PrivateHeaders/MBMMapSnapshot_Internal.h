@@ -6,6 +6,10 @@
 @class MBMImage;
 @class MBMScreenCoordinate;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An image snapshot of a map rendered by `map snapshotter`.
+ */
 NS_SWIFT_NAME(MapSnapshot)
 __attribute__((visibility ("default")))
 @interface MBMMapSnapshot : NSObject
@@ -16,7 +20,21 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculate screen coordinate on the snapshot from geographical `coordinate`.
+ *
+ * @param coordinate A geographical `coordinate`.
+ * @return A `screen coordinate` measured in `platform pixels` on the snapshot for geographical `coordinate`.
+ */
 - (nonnull MBMScreenCoordinate *)screenCoordinateForCoordinate:(CLLocationCoordinate2D)coordinate __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Calculate geographical coordinates from a point on the snapshot.
+ *
+ * @param screenCoordinate A `screen coordinate` on the snapshot in `platform pixels`.
+ * @return A geographical `coordinate` for a `screen coordinate` on the snapshot.
+ */
 - (CLLocationCoordinate2D)coordinateForScreenCoordinate:(nonnull MBMScreenCoordinate *)screenCoordinate;
 /**
  * Get list of attributions for the sources in this snapshot.
@@ -24,6 +42,13 @@ __attribute__((visibility ("default")))
  * @return A list of attributions for the sources in this snapshot.
  */
 - (nonnull NSArray<NSString *> *)attributions __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Moves image data to the caller and cleans up allocated resources.
+ * Consecutive calls will return a null.
+ *
+ * @return A rendered snapshot `image` or null if the image data is already moved from the snapshot.
+ */
 - (nullable MBMImage *)moveImage __attribute((ns_returns_retained));
 
 @end

@@ -2,6 +2,9 @@
 
 #import <MapboxCoreMaps/MBMViewAnnotationPositionDescriptor.h>
 
+@class MBMScreenCoordinate;
+@class MBMViewAnnotationAnchorConfig;
+
 @interface MBMViewAnnotationPositionDescriptor ()
 - (nonnull instancetype)initWithIdentifier:(nonnull NSString *)identifier
                                      width:(double)width
@@ -9,5 +12,10 @@
                          leftTopCoordinate:(nonnull MBMScreenCoordinate *)leftTopCoordinate
                           anchorCoordinate:(CLLocationCoordinate2D)anchorCoordinate
                               anchorConfig:(nonnull MBMViewAnnotationAnchorConfig *)anchorConfig NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Left-top screen coordinate in `platform pixels` for view annotation.
+ */
 @property (nonatomic, readonly, nonnull) MBMScreenCoordinate *leftTopCoordinate;
+
 @end

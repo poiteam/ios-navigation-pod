@@ -1,0 +1,15 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+@class MBXExpected<__covariant Value, __covariant Error>;
+
+@class MBXGeofencingError;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback that provides the result of a request to configure the Geofencing API object.
+ *
+ * @param result No expectation if the operation succeeds, or a GeofencingError otherwise.
+ */
+NS_SWIFT_NAME(__ConfigureCallback)
+typedef void (^MBXConfigureCallback)(MBXExpected<NSNull *, MBXGeofencingError *> * _Nonnull result); // NOLINT(modernize-use-using)

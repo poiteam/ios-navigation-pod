@@ -1,0 +1,81 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+#import <MapboxCommon/MBXAddFeatureCallback_Internal.h>
+#import <MapboxCommon/MBXAddObserverCallback_Internal.h>
+#import <MapboxCommon/MBXClearFeaturesCallback_Internal.h>
+#import <MapboxCommon/MBXConfigureCallback_Internal.h>
+#import <MapboxCommon/MBXGetFeatureCallback_Internal.h>
+#import <MapboxCommon/MBXGetOptionsCallback_Internal.h>
+#import <MapboxCommon/MBXRemoveFeatureCallback_Internal.h>
+#import <MapboxCommon/MBXRemoveObserverCallback_Internal.h>
+@class MBXFeature;
+
+@class MBXGeofencingOptions;
+@protocol MBXGeofencingObserver;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Geofencing API for detecting entry/exit states of monitored features' geometries.
+ */
+NS_SWIFT_NAME(__GeofencingService)
+@protocol MBXGeofencingService
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Set options affecting the behavior of the geofencing service.
+ */
+- (void)configureForOptions:(nonnull MBXGeofencingOptions *)options
+                   callback:(nonnull MBXConfigureCallback)callback
+__attribute__((swift_name("configure(options:callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns the current options affecting the behavior of the geofencing service.
+ */
+- (void)getOptionsForCallback:(nonnull MBXGetOptionsCallback)callback
+__attribute__((swift_name("getOptions(callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Adds a feature to be monitored for geofencing activities.
+ *
+ * You can add extra properties (see GeofencingPropertiesKeys) to the Feature to configure how geofencing engine behaves per each specific feature.
+ *
+ * If a feature with the same ID already exist it will be overwritten and its state reset.
+ */
+- (void)addFeatureForFeature:(nonnull MBXFeature *)feature
+                    callback:(nonnull MBXAddFeatureCallback)callback
+__attribute__((swift_name("addFeature(feature:callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets a feature by its identifier.
+ */
+- (void)getFeatureForIdentifier:(nonnull NSString *)identifier
+                       callback:(nonnull MBXGetFeatureCallback)callback
+__attribute__((swift_name("getFeature(identifier:callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Removes a feature (defined by its identifier) to be monitored for geofencing activities.
+ */
+- (void)removeFeatureForIdentifier:(nonnull NSString *)identifier
+                          callback:(nonnull MBXRemoveFeatureCallback)callback
+__attribute__((swift_name("removeFeature(identifier:callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Clears all monitored features.
+ */
+- (void)clearFeaturesForCallback:(nonnull MBXClearFeaturesCallback)callback
+__attribute__((swift_name("clearFeatures(callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Adds a geofence monitored features' observer.
+ */
+- (void)addObserverForObserver:(nonnull id<MBXGeofencingObserver>)observer
+                      callback:(nonnull MBXAddObserverCallback)callback
+__attribute__((swift_name("addObserver(observer:callback:)")));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Removes a geofence monitored features' observer.
+ */
+- (void)removeObserverForObserver:(nonnull id<MBXGeofencingObserver>)observer
+                         callback:(nonnull MBXRemoveObserverCallback)callback
+__attribute__((swift_name("removeObserver(observer:callback:)")));
+@end

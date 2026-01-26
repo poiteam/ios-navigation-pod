@@ -6,10 +6,40 @@
 
 @protocol MBXLifecycleObserver;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An interface to get app's lifecycle and listen for lifecycle changes.
+ */
 NS_SWIFT_NAME(LifecycleMonitorInterface)
 @protocol MBXLifecycleMonitorInterface
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets the state of the application.
+ *
+ * @param callback A callback to get an application state.
+ */
 - (void)getLifecycleStateForCallback:(nonnull MBXGetLifecycleStateCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets the state of the lifecycle monitor.
+ *
+ * @param callback A callback to get lifecycle monitoring state.
+ */
 - (void)getMonitoringStateForCallback:(nonnull MBXGetLifecycleMonitoringStateCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Registers a lifecycle observer, automatically starts
+ * monitoring if it has not been started yet.
+ *
+ * @param observer An observer to register.
+ */
 - (void)registerObserverForObserver:(nonnull id<MBXLifecycleObserver>)observer;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Unregisters a lifecycle observer. Once the last observer
+ * is unregisted it stops monitoring.
+ *
+ * @param observer An observer to unregister.
+ */
 - (void)unregisterObserverForObserver:(nonnull id<MBXLifecycleObserver>)observer;
 @end

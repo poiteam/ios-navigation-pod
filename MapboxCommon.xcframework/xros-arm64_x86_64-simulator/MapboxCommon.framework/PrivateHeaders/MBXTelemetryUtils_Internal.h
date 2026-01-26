@@ -1,16 +1,15 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTelemetryCollectionState_Internal.h>
 #import <MapboxCommon/MBXTelemetryUtilsResponseCallback_Internal.h>
 
 @protocol MBXTelemetryCollectionStateObserver;
+typedef NS_ENUM(NSInteger, MBXTelemetryCollectionState);
 
 NS_SWIFT_NAME(TelemetryUtils)
 __attribute__((visibility ("default")))
 @interface MBXTelemetryUtils : NSObject
 
-/** Returns TelemetryUtils to use for observers registration. */
 - (nonnull instancetype)init;
 
 + (void)setEventsCollectionStateForEnableCollection:(BOOL)enableCollection

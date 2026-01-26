@@ -1,8 +1,13 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXNetworkRestriction.h>
 
+typedef NS_ENUM(NSInteger, MBXNetworkRestriction);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * WSS connection Request representation used by the backend Service
+ */
 NS_SWIFT_NAME(Request)
 __attribute__((visibility ("default")))
 @interface MBXExperimentalWssBackendRequest : NSObject

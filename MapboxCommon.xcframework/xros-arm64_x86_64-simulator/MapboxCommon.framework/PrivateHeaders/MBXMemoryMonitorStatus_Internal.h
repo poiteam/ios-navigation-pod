@@ -1,8 +1,13 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXMemoryMonitorState_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXMemoryMonitorState);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * This record holds information of a memory alert.
+ */
 NS_SWIFT_NAME(MemoryMonitorStatus)
 __attribute__((visibility ("default")))
 @interface MBXMemoryMonitorStatus : NSObject
@@ -17,7 +22,12 @@ __attribute__((visibility ("default")))
                           totalMemory:(uint64_t)totalMemory
                            usedMemory:(uint64_t)usedMemory;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Current state.
+ */
 @property (nonatomic, readonly) MBXMemoryMonitorState state;
+
 /**
  * Total available memory for the app in bytes.
  * For some platforms this value may be lower than real available memory

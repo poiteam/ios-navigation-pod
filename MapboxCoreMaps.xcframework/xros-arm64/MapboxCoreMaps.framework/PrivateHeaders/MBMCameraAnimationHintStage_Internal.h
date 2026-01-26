@@ -4,6 +4,10 @@
 
 @class MBMCameraOptions;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes a single stage of the animation.
+ */
 NS_SWIFT_NAME(CameraAnimationHintStage)
 __attribute__((visibility ("default")))
 @interface MBMCameraAnimationHintStage : NSObject
@@ -20,6 +24,11 @@ __attribute__((visibility ("default")))
 /** The duration elapsed since the animation start (i.e. from invocation of the `setUserAnimationInProgress(true)` method). */
 @property (nonatomic, readonly) NSTimeInterval progress;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The expected camera options
+ */
 @property (nonatomic, readonly, nonnull) MBMCameraOptions *camera;
+
 
 @end

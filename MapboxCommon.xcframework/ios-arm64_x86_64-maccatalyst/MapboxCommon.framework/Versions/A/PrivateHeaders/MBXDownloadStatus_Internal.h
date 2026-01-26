@@ -1,14 +1,18 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTransferState_Internal.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
 @class MBXDownloadOptions;
 @class MBXHttpRequestError;
 @class MBXHttpResponseData;
 @class MBXTransferError;
+typedef NS_ENUM(NSInteger, MBXTransferState);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Structure to hold current status information about ongoing download session.
+ */
 NS_SWIFT_NAME(DownloadStatus)
 __attribute__((visibility ("default")))
 @interface MBXDownloadStatus : NSObject
@@ -28,13 +32,58 @@ __attribute__((visibility ("default")))
                            downloadOptions:(nonnull MBXDownloadOptions *)downloadOptions
                                 httpResult:(nullable MBXExpected<MBXHttpResponseData *, MBXHttpRequestError *> *)httpResult;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Download id which was created by download request.
+ */
 @property (nonatomic, readwrite) uint64_t downloadId;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * State of download request.
+ */
 @property (nonatomic, readwrite) MBXTransferState state;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The optional which contains error information in case of failure when state is set to TransferState::Failed.
+ */
 @property (nonatomic, readwrite, nullable) MBXTransferError *error;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Total amount of bytes to receive. In some cases this value is unknown until we get final part of the file.
+ */
 @property (nonatomic, readwrite, nullable) NSNumber *totalBytes NS_REFINED_FOR_SWIFT;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Amount of bytes already received and saved on the disk. Includes previous download attempts for a resumed
+ * download.
+ */
 @property (nonatomic, readwrite) uint64_t receivedBytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Amount of bytes received during the current resume attempt. For downloads that weren't resumed,
+ * this value will be the same as receivedBytes.
+ */
 @property (nonatomic, readwrite) uint64_t transferredBytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Download options used to send the download request.
+ */
 @property (nonatomic, readwrite, nonnull) MBXDownloadOptions *downloadOptions;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP result. This field is only set for TransferState::Failed and TransferState::Finished.
+ * For TransferState::Failed expect HttpRequestError to be provided for cases when TransferErrorCode is
+ * NetworkError.
+ * And for TransferState::Finished HttpResponseData is set, but with empty data field (since all the data was written to the disk).
+ */
 @property (nonatomic, readwrite, nullable) MBXExpected<MBXHttpResponseData *, MBXHttpRequestError *> *httpResult NS_REFINED_FOR_SWIFT;
+
 
 @end

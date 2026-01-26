@@ -4,5 +4,12 @@
 
 @class MBMStyleManager;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callbacks that are invoked to run user's styling block,
+ * or to notify of completion or cancellation.
+ *
+ * @param styleManager The StyleManager object to be used by the callback.
+ */
 NS_SWIFT_NAME(StyleManagerCallback)
 typedef void (^MBMStyleManagerCallback)(MBMStyleManager * _Nonnull styleManager); // NOLINT(modernize-use-using)

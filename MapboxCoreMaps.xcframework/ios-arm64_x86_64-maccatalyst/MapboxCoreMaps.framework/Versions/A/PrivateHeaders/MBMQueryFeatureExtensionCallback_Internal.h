@@ -5,5 +5,11 @@
 
 @class MBMFeatureExtensionValue;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback to get query feature extension asynchronously.
+ *
+ * @param extension A `feature extension value` in case of the successful operation, string representing error otherwise.
+ */
 NS_SWIFT_NAME(QueryFeatureExtensionCallback)
 typedef void (^MBMQueryFeatureExtensionCallback)(MBXExpected<MBMFeatureExtensionValue *, NSString *> * _Nonnull extension); // NOLINT(modernize-use-using)

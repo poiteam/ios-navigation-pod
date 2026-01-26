@@ -6,12 +6,60 @@
 typedef NS_ENUM(NSInteger, MBXResourceLoadFlags)
 {
     MBXResourceLoadFlagsNone = 0,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Resources loaded with critical priority will be loaded before resources with non-critical priority.
+     *
+     * This flag should be set to true for resources that are needed as soon as possible, e.g. because they are needed
+     * for displaying. Set to false for resources that are less critical, e.g. because they are downloaded preemptivily
+     * to "warm up" the cache.
+     */
     MBXResourceLoadFlagsCritical = 1,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Accepts expired data when loading resources.
+     *
+     * This flag should be set to true to accept expired responses. When a resource is already loaded but expired, no
+     * attempt will be made to refresh the data. This may lead to outdated data. Set to false to ensure that data
+     * for a resource is up-to-date.
+     */
     MBXResourceLoadFlagsAcceptExpired = 2,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Forces a resource reload, even if the resource is already loaded.
+     */
     MBXResourceLoadFlagsForceLoad = 4,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Loads the resource to disk as usual, but does not add the data to the ResourceLoadResult struct. This is useful
+     * for situations where a resource should be loaded and available in the cache, but the requestor doesn't need to
+     * access the actual contents of the resource, e.g. in case of preemptive downloads.
+     */
     MBXResourceLoadFlagsSkipDataLoading = 8,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Makes a request to determine the resource size, but doesn't transfer or cache the resource. This is useful for
+     * situations where you want learn about the size of a resource without actually downloading or caching it.
+     * This implies SkipDataLoading.
+     */
     MBXResourceLoadFlagsSkipDataTransfer = 24,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Treat the resource as expired even if it isn't.
+     *
+     * Using this flag is different than using the ForceLoad flag since the latter will also disable conditional HTTP
+     * requests and delta updates.
+     */
     MBXResourceLoadFlagsForceExpired = 32,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Do not decompress the resource when it's read from disk.
+     */
     MBXResourceLoadFlagsSkipDecompression = 64,
+    /**
+     * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+     * Verifies the integrity of the resource when loading. Integrity verification is performed only if the resource
+     * includes a precomputed digest. The digest is received when the resource is downloaded.
+     */
     MBXResourceLoadFlagsCheckIntegrity = 128
 } NS_SWIFT_NAME(ResourceLoadFlags);

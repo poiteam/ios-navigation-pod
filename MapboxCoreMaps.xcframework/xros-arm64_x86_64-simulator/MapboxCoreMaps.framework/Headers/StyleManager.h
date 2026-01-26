@@ -10,6 +10,7 @@
 #import "MBMCustomRasterSourceOptions.h"
 #import "MBMCustomRasterSourceTileData.h"
 #import "MBMStylePropertyValue.h"
+#import "MBMDepthRange.h"
 #import "MBMCustomLayerRenderParameters.h"
 #import "MBMCustomLayerRenderConfiguration.h"
 #import "MBMCustomRasterSourceTileRenderer.h"

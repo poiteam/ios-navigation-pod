@@ -1,11 +1,15 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXHttpMethod.h>
-#import <MapboxCommon/MBXNetworkRestriction.h>
 
 @protocol MBXReadStream;
+typedef NS_ENUM(NSInteger, MBXHttpMethod);
+typedef NS_ENUM(NSInteger, MBXNetworkRestriction);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP Request representation used by the backend Service
+ */
 NS_SWIFT_NAME(Request)
 __attribute__((visibility ("default")))
 @interface MBXHttpBackendRequest : NSObject
@@ -27,11 +31,41 @@ __attribute__((visibility ("default")))
 /** HTTP request method. See HttpRequest for details. */
 @property (nonatomic, readwrite) MBXHttpMethod method;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP request url. See HttpRequest for details.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *url;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP request headers. See HttpRequest for details.
+ */
 @property (nonatomic, readwrite, nonnull, copy) NSDictionary<NSString *, NSString *> *headers;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Connection timeout. See HttpRequest for details.
+ */
 @property (nonatomic, readonly) uint64_t timeout;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * See HttpRequest for details.
+ */
 @property (nonatomic, readonly) MBXNetworkRestriction networkRestriction;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The body for the request
+ */
 @property (nonatomic, readonly, nullable) id<MBXReadStream> body;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * See HttpRequest for details.
+ */
 @property (nonatomic, readonly) uint32_t flags;
+
 
 @end

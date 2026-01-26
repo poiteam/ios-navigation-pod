@@ -1,9 +1,14 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXNetworkRestriction.h>
-#import <MapboxCommon/MBXResourceLoadFlags_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXNetworkRestriction);
+typedef NS_ENUM(NSInteger, MBXResourceLoadFlags);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes the resource load option values.
+ */
 NS_SWIFT_NAME(ResourceLoadOptions)
 __attribute__((visibility ("default")))
 @interface MBXResourceLoadOptions : NSObject
@@ -19,9 +24,50 @@ __attribute__((visibility ("default")))
                  networkRestriction:(MBXNetworkRestriction)networkRestriction
                        extraOptions:(nullable id)extraOptions;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A brief identifier that describes the reason for this resource load
+ *
+ * Use `display` when the resource is loaded for immediate display on an UI. Other commonly
+ * used values include: `ambient`, `route`, `predictive` and `offline`.
+ *
+ * It is not necessary to request a resource again with a different reason if you already have a resource handle,
+ * and want to use it for a different purpose. It does not affect how the resource will be loaded, and is only
+ * used for debugging and logging purposes.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *tag;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Various flags that control resource loading behavior.
+ *
+ * See documentation for ResourceLoadFlags.
+ */
 @property (nonatomic, readonly) MBXResourceLoadFlags flags;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Controls which networks may be used to load the resource.
+ *
+ * By default, all networks are allowed. However, in some situations, it's useful to limit the kind of networks
+ * that are allowed, e.g. to ensure that data is only transferred over a connection that doesn't incur cost to
+ * the user, like a WiFi connection, and prohibit data transfer over expensive connections like cellular.
+ */
 @property (nonatomic, readonly) MBXNetworkRestriction networkRestriction;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Extra resource load options.
+ *
+ * If provided, contains an object value with extra resource load options.
+ *
+ * Currently supported options:
+ *  * accepted_formats: if present, should be a value array where each element is a string containing a MIME type.
+ *                      If the type of a resource in the cache doesn't match any of the accepted formats, a new
+ *                      transfer will be initiated. The provided MIME types will be included in the Accept HTTP
+ *                      header to negotiate the content type with the backend.
+ */
 @property (nonatomic, readonly, nullable, copy) id extraOptions;
+
 
 @end

@@ -3,5 +3,11 @@
 #import <Foundation/Foundation.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A callback to get the current battery charging status.
+ *
+ * @param result True if the battery is charging, false if not, or an error string otherwise.
+ */
 NS_SWIFT_NAME(BatteryChargingStatusCallback)
 typedef void (^MBXBatteryChargingStatusCallback)(MBXExpected<NSNumber *, NSString *> * _Nonnull result); // NOLINT(modernize-use-using)

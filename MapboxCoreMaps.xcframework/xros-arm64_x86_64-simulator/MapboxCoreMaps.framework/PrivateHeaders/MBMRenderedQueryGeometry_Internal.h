@@ -12,6 +12,10 @@ typedef NS_ENUM(NSInteger, MBMRenderedQueryGeometryType)
     MBMRenderedQueryGeometryTypeNSArray
 } NS_SWIFT_NAME(RenderedQueryGeometryType);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Geometry for querying rendered features.
+ */
 NS_SWIFT_NAME(RenderedQueryGeometry)
 __attribute__((visibility ("default")))
 @interface MBMRenderedQueryGeometry : NSObject

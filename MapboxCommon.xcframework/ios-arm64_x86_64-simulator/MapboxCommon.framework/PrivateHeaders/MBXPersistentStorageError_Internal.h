@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXPersistentStorageErrorCode_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXPersistentStorageErrorCode);
 
 NS_SWIFT_NAME(PersistentStorageError)
 __attribute__((visibility ("default")))
@@ -16,7 +17,12 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithCode:(MBXPersistentStorageErrorCode)code
                              message:(nonnull NSString *)message;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Code describing the error that occurred.
+ */
 @property (nonatomic, readonly) MBXPersistentStorageErrorCode code;
+
 /** Message describing what went wrong. */
 @property (nonatomic, readonly, nonnull, copy) NSString *message;
 

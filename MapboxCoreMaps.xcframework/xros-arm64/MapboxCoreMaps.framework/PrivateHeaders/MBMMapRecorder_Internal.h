@@ -1,11 +1,32 @@
 // This file is generated and will be overwritten automatically.
 
 #import <MapboxCoreMaps/MBMMapRecorder.h>
-#import <MapboxCoreMaps/MBMPlaybackFinished_Internal.h>
 
 @interface MBMMapRecorder ()
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Initializes a MapRecorder object for the supplied map.
+ *
+ * @param map The `map` to record.
+ *
+ * @return A `MapRecorder` instance if operation succeeded, otherwise a string describing an error if the operation was not successful.
+ */
 + (nonnull MBXExpected<MBMMapRecorder *, NSString *> *)createInstanceForMap:(nonnull MBMMap *)map __attribute((ns_returns_retained));
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Begins the API call sequence recording.
+ */
 - (void)startRecordingForOptions:(nonnull MBMMapRecorderOptions *)options;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Replay a supplied sequence.
+ *
+ * Note! This is an experimental API and behavior might change in future.
+ *
+ * @param content A data reference which should contain a replayable sequence as a gzip compressed or plain JSON string.
+ * @param options Options to customize the behaviour of the playback.
+ * @param callback Callback to call when the playback ends.
+ */
 - (void)replayForContent:(nonnull MBXDataRef *)content
                  options:(nonnull MBMMapPlayerOptions *)options
                 callback:(nonnull MBMPlaybackFinished)callback;

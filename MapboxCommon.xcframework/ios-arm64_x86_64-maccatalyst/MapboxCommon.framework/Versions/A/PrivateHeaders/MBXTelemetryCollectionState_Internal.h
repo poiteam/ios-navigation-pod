@@ -7,7 +7,8 @@ typedef NS_ENUM(NSInteger, MBXTelemetryCollectionState)
 {
     MBXTelemetryCollectionStateEnabled,
     MBXTelemetryCollectionStateTurnstileEventsOnly,
-    MBXTelemetryCollectionStateUnknown
+    MBXTelemetryCollectionStateUnknown,
+    MBXTelemetryCollectionStateBackgroundLocationsDisabled
 } NS_SWIFT_NAME(TelemetryCollectionState);
 
 NSString* MBXTelemetryCollectionStateToString(MBXTelemetryCollectionState telemetry_collection_state);

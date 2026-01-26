@@ -4,7 +4,17 @@
 
 @class MBXMetrics;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Metrics source interface for getting the list of metrics in the source.
+ */
 NS_SWIFT_NAME(MetricsSource)
 @protocol MBXMetricsSource
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Get a list of metrics that are part of the metrics source.
+ *
+ * @return A list of metrics in the source.
+ */
 - (nonnull NSArray<MBXMetrics *> *)getMetrics;
 @end

@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXEventsServiceErrorCode_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXEventsServiceErrorCode);
 
 NS_SWIFT_NAME(EventsServiceError)
 __attribute__((visibility ("default")))

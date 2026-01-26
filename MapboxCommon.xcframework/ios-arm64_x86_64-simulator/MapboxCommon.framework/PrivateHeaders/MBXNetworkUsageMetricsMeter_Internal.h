@@ -2,6 +2,11 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Provides an ability to push network usage events to NetworkUsageMetricsSource.
+ * Intended to be used internally by various HttpService implementations.
+ */
 NS_SWIFT_NAME(NetworkUsageMetricsMeter)
 __attribute__((visibility ("default")))
 @interface MBXNetworkUsageMetricsMeter : NSObject
