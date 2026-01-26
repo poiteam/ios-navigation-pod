@@ -1301,7 +1301,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -1324,7 +1324,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -1348,7 +1348,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -1370,7 +1370,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -1394,7 +1394,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -1416,7 +1416,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -4673,7 +4673,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -4695,7 +4695,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -4765,12 +4765,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "_LocationEssentials.CLLocation?",
+                "printedName": "CoreLocation.CLLocation?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocation",
-                    "printedName": "_LocationEssentials.CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
                     "usr": "c:objc(cs)CLLocation"
                   }
                 ],
@@ -4795,12 +4795,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "_LocationEssentials.CLLocation?",
+                    "printedName": "CoreLocation.CLLocation?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocation",
-                        "printedName": "_LocationEssentials.CLLocation",
+                        "printedName": "CoreLocation.CLLocation",
                         "usr": "c:objc(cs)CLLocation"
                       }
                     ],
@@ -5104,52 +5104,6 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@PoilabsCommon@objc(cs)PLPoi(im)isVisibleOnMap",
                 "mangledName": "$s13PoilabsCommon5PLPoiC14isVisibleOnMapSbvg",
-                "moduleName": "PoilabsCommon",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "sponsored",
-            "printedName": "sponsored",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoi(py)sponsored",
-            "mangledName": "$s13PoilabsCommon5PLPoiC9sponsoredSbvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoi(im)sponsored",
-                "mangledName": "$s13PoilabsCommon5PLPoiC9sponsoredSbvg",
                 "moduleName": "PoilabsCommon",
                 "declAttributes": [
                   "Final",
@@ -8824,13 +8778,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -8849,294 +8796,294 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
       "kind": "StringLiteral",
       "offset": 953,
       "length": 43,
       "value": "\"https:\/\/navigation-api.poilabs.com\/v3\/nav\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 1254,
+      "offset": 1134,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
+      "offset": 1253,
       "length": 6,
       "value": "\"uuid\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1273,
       "length": 7,
       "value": "\"major\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "IntegerLiteral",
       "offset": 800,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "IntegerLiteral",
       "offset": 879,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "FloatLiteral",
       "offset": 1364,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "FloatLiteral",
       "offset": 1446,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "FloatLiteral",
       "offset": 1517,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "Array",
       "offset": 2617,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
       "kind": "Array",
       "offset": 2811,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLFacility.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLFacility.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 6,
       "value": "\"icon\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "FloatLiteral",
       "offset": 1118,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "BooleanLiteral",
       "offset": 1213,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "FloatLiteral",
       "offset": 1292,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "FloatLiteral",
       "offset": 1371,
       "length": 4,
       "value": "15.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "StringLiteral",
       "offset": 1590,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "IntegerLiteral",
       "offset": 4320,
       "length": 2,
       "value": "92"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "IntegerLiteral",
       "offset": 4323,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "IntegerLiteral",
       "offset": 4335,
       "length": 3,
       "value": "168"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "IntegerLiteral",
       "offset": 4339,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "IntegerLiteral",
       "offset": 4350,
       "length": 3,
       "value": "175"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "IntegerLiteral",
       "offset": 4354,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
       "kind": "FloatLiteral",
       "offset": 4366,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLPlacePositioning.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLPlacePositioning.swift",
       "kind": "StringLiteral",
       "offset": 379,
       "length": 23,
       "value": "\"iosBeaconScanInterval\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLPlacePositioning.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLPlacePositioning.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 17,
       "value": "\"multilateration\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/Navigation\/PLPoiNavigationSegment.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/Navigation\/PLPoiNavigationSegment.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
       "kind": "Array",
       "offset": 1050,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
       "kind": "Array",
       "offset": 1112,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
       "kind": "IntegerLiteral",
-      "offset": 2223,
+      "offset": 2164,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
       "kind": "StringLiteral",
-      "offset": 2314,
+      "offset": 2255,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoi.swift",
       "kind": "StringLiteral",
-      "offset": 2424,
+      "offset": 2365,
       "length": 12,
       "value": "\"navigation\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiFilters.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiFilters.swift",
       "kind": "StringLiteral",
       "offset": 269,
       "length": 11,
       "value": "\"store_ids\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiProperties.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiProperties.swift",
       "kind": "StringLiteral",
       "offset": 489,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 16,
       "value": "\"PLNetworkCache\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
       "kind": "BooleanLiteral",
       "offset": 469,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
       "kind": "IntegerLiteral",
       "offset": 403,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 19,
       "value": "\"PLNavigationCache\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
       "kind": "BooleanLiteral",
       "offset": 540,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Core\/PLNetworkConfiguration.swift",
+      "filePath": "\/Users\/emrekuru\/Projects\/sdk\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Core\/PLNetworkConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 203,
       "length": 43,
