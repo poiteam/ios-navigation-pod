@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PoilabsMapView
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PoilabsMapView
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreLocation
 import Foundation
 import MapboxMaps
@@ -11,15 +11,17 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public class PLAnnotation : ObjectiveC.NSObject {
-  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
+  @objc final public let coordinate: _LocationEssentials.CLLocationCoordinate2D
   @objc final public let poiId: Swift.String
   @objc final public let floorLevel: Swift.Int
-  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
+  @objc public init(poiId: Swift.String, coordinate: _LocationEssentials.CLLocationCoordinate2D, floorLevel: Swift.Int)
   @objc deinit
 }
 @objc public enum PLAnnotationIconAnchor : Swift.Int {
   case center, bottom
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -29,7 +31,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addAnnotation(toCoordinate coordinate: CoreLocation.CLLocationCoordinate2D, identifier: Swift.String, image: UIKit.UIImage, anchor: PoilabsMapView.PLAnnotationIconAnchor)
+  @objc dynamic public func addAnnotation(toCoordinate coordinate: _LocationEssentials.CLLocationCoordinate2D, identifier: Swift.String, image: UIKit.UIImage, anchor: PoilabsMapView.PLAnnotationIconAnchor)
   @objc dynamic public func removeAnnotation(withIdentifier identifier: Swift.String)
   @objc dynamic public func removeAnnotations(exceptIdentifier identifier: Swift.String)
   @objc dynamic public func removeAllAnnotations()
@@ -50,29 +52,34 @@ extension PoilabsMapView.PLAnnotationManager {
   @objc dynamic public func removeAllMultipleRouteLines()
 }
 extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addDashedLines(from startCoordinate: CoreLocation.CLLocationCoordinate2D, to endCoordinate: CoreLocation.CLLocationCoordinate2D)
+  @objc dynamic public func addDashedLines(from startCoordinate: _LocationEssentials.CLLocationCoordinate2D, to endCoordinate: _LocationEssentials.CLLocationCoordinate2D)
   @objc dynamic public func removeDashedLines()
 }
 extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addSharedLocationAnnotation(at coordinate: CoreLocation.CLLocationCoordinate2D, image: UIKit.UIImage, title: Swift.String, onNavigatePress: (() -> Swift.Void)?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func addSharedLocationAnnotation(at coordinate: _LocationEssentials.CLLocationCoordinate2D, image: UIKit.UIImage, title: Swift.String, onNavigatePress: (() -> Swift.Void)?)
+  #endif
   @objc dynamic public func removeSharedLocationAnnotation()
 }
 @_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
-  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+  @objc public static func coordinateInCoordinateBounds(coordinate: _LocationEssentials.CLLocationCoordinate2D, swForBounds sw: _LocationEssentials.CLLocationCoordinate2D, neForBounds ne: _LocationEssentials.CLLocationCoordinate2D) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol PLMapViewDelegate {
   @objc func mapViewDidFinishLoading(_ mapView: PoilabsMapView.PLMapView)
   @objc func mapViewDidFollowStateChange(state: PoilabsMapView.PLMapViewFollowState)
+  @objc func mapViewDidDragMapEvent()
   @objc func mapViewDidTapOnPolygonWith(coordinates: [[Swift.Double]])
-  @objc func mapViewDidTapOnPointWith(coordinate: CoreLocation.CLLocationCoordinate2D)
+  @objc func mapViewDidTapOnPointWith(coordinate: _LocationEssentials.CLLocationCoordinate2D)
   @objc func mapViewDidTap(annotationWithPoiId poiId: Swift.String)
   @objc func mapViewDidDeselectPolygon()
 }
 @objc public enum PLMapViewFollowState : Swift.Int {
   case follow, none
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -90,21 +97,23 @@ extension PoilabsMapView.PLAnnotationManager {
   @objc deinit
 }
 extension PoilabsMapView.PLMapView {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCenterWithoutAnimation(_ coordinate: CoreLocation.CLLocationCoordinate2D, zoomLevel: Swift.Double)
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCameraProperties(maxBoundSw sw: CoreLocation.CLLocationCoordinate2D, maxBoundNe ne: CoreLocation.CLLocationCoordinate2D, maxZoom: Swift.Double, minZoom: Swift.Double, navigationZoom: Swift.Double)
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func getMapCenterCoordinate() -> CoreLocation.CLLocationCoordinate2D
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCamera(center: CoreLocation.CLLocationCoordinate2D, zoomLevel: Foundation.NSNumber? = nil, bearing: Foundation.NSNumber? = nil, pitch: Foundation.NSNumber? = nil, completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCenterWithoutAnimation(_ coordinate: _LocationEssentials.CLLocationCoordinate2D, zoomLevel: Swift.Double)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCameraProperties(maxBoundSw sw: _LocationEssentials.CLLocationCoordinate2D, maxBoundNe ne: _LocationEssentials.CLLocationCoordinate2D, maxZoom: Swift.Double, minZoom: Swift.Double, navigationZoom: Swift.Double)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func getMapCenterCoordinate() -> _LocationEssentials.CLLocationCoordinate2D
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCamera(center: _LocationEssentials.CLLocationCoordinate2D, zoomLevel: Foundation.NSNumber? = nil, bearing: Foundation.NSNumber? = nil, pitch: Foundation.NSNumber? = nil, completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCameraThatFits(annotations: [PoilabsMapView.PLAnnotation], forLevel floorLevel: Swift.Int)
 }
 extension PoilabsMapView.PLMapView {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func updateUserLocation(location: CoreLocation.CLLocation, heading: CoreLocation.CLHeading)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func updateUserLocation(location: _LocationEssentials.CLLocation, heading: CoreLocation.CLHeading)
 }
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setFollowState(state: PoilabsMapView.PLMapViewFollowState)
 }
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func deselectPolygon()
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func selectPolygon(forCoordinate coordinate: CoreLocation.CLLocationCoordinate2D)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func selectPolygon(forCoordinate coordinate: _LocationEssentials.CLLocationCoordinate2D)
 }
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func hideLayersWithPrefix(_ prefix: Swift.String)
