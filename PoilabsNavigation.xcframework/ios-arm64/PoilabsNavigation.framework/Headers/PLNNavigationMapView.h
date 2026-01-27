@@ -60,6 +60,7 @@
 @property (nonatomic, copy) NSString *searchTextForInit;
 @property (nonatomic, assign) BOOL isInfoLoading;
 @property (nonatomic, assign) BOOL routeFocusActive;
+@property (nonatomic, assign) int routeFocusCollectionFloorIndex;
 
 - (IBAction)searchTextFieldEditingDidBegin:(id)sender;
 
@@ -130,7 +131,7 @@
 -(void)addSharedLocationPinToCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(int)floorLevel withIcon:(UIImage*)icon withTitle:(NSString*)title;
 -(void)removeSharedLocationPin;
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collecitonViewfloorChangeSlider;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionViewfloorChangeSlider;
 
 
 // slider collection tanımlama

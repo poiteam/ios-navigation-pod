@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/PoilabsMapView-Swift.h</key>
 		<data>
-		Y07lWGU3e4+QMgltPUKVrLilB54=
+		0U/jNlUaJCrNigh1xtft+WfuPOg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VggIaccY391K0hLhWjp/8K0FkOg=
+		4IvJLawO0x78osNuunf6kPgasME=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FT4cvo9JOqdY4L/h+QORMUQ4lmg=
+		RBaCMuhRoYvKnktLusFNfXfx+KM=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YNT4k4Ld3t0MbCjz6eXQjRavqp0=
+		9SrKuPYyRO3CdtBTAib/Kq2ziPA=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Afbq7o6f+HHXTzbuaqaam5hYG2k=
+		x/PlAJGtpTiEkhPm9bXnx449zp0=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YNT4k4Ld3t0MbCjz6eXQjRavqp0=
+		9SrKuPYyRO3CdtBTAib/Kq2ziPA=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gP6WeUkXNdUsdP07IqSYJ2H/HtE=
+		xMApOg13CEnoowVTSNyxh0omxDs=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FT4cvo9JOqdY4L/h+QORMUQ4lmg=
+		RBaCMuhRoYvKnktLusFNfXfx+KM=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+H3+1TIfljEipC0iA+A6sExwYnY=
+		Yu71wvSKx3QWvKU13L4LNHuYFNI=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HOsbSYYJ47PRzC/cicPANpyw2GU=
+		Uk5u8raq9Xjw8NxD8TBnWW3+g3k=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+H3+1TIfljEipC0iA+A6sExwYnY=
+		Yu71wvSKx3QWvKU13L4LNHuYFNI=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y4YESF+4eOCnisMB7vPScT7dmA8=
+		owOBONp2a6JR3Kjn3iZlnkxHogo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,77 +63,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPQzuyb8LEBB9uPD26YLxVP1HCcsRGCHbiEKsYeNRvc=
+			B8eo0nFwoOcsBLdcrMpzKeMyc4+GUPQrB1pu0mdmSMA=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zd5JfdY1eGdX/zRlph6sszkuONvzezvcopNpRDG+uZA=
+			3BF2HV4+KtxISb+3TKzgLL4gp9Vsk6Zekcq6pK0kAqQ=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NpGbu99RklgYk2plc8iyjW30bneqyOVM9LfC4tfQNjM=
+			fMfx3HfUnNjvzVFDcYsd1fMLIXR3JRtbM/XTXGIG4bU=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			00aSglcrQiggcjED+/Wr+eWlZH54JQJIiy2/e9Wa4VA=
+			LktWDFLh4ivp5I2ZK9U1z0bQkYsMUJjoDLp3YKPvtt8=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NpGbu99RklgYk2plc8iyjW30bneqyOVM9LfC4tfQNjM=
+			fMfx3HfUnNjvzVFDcYsd1fMLIXR3JRtbM/XTXGIG4bU=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FdpaWylgK0FVaKXQIoNmR07viK4os9Womjzm36MAwK4=
+			WNlNtHnpHkP6DxmCvULYIn0C1nkAR5Y2/BflK8jS91g=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zd5JfdY1eGdX/zRlph6sszkuONvzezvcopNpRDG+uZA=
+			3BF2HV4+KtxISb+3TKzgLL4gp9Vsk6Zekcq6pK0kAqQ=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBY7Gy3tuYNrk1BJqTbF3r/ce+tI07yz7kuJtjzvShk=
+			ZNCbW1bhQtXmY7rOY3BET+RJGsyKcMXQxi9lUPOxDgs=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MAmoomuaV5oPq4vqxcGiCKs+oHrwDAaKriBk7T5FrYo=
+			7syg1p7RHPCOtT20kFW/vWy2oaDgKkmj52hYXk0Ed2k=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBY7Gy3tuYNrk1BJqTbF3r/ce+tI07yz7kuJtjzvShk=
+			ZNCbW1bhQtXmY7rOY3BET+RJGsyKcMXQxi9lUPOxDgs=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9MBPL/5DfUF/mAes9LYVdmvUOo+2/1nlM25c77wRcWg=
+			+TAZfOqAgEpTqJWYaKJBioywPVkfwngRseWEmForGsg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
