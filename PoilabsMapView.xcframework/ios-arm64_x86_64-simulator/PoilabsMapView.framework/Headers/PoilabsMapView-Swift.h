@@ -332,11 +332,6 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
-- (void)removeSharedLocationAnnotation;
-@end
-
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
 - (void)removeMultipleAnnotation;
 @end
@@ -347,16 +342,14 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)removeAllRouteLines;
-- (void)focusOnRouteWithIndex:(NSInteger)index;
+- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
+- (void)removeSharedLocationAnnotation;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addAnnotationToCoordinate:(CLLocationCoordinate2D)coordinate identifier:(NSString * _Nonnull)identifier image:(UIImage * _Nonnull)image anchor:(enum PLAnnotationIconAnchor)anchor;
-- (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
-- (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
-- (void)removeAllAnnotations;
+- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)removeAllRouteLines;
+- (void)focusOnRouteWithIndex:(NSInteger)index;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -364,6 +357,13 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 - (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
 - (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
 - (void)removeAllMultipleRouteLines;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addAnnotationToCoordinate:(CLLocationCoordinate2D)coordinate identifier:(NSString * _Nonnull)identifier image:(UIImage * _Nonnull)image anchor:(enum PLAnnotationIconAnchor)anchor;
+- (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
+- (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
+- (void)removeAllAnnotations;
 @end
 
 SWIFT_CLASS("_TtC14PoilabsMapView10PLMapUtils")
@@ -384,6 +384,7 @@ SWIFT_CLASS("_TtC14PoilabsMapView9PLMapView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame styleUrl:(NSURL * _Nonnull)styleUrl accessToken:(NSString * _Nonnull)accessToken clickColor:(UIColor * _Nonnull)clickColor language:(NSString * _Nonnull)language OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)removeFromSuperview;
+- (void)ensureOrnamentsHidden;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -774,11 +775,6 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
-- (void)removeSharedLocationAnnotation;
-@end
-
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
 - (void)removeMultipleAnnotation;
 @end
@@ -789,16 +785,14 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)removeAllRouteLines;
-- (void)focusOnRouteWithIndex:(NSInteger)index;
+- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
+- (void)removeSharedLocationAnnotation;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addAnnotationToCoordinate:(CLLocationCoordinate2D)coordinate identifier:(NSString * _Nonnull)identifier image:(UIImage * _Nonnull)image anchor:(enum PLAnnotationIconAnchor)anchor;
-- (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
-- (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
-- (void)removeAllAnnotations;
+- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)removeAllRouteLines;
+- (void)focusOnRouteWithIndex:(NSInteger)index;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -806,6 +800,13 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 - (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
 - (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
 - (void)removeAllMultipleRouteLines;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addAnnotationToCoordinate:(CLLocationCoordinate2D)coordinate identifier:(NSString * _Nonnull)identifier image:(UIImage * _Nonnull)image anchor:(enum PLAnnotationIconAnchor)anchor;
+- (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
+- (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
+- (void)removeAllAnnotations;
 @end
 
 SWIFT_CLASS("_TtC14PoilabsMapView10PLMapUtils")
@@ -826,6 +827,7 @@ SWIFT_CLASS("_TtC14PoilabsMapView9PLMapView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame styleUrl:(NSURL * _Nonnull)styleUrl accessToken:(NSString * _Nonnull)accessToken clickColor:(UIColor * _Nonnull)clickColor language:(NSString * _Nonnull)language OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)removeFromSuperview;
+- (void)ensureOrnamentsHidden;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

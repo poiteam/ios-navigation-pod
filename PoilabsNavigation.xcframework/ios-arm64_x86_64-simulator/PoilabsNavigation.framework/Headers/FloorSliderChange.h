@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, PLNRoutePageIconType) {
     PLNRoutePageBack,
     PLNRoutePageNext,
     PLNRoutePageFinal,
+    PLNRoutePageFinished,  // New finished state
     
     PLNRoutePageUpElevator,
     PLNRoutePageUpEscalator,

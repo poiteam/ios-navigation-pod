@@ -376,7 +376,7 @@ SWIFT_CLASS("_TtC13PoilabsCommon11PLNFacility")
 @class NSNumber;
 SWIFT_CLASS_NAMED("PLNNavigationConfig")
 @interface PLNNavigationConfig : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull placeId;
+@property (nonatomic, copy) NSString * _Nonnull placeId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull uuidString;
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull majorList;
 @property (nonatomic, readonly) NSInteger minimumRssiLimit;
@@ -898,7 +898,7 @@ SWIFT_CLASS("_TtC13PoilabsCommon11PLNFacility")
 @class NSNumber;
 SWIFT_CLASS_NAMED("PLNNavigationConfig")
 @interface PLNNavigationConfig : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull placeId;
+@property (nonatomic, copy) NSString * _Nonnull placeId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull uuidString;
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull majorList;
 @property (nonatomic, readonly) NSInteger minimumRssiLimit;

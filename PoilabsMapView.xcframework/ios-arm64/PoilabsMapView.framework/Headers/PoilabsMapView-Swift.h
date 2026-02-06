@@ -330,11 +330,6 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
-- (void)removeDashedLines;
-@end
-
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
@@ -344,6 +339,11 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
 - (void)removeSharedLocationAnnotation;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
+- (void)removeDashedLines;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -384,6 +384,7 @@ SWIFT_CLASS("_TtC14PoilabsMapView9PLMapView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame styleUrl:(NSURL * _Nonnull)styleUrl accessToken:(NSString * _Nonnull)accessToken clickColor:(UIColor * _Nonnull)clickColor language:(NSString * _Nonnull)language OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)removeFromSuperview;
+- (void)ensureOrnamentsHidden;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
