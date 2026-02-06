@@ -1,0 +1,23 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+
+@protocol MBXRegionsMonitor;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Service for accessing region monitoring functionality.
+ */
+NS_SWIFT_NAME(RegionsMonitorService)
+@protocol MBXRegionsMonitorService
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Creates a new region monitor instance with the specified name.
+ *
+ * @param name A unique identifier for the region monitor instance
+ * @return A new RegionsMonitor instance
+ */
+- (nonnull id<MBXRegionsMonitor>)createRegionsMonitorForName:(nonnull NSString *)name
+                                               notifyOnEntry:(BOOL)notifyOnEntry
+                                                notifyOnExit:(BOOL)notifyOnExit;
+@end

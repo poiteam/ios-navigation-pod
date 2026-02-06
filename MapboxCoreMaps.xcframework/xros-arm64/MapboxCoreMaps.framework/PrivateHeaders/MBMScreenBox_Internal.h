@@ -4,6 +4,11 @@
 
 @class MBMScreenCoordinate;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes the coordinate box on the screen, measured in `platform pixels`
+ * from top to bottom and from left to right.
+ */
 NS_SWIFT_NAME(ScreenBox)
 __attribute__((visibility ("default")))
 @interface MBMScreenBox : NSObject
@@ -17,8 +22,18 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithMin:(nonnull MBMScreenCoordinate *)min
                                 max:(nonnull MBMScreenCoordinate *)max;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The screen coordinate close to the top left corner of the screen.
+ */
 @property (nonatomic, readonly, nonnull) MBMScreenCoordinate *min;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The screen coordinate close to the bottom right corner of the screen.
+ */
 @property (nonatomic, readonly, nonnull) MBMScreenCoordinate *max;
+
 
 - (BOOL)isEqualToScreenBox:(nonnull MBMScreenBox *)other;
 

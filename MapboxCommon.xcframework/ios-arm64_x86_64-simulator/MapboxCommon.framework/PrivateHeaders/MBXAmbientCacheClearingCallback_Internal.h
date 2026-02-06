@@ -5,5 +5,12 @@
 
 @class MBXCacheClearingError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked as a result of the TileStore clearAmbientCache() method call.
+ *
+ * @param result An integer with how many bytes were cleared from the cache.
+ * Otherwise, a CacheClearingError describing the error.
+ */
 NS_SWIFT_NAME(AmbientCacheClearingCallback)
 typedef void (^MBXAmbientCacheClearingCallback)(MBXExpected<NSNumber *, MBXCacheClearingError *> * _Nonnull result); // NOLINT(modernize-use-using)

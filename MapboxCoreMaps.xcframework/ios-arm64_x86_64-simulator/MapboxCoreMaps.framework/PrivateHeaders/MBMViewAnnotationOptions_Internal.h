@@ -5,6 +5,10 @@
 @class MBMAnnotatedFeature;
 @class MBMViewAnnotationAnchorConfig;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Defines the necessary options for displaying view annotations.
+ */
 NS_SWIFT_NAME(ViewAnnotationOptions)
 __attribute__((visibility ("default")))
 @interface MBMViewAnnotationOptions : NSObject
@@ -29,7 +33,14 @@ __attribute__((visibility ("default")))
                                          minZoom:(nullable NSNumber *)minZoom
                                          maxZoom:(nullable NSNumber *)maxZoom NS_REFINED_FOR_SWIFT;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Associates a view annotation with the geometry provided by the `AnnotatedFeature`.
+ * Note: When adding a new view annotation, you must specify the `AnnotatedFeature` type. Failure to do so will result in an error.
+ * When updating existing annotations,if the `annotatedFeature` is not set, the current value will be retained.
+ */
 @property (nonatomic, readonly, nullable) MBMAnnotatedFeature *annotatedFeature;
+
 /** View annotation width in `platform pixels`. */
 @property (nonatomic, readonly, nullable) NSNumber *width NS_REFINED_FOR_SWIFT;
 
@@ -116,15 +127,15 @@ __attribute__((visibility ("default")))
 @property (nonatomic, readonly, nullable) NSNumber *ignoreCameraPadding NS_REFINED_FOR_SWIFT;
 
 /**
- * minimum zoom value in range [0.0, 22.0] to display View Annotation.
+ * minimum zoom value in Mapbox zoom levels [0.0-25.5] to display View Annotation.
  * if not provided or is out of range, defaults to 0.0.
  */
 @property (nonatomic, readonly, nullable) NSNumber *minZoom NS_REFINED_FOR_SWIFT;
 
 /**
- * maximum zoom value in range [0.0, 22.0] to display View Annotation.
+ * maximum zoom value in Mapbox zoom levels [0.0, 25.5] to display View Annotation.
  * should be greater than or equal to minZoom.
- * if not provided or is out of range, defaults to 22.0.
+ * if not provided or is out of range, defaults to 25.5.
  */
 @property (nonatomic, readonly, nullable) NSNumber *maxZoom NS_REFINED_FOR_SWIFT;
 

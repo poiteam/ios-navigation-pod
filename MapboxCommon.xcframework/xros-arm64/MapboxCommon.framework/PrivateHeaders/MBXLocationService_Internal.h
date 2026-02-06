@@ -1,8 +1,6 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXAccuracyAuthorization.h>
-#import <MapboxCommon/MBXPermissionStatus.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
 @class MBXLocationError;
@@ -10,7 +8,13 @@
 @protocol MBXDeviceLocationProvider;
 @protocol MBXDeviceLocationProviderFactory;
 @protocol MBXLocationServiceObserver;
+typedef NS_ENUM(NSInteger, MBXAccuracyAuthorization);
+typedef NS_ENUM(NSInteger, MBXPermissionStatus);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The entry point of the platform location services.
+ */
 NS_SWIFT_NAME(LocationService)
 @protocol MBXLocationService
 /**
@@ -37,6 +41,30 @@ NS_SWIFT_NAME(LocationService)
  * @param observer An observer to remove.
  */
 - (void)unregisterObserverForObserver:(nonnull id<MBXLocationServiceObserver>)observer;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets an instance of DeviceLocationProvider. In case user defined factory
+ * was set by setUserDefinedDeviceLocationProviderFactory it will be asked to provide an instance.
+ *
+ * Note that it's up to the implementation to create a new instance
+ * or reuse the existing one.
+ *
+ * @param request Settings for this instance of the client.
+ *                 When request is not specified then reasonable default will be applied.
+ *                 Unknown values in request should be omitted by implementation silently.
+ *
+ * @return Returns an instance of a device location provider
+ *         or a error if it fails to instantiate it.
+ */
 - (nonnull MBXExpected<id<MBXDeviceLocationProvider>, MBXLocationError *> *)getDeviceLocationProviderForRequest:(nullable MBXLocationProviderRequest *)request;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Set factory to build user defined DeviceLocationProvider.
+ * When set, this factory will intercept all getDeviceLocationProvider calls to provide an instance of a `DeviceLocationProvider`.
+ *
+ * When `null` is set, factory resets to the default one.
+ *
+ * @param factory to build DeviceLocationProvider
+ */
 - (void)setUserDefinedDeviceLocationProviderFactoryForFactory:(nullable id<MBXDeviceLocationProviderFactory>)factory;
 @end

@@ -6,6 +6,11 @@
 
 @protocol MBXMetricsSource;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Metrics service used to register or unregister metric
+ * sources and start or stop collecting metrics.
+ */
 NS_SWIFT_NAME(MetricsService)
 __attribute__((visibility ("default")))
 @interface MBXMetricsService : NSObject
@@ -16,13 +21,72 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Add metrics source to the service to collect the metrics that
+ * are associated with the source.
+ *
+ * @param source The metric source that should be added
+ */
 - (void)addMetricsSourceForSource:(nonnull id<MBXMetricsSource>)source;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Remove metrics source from the service to stop collecting metrics that
+ * are associated with the source.
+ *
+ * @param source The metric source that should be removed.
+ */
 - (void)removeMetricsSourceForSource:(nonnull id<MBXMetricsSource>)source;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Serialize the metrics events to a string that can be pushed to
+ * the metrics endpoint. Useful for debugging or pushing to a staging
+ * endpoint manually.
+ *
+ * @param callback to be called upon completion on a worker thread
+ */
 - (void)serializeForCallback:(nonnull MBXMetricsServiceSerializeCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Serialize the metrics events into a human-readable JSON format.
+ *
+ * @param callback to be called upon completion on a worker thread
+ */
 - (void)serializePrettyForCallback:(nonnull MBXMetricsServiceSerializeCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Start collecting metrics with the desired time interval. Calling it multiple
+ * times will restart the service with a new interval.
+ *
+ * @param interval Desired interval for metrics collection. Units in seconds. Defaults to `180s`.
+ */
 - (void)startForInterval:(nullable NSNumber *)interval;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Stop collecting metrics.
+ */
 - (void)stop;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Flush the metrics pipeline, sending all metrics events. It will attempt to
+ * send events even if the service has not been started by the start() method.
+ *
+ * @param callback The callback to be invoked once all the events are flushed.
+ *
+ * Note: This method should only be used for development and testing purposes.
+ *
+ */
 - (void)flushForCallback:(nonnull MBXFlushOperationResultCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Set application tag name for filtering events associated to the tag.
+ *
+ * Note: This method should only be used in the application layer. If the tag name
+ * has been set already, it will be replaced.
+ *
+ * @param tag Application tag name that can be used for filtering all the events
+ * associated to the tag.
+ */
 - (void)setTagForTag:(nonnull NSString *)tag;
 /** Configure MetricsService to get settings from the remote config. */
 - (void)subscribeToConfigUpdates;

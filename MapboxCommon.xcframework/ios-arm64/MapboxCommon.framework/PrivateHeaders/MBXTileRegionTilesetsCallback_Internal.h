@@ -1,0 +1,16 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+@class MBXExpected<__covariant Value, __covariant Error>;
+
+@class MBXTileRegionError;
+@class MBXTilesetDescriptor;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked to return a tile region's associated descriptors
+ *
+ * @param result A metadata value. Otherwise, an TileRegionError describing an error.
+ */
+NS_SWIFT_NAME(TileRegionTilesetsCallback)
+typedef void (^MBXTileRegionTilesetsCallback)(MBXExpected<MBXTilesetDescriptor *, MBXTileRegionError *> * _Nonnull result); // NOLINT(modernize-use-using)

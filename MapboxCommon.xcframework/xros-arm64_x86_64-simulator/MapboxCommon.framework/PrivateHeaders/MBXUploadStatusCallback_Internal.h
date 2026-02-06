@@ -4,5 +4,10 @@
 
 @class MBXUploadStatus;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback which is used to report the result of the file upload.
+ * This callback can be invoked from any thread at the moment and the client is responsible for posting it back to a desired thread.
+ */
 NS_SWIFT_NAME(UploadStatusCallback)
 typedef void (^MBXUploadStatusCallback)(MBXUploadStatus * _Nonnull status); // NOLINT(modernize-use-using)

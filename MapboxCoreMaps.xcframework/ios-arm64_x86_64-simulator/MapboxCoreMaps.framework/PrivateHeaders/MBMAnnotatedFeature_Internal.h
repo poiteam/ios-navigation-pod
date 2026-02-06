@@ -11,6 +11,10 @@ typedef NS_ENUM(NSInteger, MBMAnnotatedFeatureType)
     MBMAnnotatedFeatureTypeAnnotatedLayerFeature
 } NS_SWIFT_NAME(AnnotatedFeatureType);
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents a variant that can store either a GeoJSON geometry or an annotated layer feature.
+ */
 NS_SWIFT_NAME(AnnotatedFeature)
 __attribute__((visibility ("default")))
 @interface MBMAnnotatedFeature : NSObject

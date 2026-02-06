@@ -5,9 +5,33 @@
 
 @protocol MBXBatteryMonitorObserver;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An interface to obtain the device's battery status and listen for battery status changes.
+ */
 NS_SWIFT_NAME(BatteryMonitorInterface)
 @protocol MBXBatteryMonitorInterface
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Gets the battery charging state of the device.
+ *
+ * @param callback A callback to get the battery charging state.
+ */
 - (void)getBatteryChargingStatusForCallback:(nonnull MBXBatteryChargingStatusCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Registers a battery observer, automatically starts
+ * monitoring if it has not been started yet.
+ *
+ * @param observer An observer to register.
+ */
 - (void)registerObserverForObserver:(nonnull id<MBXBatteryMonitorObserver>)observer;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Unregisters a battery observer. Once the last observer
+ * is unregisted it stops monitoring.
+ *
+ * @param observer An observer to unregister.
+ */
 - (void)unregisterObserverForObserver:(nonnull id<MBXBatteryMonitorObserver>)observer;
 @end

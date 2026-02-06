@@ -13,7 +13,6 @@
 #import <PoilabsNavigation/PLNNavigationSettings.h>
 #import <PoilabsNavigation/PLNLocationManager.h>
 #import <PoilabsNavigation/PLNNavigationMapView.h>
-#import <PoilabsNavigation/SearchMainTableViewCell.h>
 #import <PoilabsNavigation/SearchKeywordLogManager.h>
 
 //! Project version number for PoilabsNavigation.

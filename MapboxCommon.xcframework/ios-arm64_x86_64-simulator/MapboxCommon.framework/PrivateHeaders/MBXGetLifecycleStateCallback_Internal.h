@@ -1,8 +1,15 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXLifecycleState_Internal.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
+typedef NS_ENUM(NSInteger, MBXLifecycleState);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A callback to get the state of the application.
+ *
+ * @param result The current lifecycle state of the application.
+ */
 NS_SWIFT_NAME(GetLifecycleStateCallback)
 typedef void (^MBXGetLifecycleStateCallback)(MBXExpected<NSNumber *, NSString *> * _Nonnull result); // NOLINT(modernize-use-using)

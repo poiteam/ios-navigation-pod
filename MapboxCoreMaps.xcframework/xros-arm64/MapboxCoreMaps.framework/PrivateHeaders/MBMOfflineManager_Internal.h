@@ -6,18 +6,80 @@
 #import <MapboxCoreMaps/MBMStylePacksCallback_Internal.h>
 
 @interface MBMOfflineManager ()
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Loads a new style package or updates the existing one.
+ *
+ * If a style package with the given id already exists, it gets updated with
+ * the values provided to the given load options. The missing resources get
+ * loaded and the expired resources get updated.
+ *
+ * If there no values provided to the given load options, the existing style package
+ * gets refreshed: the missing resources get loaded and the expired resources get updated.
+ *
+ * A failed load request can be reattempted with another loadStylePack() call.
+ *
+ * If the style cannot be fetched for any reason, the load request is terminated.
+ * If the style is fetched but loading some of the style package resources fails,
+ * the load request proceeds trying to load the remaining style package resources.
+ *
+ * @param styleURI The URI of the style package's associated style
+ * @param loadOptions The `style pack load options`.
+ * @param onProgress The callback that may be invoked multiple times to report progess of the loading operation.
+ * @param onFinished The callback that is invoked only once upon success, failure, or cancelation of the loading operation.
+ * @return A `cancelable` object that could be used to cancel the load request.
+ */
 - (nonnull id<MBXCancelable>)loadStylePackForStyleURI:(nonnull NSString *)styleURI
                                           loadOptions:(nonnull MBMStylePackLoadOptions *)loadOptions
                                            onProgress:(nonnull MBMStylePackLoadProgressCallback)onProgress
                                            onFinished:(nonnull MBMStylePackCallback)onFinished __attribute((ns_returns_retained)) NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An overloaded version that does not report progess of the loading operation.
+ *
+ * @param styleURI The URI of the style package's associated style
+ * @param loadOptions The `style pack load options`.
+ * @param onFinished The callback that is invoked only once upon success, failure, or cancelation of the loading operation.
+ * @return A `cancelable` object that could be used to cancel the load request.
+ */
 - (nonnull id<MBXCancelable>)loadStylePackForStyleURI:(nonnull NSString *)styleURI
                                           loadOptions:(nonnull MBMStylePackLoadOptions *)loadOptions
                                            onFinished:(nonnull MBMStylePackCallback)onFinished __attribute((ns_returns_retained)) NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns a list of the existing style packages.
+ *
+ * @param callback The `style packs callback`.
+ */
 - (void)getAllStylePacksForCallback:(nonnull MBMStylePacksCallback)callback NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns a style package by its id.
+ *
+ * @param styleURI The URI of the style package's associated style
+ * @param callback The `style pack callback`.
+ */
 - (void)getStylePackForStyleURI:(nonnull NSString *)styleURI
                        callback:(nonnull MBMStylePackCallback)callback NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns a style package's associated metadata
+ *
+ * The style package's associated metadata that a user previously set.
+ *
+ * @param styleURI The URI of the style package's associated style
+ * @param callback The `style pack metadata callback`.
+ */
 - (void)getStylePackMetadataForStyleURI:(nonnull NSString *)styleURI
                                callback:(nonnull MBMStylePackMetadataCallback)callback NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * An overloaded version with a callback for feedback.
+ * On successful style package removal, the given callback is invoked with the removed style package. Otherwise, the given callback is invoked with an error.
+ *
+ * @param styleURI The URI of the style package's associated style
+ * @param callback A callback to be invoked when a style package was removed.
+ */
 - (void)removeStylePackForStyleURI:(nonnull NSString *)styleURI
                           callback:(nonnull MBMStylePackCallback)callback NS_REFINED_FOR_SWIFT;
 @end

@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents the progress in a resource load operation.
+ */
 NS_SWIFT_NAME(ResourceLoadProgress)
 __attribute__((visibility ("default")))
 @interface MBXResourceLoadProgress : NSObject
@@ -15,7 +19,17 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithBytes:(uint64_t)bytes
                            totalBytes:(nullable NSNumber *)totalBytes;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The amount of bytes transferred so far.
+ */
 @property (nonatomic, readonly) uint64_t bytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * If known, the total amount of bytes to transfer. Empty otherwise.
+ */
 @property (nonatomic, readonly, nullable) NSNumber *totalBytes;
+
 
 @end

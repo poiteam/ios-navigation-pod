@@ -5,5 +5,11 @@
 
 @class MBMStylePackError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked to return a style package's associated metadata
+ *
+ * @param result A metadata value. Otherwise, an `style pack error` describing an error.
+ */
 NS_SWIFT_NAME(StylePackMetadataCallback)
 typedef void (^MBMStylePackMetadataCallback)(MBXExpected<id, MBMStylePackError *> * _Nonnull result); // NOLINT(modernize-use-using)

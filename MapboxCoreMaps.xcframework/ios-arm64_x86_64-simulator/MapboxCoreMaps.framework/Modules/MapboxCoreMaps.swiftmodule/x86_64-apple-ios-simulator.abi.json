@@ -6,6 +6,2614 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCommon",
+        "printedName": "MapboxCommon",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraOptions",
+        "printedName": "CameraOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocationCoordinate2D",
+                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "usr": "c:@S@CLLocationCoordinate2D"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvg",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocationCoordinate2D",
+                        "printedName": "CoreLocation.CLLocationCoordinate2D",
+                        "usr": "c:@S@CLLocationCoordinate2D"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvs",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvs",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvM",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6centerSo22CLLocationCoordinate2DVSgvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "padding",
+            "printedName": "padding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIEdgeInsets?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIEdgeInsets?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIEdgeInsets",
+                        "printedName": "UIKit.UIEdgeInsets",
+                        "usr": "c:@S@UIEdgeInsets"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvg",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIEdgeInsets?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIEdgeInsets",
+                        "printedName": "UIKit.UIEdgeInsets",
+                        "usr": "c:@S@UIEdgeInsets"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvs",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvs",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvM",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7paddingSo12UIEdgeInsetsVSgvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "anchor",
+            "printedName": "anchor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGPoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPoint",
+                        "printedName": "CoreFoundation.CGPoint",
+                        "usr": "c:@S@CGPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGPoint?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPoint",
+                        "printedName": "CoreFoundation.CGPoint",
+                        "usr": "c:@S@CGPoint"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvs",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvM",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6anchorSo7CGPointVSgvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "zoom",
+            "printedName": "zoom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV4zoom0B10Foundation7CGFloatVSgvp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV4zoom0B8Graphics7CGFloatVSgvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV4zoom0B10Foundation7CGFloatVSgvg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV4zoom0B8Graphics7CGFloatVSgvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV4zoom0B10Foundation7CGFloatVSgvs",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV4zoom0B8Graphics7CGFloatVSgvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV4zoom0B10Foundation7CGFloatVSgvM",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV4zoom0B8Graphics7CGFloatVSgvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bearing",
+            "printedName": "bearing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV7bearingSdSgvp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7bearingSdSgvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV7bearingSdSgvg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7bearingSdSgvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV7bearingSdSgvs",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7bearingSdSgvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV7bearingSdSgvM",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV7bearingSdSgvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pitch",
+            "printedName": "pitch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV5pitch0B10Foundation7CGFloatVSgvp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV5pitch0B8Graphics7CGFloatVSgvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV5pitch0B10Foundation7CGFloatVSgvg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV5pitch0B8Graphics7CGFloatVSgvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV5pitch0B10Foundation7CGFloatVSgvs",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV5pitch0B8Graphics7CGFloatVSgvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV5pitch0B10Foundation7CGFloatVSgvM",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV5pitch0B8Graphics7CGFloatVSgvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(center:padding:anchor:zoom:bearing:pitch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraOptions",
+                "printedName": "MapboxCoreMaps.CameraOptions",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreLocation.CLLocationCoordinate2D?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIEdgeInsets?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGPoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV6center7padding6anchor4zoom7bearing5pitchACSo22CLLocationCoordinate2DVSg_So12UIEdgeInsetsVSgSo7CGPointVSg0B10Foundation7CGFloatVSgSdSgAVtcfc",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6center7padding6anchor4zoom7bearing5pitchACSo22CLLocationCoordinate2DVSg_So12UIEdgeInsetsVSgSo7CGPointVSg0B8Graphics7CGFloatVSgSdSgAVtcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cameraState:anchor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraOptions",
+                "printedName": "MapboxCoreMaps.CameraOptions",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraState",
+                "printedName": "MapboxCoreMaps.CameraState",
+                "usr": "s:14MapboxCoreMaps11CameraStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGPoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV11cameraState6anchorAcA0dG0V_So7CGPointVSgtcfc",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV11cameraState6anchorAcA0dG0V_So7CGPointVSgtcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraOptions",
+                "printedName": "MapboxCoreMaps.CameraOptions",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV9hashValueSivp",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV9hashValueSivp",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV9hashValueSivg",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV9hashValueSivg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV4hash4intoys6HasherVz_tF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraOptions",
+                "printedName": "MapboxCoreMaps.CameraOptions",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraOptions",
+                "printedName": "MapboxCoreMaps.CameraOptions",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCoreMaps",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraOptions",
+                    "printedName": "MapboxCoreMaps.CameraOptions",
+                    "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraOptions",
+                    "printedName": "MapboxCoreMaps.CameraOptions",
+                    "usr": "s:14MapboxCoreMaps13CameraOptionsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps13CameraOptionsV10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps13CameraOptionsV10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps13CameraOptionsV10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps13CameraOptionsV10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps13CameraOptionsV",
+        "mangledName": "$s14MapboxCoreMaps13CameraOptionsV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CameraState",
+        "printedName": "CameraState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvp",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvg",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvg",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvs",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvs",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvM",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV6centerSo22CLLocationCoordinate2DVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "padding",
+            "printedName": "padding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvp",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvg",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvg",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvs",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvs",
+                "moduleName": "MapboxCoreMaps",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvM",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV7paddingSo12UIEdgeInsetsVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "zoom",
+            "printedName": "zoom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11CameraStateV4zoom0B10Foundation7CGFloatVvp",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV4zoom0B8Graphics7CGFloatVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV4zoom0B10Foundation7CGFloatVvg",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV4zoom0B8Graphics7CGFloatVvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV4zoom0B10Foundation7CGFloatVvs",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV4zoom0B8Graphics7CGFloatVvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV4zoom0B10Foundation7CGFloatVvM",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV4zoom0B8Graphics7CGFloatVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bearing",
+            "printedName": "bearing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11CameraStateV7bearingSdvp",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV7bearingSdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV7bearingSdvg",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV7bearingSdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV7bearingSdvs",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV7bearingSdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV7bearingSdvM",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV7bearingSdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pitch",
+            "printedName": "pitch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11CameraStateV5pitch0B10Foundation7CGFloatVvp",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV5pitch0B8Graphics7CGFloatVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV5pitch0B10Foundation7CGFloatVvg",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV5pitch0B8Graphics7CGFloatVvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV5pitch0B10Foundation7CGFloatVvs",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV5pitch0B8Graphics7CGFloatVvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV5pitch0B10Foundation7CGFloatVvM",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV5pitch0B8Graphics7CGFloatVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(center:padding:zoom:bearing:pitch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraState",
+                "printedName": "MapboxCoreMaps.CameraState",
+                "usr": "s:14MapboxCoreMaps11CameraStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps11CameraStateV6center7padding4zoom7bearing5pitchACSo22CLLocationCoordinate2DV_So12UIEdgeInsetsV0B10Foundation7CGFloatVSdAOtcfc",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV6center7padding4zoom7bearing5pitchACSo22CLLocationCoordinate2DV_So12UIEdgeInsetsV0B8Graphics7CGFloatVSdAOtcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraState",
+                "printedName": "MapboxCoreMaps.CameraState",
+                "usr": "s:14MapboxCoreMaps11CameraStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps11CameraStateV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps11CameraStateV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11CameraStateV9hashValueSivp",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV9hashValueSivp",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11CameraStateV9hashValueSivg",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV9hashValueSivg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps11CameraStateV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV4hash4intoys6HasherVz_tF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraState",
+                "printedName": "MapboxCoreMaps.CameraState",
+                "usr": "s:14MapboxCoreMaps11CameraStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CameraState",
+                "printedName": "MapboxCoreMaps.CameraState",
+                "usr": "s:14MapboxCoreMaps11CameraStateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps11CameraStateV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCoreMaps",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraState",
+                    "printedName": "MapboxCoreMaps.CameraState",
+                    "usr": "s:14MapboxCoreMaps11CameraStateV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps11CameraStateV10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraState",
+                    "printedName": "MapboxCoreMaps.CameraState",
+                    "usr": "s:14MapboxCoreMaps11CameraStateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps11CameraStateV10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps11CameraStateV10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps11CameraStateV10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps11CameraStateV10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps11CameraStateV",
+        "mangledName": "$s14MapboxCoreMaps11CameraStateV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly",
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EdgeInsets",
+        "printedName": "EdgeInsets",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "top",
+            "printedName": "top",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV3topSdvp",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV3topSdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV3topSdvg",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV3topSdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV3topSdvs",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV3topSdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV3topSdvM",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV3topSdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "left",
+            "printedName": "left",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV4leftSdvp",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV4leftSdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV4leftSdvg",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV4leftSdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV4leftSdvs",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV4leftSdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV4leftSdvM",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV4leftSdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV6bottomSdvp",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV6bottomSdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV6bottomSdvg",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV6bottomSdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV6bottomSdvs",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV6bottomSdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV6bottomSdvM",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV6bottomSdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "right",
+            "printedName": "right",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV5rightSdvp",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV5rightSdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV5rightSdvg",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV5rightSdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV5rightSdvs",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV5rightSdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV5rightSdvM",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV5rightSdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(top:left:bottom:right:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EdgeInsets",
+                "printedName": "MapboxCoreMaps.EdgeInsets",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV3top4left6bottom5rightACSd_S3dtcfc",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV3top4left6bottom5rightACSd_S3dtcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV9hashValueSivp",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV9hashValueSivp",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV9hashValueSivg",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV9hashValueSivg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV4hash4intoys6HasherVz_tF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EdgeInsets",
+                "printedName": "MapboxCoreMaps.EdgeInsets",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EdgeInsets",
+                "printedName": "MapboxCoreMaps.EdgeInsets",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCoreMaps",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EdgeInsets",
+                    "printedName": "MapboxCoreMaps.EdgeInsets",
+                    "usr": "s:14MapboxCoreMaps10EdgeInsetsV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EdgeInsets",
+                    "printedName": "MapboxCoreMaps.EdgeInsets",
+                    "usr": "s:14MapboxCoreMaps10EdgeInsetsV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps10EdgeInsetsV10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps10EdgeInsetsV10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps10EdgeInsetsV",
+        "mangledName": "$s14MapboxCoreMaps10EdgeInsetsV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MapboxCommon",
         "printedName": "MapboxCommon",
         "declKind": "Import",
@@ -621,6 +3229,1294 @@
       },
       {
         "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly",
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IndoorFloor",
+        "printedName": "IndoorFloor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV2idSSvp",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV2idSSvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV2idSSvg",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV2idSSvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV2idSSvs",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV2idSSvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV2idSSvM",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV2idSSvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV4nameSSvp",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV4nameSSvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV4nameSSvg",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV4nameSSvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV4nameSSvs",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV4nameSSvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV4nameSSvM",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV4nameSSvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IndoorFloor",
+                "printedName": "MapboxCoreMaps.IndoorFloor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV2id4nameACSS_SStcfc",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV2id4nameACSS_SStcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV9hashValueSivp",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV9hashValueSivp",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV9hashValueSivg",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV9hashValueSivg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV4hash4intoys6HasherVz_tF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndoorFloor",
+                "printedName": "MapboxCoreMaps.IndoorFloor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndoorFloor",
+                "printedName": "MapboxCoreMaps.IndoorFloor",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCoreMaps",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorFloor",
+                    "printedName": "MapboxCoreMaps.IndoorFloor",
+                    "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorFloor",
+                    "printedName": "MapboxCoreMaps.IndoorFloor",
+                    "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps11IndoorFloorV10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps11IndoorFloorV10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps11IndoorFloorV10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps11IndoorFloorV10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps11IndoorFloorV",
+        "mangledName": "$s14MapboxCoreMaps11IndoorFloorV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl",
+          "Documentation",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "Experimental"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCommon",
+        "printedName": "MapboxCommon",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly",
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IndoorManager",
+        "printedName": "IndoorManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IndoorManager",
+                "printedName": "MapboxCoreMaps.IndoorManager",
+                "usr": "s:14MapboxCoreMaps13IndoorManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps13IndoorManagerCyACypcfc",
+            "mangledName": "$s14MapboxCoreMaps13IndoorManagerCyACypcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "onIndoorUpdated",
+            "printedName": "onIndoorUpdated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<MapboxCoreMaps.IndoorState, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorState",
+                    "printedName": "MapboxCoreMaps.IndoorState",
+                    "usr": "s:14MapboxCoreMaps11IndoorStateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvp",
+            "mangledName": "$s14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "Final",
+              "Lazy",
+              "AccessControl",
+              "Documentation",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<MapboxCoreMaps.IndoorState, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndoorState",
+                        "printedName": "MapboxCoreMaps.IndoorState",
+                        "usr": "s:14MapboxCoreMaps11IndoorStateV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvg",
+                "mangledName": "$s14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<MapboxCoreMaps.IndoorState, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndoorState",
+                        "printedName": "MapboxCoreMaps.IndoorState",
+                        "usr": "s:14MapboxCoreMaps11IndoorStateV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvs",
+                "mangledName": "$s14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvM",
+                "mangledName": "$s14MapboxCoreMaps13IndoorManagerC02onD7Updated7Combine12AnyPublisherVyAA0D5StateVs5NeverOGvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "selectFloor",
+            "printedName": "selectFloor(selectedFloorId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps13IndoorManagerC11selectFloor08selectedG2IdySS_tF",
+            "mangledName": "$s14MapboxCoreMaps13IndoorManagerC11selectFloor08selectedG2IdySS_tF",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Documentation",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorManager",
+                    "printedName": "MapboxCoreMaps.IndoorManager",
+                    "usr": "s:14MapboxCoreMaps13IndoorManagerC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps13IndoorManagerC10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps13IndoorManagerC10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorManager",
+                    "printedName": "MapboxCoreMaps.IndoorManager",
+                    "usr": "s:14MapboxCoreMaps13IndoorManagerC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps13IndoorManagerC10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps13IndoorManagerC10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps13IndoorManagerC10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps13IndoorManagerC10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14MapboxCoreMaps13IndoorManagerC",
+        "mangledName": "$s14MapboxCoreMaps13IndoorManagerC",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Documentation",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "Experimental"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly",
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IndoorState",
+        "printedName": "IndoorState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "floors",
+            "printedName": "floors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MapboxCoreMaps.IndoorFloor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorFloor",
+                    "printedName": "MapboxCoreMaps.IndoorFloor",
+                    "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvp",
+            "mangledName": "$s14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "Documentation",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapboxCoreMaps.IndoorFloor]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndoorFloor",
+                        "printedName": "MapboxCoreMaps.IndoorFloor",
+                        "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvg",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapboxCoreMaps.IndoorFloor]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IndoorFloor",
+                        "printedName": "MapboxCoreMaps.IndoorFloor",
+                        "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvs",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvM",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV6floorsSayAA0D5FloorVGvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedFloorId",
+            "printedName": "selectedFloorId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvp",
+            "mangledName": "$s14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvg",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvs",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvM",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV15selectedFloorIdSSvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Experimental"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(floors:selectedFloorId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IndoorState",
+                "printedName": "MapboxCoreMaps.IndoorState",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MapboxCoreMaps.IndoorFloor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorFloor",
+                    "printedName": "MapboxCoreMaps.IndoorFloor",
+                    "usr": "s:14MapboxCoreMaps11IndoorFloorV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps11IndoorStateV6floors15selectedFloorIdACSayAA0dH0VG_SStcfc",
+            "mangledName": "$s14MapboxCoreMaps11IndoorStateV6floors15selectedFloorIdACSayAA0dH0VG_SStcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorState",
+                    "printedName": "MapboxCoreMaps.IndoorState",
+                    "usr": "s:14MapboxCoreMaps11IndoorStateV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndoorState",
+                    "printedName": "MapboxCoreMaps.IndoorState",
+                    "usr": "s:14MapboxCoreMaps11IndoorStateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps11IndoorStateV10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps11IndoorStateV10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps11IndoorStateV10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps11IndoorStateV10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps11IndoorStateV",
+        "mangledName": "$s14MapboxCoreMaps11IndoorStateV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl",
+          "Documentation",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "Experimental"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1221,6 +5117,1287 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly",
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScreenCoordinate",
+        "printedName": "ScreenCoordinate",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "x",
+            "printedName": "x",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1xSdvp",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1xSdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1xSdvg",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1xSdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1xSdvs",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1xSdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1xSdvM",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1xSdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "y",
+            "printedName": "y",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1ySdvp",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1ySdvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1ySdvg",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1ySdvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1ySdvs",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1ySdvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1ySdvM",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1ySdvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(x:y:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScreenCoordinate",
+                "printedName": "MapboxCoreMaps.ScreenCoordinate",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV1x1yACSd_Sdtcfc",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV1x1yACSd_Sdtcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV9hashValueSivp",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV9hashValueSivp",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV9hashValueSivg",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV9hashValueSivg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV4hash4intoys6HasherVz_tF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScreenCoordinate",
+                "printedName": "MapboxCoreMaps.ScreenCoordinate",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ScreenCoordinate",
+                "printedName": "MapboxCoreMaps.ScreenCoordinate",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCoreMaps",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Marshaller",
+            "printedName": "Marshaller",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "toObjc",
+                "printedName": "toObjc(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenCoordinate",
+                    "printedName": "MapboxCoreMaps.ScreenCoordinate",
+                    "usr": "s:14MapboxCoreMaps16ScreenCoordinateV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV10MarshallerV6toObjcyxAClFZ",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV10MarshallerV6toObjcyxAClFZ",
+                "moduleName": "MapboxCoreMaps",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "toSwift",
+                "printedName": "toSwift(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenCoordinate",
+                    "printedName": "MapboxCoreMaps.ScreenCoordinate",
+                    "usr": "s:14MapboxCoreMaps16ScreenCoordinateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:14MapboxCoreMaps16ScreenCoordinateV10MarshallerV7toSwiftyACypFZ",
+                "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV10MarshallerV7toSwiftyACypFZ",
+                "moduleName": "MapboxCoreMaps",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "spi_group_names": [
+                  "Marshalling"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:14MapboxCoreMaps16ScreenCoordinateV10MarshallerV",
+            "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV10MarshallerV",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps16ScreenCoordinateV",
+        "mangledName": "$s14MapboxCoreMaps16ScreenCoordinateV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation.CLLocation",
+        "printedName": "CoreLocation.CLLocation",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCoreMaps_Private",
+        "printedName": "MapboxCoreMaps_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIGeometry",
+        "printedName": "UIKit.UIGeometry",
+        "declKind": "Import",
+        "moduleName": "MapboxCoreMaps"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIEdgeInsetsCodable",
+        "printedName": "UIEdgeInsetsCodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "top",
+            "printedName": "top",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B10Foundation7CGFloatVvp",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B8Graphics7CGFloatVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B10Foundation7CGFloatVvg",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B8Graphics7CGFloatVvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B10Foundation7CGFloatVvs",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B8Graphics7CGFloatVvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B10Foundation7CGFloatVvM",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV3top0B8Graphics7CGFloatVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "left",
+            "printedName": "left",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B10Foundation7CGFloatVvp",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B8Graphics7CGFloatVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B10Foundation7CGFloatVvg",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B8Graphics7CGFloatVvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B10Foundation7CGFloatVvs",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B8Graphics7CGFloatVvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B10Foundation7CGFloatVvM",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV4left0B8Graphics7CGFloatVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B10Foundation7CGFloatVvp",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B8Graphics7CGFloatVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B10Foundation7CGFloatVvg",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B8Graphics7CGFloatVvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B10Foundation7CGFloatVvs",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B8Graphics7CGFloatVvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B10Foundation7CGFloatVvM",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV6bottom0B8Graphics7CGFloatVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "right",
+            "printedName": "right",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B10Foundation7CGFloatVvp",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B8Graphics7CGFloatVvp",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B10Foundation7CGFloatVvg",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B8Graphics7CGFloatVvg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B10Foundation7CGFloatVvs",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B8Graphics7CGFloatVvs",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B10Foundation7CGFloatVvM",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV5right0B8Graphics7CGFloatVvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(top:left:bottom:right:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsetsCodable",
+                "printedName": "MapboxCoreMaps.UIEdgeInsetsCodable",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV3top4left6bottom5rightAC0B10Foundation7CGFloatV_A3Jtcfc",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV3top4left6bottom5rightAC0B8Graphics7CGFloatV_A3Jtcfc",
+            "moduleName": "MapboxCoreMaps",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsetsCodable",
+                "printedName": "MapboxCoreMaps.UIEdgeInsetsCodable",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV9hashValueSivp",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV9hashValueSivp",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV9hashValueSivg",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV9hashValueSivg",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV4hash4intoys6HasherVz_tF",
+            "moduleName": "MapboxCoreMaps",
+            "implicit": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsetsCodable",
+                "printedName": "MapboxCoreMaps.UIEdgeInsetsCodable",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsetsCodable",
+                "printedName": "MapboxCoreMaps.UIEdgeInsetsCodable",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCoreMaps",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "edgeInsets",
+            "printedName": "edgeInsets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0Vvp",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0Vvp",
+            "moduleName": "MapboxCoreMaps",
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0Vvg",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0Vvg",
+                "moduleName": "MapboxCoreMaps",
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEdgeInsets",
+                    "printedName": "UIKit.UIEdgeInsets",
+                    "usr": "c:@S@UIEdgeInsets"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0Vvs",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0Vvs",
+                "moduleName": "MapboxCoreMaps",
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0VvM",
+                "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV04edgeE0So0dE0VvM",
+                "moduleName": "MapboxCoreMaps",
+                "implicit": true,
+                "declAttributes": [
+                  "SPIAccessControl"
+                ],
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsetsCodable",
+                "printedName": "MapboxCoreMaps.UIEdgeInsetsCodable",
+                "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIEdgeInsets",
+                "printedName": "UIKit.UIEdgeInsets",
+                "usr": "c:@S@UIEdgeInsets"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableVyACSo0dE0Vcfc",
+            "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableVyACSo0dE0Vcfc",
+            "moduleName": "MapboxCoreMaps",
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14MapboxCoreMaps19UIEdgeInsetsCodableV",
+        "mangledName": "$s14MapboxCoreMaps19UIEdgeInsetsCodableV",
+        "moduleName": "MapboxCoreMaps",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "Internal"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       }

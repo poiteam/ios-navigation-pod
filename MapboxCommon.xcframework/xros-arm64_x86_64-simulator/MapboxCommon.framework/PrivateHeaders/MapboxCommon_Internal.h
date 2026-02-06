@@ -1,5 +1,6 @@
 #import <MapboxCommon/MBXExpected.h>
 #import <MapboxCommon/MBXResourceData_Internal.h>
+#import <MapboxCommon/Tracing_Internal.h>
 #import <MapboxCommon/MapboxAccounts_Internal.h>
 #import <MapboxCommon/MapboxBattery_Internal.h>
 #import <MapboxCommon/MapboxBillingService_Internal.h>
@@ -32,7 +33,10 @@
 #import <MapboxCommon/MapboxTelemetry_Internal.h>
 #import <MapboxCommon/MapboxTileStoreUtilities_Internal.h>
 #import <MapboxCommon/MapboxTileStore_Internal.h>
+#import <MapboxCommon/MapboxTilesetDescriptor_Internal.h>
 #import <MapboxCommon/MapboxValue_Internal.h>
 #import <MapboxCommon/MapboxVersion_Internal.h>
 #import <MapboxCommon/MapboxWssBackend_Internal.h>
 #import <MapboxCommon/NSStream+MBXAdditions.h>
+#import <MapboxCommon/MapboxTileStoreImport_Internal.h>
+#import <MapboxCommon/MBXCLHeadingProvider.h>

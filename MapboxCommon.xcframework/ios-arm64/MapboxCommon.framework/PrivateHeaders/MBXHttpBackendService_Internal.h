@@ -6,12 +6,32 @@
 @class MBXHttpBackendRequest;
 @protocol MBXHttpBackendRequestObserver;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP Service Backend, responsible for performing
+ */
 NS_SWIFT_NAME(Service)
 @protocol MBXHttpBackendService
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets the maximum number of simultaneous connections to a single host.
+ */
 - (void)setMaxRequestsPerHostForMax:(uint8_t)max;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Make an HTTP request. The provided callback is invoked upon completion or error.
+ */
 - (uint64_t)requestForRequest:(nonnull MBXHttpBackendRequest *)request
                      observer:(nonnull id<MBXHttpBackendRequestObserver>)observer;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Cancels a pending request.
+ */
 - (void)cancelRequestForId:(uint64_t)id_
                   callback:(nonnull MBXResultCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns true if the backend supports the keepCompression flag in HTTP requests, false otherwise.
+ */
 - (BOOL)supportsKeepCompression;
 @end

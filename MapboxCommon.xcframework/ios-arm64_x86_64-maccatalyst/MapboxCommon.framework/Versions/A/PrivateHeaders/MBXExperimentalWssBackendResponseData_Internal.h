@@ -4,6 +4,10 @@
 
 @protocol MBXReadStream;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents the data received as response to a successful WS request.
+ */
 NS_SWIFT_NAME(ResponseData)
 __attribute__((visibility ("default")))
 @interface MBXExperimentalWssBackendResponseData : NSObject
@@ -24,6 +28,11 @@ __attribute__((visibility ("default")))
 /** Response code. */
 @property (nonatomic, readonly) int32_t code;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A ReadStream from which the WS response data can be read.
+ */
 @property (nonatomic, readonly, nonnull) id<MBXReadStream> dataStream;
+
 
 @end

@@ -3,6 +3,10 @@
 #import <Foundation/Foundation.h>
 @class MBXDataRef;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents the data retrieved by a resource load operation.
+ */
 NS_SWIFT_NAME(ResourceData)
 __attribute__((visibility ("default")))
 @interface MBXResourceData : NSObject
@@ -13,6 +17,12 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Retrieves the data.
+ *
+ * The data may already be available in memory or be retrieved from disk.
+ */
 - (nullable MBXDataRef *)getData __attribute((ns_returns_retained));
 
 @end

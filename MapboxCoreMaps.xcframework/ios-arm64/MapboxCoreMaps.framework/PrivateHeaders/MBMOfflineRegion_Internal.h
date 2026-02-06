@@ -5,9 +5,41 @@
 #import <MapboxCoreMaps/MBMOfflineRegionStatusCallback_Internal.h>
 
 @interface MBMOfflineRegion ()
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Sets arbitrary binary region metadata for the region.
+ *
+ * Note that this setter is asynchronous and the given metadata is applied only
+ * after the resulting callback is invoked with no error.
+ *
+ * @param metadata The metadata associated with the region.
+ * @param callback Called once the request is complete or an error occurred.
+ */
 - (void)setMetadataForMetadata:(nonnull NSData *)metadata
                       callback:(nonnull MBMAsyncOperationResultCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Invalidate all the tiles for the region forcing to revalidate
+ * the tiles with the server before using. This is more efficient than deleting the
+ * offline region and downloading it again because if the data on the cache matches
+ * the server, no new data gets transmitted.
+ *
+ * @param callback Called once the request is complete or an error occurred.
+ */
 - (void)invalidateForCallback:(nonnull MBMAsyncOperationResultCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Remove an offline region from the database and perform any resources
+ * evictions necessary as a result.
+ *
+ * @param callback Called once the request is complete or an error occurred.
+ */
 - (void)purgeForCallback:(nonnull MBMAsyncOperationResultCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Return the current status of this offline region.
+ *
+ * @param callback Called once the request is complete or an error occurred.
+ */
 - (void)getStatusForCallback:(nonnull MBMOfflineRegionStatusCallback)callback;
 @end

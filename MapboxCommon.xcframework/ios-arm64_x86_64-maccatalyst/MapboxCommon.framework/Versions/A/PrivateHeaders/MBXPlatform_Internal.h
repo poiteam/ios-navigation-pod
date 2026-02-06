@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * This enum represents a platform where the SDK is used.
+ */
 // NOLINTNEXTLINE(modernize-use-using)
 typedef NS_ENUM(NSInteger, MBXPlatform)
 {

@@ -1,0 +1,36 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+
+@class MBXRegionMonitorError;
+
+NS_SWIFT_NAME(RegionsMonitorObserver)
+@protocol MBXRegionsMonitorObserver
+/**
+ * Called when a monitored region is entered.
+ *
+ * @param identifier The identifier of the region that was entered.
+ */
+- (void)onRegionEnteredForIdentifier:(nonnull NSString *)identifier;
+/**
+ * Called when a monitored region is exited.
+ *
+ * @param identifier The identifier of the region that was exited.
+ */
+- (void)onRegionExitedForIdentifier:(nonnull NSString *)identifier;
+/**
+ * Called when region monitoring has started successfully.
+ *
+ * @param identifier The identifier of the region for which monitoring started.
+ */
+- (void)onRegionMonitoringStartedForIdentifier:(nonnull NSString *)identifier;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Called when region monitoring has failed to start.
+ *
+ * @param identifier The identifier of the region for which monitoring failed.
+ * @param error The error that occurred while starting region monitoring.
+ */
+- (void)onRegionMonitoringFailedForIdentifier:(nonnull NSString *)identifier
+                                        error:(nonnull MBXRegionMonitorError *)error;
+@end

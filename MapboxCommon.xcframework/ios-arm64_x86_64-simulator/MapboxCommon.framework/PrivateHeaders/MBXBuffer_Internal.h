@@ -3,6 +3,18 @@
 #import <Foundation/Foundation.h>
 @class MBXDataRef;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents a contiguous memory buffer whose contents can be mutated.
+ *
+ * Note: this class is needed on top of data_ref because of the semantics of Data/NSData in Apple platforms. NSData is
+ * immutable and Data follows copy-on-write so it is possible for a Data object to be detached from the original buffer
+ * it is created from. This may also happen for small buffers due to small value optimization. This class overcomes
+ * these issues through different semantics and Apple-platform specific accessors.
+ *
+ * In Java, the semantics of java.nio.DirectByteBuffer are necessarry and sufficient to allow access to the buffer's
+ * memory, so access is done via the data_ref property.
+ */
 NS_SWIFT_NAME(Buffer)
 __attribute__((visibility ("default")))
 @interface MBXBuffer : NSObject
@@ -13,10 +25,28 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Apple-platform specific constructor from a given pointer and length.
+ */
 - (nonnull instancetype)initWithBytes:(uint64_t)bytes
                                  size:(uint64_t)size;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The backing data_ref for this buffer.
+ */
+@property (nonatomic, readonly, nonnull) MBXDataRef *data;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Apple-platform specific accessor to this buffer's memory. Returns a pointer encoded as a 64 bit integer.
+ */
 - (uint64_t)getBytes;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Apple-platform specific accessor to this buffer's size.
+ */
 - (uint64_t)getSize;
 
 @end

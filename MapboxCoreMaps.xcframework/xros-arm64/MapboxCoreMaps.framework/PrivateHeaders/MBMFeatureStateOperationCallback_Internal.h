@@ -3,5 +3,11 @@
 #import <Foundation/Foundation.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback to get operation status on the feature states asynchronously.
+ *
+ * @param operationStatus A string describing an error if the operation was not successful, empty otherwise.
+ */
 NS_SWIFT_NAME(FeatureStateOperationCallback)
 typedef void (^MBMFeatureStateOperationCallback)(MBXExpected<NSNull *, NSString *> * _Nonnull operationStatus); // NOLINT(modernize-use-using)

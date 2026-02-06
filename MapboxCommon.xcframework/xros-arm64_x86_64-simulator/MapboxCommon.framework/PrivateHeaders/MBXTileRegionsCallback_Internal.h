@@ -6,5 +6,11 @@
 @class MBXTileRegion;
 @class MBXTileRegionError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked when returning existing tile regions.
+ *
+ * @param regions A list of existing tile regions. Otherwise, an TileRegionError describing the error.
+ */
 NS_SWIFT_NAME(TileRegionsCallback)
 typedef void (^MBXTileRegionsCallback)(MBXExpected<NSArray<MBXTileRegion *> *, MBXTileRegionError *> * _Nonnull regions); // NOLINT(modernize-use-using)

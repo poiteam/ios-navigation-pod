@@ -7,7 +7,20 @@
 @class MBXLocationProviderRequest;
 @protocol MBXDeviceLocationProvider;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Factory interface to build user defined DeviceLocationProvider.
+ */
 NS_SWIFT_NAME(DeviceLocationProviderFactory)
 @protocol MBXDeviceLocationProviderFactory
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Build user defined DeviceLocationProvider with request.
+ * @param request Settings for this instance of the client.
+ *                 When request is not specified then reasonable default will be applied.
+ *                 Unknown values in request should be omitted by implementation silently.
+ * @return Returns an instance of a device location provider
+ *         or a error if it fails to instantiate it.
+ */
 - (nonnull MBXExpected<id<MBXDeviceLocationProvider>, MBXLocationError *> *)buildForRequest:(nullable MBXLocationProviderRequest *)request;
 @end

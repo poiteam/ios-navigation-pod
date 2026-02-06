@@ -4,6 +4,10 @@
 
 @protocol MBXReadStream;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents the data received as response to a successful HTTP request.
+ */
 NS_SWIFT_NAME(ResponseData)
 __attribute__((visibility ("default")))
 @interface MBXHttpBackendResponseData : NSObject
@@ -18,8 +22,23 @@ __attribute__((visibility ("default")))
                                    code:(int32_t)code
                              dataStream:(nonnull id<MBXReadStream>)dataStream;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP response headers in a format header name:value. All the header names are in lower case format.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSDictionary<NSString *, NSString *> *headers;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * HTTP response code.
+ */
 @property (nonatomic, readonly) int32_t code;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A ReadStream from which the HTTP response data can be read.
+ */
 @property (nonatomic, readonly, nonnull) id<MBXReadStream> dataStream;
+
 
 @end

@@ -17,6 +17,7 @@
 @property(strong, nonatomic) UIImageView *floorsIcon;
 @property(strong, nonatomic) UIImageView *notificationCircle;
 @property(strong, nonatomic) UILabel *otherFloorsLabel;
+@property (strong, nonatomic) UIImageView *moreLevelIcon;
 
 @property (strong, nonatomic) void (^clicked)(void);
 

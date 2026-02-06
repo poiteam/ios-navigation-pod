@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCoreMaps/MBMStylePropertyValueKind.h>
+
+typedef NS_ENUM(NSInteger, MBMStylePropertyValueKind);
 
 /** Holds a style property value with meta data. */
 NS_SWIFT_NAME(StylePropertyValue)

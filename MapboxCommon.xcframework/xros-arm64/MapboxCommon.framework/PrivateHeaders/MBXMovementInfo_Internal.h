@@ -1,8 +1,9 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXMovementModeProvider_Internal.h>
-#import <MapboxCommon/MBXMovementMode_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXMovementMode);
+typedef NS_ENUM(NSInteger, MBXMovementModeProvider);
 
 NS_SWIFT_NAME(MovementInfo)
 __attribute__((visibility ("default")))

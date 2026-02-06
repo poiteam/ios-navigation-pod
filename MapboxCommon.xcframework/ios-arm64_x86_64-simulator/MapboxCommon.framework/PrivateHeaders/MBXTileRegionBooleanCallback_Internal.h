@@ -5,5 +5,12 @@
 
 @class MBXTileRegionError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked as a result of the TileStore tileRegionContainsDescriptors() method call.
+ *
+ * @param result A flag indicating if the tile region contains all tilesets
+ * from all of the given tileset descriptors. Otherwise, an TileRegionError describing the error.
+ */
 NS_SWIFT_NAME(TileRegionBooleanCallback)
 typedef void (^MBXTileRegionBooleanCallback)(MBXExpected<NSNumber *, MBXTileRegionError *> * _Nonnull result); // NOLINT(modernize-use-using)

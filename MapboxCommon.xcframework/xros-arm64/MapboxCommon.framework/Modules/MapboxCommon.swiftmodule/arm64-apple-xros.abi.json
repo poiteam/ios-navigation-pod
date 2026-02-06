@@ -204,6 +204,205 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SignalPublisher",
+        "printedName": "SignalPublisher",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(closure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalPublisher",
+                "printedName": "MapboxCommon.SignalPublisher<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12MapboxCommon15SignalPublisherV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(@escaping (τ_0_0) -> ()) -> (() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12MapboxCommon15SignalPublisherV7closureACyxGyycSgyxcc_tcfc",
+            "mangledName": "$s12MapboxCommon15SignalPublisherV7closureACyxGyycSgyxcc_tcfc",
+            "moduleName": "MapboxCommon",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Output>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "receive",
+            "printedName": "receive(subscriber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon15SignalPublisherV7receive10subscriberyqd___t5InputQyd__Rsz7Combine10SubscriberRd__s5NeverO7FailureRtd__lF",
+            "mangledName": "$s12MapboxCommon15SignalPublisherV7receive10subscriberyqd___t5InputQyd__Rsz7Combine10SubscriberRd__s5NeverO7FailureRtd__lF",
+            "moduleName": "MapboxCommon",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == τ_1_0.Input, τ_1_0 : Combine.Subscriber, τ_1_0.Failure == Swift.Never>",
+            "sugared_genericSig": "<Output, S where Output == S.Input, S : Combine.Subscriber, S.Failure == Swift.Never>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12MapboxCommon15SignalPublisherV",
+        "mangledName": "$s12MapboxCommon15SignalPublisherV",
+        "moduleName": "MapboxCommon",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Output>",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "Available"
+        ],
+        "spi_group_names": [
+          "Marshalling"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Publisher",
+            "printedName": "Publisher",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Output",
+                "printedName": "Output",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Failure",
+                "printedName": "Failure",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine9PublisherP",
+            "mangledName": "$s7Combine9PublisherP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -224,6 +423,102 @@
         "moduleName": "MapboxCommon"
       },
       {
+        "kind": "TypeDecl",
+        "name": "CancelableMarshaller",
+        "printedName": "CancelableMarshaller",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toObjc",
+            "printedName": "toObjc(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Cancelable",
+                "printedName": "any MapboxCommon.Cancelable",
+                "usr": "c:objc(pl)MBXCancelable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Cancelable",
+                "printedName": "any MapboxCommon.Cancelable",
+                "usr": "c:objc(pl)MBXCancelable"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon20CancelableMarshallerV6toObjcySo13MBXCancelable_pSoAE_pFZ",
+            "mangledName": "$s12MapboxCommon20CancelableMarshallerV6toObjcySo13MBXCancelable_pSoAE_pFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toSwift",
+            "printedName": "toSwift(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Cancelable",
+                "printedName": "any MapboxCommon.Cancelable",
+                "usr": "c:objc(pl)MBXCancelable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Cancelable",
+                "printedName": "any MapboxCommon.Cancelable",
+                "usr": "c:objc(pl)MBXCancelable"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon20CancelableMarshallerV7toSwiftySo13MBXCancelable_pSoAE_pFZ",
+            "mangledName": "$s12MapboxCommon20CancelableMarshallerV7toSwiftySo13MBXCancelable_pSoAE_pFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12MapboxCommon20CancelableMarshallerV",
+        "mangledName": "$s12MapboxCommon20CancelableMarshallerV",
+        "moduleName": "MapboxCommon",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "Marshalling"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "MapboxCommon_Private",
         "printedName": "MapboxCommon_Private",
@@ -238,10 +533,7 @@
         "name": "Turf",
         "printedName": "Turf",
         "declKind": "Import",
-        "moduleName": "MapboxCommon",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
+        "moduleName": "MapboxCommon"
       },
       {
         "kind": "Import",
@@ -278,11 +570,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "hasStorage": true,
             "accessors": [
@@ -303,9 +591,6 @@
                 "mangledName": "$s12MapboxCommon13GeofenceStateV7feature4Turf7FeatureVvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -330,9 +615,6 @@
                 "mangledName": "$s12MapboxCommon13GeofenceStateV7feature4Turf7FeatureVvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -351,9 +633,6 @@
                 "mangledName": "$s12MapboxCommon13GeofenceStateV7feature4Turf7FeatureVvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -385,11 +664,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "hasStorage": true,
             "accessors": [
@@ -418,9 +693,6 @@
                 "mangledName": "$s12MapboxCommon13GeofenceStateV9timestamp10Foundation4DateVSgvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -453,9 +725,6 @@
                 "mangledName": "$s12MapboxCommon13GeofenceStateV9timestamp10Foundation4DateVSgvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -474,9 +743,6 @@
                 "mangledName": "$s12MapboxCommon13GeofenceStateV9timestamp10Foundation4DateVSgvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -519,9 +785,6 @@
             "moduleName": "MapboxCommon",
             "declAttributes": [
               "AccessControl"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "init_kind": "Designated"
           },
@@ -629,12 +892,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -687,11 +945,7 @@
             "moduleName": "MapboxCommon",
             "declAttributes": [
               "HasStorage",
-              "AccessControl",
-              "SPIAccessControl"
-            ],
-            "spi_group_names": [
-              "Experimental"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -712,9 +966,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingErrorV4typeAA0cD4TypeOvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -739,9 +990,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingErrorV4typeAA0cD4TypeOvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -760,9 +1008,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingErrorV4typeAA0cD4TypeOvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -787,9 +1032,6 @@
               "HasStorage",
               "AccessControl"
             ],
-            "spi_group_names": [
-              "Experimental"
-            ],
             "hasStorage": true,
             "accessors": [
               {
@@ -809,9 +1051,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingErrorV7messageSSvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -836,9 +1075,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingErrorV7messageSSvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -857,9 +1093,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingErrorV7messageSSvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -893,11 +1126,7 @@
             "mangledName": "$s12MapboxCommon15GeofencingErrorV4type7messageAcA0cD4TypeO_SStcfc",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "AccessControl",
-              "SPIAccessControl"
-            ],
-            "spi_group_names": [
-              "Experimental"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -1005,12 +1234,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -1096,11 +1320,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO7genericyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1140,11 +1360,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO12notAvailableyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1184,11 +1400,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO21defaultRadiusTooLargeyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1228,11 +1440,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO29monitoredFeaturesLimitReachedyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1272,11 +1480,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO26locationServiceUnavailableyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1316,11 +1520,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO27locationServiceUnauthorizedyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1360,11 +1560,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO25locationServiceInaccurateyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1404,11 +1600,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO022deviceLocationProviderD0yA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1448,11 +1640,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO19featureAlreadyAddedyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1492,11 +1680,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO15featureNotFoundyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1536,11 +1720,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO14featureInvalidyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1580,11 +1760,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO20observerAlreadyAddedyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1624,11 +1800,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO16observerNotFoundyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1668,11 +1840,7 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO16featureNotStoredyA2CmF",
             "moduleName": "MapboxCommon",
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ]
           },
           {
@@ -1706,9 +1874,6 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO8rawValueACSgSi_tcfc",
             "moduleName": "MapboxCommon",
             "implicit": true,
-            "spi_group_names": [
-              "Experimental"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -1728,9 +1893,6 @@
             "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO8rawValueSivp",
             "moduleName": "MapboxCommon",
             "implicit": true,
-            "spi_group_names": [
-              "Experimental"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1749,9 +1911,6 @@
                 "mangledName": "$s12MapboxCommon19GeofencingErrorTypeO8rawValueSivg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -1860,12 +2019,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -1926,10 +2080,7 @@
         "name": "Turf",
         "printedName": "Turf",
         "declKind": "Import",
-        "moduleName": "MapboxCommon",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
+        "moduleName": "MapboxCommon"
       },
       {
         "kind": "Import",
@@ -1966,11 +2117,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1991,9 +2138,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingEventV7feature4Turf7FeatureVvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -2018,9 +2162,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingEventV7feature4Turf7FeatureVvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -2039,9 +2180,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingEventV7feature4Turf7FeatureVvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -2065,11 +2203,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "hasStorage": true,
             "accessors": [
@@ -2090,9 +2224,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingEventV9timestamp10Foundation4DateVvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -2117,9 +2248,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingEventV9timestamp10Foundation4DateVvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -2138,9 +2266,6 @@
                 "mangledName": "$s12MapboxCommon15GeofencingEventV9timestamp10Foundation4DateVvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -2175,9 +2300,6 @@
             "moduleName": "MapboxCommon",
             "declAttributes": [
               "AccessControl"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "init_kind": "Designated"
           },
@@ -2285,12 +2407,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -2319,6 +2436,13 @@
           "ImplementationOnly",
           "SPIAccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
       },
       {
         "kind": "TypeDecl",
@@ -2843,12 +2967,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Documentation",
-              "SPIAccessControl",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2871,12 +2990,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Documentation",
-              "SPIAccessControl",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2905,12 +3019,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Documentation",
-              "SPIAccessControl",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -2922,12 +3031,7 @@
         "declAttributes": [
           "Final",
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -2988,11 +3092,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingObserver>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3022,11 +3122,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingObserver>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3056,11 +3152,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingObserver>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3090,11 +3182,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingObserver>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3124,11 +3212,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingObserver>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3140,12 +3224,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -3161,6 +3240,102 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GeofencingObserverMarshaller",
+        "printedName": "GeofencingObserverMarshaller",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toObjc",
+            "printedName": "toObjc(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GeofencingObserver",
+                "printedName": "any MapboxCommon.GeofencingObserver",
+                "usr": "s:12MapboxCommon18GeofencingObserverP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon28GeofencingObserverMarshallerV6toObjcyxAA0cD0_plFZ",
+            "mangledName": "$s12MapboxCommon28GeofencingObserverMarshallerV6toObjcyxAA0cD0_plFZ",
+            "moduleName": "MapboxCommon",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toSwift",
+            "printedName": "toSwift(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GeofencingObserver",
+                "printedName": "any MapboxCommon.GeofencingObserver",
+                "usr": "s:12MapboxCommon18GeofencingObserverP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon28GeofencingObserverMarshallerV7toSwiftyAA0cD0_pypFZ",
+            "mangledName": "$s12MapboxCommon28GeofencingObserverMarshallerV7toSwiftyAA0cD0_pypFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12MapboxCommon28GeofencingObserverMarshallerV",
+        "mangledName": "$s12MapboxCommon28GeofencingObserverMarshallerV",
+        "moduleName": "MapboxCommon",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "Marshalling"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -3199,11 +3374,7 @@
             "declAttributes": [
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3224,9 +3395,6 @@
                 "mangledName": "$s12MapboxCommon17GeofencingOptionsV24maximumMonitoredFeaturess6UInt32Vvg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -3251,9 +3419,6 @@
                 "mangledName": "$s12MapboxCommon17GeofencingOptionsV24maximumMonitoredFeaturess6UInt32Vvs",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -3272,9 +3437,6 @@
                 "mangledName": "$s12MapboxCommon17GeofencingOptionsV24maximumMonitoredFeaturess6UInt32VvM",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -3305,9 +3467,6 @@
             "declAttributes": [
               "AccessControl"
             ],
-            "spi_group_names": [
-              "Experimental"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -3327,9 +3486,6 @@
             "mangledName": "$s12MapboxCommon17GeofencingOptionsV9hashValueSivp",
             "moduleName": "MapboxCommon",
             "implicit": true,
-            "spi_group_names": [
-              "Experimental"
-            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3348,9 +3504,6 @@
                 "mangledName": "$s12MapboxCommon17GeofencingOptionsV9hashValueSivg",
                 "moduleName": "MapboxCommon",
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3378,9 +3531,6 @@
             "mangledName": "$s12MapboxCommon17GeofencingOptionsV4hash4intoys6HasherVz_tF",
             "moduleName": "MapboxCommon",
             "implicit": true,
-            "spi_group_names": [
-              "Experimental"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3413,9 +3563,6 @@
             "moduleName": "MapboxCommon",
             "static": true,
             "implicit": true,
-            "spi_group_names": [
-              "Experimental"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3522,12 +3669,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -3597,11 +3739,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3624,9 +3762,6 @@
                 "moduleName": "MapboxCommon",
                 "static": true,
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3652,11 +3787,7 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3679,9 +3810,6 @@
                 "moduleName": "MapboxCommon",
                 "static": true,
                 "implicit": true,
-                "spi_group_names": [
-                  "Experimental"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3693,12 +3821,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -3722,10 +3845,7 @@
         "name": "Turf",
         "printedName": "Turf",
         "declKind": "Import",
-        "moduleName": "MapboxCommon",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
+        "moduleName": "MapboxCommon"
       },
       {
         "kind": "Import",
@@ -3799,11 +3919,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3859,11 +3975,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3925,11 +4037,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3991,11 +4099,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4056,11 +4160,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4116,11 +4216,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4181,11 +4277,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4246,11 +4338,7 @@
             "sugared_genericSig": "<Self where Self : MapboxCommon.GeofencingService>",
             "protocolReq": true,
             "declAttributes": [
-              "Documentation",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -4262,12 +4350,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "AccessControl",
-          "Documentation",
-          "SPIAccessControl",
           "RawDocComment"
-        ],
-        "spi_group_names": [
-          "Experimental"
         ],
         "conformances": [
           {
@@ -4283,6 +4366,102 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GeofencingServiceMarshaller",
+        "printedName": "GeofencingServiceMarshaller",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toObjc",
+            "printedName": "toObjc(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GeofencingService",
+                "printedName": "any MapboxCommon.GeofencingService",
+                "usr": "s:12MapboxCommon17GeofencingServiceP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon27GeofencingServiceMarshallerV6toObjcyxAA0cD0_plFZ",
+            "mangledName": "$s12MapboxCommon27GeofencingServiceMarshallerV6toObjcyxAA0cD0_plFZ",
+            "moduleName": "MapboxCommon",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toSwift",
+            "printedName": "toSwift(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GeofencingService",
+                "printedName": "any MapboxCommon.GeofencingService",
+                "usr": "s:12MapboxCommon17GeofencingServiceP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon27GeofencingServiceMarshallerV7toSwiftyAA0cD0_pypFZ",
+            "mangledName": "$s12MapboxCommon27GeofencingServiceMarshallerV7toSwiftyAA0cD0_pypFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "Marshalling"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12MapboxCommon27GeofencingServiceMarshallerV",
+        "mangledName": "$s12MapboxCommon27GeofencingServiceMarshallerV",
+        "moduleName": "MapboxCommon",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "Marshalling"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -4358,12 +4537,9 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "SPIAccessControl",
-              "SPIAccessControl",
-              "RawDocComment"
+              "SPIAccessControl"
             ],
             "spi_group_names": [
-              "Experimental",
               "Internal"
             ],
             "funcSelfKind": "NonMutating"
@@ -4388,12 +4564,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Documentation",
-              "SPIAccessControl",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4417,12 +4588,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Documentation",
-              "SPIAccessControl",
               "RawDocComment"
-            ],
-            "spi_group_names": [
-              "Experimental"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -4433,11 +4599,7 @@
         "moduleName": "MapboxCommon",
         "declAttributes": [
           "Final",
-          "AccessControl",
-          "SPIAccessControl"
-        ],
-        "spi_group_names": [
-          "Experimental"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -4465,11 +4627,428 @@
         "moduleName": "MapboxCommon"
       },
       {
+        "kind": "TypeDecl",
+        "name": "Heading",
+        "printedName": "Heading",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "direction",
+            "printedName": "direction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12MapboxCommon7HeadingV9directionSdvp",
+            "mangledName": "$s12MapboxCommon7HeadingV9directionSdvp",
+            "moduleName": "MapboxCommon",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV9directionSdvg",
+                "mangledName": "$s12MapboxCommon7HeadingV9directionSdvg",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV9directionSdvs",
+                "mangledName": "$s12MapboxCommon7HeadingV9directionSdvs",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV9directionSdvM",
+                "mangledName": "$s12MapboxCommon7HeadingV9directionSdvM",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accuracy",
+            "printedName": "accuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12MapboxCommon7HeadingV8accuracySdvp",
+            "mangledName": "$s12MapboxCommon7HeadingV8accuracySdvp",
+            "moduleName": "MapboxCommon",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV8accuracySdvg",
+                "mangledName": "$s12MapboxCommon7HeadingV8accuracySdvg",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV8accuracySdvs",
+                "mangledName": "$s12MapboxCommon7HeadingV8accuracySdvs",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV8accuracySdvM",
+                "mangledName": "$s12MapboxCommon7HeadingV8accuracySdvM",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12MapboxCommon7HeadingV9timestamp10Foundation4DateVvp",
+            "mangledName": "$s12MapboxCommon7HeadingV9timestamp10Foundation4DateVvp",
+            "moduleName": "MapboxCommon",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV9timestamp10Foundation4DateVvg",
+                "mangledName": "$s12MapboxCommon7HeadingV9timestamp10Foundation4DateVvg",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV9timestamp10Foundation4DateVvs",
+                "mangledName": "$s12MapboxCommon7HeadingV9timestamp10Foundation4DateVvs",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12MapboxCommon7HeadingV9timestamp10Foundation4DateVvM",
+                "mangledName": "$s12MapboxCommon7HeadingV9timestamp10Foundation4DateVvM",
+                "moduleName": "MapboxCommon",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(direction:accuracy:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Heading",
+                "printedName": "MapboxCommon.Heading",
+                "usr": "s:12MapboxCommon7HeadingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12MapboxCommon7HeadingV9direction8accuracy9timestampACSd_Sd10Foundation4DateVtcfc",
+            "mangledName": "$s12MapboxCommon7HeadingV9direction8accuracy9timestampACSd_Sd10Foundation4DateVtcfc",
+            "moduleName": "MapboxCommon",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Heading",
+                "printedName": "MapboxCommon.Heading",
+                "usr": "s:12MapboxCommon7HeadingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Heading",
+                "printedName": "MapboxCommon.Heading",
+                "usr": "s:12MapboxCommon7HeadingV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12MapboxCommon7HeadingV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12MapboxCommon7HeadingV2eeoiySbAC_ACtFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12MapboxCommon7HeadingV",
+        "mangledName": "$s12MapboxCommon7HeadingV",
+        "moduleName": "MapboxCommon",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCommon_Private",
+        "printedName": "MapboxCommon_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MapboxCommon"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxCommon_Private",
+        "printedName": "MapboxCommon_Private",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -4825,6 +5404,13 @@
           "ImplementationOnly",
           "SPIAccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MapboxCommon"
       },
       {
         "kind": "TypeDecl",
@@ -5192,6 +5778,204 @@
         "moduleName": "MapboxCommon",
         "isOpen": true,
         "objc_name": "MBXExceptionHandler",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocationServiceFactory",
+        "printedName": "LocationServiceFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "createDefaultHeadingPublisher",
+            "printedName": "createDefaultHeadingPublisher()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<MapboxCommon.Heading, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Heading",
+                    "printedName": "MapboxCommon.Heading",
+                    "usr": "s:12MapboxCommon7HeadingV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So25MBXLocationServiceFactoryC12MapboxCommonE29createDefaultHeadingPublisher7Combine03AnyI0VyAC0H0Vs5NeverOGyFZ",
+            "mangledName": "$sSo25MBXLocationServiceFactoryC12MapboxCommonE29createDefaultHeadingPublisher7Combine03AnyI0VyAC0H0Vs5NeverOGyFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createDefaultLocationPublisher",
+            "printedName": "createDefaultLocationPublisher()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[MapboxCommon.Location], Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapboxCommon.Location]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Location",
+                        "printedName": "MapboxCommon.Location",
+                        "usr": "c:objc(cs)MBXLocation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So25MBXLocationServiceFactoryC12MapboxCommonE30createDefaultLocationPublisher7Combine03AnyI0VySaySo0A0CGs5NeverOGyFZ",
+            "mangledName": "$sSo25MBXLocationServiceFactoryC12MapboxCommonE30createDefaultLocationPublisher7Combine03AnyI0VySaySo0A0CGs5NeverOGyFZ",
+            "moduleName": "MapboxCommon",
+            "static": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)MBXLocationServiceFactory",
+        "moduleName": "MapboxCommon",
+        "isOpen": true,
+        "objc_name": "MBXLocationServiceFactory",
         "declAttributes": [
           "ObjC",
           "Dynamic"
@@ -6198,6 +6982,91 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "LocationProvider",
+        "printedName": "LocationProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "createPublisher",
+            "printedName": "createPublisher()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[MapboxCommon.Location], Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MapboxCommon.Location]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Location",
+                        "printedName": "MapboxCommon.Location",
+                        "usr": "c:objc(cs)MBXLocation"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So19MBXLocationProviderP12MapboxCommonE15createPublisher7Combine03AnyF0VySaySo0A0CGs5NeverOGyF",
+            "mangledName": "$sSo19MBXLocationProviderP12MapboxCommonE15createPublisher7Combine03AnyF0VySaySo0A0CGs5NeverOGyF",
+            "moduleName": "MapboxCommon",
+            "genericSig": "<τ_0_0 where τ_0_0 : MapboxCommon.LocationProvider>",
+            "sugared_genericSig": "<Self where Self : MapboxCommon.LocationProvider>",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Experimental"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:objc(pl)MBXLocationProvider",
+        "moduleName": "MapboxCommon",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "MBXLocationProvider",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "HttpRequestError",
         "printedName": "HttpRequestError",
         "children": [
@@ -7016,100 +7885,100 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 371,
+      "offset": 235,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 471,
+      "offset": 295,
       "length": 21,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 612,
+      "offset": 396,
       "length": 29,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 737,
+      "offset": 481,
       "length": 26,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
+      "offset": 572,
       "length": 27,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 983,
+      "offset": 647,
       "length": 25,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1118,
+      "offset": 742,
       "length": 27,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1244,
+      "offset": 828,
       "length": 19,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1364,
+      "offset": 908,
       "length": 15,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1468,
+      "offset": 972,
       "length": 14,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1590,
+      "offset": 1054,
       "length": 20,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1711,
+      "offset": 1135,
       "length": 16,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingErrorType.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingErrorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1849,
+      "offset": 1233,
       "length": 16,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/GeofencingOptions.swift",
+      "filePath": "\/Users\/admin\/actions-runner\/_work\/mapbox-sdk\/mapbox-sdk\/projects\/common\/components\/geofencing\/generated\/swift_compat\/MapboxCommon\/GeofencingOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 483,
+      "offset": 387,
       "length": 6,
       "value": "100000"
     }

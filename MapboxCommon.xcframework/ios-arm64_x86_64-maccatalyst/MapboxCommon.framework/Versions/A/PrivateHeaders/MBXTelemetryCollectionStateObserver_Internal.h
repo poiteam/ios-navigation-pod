@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTelemetryCollectionState_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXTelemetryCollectionState);
 
 NS_SWIFT_NAME(TelemetryCollectionStateObserver)
 @protocol MBXTelemetryCollectionStateObserver

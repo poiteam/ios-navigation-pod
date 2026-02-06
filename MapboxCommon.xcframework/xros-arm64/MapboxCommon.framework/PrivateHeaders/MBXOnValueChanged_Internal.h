@@ -2,5 +2,13 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Specifies callback that will be called once value for specified key has changed.
+ *
+ * @param key Key for which this callback was registered.
+ * @param oldValue Previously stored value or nothing if value was just set for specified key.
+ * @param newValue Newly updated value for specified key or nothing if value for key was just erased from storage.
+ */
 NS_SWIFT_NAME(OnValueChanged)
 typedef void (^MBXOnValueChanged)(NSString * _Nonnull key, id _Nullable oldValue, id _Nullable newValue); // NOLINT(modernize-use-using)

@@ -16,6 +16,8 @@
 
 @property(strong, nonatomic) NSString *applicationId;
 
+@property(strong, nonatomic) NSString *placeId;
+
 @property(strong, nonatomic) NSString *applicationSecret;
 
 @property(strong, nonatomic) NSString *navigationUniqueIdentifier;

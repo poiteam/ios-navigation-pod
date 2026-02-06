@@ -1,5 +1,11 @@
 // This file is generated and will be overwritten automatically.
 
+#import "MBXRegionMonitorErrorCode_Internal.h"
+#import "MBXRegionMonitorError_Internal.h"
+#import "MBXRegionsMonitorServiceFactory_Internal.h"
 #import "MBXLocationService_Internal.h"
+#import "MBXRegionsMonitorService_Internal.h"
+#import "MBXRegionsMonitor_Internal.h"
+#import "MBXRegionsMonitorObserver_Internal.h"
 #import "MBXDeviceLocationProviderFactory_Internal.h"
 #import "MBXLocationServiceFactory_Internal.h"

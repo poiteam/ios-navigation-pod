@@ -1,9 +1,9 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXResourceLoadStatus_Internal.h>
 
 @class MBXResourceData;
+typedef NS_ENUM(NSInteger, MBXResourceLoadStatus);
 
 NS_SWIFT_NAME(ResourceLoadResult)
 __attribute__((visibility ("default")))
@@ -26,17 +26,68 @@ __attribute__((visibility ("default")))
                                 etag:(nonnull NSString *)etag
                       belongsToGroup:(BOOL)belongsToGroup;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The data retrieved from TileStore. Empty if the resource was loaded with `ResourceLoadFlags::SkipDataLoading`
+ * set.
+ */
 @property (nonatomic, readonly, nullable) MBXResourceData *data;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents the status of the operation.
+ */
 @property (nonatomic, readonly) MBXResourceLoadStatus status;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A flag indicating whether the data is considered immutable, or whether there may be updates once the data
+ * expires.
+ */
 @property (nonatomic, readonly) BOOL immutable;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * If true, this resource may not be used after it expired.
+ */
 @property (nonatomic, readonly) BOOL mustRevalidate;
+
 /** The expiration time of the file, if one exists. */
 @property (nonatomic, readonly, nonnull) NSDate *expires;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The size of this resource.
+ */
 @property (nonatomic, readonly) uint64_t totalBytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The number of bytes that were transferred for this request.
+ *
+ * This value may be lower than the size of the file, e.g. because the download was resumed, or because the resource
+ * was compressed in transfer. It may also be higher than the total size, e.g. if we had to make multiple download
+ * attempts that couldn't be resumed.
+ */
 @property (nonatomic, readonly) uint64_t transferredBytes;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The value of the Content-Type HTTP header.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *contentType;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The ETag returned by the server
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *etag;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * If true, this resource belongs to a group.
+ */
 @property (nonatomic, readonly) BOOL belongsToGroup;
+
 
 @end

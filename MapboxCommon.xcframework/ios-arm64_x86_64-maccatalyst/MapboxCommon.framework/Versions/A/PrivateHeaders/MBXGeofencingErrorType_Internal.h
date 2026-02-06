@@ -1,0 +1,40 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Geofencing error codes.
+ */
+// NOLINTNEXTLINE(modernize-use-using)
+typedef NS_ENUM(NSInteger, MBXGeofencingErrorType)
+{
+    /** Generic error. */
+    MBXGeofencingErrorTypeGeneric,
+    /** Geofencing API object is not available. */
+    MBXGeofencingErrorTypeNotAvailable,
+    /** Default radius is too large. */
+    MBXGeofencingErrorTypeDefaultRadiusTooLarge,
+    /** Maximum amount of monitored features limit has been reached. */
+    MBXGeofencingErrorTypeMonitoredFeaturesLimitReached,
+    /** Location Service API is unavailable. */
+    MBXGeofencingErrorTypeLocationServiceUnavailable,
+    /** Location usage is not authorized by the user. */
+    MBXGeofencingErrorTypeLocationServiceUnauthorized,
+    /** Location data is inaccurate. */
+    MBXGeofencingErrorTypeLocationServiceInaccurate,
+    /** An error occurred in the device location provider. */
+    MBXGeofencingErrorTypeDeviceLocationProviderError,
+    /** The given feature is already monitored. */
+    MBXGeofencingErrorTypeFeatureAlreadyAdded,
+    /** The given feature is not being monitored. */
+    MBXGeofencingErrorTypeFeatureNotFound,
+    /** The given feature is invalid. */
+    MBXGeofencingErrorTypeFeatureInvalid,
+    /** The given geofence observer is already included. */
+    MBXGeofencingErrorTypeObserverAlreadyAdded,
+    /** The given geofence observer is not found. */
+    MBXGeofencingErrorTypeObserverNotFound,
+    /** The given feature could not be added to the permanent storage. */
+    MBXGeofencingErrorTypeFeatureNotStored
+} NS_SWIFT_NAME(__GeofencingErrorType);

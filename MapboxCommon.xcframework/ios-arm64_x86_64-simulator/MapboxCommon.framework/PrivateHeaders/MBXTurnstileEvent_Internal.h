@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXUserSKUIdentifier_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXUserSKUIdentifier);
 
 NS_SWIFT_NAME(TurnstileEvent)
 __attribute__((visibility ("default")))

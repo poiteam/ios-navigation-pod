@@ -5,6 +5,12 @@
 
 @class MBMOfflineRegionStatus;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked when get offline region status operation completes.
+ *
+ * @param result An offline region status or an error
+ */
 NS_SWIFT_NAME(OfflineRegionStatusCallback)
 __attribute__((deprecated))
 typedef void (^MBMOfflineRegionStatusCallback)(MBXExpected<MBMOfflineRegionStatus *, NSString *> * _Nonnull result); // NOLINT(modernize-use-using)

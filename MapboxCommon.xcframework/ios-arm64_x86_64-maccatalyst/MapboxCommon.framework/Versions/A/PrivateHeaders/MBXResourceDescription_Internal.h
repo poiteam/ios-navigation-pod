@@ -1,8 +1,13 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTileDataDomain.h>
 
+typedef NS_ENUM(NSInteger, MBXTileDataDomain);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes a resource to be loaded with TileStore::loadResource()
+ */
 NS_SWIFT_NAME(ResourceDescription)
 __attribute__((visibility ("default")))
 @interface MBXResourceDescription : NSObject
@@ -16,8 +21,27 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithDomain:(MBXTileDataDomain)domain
                                    url:(nonnull NSString *)url;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The data domain for this requests.
+ *
+ * This value is used to determine the value of TileStore options to be used. For instance, a domain-specific
+ * access token may be used if one is set.
+ */
 @property (nonatomic, readonly) MBXTileDataDomain domain;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The URL for the resource.
+ *
+ * The URL may also be a template. The following placeholders are replaced using domain specific or global options:
+ * - {mapbox_api_url}: The globally set Mapbox API URL, or the default endpoint if none is set.
+ * - {mapbox_access_token}: The access token, or an empty string if none is set.
+ * - {mapbox_sku_token}: The Mapbox SKU token for the specified domain.
+ * - {mapbox_sdk_version}: The version of the SDK that uses tilestore to fetch resources.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *url;
+
 
 - (BOOL)isEqualToResourceDescription:(nonnull MBXResourceDescription *)other;
 

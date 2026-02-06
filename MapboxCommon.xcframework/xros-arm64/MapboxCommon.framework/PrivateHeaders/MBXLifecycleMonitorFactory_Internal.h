@@ -4,6 +4,11 @@
 
 @protocol MBXLifecycleMonitorInterface;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A factory class used to instantiate a platform-specific interface
+ * to obtain a monitor an app's lifecycle state.
+ */
 NS_SWIFT_NAME(LifecycleMonitorFactory)
 __attribute__((visibility ("default")))
 @interface MBXLifecycleMonitorFactory : NSObject
@@ -14,6 +19,12 @@ __attribute__((visibility ("default")))
 // This class provides custom init which should be called
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * A method used to instantiate platform-specific app lifecycle monitor.
+ *
+ * @return An application lifecycle monitor.
+ */
 + (nonnull id<MBXLifecycleMonitorInterface>)getOrCreate __attribute((ns_returns_retained));
 
 @end

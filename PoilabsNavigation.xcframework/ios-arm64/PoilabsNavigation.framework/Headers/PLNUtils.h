@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, FloorNameSuffixType) {
     FloorNameSuffixTypeFloorChange,
     FloorNameSuffixTypeTargetFloor
 };
+typedef void (^PLNAlertHandler)(void);
 
 + (instancetype)sharedInstance;
 + (void)destroySharedInstance;
@@ -24,6 +25,7 @@ typedef NS_ENUM(NSInteger, FloorNameSuffixType) {
 +(NSString *)getLocaleStringForQuery:(NSString *)comingStr;
 +(NSString *)getLocaleStringForKey:(NSString *) key;
 +(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder;
++(void)showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message onResponder:(UIResponder *)responder handler:(PLNAlertHandler)handler;
 + (NSString *)correctSuffixForWord:(NSString *)word;
 + (NSString *)correctSuffixForBuildingPassWord:(NSString *)word;
 + (NSString *)correctSuffixForFloorTitle:(NSString *)title suffixType:(FloorNameSuffixType)suffixType;

@@ -16,12 +16,12 @@
 
 - (instancetype)initWithMenuItems:(NSArray<PLNFloorsMenuItem *> *)menuItems actionHandler:(void(^)(PLNFloorsMenuItem *selectedFloor))actionHandler;
 
-@property (nonatomic, assign, readonly) BOOL isMenuOpen;
+@property (nonatomic, assign) BOOL isMenuOpen;
 
 - (CGFloat)getMaxWidth;
 -(void)close;
 -(void)selectFloorWithBuildingName:(NSString*) buildingName floorName:(NSString *)floorName;
--(void)toggleMenu;
+-(void)toggleMenu: (int) height;
 -(void)addNotificationCirclesTo:(NSDictionary<NSString *, NSArray<NSString *>*> *)dict;
 -(void)removeNotificationCircles;
 

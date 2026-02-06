@@ -9,5 +9,10 @@
              completedResourceSize:(uint64_t)completedResourceSize
                            expires:(nullable NSDate *)expires
                          extraData:(nullable id)extraData;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Reserved for future extensions.
+ */
 @property (nonatomic, readonly, nullable, copy) id extraData;
+
 @end

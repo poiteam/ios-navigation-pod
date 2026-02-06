@@ -1,0 +1,84 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+@class MBXExpected<__covariant Value, __covariant Error>;
+
+@class MBXRegionMonitorError;
+@protocol MBXRegionsMonitorObserver;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Interface for monitoring geographical regions and detecting when the device enters or exits them.
+ *
+ * This interface provides functionality to add circular geographical regions for monitoring
+ * and manage observers that will be notified when region boundary events occur.
+ *
+ */
+NS_SWIFT_NAME(RegionsMonitor)
+@protocol MBXRegionsMonitor
+/**
+ * Gets the name of this region monitor instance.
+ *
+ * @return The unique identifier name of this region monitor
+ */
+- (nonnull NSString *)getName;
+/**
+ * Restores a previously monitored circular region for location monitoring.
+ *
+ * In iOS CoreLocation, monitored regions persist through app launches.
+ * You can use this method to restore subscription to a region events,
+ * without having to re-add the region to this monitor.
+ *
+ * @param identifier The unique string identifier of the circular region to restore.
+ */
+- (void)restoreCircularRegionForIdentifier:(nonnull NSString *)identifier;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Adds a circular geographical region for monitoring.
+ *
+ * @param identifier A unique string identifier for the circular region
+ * @param center The geographical coordinate representing the center point of the circle
+ * @param radius The radius of the circular region in meters
+ */
+- (nonnull MBXExpected<NSNull *, MBXRegionMonitorError *> *)addCircularRegionForIdentifier:(nonnull NSString *)identifier
+                                                                                    center:(CLLocationCoordinate2D)center
+                                                                                    radius:(double)radius;
+/**
+ * Removes a circular geographical region from monitoring.
+ *
+ * @param identifier The unique string identifier of the circular region to remove
+ */
+- (void)removeCircularRegionForIdentifier:(nonnull NSString *)identifier;
+/**
+ * Removes all circular geographical regions from monitoring.
+ *
+ * This method stops monitoring all previously added circular regions
+ * and clears the internal list of monitored regions.
+ */
+- (void)removeAllRegions;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Adds an observer to monitor region-based location events.
+ *
+ * This method registers a RegionMonitorObserver that will receive callbacks
+ * when the device enters or exits specified geographic regions. The observer
+ * will be notified of region monitoring events such as boundary crossings.
+ *
+ * @param observer The RegionMonitorObserver instance that will receive
+ *                 region monitoring event callbacks
+ */
+- (void)addRegionsMonitorObserverForObserver:(nonnull id<MBXRegionsMonitorObserver>)observer;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Removes a previously registered region monitor observer.
+ *
+ * This method unregisters an observer that was previously added to receive
+ * notifications about region monitoring events. After removal, the observer
+ * will no longer receive callbacks for region enter/exit events.
+ *
+ * @param observer The RegionsMonitorObserver instance to remove from the list
+ *                 of registered observers
+ */
+- (void)removeRegionsMonitorObserverForObserver:(nonnull id<MBXRegionsMonitorObserver>)observer;
+@end

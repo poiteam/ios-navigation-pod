@@ -7,7 +7,15 @@
 @class MBMEdgeInsets;
 @class MBMScreenCoordinate;
 
-NS_SWIFT_NAME(CameraOptions)
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Various options for describing the viewpoint of a camera. All fields are
+ * optional.
+ *
+ * Anchor and center points are mutually exclusive, with preference for the
+ * center point when both are set.
+ */
+NS_SWIFT_NAME(__CameraOptions)
 __attribute__((visibility ("default")))
 @interface MBMCameraOptions : NSObject
 
@@ -22,24 +30,36 @@ __attribute__((visibility ("default")))
                                 anchor:(nullable MBMScreenCoordinate *)anchor
                                   zoom:(nullable NSNumber *)zoom
                                bearing:(nullable NSNumber *)bearing
-                                 pitch:(nullable NSNumber *)pitch NS_REFINED_FOR_SWIFT;
+                                 pitch:(nullable NSNumber *)pitch;
 
 /** Coordinate at the center of the camera. */
-@property (nonatomic, readonly, nullable) MBXCoordinate2D *center NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly, nullable) MBXCoordinate2D *center;
 
-@property (nonatomic, readonly, nullable) MBMEdgeInsets *padding NS_REFINED_FOR_SWIFT;
-@property (nonatomic, readonly, nullable) MBMScreenCoordinate *anchor NS_REFINED_FOR_SWIFT;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Padding around the interior of the view that affects the frame of
+ * reference for `center`.
+ */
+@property (nonatomic, readonly, nullable) MBMEdgeInsets *padding;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Point of reference for `zoom` and `angle`, assuming an origin at the
+ * top-left corner of the view.
+ */
+@property (nonatomic, readonly, nullable) MBMScreenCoordinate *anchor;
+
 /**
  * Zero-based zoom level. Constrained to the minimum and maximum zoom
  * levels.
  */
-@property (nonatomic, readonly, nullable) NSNumber *zoom NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly, nullable) NSNumber *zoom;
 
 /** Bearing, measured in degrees from true north. Wrapped to [0, 360). */
-@property (nonatomic, readonly, nullable) NSNumber *bearing NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly, nullable) NSNumber *bearing;
 
 /** Pitch toward the horizon measured in degrees. */
-@property (nonatomic, readonly, nullable) NSNumber *pitch NS_REFINED_FOR_SWIFT;
+@property (nonatomic, readonly, nullable) NSNumber *pitch;
 
 
 @end

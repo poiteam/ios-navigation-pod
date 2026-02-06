@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		2IyCiSGAqqF9WGcAcTAKkuVstLo=
+		PmefCbL1ErZ989uW9+pyLORNfz8=
 		</data>
 		<key>Headers/MapboxMaps.h</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6N1Kb6Db8+yH/5AepoGLIKt4eko=
+		bNGSCo9TCVxLoTi7vHoh8hHY+OI=
 		</data>
 		<key>MapboxMaps.json</key>
 		<data>
-		3AOXv1kZ15k6ksZRbJgB1WTOQsI=
+		XexKrqaLOjYm0h9wSBjHDXPWEwE=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		Q7ciyCjjq9LPTP6FVvuaUIcBoko=
+		DKSWG2HeU/vhviAkjoq/GPf9Xfo=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		5i/F0Bf0bKYWKSHdqnATGaqql+k=
+		j9ztzRNW0GXEIxlA7xuvEQScl14=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		IW1tE2Q4Zt6brN06kCmM5BbRAkE=
+		3RiZ55lUYxC6M9DwcT5TuItQ9/Q=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		1BRLWvBSGvueZxOB/ard0axq8bE=
+		JbzmLtTZuxNrc/fnUs6trgK6aP8=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		HpYp2XqZhAH2qkV5FZj73SimJLI=
+		1OwRJviWbgO0WSp60hOHTVVRcWw=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		Q7ciyCjjq9LPTP6FVvuaUIcBoko=
+		DKSWG2HeU/vhviAkjoq/GPf9Xfo=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		HCurCAvB3SNUIm7MGsf1Y5wBg9M=
+		xCP7qTGDOXquxF8te/JogpBoBuw=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		v308hbnZAWxR6LhH5DpLkvQsTHo=
+		wX6g+wQN9G8oQaQFnTtN76GsXyM=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		6UrilByjmaapYJutPhYMlVakcS4=
+		p4kChScF5OBt9+1jzcx7MLZtMwo=
 		</data>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		18OH3UEcgmdaBaJ5vprP0e6Ja9w=
+		pTAvIywBoo+9JDxBAeIfsSkz9IA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -763,7 +763,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lMo33rhCvqWixJOhPQ+PzjYtHTxlPd5lt6kwFmX+og8=
+			L2vn94bJD6ZOIB7OnbvTyIel5zbeiaLa6///ocIURtY=
 			</data>
 		</dict>
 		<key>Headers/MapboxMaps.h</key>
@@ -777,77 +777,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nzlpKufNYRxm1JEYOVIcMRDofWavro3/MVXl1afK+yc=
+			oROXLqpiH54Gau3jJfoU+mi/w4Ksfs6yYNDLtmrXmIU=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			anTZiUE/mLKcFL9qJPOdZVNKzblI2ogz7YcrmmHhQMs=
+			BlsPW0bajaZcfqp/+arE3p9tpqYH0DeBwYEfTMPZlSI=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BP9IZvoIMRTp0wc2odOYAduVQFv9QtlZcuN542EtiAo=
+			jsBBq8eVcNYSD0Y9VIk39QYg7lvrnOL8hu91BAds4lk=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TAr8mw8323+2VkBbsvUeTpmlU33vAyxAb46T+tpBl5M=
+			aC5qtLaj0GJDni92yXAtp/3evTB4tm1/GAaLG8Zscn8=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f/2clVUUh+jxg1ARw9WSFYvVxUkPvM7lAgy+I4trpQc=
+			/x8aeY8L2S/0f4bPJJch99TEPruHBfOrCZRp9ZxT5NI=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8V30lizmglHoREdb9f9sT0im0UVJpXMNjwyzNtjO+40=
+			N4oodYSstrBBS7ytIhG+W0eT+snS3ioxGccUwA24gtw=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			anTZiUE/mLKcFL9qJPOdZVNKzblI2ogz7YcrmmHhQMs=
+			BlsPW0bajaZcfqp/+arE3p9tpqYH0DeBwYEfTMPZlSI=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LJoLxkBdZZi4n4ou2UKA+fzyaf5AkA6pgrdFMC2HvzY=
+			+wSu2hh+T9I2zGcX6cdA4tk39ZfIoy+2csjhLOtW/kc=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3EaA3EZ9i+BvzZHpw4UPKCXnY8GzOhG3pVWISpb++CQ=
+			JrhM1CblyZBKct1NYtWLWGeKhWxi7SSb+lDuPpBVDEA=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kP8noniM1aQB+TRB1fYnQgQABTXz5B4Ok4ABJvKIpjo=
+			Fr9RA/6mIdxY/cJnudetXn0u4qNs6FULiOxutZR3Wm0=
 			</data>
 		</dict>
 		<key>Modules/MapboxMaps.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5fVwWXGEbtFyyUHMGuxjLXoyACmBy9HfLazFw2iJIIU=
+			vveOCuvM11MvSSFSDWIWunHTw3YuwyeWENXdFOikhQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

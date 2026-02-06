@@ -5,5 +5,11 @@
 
 @class MBXTileRegionError;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked to return a tile region's associated metadata
+ *
+ * @param result A metadata value. Otherwise, an TileRegionError describing an error.
+ */
 NS_SWIFT_NAME(TileRegionMetadataCallback)
 typedef void (^MBXTileRegionMetadataCallback)(MBXExpected<id, MBXTileRegionError *> * _Nonnull result); // NOLINT(modernize-use-using)

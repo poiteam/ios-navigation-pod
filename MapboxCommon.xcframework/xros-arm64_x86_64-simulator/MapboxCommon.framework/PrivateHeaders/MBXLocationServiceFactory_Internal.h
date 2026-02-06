@@ -4,5 +4,12 @@
 
 @interface MBXLocationServiceFactory ()
 + (void)reset;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Returns an instance of the Location service.
+ *
+ * LocationService is allocated on the first call of after a call to reset().
+ * It is kept until a call to reset() releases it.
+ */
 + (nonnull id<MBXLocationService>)getOrCreate __attribute((ns_returns_retained));
 @end

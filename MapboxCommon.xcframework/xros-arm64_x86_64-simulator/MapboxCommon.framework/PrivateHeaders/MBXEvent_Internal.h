@@ -1,9 +1,9 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXEventPriority_Internal.h>
 
 @class MBXDeferredDeliveryRequestOptions;
+typedef NS_ENUM(NSInteger, MBXEventPriority);
 
 NS_SWIFT_NAME(Event)
 __attribute__((visibility ("default")))

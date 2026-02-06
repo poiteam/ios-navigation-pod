@@ -1,10 +1,10 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXHttpMethod.h>
-#import <MapboxCommon/MBXNetworkRestriction.h>
 
 @class MBXSdkInformation;
+typedef NS_ENUM(NSInteger, MBXHttpMethod);
+typedef NS_ENUM(NSInteger, MBXNetworkRestriction);
 
 /** HttpRequest holds basic information for construction of an HTTP request */
 NS_SWIFT_NAME(HttpRequest)

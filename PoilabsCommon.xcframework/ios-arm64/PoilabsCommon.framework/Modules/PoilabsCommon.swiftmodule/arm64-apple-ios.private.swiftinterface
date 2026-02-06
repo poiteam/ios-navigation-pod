@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PoilabsCommon
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PoilabsCommon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreLocation
 import Foundation
 @_exported import PoilabsCommon
@@ -11,7 +11,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc(PLNNavigationConfig) @objcMembers final public class PLNNavigationConfig : ObjectiveC.NSObject, Swift.Decodable {
-  @objc final public let placeId: Swift.String
+  @objc final public var placeId: Swift.String
   @objc final public let uuidString: Swift.String
   @objc final public let majorList: [Swift.Int]
   @objc final public let minimumRssiLimit: Swift.Int
@@ -30,6 +30,11 @@ import _SwiftConcurrencyShims
     @objc get
   }
   public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+@objc public class ConfigUseCaseBridge : ObjectiveC.NSObject {
+  @objc public init(authBase64: Swift.String)
+  @objc public func fetchConfig(completion: @escaping (PoilabsCommon.PLNNavigationConfig?, Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
 @objc(PLFloor) @objcMembers final public class PLFloor : ObjectiveC.NSObject, Swift.Decodable {
@@ -83,18 +88,125 @@ extension PoilabsCommon.PLFloor {
     @objc get
   }
 }
+@objc public class WalkwaysUseCaseBridge : ObjectiveC.NSObject {
+  @objc public init(authBase64: Swift.String)
+  @objc public func fetchWalkways(config: PoilabsCommon.PLNNavigationConfig, completion: @escaping (Foundation.NSDictionary?, Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@objc(PLPoi) @objcMembers final public class PLPoi : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let poiId: Swift.String
+  @objc final public let title: Swift.String
+  @objc final public let placeId: Swift.String?
+  @objc final public let tags: [Swift.String]
+  @objc final public var coordinate: CoreLocation.CLLocationCoordinate2D {
+    @objc get
+  }
+  @objc final public var floorLevel: Swift.Int {
+    @objc get
+  }
+  @objc final public var shopCenterPoint: CoreLocation.CLLocation? {
+    @objc get
+  }
+  @objc final public var categoryName: Swift.String? {
+    @objc get
+  }
+  @objc final public var categoryIcon: Swift.String? {
+    @objc get
+  }
+  @objc final public var pointType: [Swift.String] {
+    @objc get
+  }
+  @objc final public var storeIds: [Swift.String] {
+    @objc get
+  }
+  @objc final public var isVisibleOnMap: Swift.Bool {
+    @objc get
+  }
+  @objc final public var sponsored: Swift.Bool {
+    @objc get
+  }
+  @objc final public var isVisibleOnList: Swift.Bool {
+    @objc get
+  }
+  @objc final public var isPrivileged: Swift.Bool {
+    @objc get
+  }
+  @objc final public var bufferWithShortest: Swift.Int {
+    @objc get
+  }
+  @objc final public var segments: [PoilabsCommon.PLPoiNavigationSegment] {
+    @objc get
+  }
+  @objc final public var hasSegments: Swift.Bool {
+    @objc get
+  }
+  @objc final public var image: Swift.String? {
+    @objc get
+  }
+  @objc final public var phone: Swift.String? {
+    @objc get
+  }
+  @objc final public var webSite: Foundation.URL? {
+    @objc get
+  }
+  @objc final public var workingHours: Swift.String? {
+    @objc get
+  }
+  @objc final public var informationText: Swift.String? {
+    @objc get
+  }
+  @objc final public var restrictionWarning: Swift.String? {
+    @objc get
+  }
+  @objc final public var zoneId: Swift.String? {
+    @objc get
+  }
+  @objc final public var qmsTime: Swift.Int {
+    @objc get
+  }
+  required public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+extension PoilabsCommon.PLPoi {
+  @objc final public func containsKeyword(_ str: Swift.String) -> Swift.Bool
+}
+public struct TemplateEndpoint : PoilabsCommon.PLEndpoint {
+  public let templateURL: Swift.String
+  public let pathValues: [Swift.String : Swift.String]
+  public let queryItems: [Foundation.URLQueryItem]?
+  public init(templateURL: Swift.String, pathValues: [Swift.String : Swift.String], queryItems: [Foundation.URLQueryItem]? = nil)
+  public var path: Swift.String {
+    get
+  }
+  public var resolvedURL: Swift.String {
+    get
+  }
+}
+@objc public class ChildsUseCaseBridge : ObjectiveC.NSObject {
+  @objc public init(authBase64: Swift.String)
+  @objc public func fetchChilds(config: PoilabsCommon.PLNNavigationConfig, language: Swift.String, completion: @escaping ([PoilabsCommon.PLPoi]?, Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class StyleDetailsUseCaseBridge : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func getStyleDetailsWithUrl(_ styleUrl: Swift.String, accessToken: Swift.String, completion: @escaping (Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@objc public class BeaconsUseCaseBridge : ObjectiveC.NSObject {
+  @objc public init(authBase64: Swift.String)
+  @objc public func fetchBeacons(config: PoilabsCommon.PLNNavigationConfig, completion: @escaping ([Foundation.NSDictionary], Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@objc public class PostSignalsUseCaseBridge : ObjectiveC.NSObject {
+  @objc public init(authBase64: Swift.String, config: PoilabsCommon.PLNNavigationConfig, clientData: Foundation.NSDictionary)
+  @objc public func postSignals(_ signals: [Foundation.NSDictionary], config: PoilabsCommon.PLNNavigationConfig)
+  @objc deinit
+}
 @objc(PLParkingSlot) @objcMembers final public class PLParkingSlot : ObjectiveC.NSObject {
   @objc final public let parkingKeyName: Swift.String
   @objc final public let parkingValues: [Swift.String]
   @objc public init(parkingKeyName: Swift.String, parkingValues: [Swift.String])
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers final public class PLNFacility : ObjectiveC.NSObject, Swift.Decodable {
-  @objc final public let pointType: Swift.String
-  @objc final public let title: Swift.String?
-  @objc final public let iconUrl: Swift.String?
-  @objc override dynamic public init()
-  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
 @objc(PLNPlace) @objcMembers final public class PLNPlace : ObjectiveC.NSObject, Swift.Decodable {
@@ -146,124 +258,6 @@ extension PoilabsCommon.PLNPlace {
   @objc final public func getClickedColor() -> UIKit.UIColor
   @objc final public func getDefaultFloor() -> PoilabsCommon.PLFloor?
 }
-@objc @objcMembers final public class PLPoiNavigationSegment : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let finishId: Swift.String
-  @objc final public let weight: Swift.Double
-  @objc final public let routeWeight: Swift.Double
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc(PLPoi) @objcMembers final public class PLPoi : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let poiId: Swift.String
-  @objc final public let title: Swift.String
-  @objc final public let placeId: Swift.String?
-  @objc final public let tags: [Swift.String]
-  @objc final public var coordinate: CoreLocation.CLLocationCoordinate2D {
-    @objc get
-  }
-  @objc final public var floorLevel: Swift.Int {
-    @objc get
-  }
-  @objc final public var shopCenterPoint: CoreLocation.CLLocation? {
-    @objc get
-  }
-  @objc final public var categoryName: Swift.String? {
-    @objc get
-  }
-  @objc final public var categoryIcon: Swift.String? {
-    @objc get
-  }
-  @objc final public var pointType: [Swift.String] {
-    @objc get
-  }
-  @objc final public var storeIds: [Swift.String] {
-    @objc get
-  }
-  @objc final public var isVisibleOnMap: Swift.Bool {
-    @objc get
-  }
-  @objc final public var isVisibleOnList: Swift.Bool {
-    @objc get
-  }
-  @objc final public var isPrivileged: Swift.Bool {
-    @objc get
-  }
-  @objc final public var bufferWithShortest: Swift.Int {
-    @objc get
-  }
-  @objc final public var segments: [PoilabsCommon.PLPoiNavigationSegment] {
-    @objc get
-  }
-  @objc final public var hasSegments: Swift.Bool {
-    @objc get
-  }
-  @objc final public var image: Swift.String? {
-    @objc get
-  }
-  @objc final public var phone: Swift.String? {
-    @objc get
-  }
-  @objc final public var webSite: Foundation.URL? {
-    @objc get
-  }
-  @objc final public var workingHours: Swift.String? {
-    @objc get
-  }
-  @objc final public var informationText: Swift.String? {
-    @objc get
-  }
-  @objc final public var restrictionWarning: Swift.String? {
-    @objc get
-  }
-  @objc final public var zoneId: Swift.String? {
-    @objc get
-  }
-  @objc final public var qmsTime: Swift.Int {
-    @objc get
-  }
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-extension PoilabsCommon.PLPoi {
-  @objc final public func containsKeyword(_ str: Swift.String) -> Swift.Bool
-}
-@objc public class BeaconsUseCaseBridge : ObjectiveC.NSObject {
-  @objc public init(authBase64: Swift.String)
-  @objc public func fetchBeacons(config: PoilabsCommon.PLNNavigationConfig, completion: @escaping ([Foundation.NSDictionary], Foundation.NSError?) -> Swift.Void)
-  @objc deinit
-}
-@objc public class ChildsUseCaseBridge : ObjectiveC.NSObject {
-  @objc public init(authBase64: Swift.String)
-  @objc public func fetchChilds(config: PoilabsCommon.PLNNavigationConfig, language: Swift.String, completion: @escaping ([PoilabsCommon.PLPoi]?, Foundation.NSError?) -> Swift.Void)
-  @objc deinit
-}
-@objc public class ConfigUseCaseBridge : ObjectiveC.NSObject {
-  @objc public init(authBase64: Swift.String)
-  @objc public func fetchConfig(completion: @escaping (PoilabsCommon.PLNNavigationConfig?, Foundation.NSError?) -> Swift.Void)
-  @objc deinit
-}
-@objc public class PlacesUseCaseBridge : ObjectiveC.NSObject {
-  @objc public init(authBase64: Swift.String)
-  @objc public func fetchPlaces(config: PoilabsCommon.PLNNavigationConfig, language: Swift.String, completion: @escaping (PoilabsCommon.PLNPlace?, Foundation.NSError?) -> Swift.Void)
-  @objc deinit
-}
-@objc public class PostSignalsUseCaseBridge : ObjectiveC.NSObject {
-  @objc public init(authBase64: Swift.String, config: PoilabsCommon.PLNNavigationConfig, clientData: Foundation.NSDictionary)
-  @objc public func postSignals(_ signals: [Foundation.NSDictionary], config: PoilabsCommon.PLNNavigationConfig)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class StyleDetailsUseCaseBridge : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public func getStyleDetailsWithUrl(_ styleUrl: Swift.String, accessToken: Swift.String, completion: @escaping (Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSError?) -> Swift.Void)
-  @objc deinit
-}
-@objc public class WalkwaysUseCaseBridge : ObjectiveC.NSObject {
-  @objc public init(authBase64: Swift.String)
-  @objc public func fetchWalkways(config: PoilabsCommon.PLNNavigationConfig, completion: @escaping (Foundation.NSDictionary?, Foundation.NSError?) -> Swift.Void)
-  @objc deinit
-}
 public protocol PLEndpoint {
   var path: Swift.String { get }
   var queryItems: [Foundation.URLQueryItem]? { get }
@@ -282,21 +276,6 @@ public enum PLAPIEndpoint : PoilabsCommon.PLEndpoint {
     get
   }
 }
-public struct PLNetworkConfiguration {
-  public let authBase64: Swift.String
-}
-public struct TemplateEndpoint : PoilabsCommon.PLEndpoint {
-  public let templateURL: Swift.String
-  public let pathValues: [Swift.String : Swift.String]
-  public let queryItems: [Foundation.URLQueryItem]?
-  public init(templateURL: Swift.String, pathValues: [Swift.String : Swift.String], queryItems: [Foundation.URLQueryItem]? = nil)
-  public var path: Swift.String {
-    get
-  }
-  public var resolvedURL: Swift.String {
-    get
-  }
-}
 public enum NetworkError : Swift.Error {
   case invalidURL
   case noData
@@ -306,6 +285,30 @@ public enum NetworkError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct PLNetworkConfiguration {
+  public let authBase64: Swift.String
+}
+@objc @objcMembers final public class PLPoiNavigationSegment : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let finishId: Swift.String
+  @objc final public let weight: Swift.Double
+  @objc final public let routeWeight: Swift.Double
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class PlacesUseCaseBridge : ObjectiveC.NSObject {
+  @objc public init(authBase64: Swift.String)
+  @objc public func fetchPlaces(config: PoilabsCommon.PLNNavigationConfig, language: Swift.String, completion: @escaping (PoilabsCommon.PLNPlace?, Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class PLNFacility : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let pointType: Swift.String
+  @objc final public let title: Swift.String?
+  @objc final public let iconUrl: Swift.String?
+  @objc override dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
 }
 extension PoilabsCommon.PLAPIEndpoint : Swift.Equatable {}
 extension PoilabsCommon.PLAPIEndpoint : Swift.Hashable {}

@@ -3,6 +3,20 @@
 #import <MapboxCommon/MBXOfflineSwitch.h>
 
 @interface MBXOfflineSwitch ()
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Register a new observer.
+ * This observer is intended to be used internal only.
+ *
+ * The observer's statusChanged method will be called immediately with the current status of the offline
+ * switch and whenever the OfflineSwitch is forced offline or back online.
+ *
+ * @param observer The callback to receive the update.
+ */
 - (void)registerObserverForObserver:(nonnull id<MBXOfflineSwitchObserver>)observer;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Unregister an observer added with registerObserver.
+ */
 - (void)unregisterObserverForObserver:(nonnull id<MBXOfflineSwitchObserver>)observer;
 @end

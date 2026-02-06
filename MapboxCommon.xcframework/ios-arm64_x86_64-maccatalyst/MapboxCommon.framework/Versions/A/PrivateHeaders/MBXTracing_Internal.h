@@ -1,0 +1,26 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+
+typedef NS_ENUM(NSInteger, MBXTracingBackendType);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The Tracer utility class allows the developer to enable tracing for mapbox libraries.
+ * The tracing can be helpful in identifying performance issues related to the style,
+ * rendered data, navigation or insufficient device capabilities.
+ */
+NS_SWIFT_NAME(Tracing)
+__attribute__((visibility ("default")))
+@interface MBXTracing : NSObject
+
+// This class provides custom init which should be called
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+// This class provides custom init which should be called
++ (nonnull instancetype)new NS_UNAVAILABLE;
+
++ (void)setTracingBackendTypeForType:(MBXTracingBackendType)type;
++ (MBXTracingBackendType)getTracingBackendType;
+
+@end

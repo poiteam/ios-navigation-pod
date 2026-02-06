@@ -2,7 +2,17 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Interface for receiving status updates from the OfflineSwitch.
+ *
+ */
 NS_SWIFT_NAME(OfflineSwitchObserver)
 @protocol MBXOfflineSwitchObserver
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Notify of a status change of the OfflineSwitch.
+ * @param connected Currently connected.
+ */
 - (void)statusChangedForConnected:(BOOL)connected;
 @end

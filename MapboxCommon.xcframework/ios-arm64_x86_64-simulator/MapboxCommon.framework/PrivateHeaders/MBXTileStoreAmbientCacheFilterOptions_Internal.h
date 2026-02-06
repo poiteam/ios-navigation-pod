@@ -1,9 +1,14 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXTileDataDomain.h>
-#import <MapboxCommon/MBXTileStoreAmbientCacheType_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXTileDataDomain);
+typedef NS_ENUM(NSInteger, MBXTileStoreAmbientCacheType);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes possible ways to filter ambient cache for operations that act on it
+ */
 NS_SWIFT_NAME(TileStoreAmbientCacheFilterOptions)
 __attribute__((visibility ("default")))
 @interface MBXTileStoreAmbientCacheFilterOptions : NSObject
@@ -17,7 +22,12 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithTypeFilter:(nullable NSArray<NSNumber *> *)typeFilter
                               domainFilter:(nullable NSArray<NSNumber *> *)domainFilter;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Optional filter to act only on the given ambient cache types. Duplicates will be ignored.
+ */
 @property (nonatomic, readonly, nullable, copy) NSArray<NSNumber *> *typeFilter;
+
 /** Optional filter to act only on the given ambient cache domains. Duplicates will be ignored. */
 @property (nonatomic, readonly, nullable, copy) NSArray<NSNumber *> *domainFilter;
 

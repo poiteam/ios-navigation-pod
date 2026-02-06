@@ -4,6 +4,10 @@
 
 @class MBMCameraAnimationHintStage;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes the custom animation data.
+ */
 NS_SWIFT_NAME(CameraAnimationHint)
 __attribute__((visibility ("default")))
 @interface MBMCameraAnimationHint : NSObject
@@ -16,6 +20,13 @@ __attribute__((visibility ("default")))
 
 - (nonnull instancetype)initWithStages:(nonnull NSArray<MBMCameraAnimationHintStage *> *)stages;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The stages of the animation.
+ * The list must be sorted by duration.
+ * The last element is treated as final point for the animation.
+ */
 @property (nonatomic, readonly, nonnull, copy) NSArray<MBMCameraAnimationHintStage *> *stages;
+
 
 @end

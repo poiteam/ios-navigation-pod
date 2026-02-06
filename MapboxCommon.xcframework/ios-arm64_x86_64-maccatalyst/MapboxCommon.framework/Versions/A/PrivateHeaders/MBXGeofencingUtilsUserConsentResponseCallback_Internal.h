@@ -1,0 +1,9 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+@class MBXExpected<__covariant Value, __covariant Error>;
+
+@class MBXGeofencingError;
+
+NS_SWIFT_NAME(__GeofencingUtilsUserConsentResponseCallback)
+typedef void (^MBXGeofencingUtilsUserConsentResponseCallback)(MBXExpected<NSNull *, MBXGeofencingError *> * _Nonnull result); // NOLINT(modernize-use-using)

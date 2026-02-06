@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Represents an identifier for a single exported featureset or a layer.
+ */
 NS_SWIFT_NAME(FeaturesetDescriptor)
 __attribute__((visibility ("default")))
 @interface MBMFeaturesetDescriptor : NSObject

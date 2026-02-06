@@ -1,7 +1,14 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXNetworkStatus_Internal.h>
 
+typedef NS_ENUM(NSInteger, MBXNetworkStatus);
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback invoked when reachability status changed.
+ *
+ * @param status Current network status.
+ */
 NS_SWIFT_NAME(ReachabilityChanged)
 typedef void (^MBXReachabilityChanged)(MBXNetworkStatus status); // NOLINT(modernize-use-using)

@@ -1,14 +1,75 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MapboxCoreMaps
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MapboxCoreMaps
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CoreLocation.CLLocation
+import Combine
+import CoreLocation
 import Foundation
 import MapboxCommon
 @_exported import MapboxCoreMaps
 import Swift
+import UIKit.UIGeometry
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct CameraOptions : Swift.Codable, Swift.Hashable, Swift.Sendable {
+  public var center: CoreLocation.CLLocationCoordinate2D? {
+    get
+    set
+  }
+  public var padding: UIKit.UIEdgeInsets? {
+    get
+    set
+  }
+  public var anchor: CoreFoundation.CGPoint?
+  public var zoom: CoreFoundation.CGFloat?
+  public var bearing: CoreLocation.CLLocationDirection?
+  public var pitch: CoreFoundation.CGFloat?
+  public init(center: CoreLocation.CLLocationCoordinate2D? = nil, padding: UIKit.UIEdgeInsets? = nil, anchor: CoreFoundation.CGPoint? = nil, zoom: CoreFoundation.CGFloat? = nil, bearing: CoreLocation.CLLocationDirection? = nil, pitch: CoreFoundation.CGFloat? = nil)
+  public init(cameraState: MapboxCoreMaps.CameraState, anchor: CoreFoundation.CGPoint? = nil)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: MapboxCoreMaps.CameraOptions, b: MapboxCoreMaps.CameraOptions) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CameraState : Swift.Codable, Swift.Hashable, Swift.Sendable {
+  public var center: CoreLocation.CLLocationCoordinate2D {
+    get
+    set
+  }
+  public var padding: UIKit.UIEdgeInsets {
+    get
+    set
+  }
+  public var zoom: CoreFoundation.CGFloat
+  public var bearing: CoreLocation.CLLocationDirection
+  public var pitch: CoreFoundation.CGFloat
+  public init(center: CoreLocation.CLLocationCoordinate2D, padding: UIKit.UIEdgeInsets, zoom: CoreFoundation.CGFloat, bearing: CoreLocation.CLLocationDirection, pitch: CoreFoundation.CGFloat)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: MapboxCoreMaps.CameraState, b: MapboxCoreMaps.CameraState) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EdgeInsets : Swift.Hashable {
+  public var top: Swift.Double
+  public var left: Swift.Double
+  public var bottom: Swift.Double
+  public var right: Swift.Double
+  public init(top: Swift.Double, left: Swift.Double, bottom: Swift.Double, right: Swift.Double)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: MapboxCoreMaps.EdgeInsets, b: MapboxCoreMaps.EdgeInsets) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum LayerPosition : Swift.Equatable, Swift.Codable, Swift.Sendable {
   case `default`
   case above(Swift.String)
@@ -17,4 +78,14 @@ public enum LayerPosition : Swift.Equatable, Swift.Codable, Swift.Sendable {
   public static func == (a: MapboxCoreMaps.LayerPosition, b: MapboxCoreMaps.LayerPosition) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public struct ScreenCoordinate : Swift.Hashable {
+  public var x: Swift.Double
+  public var y: Swift.Double
+  public init(x: Swift.Double, y: Swift.Double)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: MapboxCoreMaps.ScreenCoordinate, b: MapboxCoreMaps.ScreenCoordinate) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
 }

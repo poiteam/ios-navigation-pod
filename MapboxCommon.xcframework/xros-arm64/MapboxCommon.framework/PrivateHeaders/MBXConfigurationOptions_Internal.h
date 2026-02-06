@@ -1,7 +1,8 @@
 // This file is generated and will be overwritten automatically.
 
 #import <Foundation/Foundation.h>
-#import <MapboxCommon/MBXConfigurationOptionsSource_Internal.h>
+
+typedef NS_ENUM(NSInteger, MBXConfigurationOptionsSource);
 
 NS_SWIFT_NAME(ConfigurationOptions)
 __attribute__((visibility ("default")))

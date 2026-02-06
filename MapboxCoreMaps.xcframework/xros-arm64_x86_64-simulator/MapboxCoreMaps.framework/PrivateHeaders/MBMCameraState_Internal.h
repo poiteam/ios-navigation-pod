@@ -5,7 +5,11 @@
 
 @class MBMEdgeInsets;
 
-NS_SWIFT_NAME(CameraState)
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Describes the viewpoint of a camera.
+ */
+NS_SWIFT_NAME(__CameraState)
 __attribute__((visibility ("default")))
 @interface MBMCameraState : NSObject
 
@@ -24,7 +28,13 @@ __attribute__((visibility ("default")))
 /** Coordinate at the center of the camera. */
 @property (nonatomic, readonly) CLLocationCoordinate2D center;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Padding around the interior of the view that affects the frame of
+ * reference for `center`.
+ */
 @property (nonatomic, readonly, nonnull) MBMEdgeInsets *padding;
+
 /**
  * Zero-based zoom level. Constrained to the minimum and maximum zoom
  * levels.

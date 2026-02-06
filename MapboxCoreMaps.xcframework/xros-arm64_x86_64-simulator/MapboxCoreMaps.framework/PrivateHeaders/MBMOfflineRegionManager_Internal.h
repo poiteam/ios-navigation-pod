@@ -6,11 +6,42 @@
 #import <MapboxCoreMaps/MBMOfflineRegionCreateCallback_Internal.h>
 
 @interface MBMOfflineRegionManager ()
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Invoke a call to fetch a list of offline regions.
+ *
+ * @param callback Invoked upon success and failure. This callback is invoked on the database thread and the user
+ * is responsible for dispatching to an appropriate thread before passing it along.
+ */
 - (void)getOfflineRegionsForCallback:(nonnull MBMOfflineRegionCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Creates a new offline region based on a geometry
+ *
+ * @param geometryDefinition A previously defined definition over the region.
+ * @param callback Invoked upon success and failure. This callback is invoked on the database thread and the user
+ * is responsible for dispatching to an appropriate thread before passing it along.
+ */
 - (void)createOfflineRegionForGeometryDefinition:(nonnull MBMOfflineRegionGeometryDefinition *)geometryDefinition
                                         callback:(nonnull MBMOfflineRegionCreateCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Creates a new offline region based on a tile pyramid
+ *
+ * @param tilePyramidDefinition A tile pyramid definition
+ * @param callback Invoked upon success and failure. This callback is invoked on the database thread and the user
+ * is responsible for dispatching to an appropriate thread before passing it along.
+ */
 - (void)createOfflineRegionForTilePyramidDefinition:(nonnull MBMOfflineRegionTilePyramidDefinition *)tilePyramidDefinition
                                            callback:(nonnull MBMOfflineRegionCreateCallback)callback;
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Merge offline regions from a secondary database into the main offline database.
+ *
+ * @param filePath The file path to the secondary database.
+ * @param callback Invoked upon success and failure. This callback is invoked on the database thread and the user
+ * is responsible for dispatching to an appropriate thread before passing it along.
+ */
 - (void)mergeOfflineDatabaseForFilePath:(nonnull NSString *)filePath
                                callback:(nonnull MBMOfflineDatabaseMergeCallback)callback;
 @end

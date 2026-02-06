@@ -5,6 +5,10 @@
 @class MBMGlyphsRasterizationOptions;
 @class MBMSize;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Set of options for taking map snapshot with `map snapshotter`.
+ */
 NS_SWIFT_NAME(MapSnapshotOptions)
 __attribute__((visibility ("default")))
 @interface MBMMapSnapshotOptions : NSObject
@@ -20,7 +24,8 @@ __attribute__((visibility ("default")))
 
 - (nonnull instancetype)initWithSize:(nonnull MBMSize *)size
                           pixelRatio:(float)pixelRatio
-          glyphsRasterizationOptions:(nullable MBMGlyphsRasterizationOptions *)glyphsRasterizationOptions NS_REFINED_FOR_SWIFT;
+          glyphsRasterizationOptions:(nullable MBMGlyphsRasterizationOptions *)glyphsRasterizationOptions
+                         scaleFactor:(float)scaleFactor NS_REFINED_FOR_SWIFT;
 
 /** Dimensions of the snapshot in `platform pixel` units. */
 @property (nonatomic, readonly, nonnull) MBMSize *size NS_REFINED_FOR_SWIFT;
@@ -33,6 +38,9 @@ __attribute__((visibility ("default")))
  * By default, `GlyphsRasterizationOptions` will use `NoGlyphsRasterizedLocally` mode.
  */
 @property (nonatomic, readonly, nullable) MBMGlyphsRasterizationOptions *glyphsRasterizationOptions;
+
+/** Custom scale factor for the Map symbols: icons and texts. By default, it is set to 1.0 */
+@property (nonatomic, readonly) float scaleFactor NS_REFINED_FOR_SWIFT;
 
 
 @end

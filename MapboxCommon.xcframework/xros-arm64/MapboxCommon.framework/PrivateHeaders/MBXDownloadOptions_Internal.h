@@ -4,6 +4,10 @@
 
 @class MBXHttpRequest;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Structure to configure download session.
+ */
 NS_SWIFT_NAME(DownloadOptions)
 __attribute__((visibility ("default")))
 @interface MBXDownloadOptions : NSObject

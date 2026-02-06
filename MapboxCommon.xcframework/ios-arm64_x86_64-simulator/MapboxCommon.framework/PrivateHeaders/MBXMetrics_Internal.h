@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * This record holds information of a metric.
+ */
 NS_SWIFT_NAME(Metrics)
 __attribute__((visibility ("default")))
 @interface MBXMetrics : NSObject
@@ -15,7 +19,17 @@ __attribute__((visibility ("default")))
 - (nonnull instancetype)initWithName:(nonnull NSString *)name
                                value:(nonnull id)value;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The metric name
+ */
 @property (nonatomic, readonly, nonnull, copy) NSString *name;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * The metric value to be set.
+ */
 @property (nonatomic, readonly, nonnull, copy) id value;
+
 
 @end

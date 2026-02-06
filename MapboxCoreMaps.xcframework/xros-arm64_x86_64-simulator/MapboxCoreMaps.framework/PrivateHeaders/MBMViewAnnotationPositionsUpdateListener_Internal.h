@@ -4,6 +4,13 @@
 
 @class MBMViewAnnotationPositionDescriptor;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback to get data needed to correctly position view annotations on the screen.
+ *
+ * Array describing how to position visible view annotations. Order is critical in terms of correct placing views above each other.
+ *
+ */
 NS_SWIFT_NAME(ViewAnnotationPositionsUpdateListener)
 @protocol MBMViewAnnotationPositionsUpdateListener
 /**

@@ -1,0 +1,15 @@
+// This file is generated and will be overwritten automatically.
+
+#import <Foundation/Foundation.h>
+@class MBXExpected<__covariant Value, __covariant Error>;
+
+@class MBXGeofencingError;
+
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback that returns the result of adding a geofence monitored features' observer.
+ *
+ * @param result No expectation if the operation succeeds, or a GeofencingError otherwise.
+ */
+NS_SWIFT_NAME(__AddObserverCallback)
+typedef void (^MBXAddObserverCallback)(MBXExpected<NSNull *, MBXGeofencingError *> * _Nonnull result); // NOLINT(modernize-use-using)

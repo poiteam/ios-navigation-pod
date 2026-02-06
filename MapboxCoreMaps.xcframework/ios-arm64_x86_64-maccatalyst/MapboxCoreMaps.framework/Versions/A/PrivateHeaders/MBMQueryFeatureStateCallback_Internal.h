@@ -3,5 +3,11 @@
 #import <Foundation/Foundation.h>
 @class MBXExpected<__covariant Value, __covariant Error>;
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Callback to get query features asynchronously.
+ *
+ * @param stateMap A `feature state` object for the feature in case of the successful operation, string representing error otherwise.
+ */
 NS_SWIFT_NAME(QueryFeatureStateCallback)
 typedef void (^MBMQueryFeatureStateCallback)(MBXExpected<id, NSString *> * _Nonnull stateMap); // NOLINT(modernize-use-using)

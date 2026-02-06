@@ -2,5 +2,4 @@
 
 #import "MBXLoggingLevel.h"
 #import "MBXLogConfiguration.h"
-#import "MBXPersistentLogConfiguration.h"
 #import "MBXLogWriterBackend.h"

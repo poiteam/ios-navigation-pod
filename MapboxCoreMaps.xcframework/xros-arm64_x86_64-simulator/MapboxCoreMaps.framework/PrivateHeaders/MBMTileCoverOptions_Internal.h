@@ -2,6 +2,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * WARNING: This API is not intended for public usage. It can be deleted or changed without any notice.
+ * Various options needed for tile cover
+ */
 NS_SWIFT_NAME(TileCoverOptions)
 __attribute__((visibility ("default")))
 @interface MBMTileCoverOptions : NSObject
