@@ -23,40 +23,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView"
-      },
-      {
-        "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
@@ -64,241 +30,55 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "TypeDecl",
-        "name": "PLAnnotationIconAnchor",
-        "printedName": "PLAnnotationIconAnchor",
+        "name": "PLMapUtils",
+        "printedName": "PLMapUtils",
         "children": [
           {
-            "kind": "Var",
-            "name": "center",
-            "printedName": "center",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsMapView.PLAnnotationIconAnchor.Type) -> PoilabsMapView.PLAnnotationIconAnchor",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PLAnnotationIconAnchor",
-                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
-                    "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PLAnnotationIconAnchor",
-                        "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
-                        "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor@PLAnnotationIconAnchorCenter",
-            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO6centeryA2CmF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "bottom",
-            "printedName": "bottom",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsMapView.PLAnnotationIconAnchor.Type) -> PoilabsMapView.PLAnnotationIconAnchor",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PLAnnotationIconAnchor",
-                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
-                    "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PLAnnotationIconAnchor",
-                        "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
-                        "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor@PLAnnotationIconAnchorBottom",
-            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO6bottomyA2CmF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
+            "kind": "Function",
+            "name": "coordinateInCoordinateBounds",
+            "printedName": "coordinateInCoordinateBounds(coordinate:swForBounds:neForBounds:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PoilabsMapView.PLAnnotationIconAnchor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PLAnnotationIconAnchor",
-                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
-                    "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14PoilabsMapView22PLAnnotationIconAnchorO8rawValueACSgSi_tcfc",
-            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO8rawValueACSgSi_tcfc",
-            "moduleName": "PoilabsMapView",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivp",
-            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivp",
+            "declKind": "Func",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(cm)coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
+            "mangledName": "$s14PoilabsMapView10PLMapUtilsC28coordinateInCoordinateBounds0F005swForI002nekI0SbSo22CLLocationCoordinate2DV_A2ItFZ",
             "moduleName": "PoilabsMapView",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivg",
-                "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivg",
-                "moduleName": "PoilabsMapView",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor",
-        "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
+            "static": true,
+            "objc_name": "coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
             ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PLAnnotationManager",
-        "printedName": "PLAnnotationManager",
-        "children": [
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -306,14 +86,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PLAnnotationManager",
-                "printedName": "PoilabsMapView.PLAnnotationManager",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotationManager"
+                "name": "PLMapUtils",
+                "printedName": "PoilabsMapView.PLMapUtils",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotationManager(im)init",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerCACycfc",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(im)init",
+            "mangledName": "$s14PoilabsMapView10PLMapUtilsCACycfc",
             "moduleName": "PoilabsMapView",
             "overriding": true,
             "implicit": true,
@@ -324,609 +104,18 @@
               "Override"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "addAnnotation",
-            "printedName": "addAnnotation(toCoordinate:identifier:image:anchor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PLAnnotationIconAnchor",
-                "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
-                "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addAnnotationToCoordinate:identifier:image:anchor:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC13addAnnotation12toCoordinate10identifier5image6anchorySo22CLLocationCoordinate2DV_SSSo7UIImageCAA0D10IconAnchorOtF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "addAnnotationToCoordinate:identifier:image:anchor:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeAnnotation",
-            "printedName": "removeAnnotation(withIdentifier:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAnnotationWithIdentifier:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC16removeAnnotation14withIdentifierySS_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "removeAnnotationWithIdentifier:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeAnnotations",
-            "printedName": "removeAnnotations(exceptIdentifier:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAnnotationsWithExceptIdentifier:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC17removeAnnotations16exceptIdentifierySS_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "removeAnnotationsWithExceptIdentifier:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeAllAnnotations",
-            "printedName": "removeAllAnnotations()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAllAnnotations",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC20removeAllAnnotationsyyF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addMultipleAnnotation",
-            "printedName": "addMultipleAnnotation(points:icon:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[PoilabsMapView.PLAnnotation]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PLAnnotation",
-                    "printedName": "PoilabsMapView.PLAnnotation",
-                    "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addMultipleAnnotationWithPoints:icon:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC21addMultipleAnnotation6points4iconySayAA0D0CG_So7UIImageCtF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "addMultipleAnnotationWithPoints:icon:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeMultipleAnnotation",
-            "printedName": "removeMultipleAnnotation()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeMultipleAnnotation",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC24removeMultipleAnnotationyyF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addRouteLines",
-            "printedName": "addRouteLines(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[[PoilabsMapView.PLAnnotation]]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[[PoilabsMapView.PLAnnotation]]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[PoilabsMapView.PLAnnotation]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PLAnnotation",
-                            "printedName": "PoilabsMapView.PLAnnotation",
-                            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addRouteLinesFor:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC13addRouteLines3forySaySaySayAA0D0CGGG_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "addRouteLinesFor:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeAllRouteLines",
-            "printedName": "removeAllRouteLines()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAllRouteLines",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC19removeAllRouteLinesyyF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "focusOnRoute",
-            "printedName": "focusOnRoute(index:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)focusOnRouteWithIndex:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC12focusOnRoute5indexySi_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "focusOnRouteWithIndex:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addMultipleRouteLines",
-            "printedName": "addMultipleRouteLines(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[[PoilabsMapView.PLAnnotation]]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[[PoilabsMapView.PLAnnotation]]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[PoilabsMapView.PLAnnotation]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PLAnnotation",
-                            "printedName": "PoilabsMapView.PLAnnotation",
-                            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addMultipleRouteLinesFor:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC21addMultipleRouteLines3forySaySaySayAA0D0CGGG_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "addMultipleRouteLinesFor:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "focusOnMultipleRoute",
-            "printedName": "focusOnMultipleRoute(index:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)focusOnMultipleRouteWithIndex:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC20focusOnMultipleRoute5indexySi_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "focusOnMultipleRouteWithIndex:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "selectLineOnMultipleRoute",
-            "printedName": "selectLineOnMultipleRoute(index:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)selectLineOnMultipleRouteWithIndex:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC25selectLineOnMultipleRoute5indexySi_tF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "selectLineOnMultipleRouteWithIndex:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeAllMultipleRouteLines",
-            "printedName": "removeAllMultipleRouteLines()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAllMultipleRouteLines",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC27removeAllMultipleRouteLinesyyF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addDashedLines",
-            "printedName": "addDashedLines(from:to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addDashedLinesFrom:to:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC14addDashedLines4from2toySo22CLLocationCoordinate2DV_AHtF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "addDashedLinesFrom:to:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeDashedLines",
-            "printedName": "removeDashedLines()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeDashedLines",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC17removeDashedLinesyyF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addSharedLocationAnnotation",
-            "printedName": "addSharedLocationAnnotation(at:image:title:onNavigatePress:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addSharedLocationAnnotationAt:image:title:onNavigatePress:",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC27addSharedLocationAnnotation2at5image5title15onNavigatePressySo22CLLocationCoordinate2DV_So7UIImageCSSyycSgtF",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "addSharedLocationAnnotationAt:image:title:onNavigatePress:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeSharedLocationAnnotation",
-            "printedName": "removeSharedLocationAnnotation()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeSharedLocationAnnotation",
-            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC30removeSharedLocationAnnotationyyF",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotationManager",
-        "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC",
+        "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils",
+        "mangledName": "$s14PoilabsMapView10PLMapUtilsC",
         "moduleName": "PoilabsMapView",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -995,6 +184,391 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PLAnnotation",
+        "printedName": "PLAnnotation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "coordinate",
+            "printedName": "coordinate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)coordinate",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvp",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)coordinate",
+                "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvg",
+                "moduleName": "PoilabsMapView",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "poiId",
+            "printedName": "poiId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)poiId",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvp",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)poiId",
+                "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvg",
+                "moduleName": "PoilabsMapView",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "floorLevel",
+            "printedName": "floorLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)floorLevel",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivp",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)floorLevel",
+                "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivg",
+                "moduleName": "PoilabsMapView",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(poiId:coordinate:floorLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLAnnotation",
+                "printedName": "PoilabsMapView.PLAnnotation",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)initWithPoiId:coordinate:floorLevel:",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiId10coordinate10floorLevelACSS_So22CLLocationCoordinate2DVSitcfc",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "initWithPoiId:coordinate:floorLevel:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLAnnotation",
+                "printedName": "PoilabsMapView.PLAnnotation",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)init",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationCACycfc",
+            "moduleName": "PoilabsMapView",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation",
+        "mangledName": "$s14PoilabsMapView12PLAnnotationC",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
       },
       {
         "kind": "Import",
@@ -2489,16 +2063,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
@@ -2513,200 +2077,131 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PoilabsMapView"
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView"
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "TypeDecl",
-        "name": "PLAnnotation",
-        "printedName": "PLAnnotation",
+        "name": "PLAnnotationIconAnchor",
+        "printedName": "PLAnnotationIconAnchor",
         "children": [
           {
             "kind": "Var",
-            "name": "coordinate",
-            "printedName": "coordinate",
+            "name": "center",
+            "printedName": "center",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)coordinate",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvp",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PoilabsMapView.PLAnnotationIconAnchor.Type) -> PoilabsMapView.PLAnnotationIconAnchor",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
-                    "usr": "c:@S@CLLocationCoordinate2D"
+                    "name": "PLAnnotationIconAnchor",
+                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
+                    "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PLAnnotationIconAnchor",
+                        "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
+                        "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
+                      }
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)coordinate",
-                "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvg",
-                "moduleName": "PoilabsMapView",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
+                ]
               }
-            ]
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor@PLAnnotationIconAnchorCenter",
+            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO6centeryA2CmF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
           },
           {
             "kind": "Var",
-            "name": "poiId",
-            "printedName": "poiId",
+            "name": "bottom",
+            "printedName": "bottom",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)poiId",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvp",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PoilabsMapView.PLAnnotationIconAnchor.Type) -> PoilabsMapView.PLAnnotationIconAnchor",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "PLAnnotationIconAnchor",
+                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
+                    "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PLAnnotationIconAnchor",
+                        "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
+                        "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor@PLAnnotationIconAnchorBottom",
+            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO6bottomyA2CmF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PoilabsMapView.PLAnnotationIconAnchor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PLAnnotationIconAnchor",
+                    "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
+                    "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
                   }
                 ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)poiId",
-                "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvg",
-                "moduleName": "PoilabsMapView",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
-            ]
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PoilabsMapView22PLAnnotationIconAnchorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO8rawValueACSgSi_tcfc",
+            "moduleName": "PoilabsMapView",
+            "implicit": true,
+            "init_kind": "Designated"
           },
           {
             "kind": "Var",
-            "name": "floorLevel",
-            "printedName": "floorLevel",
+            "name": "rawValue",
+            "printedName": "rawValue",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2716,17 +2211,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)floorLevel",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivp",
+            "usr": "s:14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivp",
+            "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivp",
             "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
+            "implicit": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -2741,98 +2229,24 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)floorLevel",
-                "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivg",
+                "usr": "s:14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivg",
+                "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO8rawValueSivg",
                 "moduleName": "PoilabsMapView",
                 "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(poiId:coordinate:floorLevel:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLAnnotation",
-                "printedName": "PoilabsMapView.PLAnnotation",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)initWithPoiId:coordinate:floorLevel:",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiId10coordinate10floorLevelACSS_So22CLLocationCoordinate2DVSitcfc",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "initWithPoiId:coordinate:floorLevel:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLAnnotation",
-                "printedName": "PoilabsMapView.PLAnnotation",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)init",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationCACycfc",
-            "moduleName": "PoilabsMapView",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation",
-        "mangledName": "$s14PoilabsMapView12PLAnnotationC",
+        "declKind": "Enum",
+        "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor",
+        "mangledName": "$s14PoilabsMapView22PLAnnotationIconAnchorO",
         "moduleName": "PoilabsMapView",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
+        "enumRawTypeName": "Int",
         "conformances": [
           {
             "kind": "Conformance",
@@ -2864,72 +2278,510 @@
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
       {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
-        "name": "PLMapUtils",
-        "printedName": "PLMapUtils",
+        "name": "PLAnnotationManager",
+        "printedName": "PLAnnotationManager",
         "children": [
           {
-            "kind": "Function",
-            "name": "coordinateInCoordinateBounds",
-            "printedName": "coordinateInCoordinateBounds(coordinate:swForBounds:neForBounds:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "PLAnnotationManager",
+                "printedName": "PoilabsMapView.PLAnnotationManager",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotationManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotationManager(im)init",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerCACycfc",
+            "moduleName": "PoilabsMapView",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "addAnnotation",
+            "printedName": "addAnnotation(toCoordinate:identifier:image:anchor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
                 "printedName": "CoreLocation.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PLAnnotationIconAnchor",
+                "printedName": "PoilabsMapView.PLAnnotationIconAnchor",
+                "usr": "c:@M@PoilabsMapView@E@PLAnnotationIconAnchor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addAnnotationToCoordinate:identifier:image:anchor:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC13addAnnotation12toCoordinate10identifier5image6anchorySo22CLLocationCoordinate2DV_SSSo7UIImageCAA0D10IconAnchorOtF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "addAnnotationToCoordinate:identifier:image:anchor:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAnnotation",
+            "printedName": "removeAnnotation(withIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAnnotationWithIdentifier:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC16removeAnnotation14withIdentifierySS_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "removeAnnotationWithIdentifier:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAnnotations",
+            "printedName": "removeAnnotations(exceptIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAnnotationsWithExceptIdentifier:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC17removeAnnotations16exceptIdentifierySS_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "removeAnnotationsWithExceptIdentifier:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllAnnotations",
+            "printedName": "removeAllAnnotations()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAllAnnotations",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC20removeAllAnnotationsyyF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addMultipleAnnotation",
+            "printedName": "addMultipleAnnotation(points:icon:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PoilabsMapView.PLAnnotation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PLAnnotation",
+                    "printedName": "PoilabsMapView.PLAnnotation",
+                    "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addMultipleAnnotationWithPoints:icon:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC21addMultipleAnnotation6points4iconySayAA0D0CG_So7UIImageCtF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "addMultipleAnnotationWithPoints:icon:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeMultipleAnnotation",
+            "printedName": "removeMultipleAnnotation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeMultipleAnnotation",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC24removeMultipleAnnotationyyF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addRouteLines",
+            "printedName": "addRouteLines(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[[PoilabsMapView.PLAnnotation]]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[PoilabsMapView.PLAnnotation]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PoilabsMapView.PLAnnotation]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PLAnnotation",
+                            "printedName": "PoilabsMapView.PLAnnotation",
+                            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addRouteLinesFor:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC13addRouteLines3forySaySaySayAA0D0CGGG_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "addRouteLinesFor:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllRouteLines",
+            "printedName": "removeAllRouteLines()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAllRouteLines",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC19removeAllRouteLinesyyF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "focusOnRoute",
+            "printedName": "focusOnRoute(index:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)focusOnRouteWithIndex:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC12focusOnRoute5indexySi_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "focusOnRouteWithIndex:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addMultipleRouteLines",
+            "printedName": "addMultipleRouteLines(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[[PoilabsMapView.PLAnnotation]]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[PoilabsMapView.PLAnnotation]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PoilabsMapView.PLAnnotation]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PLAnnotation",
+                            "printedName": "PoilabsMapView.PLAnnotation",
+                            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addMultipleRouteLinesFor:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC21addMultipleRouteLines3forySaySaySayAA0D0CGGG_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "addMultipleRouteLinesFor:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "focusOnMultipleRoute",
+            "printedName": "focusOnMultipleRoute(index:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)focusOnMultipleRouteWithIndex:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC20focusOnMultipleRoute5indexySi_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "focusOnMultipleRouteWithIndex:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectLineOnMultipleRoute",
+            "printedName": "selectLineOnMultipleRoute(index:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)selectLineOnMultipleRouteWithIndex:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC25selectLineOnMultipleRoute5indexySi_tF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "selectLineOnMultipleRouteWithIndex:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllMultipleRouteLines",
+            "printedName": "removeAllMultipleRouteLines()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeAllMultipleRouteLines",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC27removeAllMultipleRouteLinesyyF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addDashedLines",
+            "printedName": "addDashedLines(from:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -2945,55 +2797,142 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(cm)coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
-            "mangledName": "$s14PoilabsMapView10PLMapUtilsC28coordinateInCoordinateBounds0F005swForI002nekI0SbSo22CLLocationCoordinate2DV_A2ItFZ",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addDashedLinesFrom:to:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC14addDashedLines4from2toySo22CLLocationCoordinate2DV_AHtF",
             "moduleName": "PoilabsMapView",
-            "static": true,
-            "objc_name": "coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
+            "objc_name": "addDashedLinesFrom:to:",
             "declAttributes": [
-              "Final",
+              "Dynamic",
               "AccessControl",
               "ObjC"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Function",
+            "name": "removeDashedLines",
+            "printedName": "removeDashedLines()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PLMapUtils",
-                "printedName": "PoilabsMapView.PLMapUtils",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils"
+                "name": "Void",
+                "printedName": "()"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(im)init",
-            "mangledName": "$s14PoilabsMapView10PLMapUtilsCACycfc",
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeDashedLines",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC17removeDashedLinesyyF",
             "moduleName": "PoilabsMapView",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
             "declAttributes": [
               "Dynamic",
-              "ObjC",
-              "Override"
+              "AccessControl",
+              "ObjC"
             ],
-            "init_kind": "Designated"
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSharedLocationAnnotation",
+            "printedName": "addSharedLocationAnnotation(at:image:title:onNavigatePress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)addSharedLocationAnnotationAt:image:title:onNavigatePress:",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC27addSharedLocationAnnotation2at5image5title15onNavigatePressySo22CLLocationCoordinate2DV_So7UIImageCSSyycSgtF",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "addSharedLocationAnnotationAt:image:title:onNavigatePress:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeSharedLocationAnnotation",
+            "printedName": "removeSharedLocationAnnotation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PoilabsMapView@objc(cs)PLAnnotationManager(im)removeSharedLocationAnnotation",
+            "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC30removeSharedLocationAnnotationyyF",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils",
-        "mangledName": "$s14PoilabsMapView10PLMapUtilsC",
+        "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotationManager",
+        "mangledName": "$s14PoilabsMapView19PLAnnotationManagerC",
         "moduleName": "PoilabsMapView",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -3065,8 +3004,8 @@
       },
       {
         "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PoilabsMapView",
         "declAttributes": [
@@ -3075,8 +3014,25 @@
       },
       {
         "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "PoilabsMapView"
       },
@@ -3135,6 +3091,50 @@
         "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PoilabsMapView",
         "declAttributes": [
@@ -3162,202 +3162,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 224,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1836,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1846,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1858,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1869,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2529,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2539,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2551,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2562,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationTitleView.swift",
-      "kind": "StringLiteral",
-      "offset": 282,
-      "length": 6,
-      "value": "\"Emre\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationTitleView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 348,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 196,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 631,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 918,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 953,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 990,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1932,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5579,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLBasePolylineAnnotationManager.swift",
-      "kind": "Array",
-      "offset": 300,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLBasePolylineAnnotationManager.swift",
-      "kind": "FloatLiteral",
-      "offset": 334,
-      "length": 3,
-      "value": "8.0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5014,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5078,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5097,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 430,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 463,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "StringLiteral",
-      "offset": 520,
-      "length": 10,
-      "value": "\"getRoute\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 606,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 562,
-      "length": 4,
-      "value": "\"en\""
-    },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
       "kind": "StringLiteral",
@@ -3436,6 +3240,104 @@
       "value": "5"
     },
     {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 430,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 463,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "StringLiteral",
+      "offset": 520,
+      "length": 10,
+      "value": "\"getRoute\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 250,
+      "length": 2,
+      "value": "57"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 253,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 3,
+      "value": "166"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 269,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 280,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 295,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLBasePolylineAnnotationManager.swift",
+      "kind": "Array",
+      "offset": 300,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLBasePolylineAnnotationManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 334,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLMultiPointAnnotationManager.swift",
       "kind": "Array",
       "offset": 403,
@@ -3476,6 +3378,153 @@
       "offset": 738,
       "length": 21,
       "value": "\"cluster-count-layer\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 631,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 918,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 990,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1932,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5579,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationTitleView.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 6,
+      "value": "\"Emre\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationTitleView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 348,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 224,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1836,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1846,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1858,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1869,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2529,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2539,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2551,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLCameraController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2562,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5014,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5078,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Layer\/PLLayerTapHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5097,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLMultipleRoutePolylineAnnotationManager.swift",
@@ -3574,55 +3623,6 @@
       "offset": 439,
       "length": 3,
       "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 250,
-      "length": 2,
-      "value": "57"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 253,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 3,
-      "value": "166"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 269,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 280,
-      "length": 2,
-      "value": "23"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 283,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
-      "kind": "FloatLiteral",
-      "offset": 295,
-      "length": 3,
-      "value": "0.6"
     }
   ]
 }

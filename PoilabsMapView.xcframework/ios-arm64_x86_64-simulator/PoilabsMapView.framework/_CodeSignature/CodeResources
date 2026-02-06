@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PoilabsMapView-Swift.h</key>
 		<data>
-		0U/jNlUaJCrNigh1xtft+WfuPOg=
+		l2agKm+Tutf7LlZBBMx4hpUpNVY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		RBaCMuhRoYvKnktLusFNfXfx+KM=
+		8znfQwTTD45Vp703k9tKNrIwzkI=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9SrKuPYyRO3CdtBTAib/Kq2ziPA=
+		RLSPiCgcmTQ+CQhG7srIJGqkaLg=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9SrKuPYyRO3CdtBTAib/Kq2ziPA=
+		RLSPiCgcmTQ+CQhG7srIJGqkaLg=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xMApOg13CEnoowVTSNyxh0omxDs=
+		romN5rITzkHQOkV1+3p5S3J7YLE=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		RBaCMuhRoYvKnktLusFNfXfx+KM=
+		8znfQwTTD45Vp703k9tKNrIwzkI=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Yu71wvSKx3QWvKU13L4LNHuYFNI=
+		KRApHq/N2c3u0jFFuIfgvQKy4cg=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Yu71wvSKx3QWvKU13L4LNHuYFNI=
+		KRApHq/N2c3u0jFFuIfgvQKy4cg=
 		</data>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		owOBONp2a6JR3Kjn3iZlnkxHogo=
+		hC4G4G4UcaKLdUhCA3sXfX2IPhc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B8eo0nFwoOcsBLdcrMpzKeMyc4+GUPQrB1pu0mdmSMA=
+			r4Rbscb/2sf+YYwvxwKZmQeW3y1qFFcZ0AmOJLCDlLo=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3BF2HV4+KtxISb+3TKzgLL4gp9Vsk6Zekcq6pK0kAqQ=
+			WMejjZtM+QmhWfnCHp/4RiukJJiNS4vBtRMqXfr/EKs=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fMfx3HfUnNjvzVFDcYsd1fMLIXR3JRtbM/XTXGIG4bU=
+			nvHCJE/2NqMf7jAwBBGSsXw+czuS5elUAtRvLgT8g9Y=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fMfx3HfUnNjvzVFDcYsd1fMLIXR3JRtbM/XTXGIG4bU=
+			nvHCJE/2NqMf7jAwBBGSsXw+czuS5elUAtRvLgT8g9Y=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WNlNtHnpHkP6DxmCvULYIn0C1nkAR5Y2/BflK8jS91g=
+			CB35L16Bf46FpI57HfcrPWJTiXkL9wl/gEcz/A4RVb0=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3BF2HV4+KtxISb+3TKzgLL4gp9Vsk6Zekcq6pK0kAqQ=
+			WMejjZtM+QmhWfnCHp/4RiukJJiNS4vBtRMqXfr/EKs=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNCbW1bhQtXmY7rOY3BET+RJGsyKcMXQxi9lUPOxDgs=
+			UOsXLPWWzwnHDw3A2Hkdo1v42BFUOO1cp2OntjCZaBo=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNCbW1bhQtXmY7rOY3BET+RJGsyKcMXQxi9lUPOxDgs=
+			UOsXLPWWzwnHDw3A2Hkdo1v42BFUOO1cp2OntjCZaBo=
 			</data>
 		</dict>
 		<key>Modules/PoilabsMapView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+TAZfOqAgEpTqJWYaKJBioywPVkfwngRseWEmForGsg=
+			Vy5rNUGIoGazkCWTnKSbWv58fTSqAaAGxvec9pRtg54=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

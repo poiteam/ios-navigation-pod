@@ -330,15 +330,15 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
+- (void)removeDashedLines;
+@end
+
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
 - (void)removeMultipleAnnotation;
-@end
-
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
-- (void)removeDashedLines;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -773,15 +773,15 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
+- (void)removeDashedLines;
+@end
+
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
 - (void)removeMultipleAnnotation;
-@end
-
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
-- (void)removeDashedLines;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
