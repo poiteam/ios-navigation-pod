@@ -60,10 +60,9 @@ or you can init sdk without mapview and you can get user location update
     PLNavigationManager.sharedInstance().delegate = self //PLNNavigationMapViewDelegate
 ```
 
-You can change colors of top bar and cancel button text according to your application theme.
+You can change colors of cancel button text according to your application theme.
 
 ```swift
-    carrierView.searchBarBaseView.backgroundColor = UIColor.black
     carrierView.searchCancelButton.setTitleColor(.white, for: .normal)
 ```
 
@@ -125,6 +124,26 @@ PoilabsNavigation will show a user icon for default. But if you want to use anot
 
 ```swift
 	PLNNavigationSettings.sharedInstance().customUserIcon = UIImage(...
+```
+
+### Setting Place ID
+
+If you want to set a specific place ID for the navigation, before calling -getReadyForStoreMap method, you should set **placeId** on PLNNavigationSettings.
+
+```swift
+	PLNNavigationSettings.sharedInstance().placeId = "your_place_id"
+```
+
+### Start with search text
+
+If you want to initialize the map view with a pre-filled search text, use the **initWithFrame:searchText:** initializer instead of the default one.
+
+```swift
+	let carrierView = PLNNavigationMapView(frame: CGRect(x: 0, y: 0, width: self.navigationView.bounds.size.width, height: self.navigationView.bounds.size.height), searchText: "search_query")
+	carrierView.awakeFromNib()
+	carrierView.delegate = self
+	self.currentCarrier = carrierView
+	self.navigationView.addSubview(carrierView)
 ```
 
 ### Start with active compass mode
