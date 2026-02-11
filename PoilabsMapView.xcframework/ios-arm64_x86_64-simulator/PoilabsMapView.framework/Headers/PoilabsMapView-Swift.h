@@ -337,13 +337,13 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
-- (void)removeMultipleAnnotation;
+- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
+- (void)removeSharedLocationAnnotation;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
-- (void)removeSharedLocationAnnotation;
+- (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
+- (void)removeMultipleAnnotation;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -353,17 +353,17 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)removeAllMultipleRouteLines;
-@end
-
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addAnnotationToCoordinate:(CLLocationCoordinate2D)coordinate identifier:(NSString * _Nonnull)identifier image:(UIImage * _Nonnull)image anchor:(enum PLAnnotationIconAnchor)anchor;
 - (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAllAnnotations;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)removeAllMultipleRouteLines;
 @end
 
 SWIFT_CLASS("_TtC14PoilabsMapView10PLMapUtils")
@@ -780,13 +780,13 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
-- (void)removeMultipleAnnotation;
+- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
+- (void)removeSharedLocationAnnotation;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addSharedLocationAnnotationAt:(CLLocationCoordinate2D)coordinate image:(UIImage * _Nonnull)image title:(NSString * _Nonnull)title onNavigatePress:(void (^ _Nullable)(void))onNavigatePress;
-- (void)removeSharedLocationAnnotation;
+- (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
+- (void)removeMultipleAnnotation;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -796,17 +796,17 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)removeAllMultipleRouteLines;
-@end
-
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addAnnotationToCoordinate:(CLLocationCoordinate2D)coordinate identifier:(NSString * _Nonnull)identifier image:(UIImage * _Nonnull)image anchor:(enum PLAnnotationIconAnchor)anchor;
 - (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAllAnnotations;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)removeAllMultipleRouteLines;
 @end
 
 SWIFT_CLASS("_TtC14PoilabsMapView10PLMapUtils")

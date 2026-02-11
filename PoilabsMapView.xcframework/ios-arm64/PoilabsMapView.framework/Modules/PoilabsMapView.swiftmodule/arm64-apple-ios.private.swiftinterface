@@ -10,58 +10,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class PLAnnotation : ObjectiveC.NSObject {
-  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
-  @objc final public let poiId: Swift.String
-  @objc final public let floorLevel: Swift.Int
-  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
-  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public enum PLAnnotationIconAnchor : Swift.Int {
-  case center, bottom
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers @objc public class PLAnnotationManager : ObjectiveC.NSObject {
-  @objc deinit
-}
-extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addAnnotation(toCoordinate coordinate: CoreLocation.CLLocationCoordinate2D, identifier: Swift.String, image: UIKit.UIImage, anchor: PoilabsMapView.PLAnnotationIconAnchor)
-  @objc dynamic public func removeAnnotation(withIdentifier identifier: Swift.String)
-  @objc dynamic public func removeAnnotations(exceptIdentifier identifier: Swift.String)
-  @objc dynamic public func removeAllAnnotations()
-}
-extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addMultipleAnnotation(points: [PoilabsMapView.PLAnnotation], icon: UIKit.UIImage)
-  @objc dynamic public func removeMultipleAnnotation()
-}
-extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addRouteLines(for coordinates: [[[PoilabsMapView.PLAnnotation]]])
-  @objc dynamic public func removeAllRouteLines()
-  @objc dynamic public func focusOnRoute(index: Swift.Int)
-}
-extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addMultipleRouteLines(for coordinates: [[[PoilabsMapView.PLAnnotation]]])
-  @objc dynamic public func focusOnMultipleRoute(index: Swift.Int)
-  @objc dynamic public func selectLineOnMultipleRoute(index: Swift.Int)
-  @objc dynamic public func removeAllMultipleRouteLines()
-}
-extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addDashedLines(from startCoordinate: CoreLocation.CLLocationCoordinate2D, to endCoordinate: CoreLocation.CLLocationCoordinate2D)
-  @objc dynamic public func removeDashedLines()
-}
-extension PoilabsMapView.PLAnnotationManager {
-  @objc dynamic public func addSharedLocationAnnotation(at coordinate: CoreLocation.CLLocationCoordinate2D, image: UIKit.UIImage, title: Swift.String, onNavigatePress: (() -> Swift.Void)?)
-  @objc dynamic public func removeSharedLocationAnnotation()
-}
 @objc public protocol PLMapViewDelegate {
   @objc func mapViewDidFinishLoading(_ mapView: PoilabsMapView.PLMapView)
   @objc func mapViewDidFollowStateChange(state: PoilabsMapView.PLMapViewFollowState)
@@ -111,9 +59,61 @@ extension PoilabsMapView.PLMapView {
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func hideLayersWithPrefix(_ prefix: Swift.String)
 }
-extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Equatable {}
-extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Hashable {}
-extension PoilabsMapView.PLAnnotationIconAnchor : Swift.RawRepresentable {}
+@objc public enum PLAnnotationIconAnchor : Swift.Int {
+  case center, bottom
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class PLAnnotationManager : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension PoilabsMapView.PLAnnotationManager {
+  @objc dynamic public func addAnnotation(toCoordinate coordinate: CoreLocation.CLLocationCoordinate2D, identifier: Swift.String, image: UIKit.UIImage, anchor: PoilabsMapView.PLAnnotationIconAnchor)
+  @objc dynamic public func removeAnnotation(withIdentifier identifier: Swift.String)
+  @objc dynamic public func removeAnnotations(exceptIdentifier identifier: Swift.String)
+  @objc dynamic public func removeAllAnnotations()
+}
+extension PoilabsMapView.PLAnnotationManager {
+  @objc dynamic public func addMultipleAnnotation(points: [PoilabsMapView.PLAnnotation], icon: UIKit.UIImage)
+  @objc dynamic public func removeMultipleAnnotation()
+}
+extension PoilabsMapView.PLAnnotationManager {
+  @objc dynamic public func addRouteLines(for coordinates: [[[PoilabsMapView.PLAnnotation]]])
+  @objc dynamic public func removeAllRouteLines()
+  @objc dynamic public func focusOnRoute(index: Swift.Int)
+}
+extension PoilabsMapView.PLAnnotationManager {
+  @objc dynamic public func addMultipleRouteLines(for coordinates: [[[PoilabsMapView.PLAnnotation]]])
+  @objc dynamic public func focusOnMultipleRoute(index: Swift.Int)
+  @objc dynamic public func selectLineOnMultipleRoute(index: Swift.Int)
+  @objc dynamic public func removeAllMultipleRouteLines()
+}
+extension PoilabsMapView.PLAnnotationManager {
+  @objc dynamic public func addDashedLines(from startCoordinate: CoreLocation.CLLocationCoordinate2D, to endCoordinate: CoreLocation.CLLocationCoordinate2D)
+  @objc dynamic public func removeDashedLines()
+}
+extension PoilabsMapView.PLAnnotationManager {
+  @objc dynamic public func addSharedLocationAnnotation(at coordinate: CoreLocation.CLLocationCoordinate2D, image: UIKit.UIImage, title: Swift.String, onNavigatePress: (() -> Swift.Void)?)
+  @objc dynamic public func removeSharedLocationAnnotation()
+}
+@_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
+  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PLAnnotation : ObjectiveC.NSObject {
+  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
+  @objc final public let poiId: Swift.String
+  @objc final public let floorLevel: Swift.Int
+  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
+  @objc deinit
+}
 extension PoilabsMapView.PLMapViewFollowState : Swift.Equatable {}
 extension PoilabsMapView.PLMapViewFollowState : Swift.Hashable {}
 extension PoilabsMapView.PLMapViewFollowState : Swift.RawRepresentable {}
+extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Equatable {}
+extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Hashable {}
+extension PoilabsMapView.PLAnnotationIconAnchor : Swift.RawRepresentable {}
