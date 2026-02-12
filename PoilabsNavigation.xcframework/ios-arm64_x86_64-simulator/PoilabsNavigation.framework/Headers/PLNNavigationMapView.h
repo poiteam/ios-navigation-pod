@@ -148,5 +148,10 @@
 -(void)navigateWithStoreIdTo:(NSString *)targetPoiStoreId;
 -(void)getRouteWithMultiplePoints:(NSArray *)storeIds;
 
+// Location Selection Mode
+@property (nonatomic, assign) BOOL isLocationSelectionMode;
+-(void)enterLocationSelectionMode;
+-(void)exitLocationSelectionMode;
+
 @end
 

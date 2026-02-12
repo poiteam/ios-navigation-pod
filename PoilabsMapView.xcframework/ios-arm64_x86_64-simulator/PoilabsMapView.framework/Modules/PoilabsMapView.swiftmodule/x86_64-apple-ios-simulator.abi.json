@@ -16,518 +16,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView"
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PLMapUtils",
-        "printedName": "PLMapUtils",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "coordinateInCoordinateBounds",
-            "printedName": "coordinateInCoordinateBounds(coordinate:swForBounds:neForBounds:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(cm)coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
-            "mangledName": "$s14PoilabsMapView10PLMapUtilsC28coordinateInCoordinateBounds0F005swForI002nekI0SbSo22CLLocationCoordinate2DV_A2ItFZ",
-            "moduleName": "PoilabsMapView",
-            "static": true,
-            "objc_name": "coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLMapUtils",
-                "printedName": "PoilabsMapView.PLMapUtils",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(im)init",
-            "mangledName": "$s14PoilabsMapView10PLMapUtilsCACycfc",
-            "moduleName": "PoilabsMapView",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils",
-        "mangledName": "$s14PoilabsMapView10PLMapUtilsC",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PLAnnotation",
-        "printedName": "PLAnnotation",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "coordinate",
-            "printedName": "coordinate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)coordinate",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvp",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
-                    "usr": "c:@S@CLLocationCoordinate2D"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)coordinate",
-                "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvg",
-                "moduleName": "PoilabsMapView",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "poiId",
-            "printedName": "poiId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)poiId",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvp",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)poiId",
-                "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvg",
-                "moduleName": "PoilabsMapView",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "floorLevel",
-            "printedName": "floorLevel",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)floorLevel",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivp",
-            "moduleName": "PoilabsMapView",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)floorLevel",
-                "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivg",
-                "moduleName": "PoilabsMapView",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(poiId:coordinate:floorLevel:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLAnnotation",
-                "printedName": "PoilabsMapView.PLAnnotation",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
-                "usr": "c:@S@CLLocationCoordinate2D"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)initWithPoiId:coordinate:floorLevel:",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiId10coordinate10floorLevelACSS_So22CLLocationCoordinate2DVSitcfc",
-            "moduleName": "PoilabsMapView",
-            "objc_name": "initWithPoiId:coordinate:floorLevel:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLAnnotation",
-                "printedName": "PoilabsMapView.PLAnnotation",
-                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)init",
-            "mangledName": "$s14PoilabsMapView12PLAnnotationCACycfc",
-            "moduleName": "PoilabsMapView",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation",
-        "mangledName": "$s14PoilabsMapView12PLAnnotationC",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MapboxMaps",
-        "printedName": "MapboxMaps",
-        "declKind": "Import",
-        "moduleName": "PoilabsMapView",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "MapboxMaps",
         "printedName": "MapboxMaps",
         "declKind": "Import",
@@ -2051,13 +1539,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -3157,123 +2638,523 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView"
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PLMapUtils",
+        "printedName": "PLMapUtils",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "coordinateInCoordinateBounds",
+            "printedName": "coordinateInCoordinateBounds(coordinate:swForBounds:neForBounds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(cm)coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
+            "mangledName": "$s14PoilabsMapView10PLMapUtilsC28coordinateInCoordinateBounds0F005swForI002nekI0SbSo22CLLocationCoordinate2DV_A2ItFZ",
+            "moduleName": "PoilabsMapView",
+            "static": true,
+            "objc_name": "coordinateInCoordinateBoundsWithCoordinate:swForBounds:neForBounds:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLMapUtils",
+                "printedName": "PoilabsMapView.PLMapUtils",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils(im)init",
+            "mangledName": "$s14PoilabsMapView10PLMapUtilsCACycfc",
+            "moduleName": "PoilabsMapView",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsMapView@objc(cs)PLMapUtils",
+        "mangledName": "$s14PoilabsMapView10PLMapUtilsC",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PLAnnotation",
+        "printedName": "PLAnnotation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "coordinate",
+            "printedName": "coordinate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)coordinate",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvp",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocationCoordinate2D",
+                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "usr": "c:@S@CLLocationCoordinate2D"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)coordinate",
+                "mangledName": "$s14PoilabsMapView12PLAnnotationC10coordinateSo22CLLocationCoordinate2DVvg",
+                "moduleName": "PoilabsMapView",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "poiId",
+            "printedName": "poiId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)poiId",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvp",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)poiId",
+                "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiIdSSvg",
+                "moduleName": "PoilabsMapView",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "floorLevel",
+            "printedName": "floorLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(py)floorLevel",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivp",
+            "moduleName": "PoilabsMapView",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)floorLevel",
+                "mangledName": "$s14PoilabsMapView12PLAnnotationC10floorLevelSivg",
+                "moduleName": "PoilabsMapView",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(poiId:coordinate:floorLevel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLAnnotation",
+                "printedName": "PoilabsMapView.PLAnnotation",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationCoordinate2D",
+                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "usr": "c:@S@CLLocationCoordinate2D"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)initWithPoiId:coordinate:floorLevel:",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationC5poiId10coordinate10floorLevelACSS_So22CLLocationCoordinate2DVSitcfc",
+            "moduleName": "PoilabsMapView",
+            "objc_name": "initWithPoiId:coordinate:floorLevel:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLAnnotation",
+                "printedName": "PoilabsMapView.PLAnnotation",
+                "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation(im)init",
+            "mangledName": "$s14PoilabsMapView12PLAnnotationCACycfc",
+            "moduleName": "PoilabsMapView",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsMapView@objc(cs)PLAnnotation",
+        "mangledName": "$s14PoilabsMapView12PLAnnotationC",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MapboxMaps",
+        "printedName": "MapboxMaps",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsMapView",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 250,
-      "length": 15,
-      "value": "\"line-layer-id\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "StringLiteral",
-      "offset": 293,
-      "length": 23,
-      "value": "\"dashed-line-source-id\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 378,
-      "length": 3,
-      "value": "192"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 382,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 394,
-      "length": 3,
-      "value": "192"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 398,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 409,
-      "length": 3,
-      "value": "192"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 413,
-      "length": 3,
-      "value": "255"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 425,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 427,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 473,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 562,
-      "length": 4,
-      "value": "\"en\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 430,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 463,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "StringLiteral",
-      "offset": 520,
-      "length": 10,
-      "value": "\"getRoute\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 606,
-      "length": 5,
-      "value": "false"
-    },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/Polyline\/PLPolylineAnnotationManager.swift",
       "kind": "IntegerLiteral",
@@ -3623,6 +3504,118 @@
       "offset": 439,
       "length": 3,
       "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 15,
+      "value": "\"line-layer-id\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 23,
+      "value": "\"dashed-line-source-id\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 378,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 398,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 413,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 427,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/PLDashedPolylineAnnotationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 473,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 430,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 463,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "StringLiteral",
+      "offset": 520,
+      "length": 10,
+      "value": "\"getRoute\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationCalloutView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 606,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

@@ -10,18 +10,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
-  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public class PLAnnotation : ObjectiveC.NSObject {
-  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
-  @objc final public let poiId: Swift.String
-  @objc final public let floorLevel: Swift.Int
-  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
-  @objc deinit
-}
 @objc public protocol PLMapViewDelegate {
   @objc func mapViewDidFinishLoading(_ mapView: PoilabsMapView.PLMapView)
   @objc func mapViewDidFollowStateChange(state: PoilabsMapView.PLMapViewFollowState)
@@ -110,6 +98,18 @@ extension PoilabsMapView.PLAnnotationManager {
 extension PoilabsMapView.PLAnnotationManager {
   @objc dynamic public func addSharedLocationAnnotation(at coordinate: CoreLocation.CLLocationCoordinate2D, image: UIKit.UIImage, title: Swift.String, onNavigatePress: (() -> Swift.Void)?)
   @objc dynamic public func removeSharedLocationAnnotation()
+}
+@_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
+  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PLAnnotation : ObjectiveC.NSObject {
+  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
+  @objc final public let poiId: Swift.String
+  @objc final public let floorLevel: Swift.Int
+  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
+  @objc deinit
 }
 extension PoilabsMapView.PLMapViewFollowState : Swift.Equatable {}
 extension PoilabsMapView.PLMapViewFollowState : Swift.Hashable {}

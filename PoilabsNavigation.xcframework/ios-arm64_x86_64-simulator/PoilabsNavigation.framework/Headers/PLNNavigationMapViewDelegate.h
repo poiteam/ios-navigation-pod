@@ -32,4 +32,6 @@
 
 -(void)didUserVisitPointWithStoreIds:(NSArray<NSString *> *_Nonnull)storeIds;
 
+-(void)didSelectLocationForCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(NSInteger)floorLevel;
+
 @end

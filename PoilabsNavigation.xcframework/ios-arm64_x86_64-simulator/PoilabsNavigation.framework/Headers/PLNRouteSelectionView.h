@@ -13,7 +13,7 @@
 
 
 @protocol PLNRouteSelectionViewDelegate <NSObject>
-- (void)locationSelectionClicked:(PLPoi *) selectedPoi;
+- (void)locationSelectionClicked:(PLPoi *) selectedPoi showMapSelect:(bool) showMapSelect;
 - (void)directButtonClicked;
 - (void)accessibleButtonClicked;
 @end
@@ -54,5 +54,5 @@
 @property(strong, nonatomic) PLPoi *selectedPoi;
 - (void)activateLocationNotFound;
 - (void) setButtonsVisibility:(BOOL) hidden;
-- (void)configureInit:(PLPoi *) poi;
+- (void)configureInit:(PLPoi *)targetPoi sourcePoi: (PLPoi *) sourcePoi;
 @end

@@ -330,11 +330,6 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
-- (void)removeDashedLines;
-@end
-
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
@@ -347,16 +342,14 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)removeAllRouteLines;
-- (void)focusOnRouteWithIndex:(NSInteger)index;
+- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
+- (void)removeDashedLines;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)removeAllMultipleRouteLines;
+- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)removeAllRouteLines;
+- (void)focusOnRouteWithIndex:(NSInteger)index;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -364,6 +357,13 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 - (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAllAnnotations;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)removeAllMultipleRouteLines;
 @end
 
 SWIFT_CLASS("_TtC14PoilabsMapView10PLMapUtils")
@@ -388,24 +388,24 @@ SWIFT_CLASS("_TtC14PoilabsMapView9PLMapView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+enum PLMapViewFollowState : NSInteger;
+@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
+- (void)setFollowStateWithState:(enum PLMapViewFollowState)state;
+@end
+
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
 - (void)hideLayersWithPrefix:(NSString * _Nonnull)prefix;
 @end
 
-enum PLMapViewFollowState : NSInteger;
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
-- (void)setFollowStateWithState:(enum PLMapViewFollowState)state;
+- (void)deselectPolygon;
+- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 @class CLLocation;
 @class CLHeading;
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
 - (void)updateUserLocationWithLocation:(CLLocation * _Nonnull)location heading:(CLHeading * _Nonnull)heading;
-@end
-
-@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
-- (void)deselectPolygon;
-- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 @class NSNumber;
@@ -773,11 +773,6 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
-- (void)removeDashedLines;
-@end
-
 @class UIImage;
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
 - (void)addMultipleAnnotationWithPoints:(NSArray<PLAnnotation *> * _Nonnull)points icon:(UIImage * _Nonnull)icon;
@@ -790,16 +785,14 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)removeAllRouteLines;
-- (void)focusOnRouteWithIndex:(NSInteger)index;
+- (void)addDashedLinesFrom:(CLLocationCoordinate2D)startCoordinate to:(CLLocationCoordinate2D)endCoordinate;
+- (void)removeDashedLines;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
-- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
-- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
-- (void)removeAllMultipleRouteLines;
+- (void)addRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)removeAllRouteLines;
+- (void)focusOnRouteWithIndex:(NSInteger)index;
 @end
 
 @interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
@@ -807,6 +800,13 @@ SWIFT_CLASS("_TtC14PoilabsMapView19PLAnnotationManager")
 - (void)removeAnnotationWithIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAnnotationsWithExceptIdentifier:(NSString * _Nonnull)identifier;
 - (void)removeAllAnnotations;
+@end
+
+@interface PLAnnotationManager (SWIFT_EXTENSION(PoilabsMapView))
+- (void)addMultipleRouteLinesFor:(NSArray<NSArray<NSArray<PLAnnotation *> *> *> * _Nonnull)coordinates;
+- (void)focusOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)selectLineOnMultipleRouteWithIndex:(NSInteger)index;
+- (void)removeAllMultipleRouteLines;
 @end
 
 SWIFT_CLASS("_TtC14PoilabsMapView10PLMapUtils")
@@ -831,24 +831,24 @@ SWIFT_CLASS("_TtC14PoilabsMapView9PLMapView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+enum PLMapViewFollowState : NSInteger;
+@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
+- (void)setFollowStateWithState:(enum PLMapViewFollowState)state;
+@end
+
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
 - (void)hideLayersWithPrefix:(NSString * _Nonnull)prefix;
 @end
 
-enum PLMapViewFollowState : NSInteger;
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
-- (void)setFollowStateWithState:(enum PLMapViewFollowState)state;
+- (void)deselectPolygon;
+- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 @class CLLocation;
 @class CLHeading;
 @interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
 - (void)updateUserLocationWithLocation:(CLLocation * _Nonnull)location heading:(CLHeading * _Nonnull)heading;
-@end
-
-@interface PLMapView (SWIFT_EXTENSION(PoilabsMapView))
-- (void)deselectPolygon;
-- (void)selectPolygonForCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
 @class NSNumber;

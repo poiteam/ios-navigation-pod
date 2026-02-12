@@ -16,6 +16,1106 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PLNFacility",
+        "printedName": "PLNFacility",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pointType",
+            "printedName": "pointType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(py)pointType",
+            "mangledName": "$s13PoilabsCommon11PLNFacilityC9pointTypeSSvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)pointType",
+                "mangledName": "$s13PoilabsCommon11PLNFacilityC9pointTypeSSvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(py)title",
+            "mangledName": "$s13PoilabsCommon11PLNFacilityC5titleSSSgvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)title",
+                "mangledName": "$s13PoilabsCommon11PLNFacilityC5titleSSSgvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconUrl",
+            "printedName": "iconUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(py)iconUrl",
+            "mangledName": "$s13PoilabsCommon11PLNFacilityC7iconUrlSSSgvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)iconUrl",
+                "mangledName": "$s13PoilabsCommon11PLNFacilityC7iconUrlSSSgvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLNFacility",
+                "printedName": "PoilabsCommon.PLNFacility",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)init",
+            "mangledName": "$s13PoilabsCommon11PLNFacilityCACycfc",
+            "moduleName": "PoilabsCommon",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLNFacility",
+                "printedName": "PoilabsCommon.PLNFacility",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PoilabsCommon11PLNFacilityC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13PoilabsCommon11PLNFacilityC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility",
+        "mangledName": "$s13PoilabsCommon11PLNFacilityC",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PLNetworkConfiguration",
+        "printedName": "PLNetworkConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authBase64",
+            "printedName": "authBase64",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvp",
+            "mangledName": "$s13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvg",
+                "mangledName": "$s13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13PoilabsCommon22PLNetworkConfigurationV",
+        "mangledName": "$s13PoilabsCommon22PLNetworkConfigurationV",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeaconsUseCaseBridge",
+        "printedName": "BeaconsUseCaseBridge",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authBase64:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeaconsUseCaseBridge",
+                "printedName": "PoilabsCommon.BeaconsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge(im)initWithAuthBase64:",
+            "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeC10authBase64ACSS_tcfc",
+            "moduleName": "PoilabsCommon",
+            "objc_name": "initWithAuthBase64:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchBeacons",
+            "printedName": "fetchBeacons(config:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PLNNavigationConfig",
+                "printedName": "PoilabsCommon.PLNNavigationConfig",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Foundation.NSDictionary], Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Foundation.NSDictionary], Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.NSDictionary]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSDictionary",
+                            "printedName": "Foundation.NSDictionary",
+                            "usr": "c:objc(cs)NSDictionary"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge(im)fetchBeaconsWithConfig:completion:",
+            "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeC05fetchC06config10completionyAA19PLNNavigationConfigC_ySaySo12NSDictionaryCG_So7NSErrorCSgtctF",
+            "moduleName": "PoilabsCommon",
+            "objc_name": "fetchBeaconsWithConfig:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeaconsUseCaseBridge",
+                "printedName": "PoilabsCommon.BeaconsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeCACycfc",
+            "moduleName": "PoilabsCommon",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeC",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PoilabsCommon.NetworkError.Type) -> PoilabsCommon.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PoilabsCommon.NetworkError",
+                    "usr": "s:13PoilabsCommon12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PoilabsCommon.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PoilabsCommon.NetworkError",
+                        "usr": "s:13PoilabsCommon12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PoilabsCommon12NetworkErrorO10invalidURLyA2CmF",
+            "mangledName": "$s13PoilabsCommon12NetworkErrorO10invalidURLyA2CmF",
+            "moduleName": "PoilabsCommon"
+          },
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PoilabsCommon.NetworkError.Type) -> PoilabsCommon.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PoilabsCommon.NetworkError",
+                    "usr": "s:13PoilabsCommon12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PoilabsCommon.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PoilabsCommon.NetworkError",
+                        "usr": "s:13PoilabsCommon12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PoilabsCommon12NetworkErrorO6noDatayA2CmF",
+            "mangledName": "$s13PoilabsCommon12NetworkErrorO6noDatayA2CmF",
+            "moduleName": "PoilabsCommon"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidFormat",
+            "printedName": "invalidFormat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PoilabsCommon.NetworkError.Type) -> PoilabsCommon.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "PoilabsCommon.NetworkError",
+                    "usr": "s:13PoilabsCommon12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PoilabsCommon.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "PoilabsCommon.NetworkError",
+                        "usr": "s:13PoilabsCommon12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PoilabsCommon12NetworkErrorO13invalidFormatyA2CmF",
+            "mangledName": "$s13PoilabsCommon12NetworkErrorO13invalidFormatyA2CmF",
+            "moduleName": "PoilabsCommon"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "PoilabsCommon.NetworkError",
+                "usr": "s:13PoilabsCommon12NetworkErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "PoilabsCommon.NetworkError",
+                "usr": "s:13PoilabsCommon12NetworkErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PoilabsCommon12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13PoilabsCommon12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "PoilabsCommon",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon12NetworkErrorO9hashValueSivp",
+            "mangledName": "$s13PoilabsCommon12NetworkErrorO9hashValueSivp",
+            "moduleName": "PoilabsCommon",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon12NetworkErrorO9hashValueSivg",
+                "mangledName": "$s13PoilabsCommon12NetworkErrorO9hashValueSivg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PoilabsCommon12NetworkErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s13PoilabsCommon12NetworkErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "PoilabsCommon",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13PoilabsCommon12NetworkErrorO",
+        "mangledName": "$s13PoilabsCommon12NetworkErrorO",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PostSignalsUseCaseBridge",
+        "printedName": "PostSignalsUseCaseBridge",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(authBase64:config:clientData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PostSignalsUseCaseBridge",
+                "printedName": "PoilabsCommon.PostSignalsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PLNNavigationConfig",
+                "printedName": "PoilabsCommon.PLNNavigationConfig",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge(im)initWithAuthBase64:config:clientData:",
+            "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeC10authBase646config10clientDataACSS_AA19PLNNavigationConfigCSo12NSDictionaryCtcfc",
+            "moduleName": "PoilabsCommon",
+            "objc_name": "initWithAuthBase64:config:clientData:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "postSignals",
+            "printedName": "postSignals(_:config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSDictionary]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PLNNavigationConfig",
+                "printedName": "PoilabsCommon.PLNNavigationConfig",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge(im)postSignals:config:",
+            "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeC04postD0_6configySaySo12NSDictionaryCG_AA19PLNNavigationConfigCtF",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PostSignalsUseCaseBridge",
+                "printedName": "PoilabsCommon.PostSignalsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeCACycfc",
+            "moduleName": "PoilabsCommon",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeC",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PLNNavigationConfig",
         "printedName": "PLNNavigationConfig",
         "children": [
@@ -888,224 +1988,6 @@
             "usr": "s:Se",
             "mangledName": "$sSe"
           },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ConfigUseCaseBridge",
-        "printedName": "ConfigUseCaseBridge",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(authBase64:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConfigUseCaseBridge",
-                "printedName": "PoilabsCommon.ConfigUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge(im)initWithAuthBase64:",
-            "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeC10authBase64ACSS_tcfc",
-            "moduleName": "PoilabsCommon",
-            "objc_name": "initWithAuthBase64:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchConfig",
-            "printedName": "fetchConfig(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsCommon.PLNNavigationConfig?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(PoilabsCommon.PLNNavigationConfig?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "PoilabsCommon.PLNNavigationConfig?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PLNNavigationConfig",
-                            "printedName": "PoilabsCommon.PLNNavigationConfig",
-                            "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge(im)fetchConfigWithCompletion:",
-            "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeC05fetchC010completionyyAA013PLNNavigationC0CSg_So7NSErrorCSgtc_tF",
-            "moduleName": "PoilabsCommon",
-            "objc_name": "fetchConfigWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConfigUseCaseBridge",
-                "printedName": "PoilabsCommon.ConfigUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeCACycfc",
-            "moduleName": "PoilabsCommon",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeC",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -2380,9 +3262,482 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
-        "name": "WalkwaysUseCaseBridge",
-        "printedName": "WalkwaysUseCaseBridge",
+        "name": "PLEndpoint",
+        "printedName": "PLEndpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon10PLEndpointP4pathSSvp",
+            "mangledName": "$s13PoilabsCommon10PLEndpointP4pathSSvp",
+            "moduleName": "PoilabsCommon",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon10PLEndpointP4pathSSvg",
+                "mangledName": "$s13PoilabsCommon10PLEndpointP4pathSSvg",
+                "moduleName": "PoilabsCommon",
+                "genericSig": "<τ_0_0 where τ_0_0 : PoilabsCommon.PLEndpoint>",
+                "sugared_genericSig": "<Self where Self : PoilabsCommon.PLEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queryItems",
+            "printedName": "queryItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URLQueryItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLQueryItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLQueryItem",
+                        "printedName": "Foundation.URLQueryItem",
+                        "usr": "s:10Foundation12URLQueryItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "mangledName": "$s13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "moduleName": "PoilabsCommon",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Foundation.URLQueryItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLQueryItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLQueryItem",
+                            "printedName": "Foundation.URLQueryItem",
+                            "usr": "s:10Foundation12URLQueryItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "mangledName": "$s13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "moduleName": "PoilabsCommon",
+                "genericSig": "<τ_0_0 where τ_0_0 : PoilabsCommon.PLEndpoint>",
+                "sugared_genericSig": "<Self where Self : PoilabsCommon.PLEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13PoilabsCommon10PLEndpointP",
+        "mangledName": "$s13PoilabsCommon10PLEndpointP",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PLAPIEndpoint",
+        "printedName": "PLAPIEndpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "config",
+            "printedName": "config",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PoilabsCommon.PLAPIEndpoint.Type) -> PoilabsCommon.PLAPIEndpoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PLAPIEndpoint",
+                    "printedName": "PoilabsCommon.PLAPIEndpoint",
+                    "usr": "s:13PoilabsCommon13PLAPIEndpointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PoilabsCommon.PLAPIEndpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PLAPIEndpoint",
+                        "printedName": "PoilabsCommon.PLAPIEndpoint",
+                        "usr": "s:13PoilabsCommon13PLAPIEndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PoilabsCommon13PLAPIEndpointO6configyA2CmF",
+            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO6configyA2CmF",
+            "moduleName": "PoilabsCommon"
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon13PLAPIEndpointO4pathSSvp",
+            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO4pathSSvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon13PLAPIEndpointO4pathSSvg",
+                "mangledName": "$s13PoilabsCommon13PLAPIEndpointO4pathSSvg",
+                "moduleName": "PoilabsCommon",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queryItems",
+            "printedName": "queryItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URLQueryItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLQueryItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLQueryItem",
+                        "printedName": "Foundation.URLQueryItem",
+                        "usr": "s:10Foundation12URLQueryItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Foundation.URLQueryItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLQueryItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLQueryItem",
+                            "printedName": "Foundation.URLQueryItem",
+                            "usr": "s:10Foundation12URLQueryItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "mangledName": "$s13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "moduleName": "PoilabsCommon",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PLAPIEndpoint",
+                "printedName": "PoilabsCommon.PLAPIEndpoint",
+                "usr": "s:13PoilabsCommon13PLAPIEndpointO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PLAPIEndpoint",
+                "printedName": "PoilabsCommon.PLAPIEndpoint",
+                "usr": "s:13PoilabsCommon13PLAPIEndpointO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PoilabsCommon13PLAPIEndpointO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO2eeoiySbAC_ACtFZ",
+            "moduleName": "PoilabsCommon",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon13PLAPIEndpointO9hashValueSivp",
+            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO9hashValueSivp",
+            "moduleName": "PoilabsCommon",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon13PLAPIEndpointO9hashValueSivg",
+                "mangledName": "$s13PoilabsCommon13PLAPIEndpointO9hashValueSivg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PoilabsCommon13PLAPIEndpointO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO4hash4intoys6HasherVz_tF",
+            "moduleName": "PoilabsCommon",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13PoilabsCommon13PLAPIEndpointO",
+        "mangledName": "$s13PoilabsCommon13PLAPIEndpointO",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PLEndpoint",
+            "printedName": "PLEndpoint",
+            "usr": "s:13PoilabsCommon10PLEndpointP",
+            "mangledName": "$s13PoilabsCommon10PLEndpointP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlacesUseCaseBridge",
+        "printedName": "PlacesUseCaseBridge",
         "children": [
           {
             "kind": "Constructor",
@@ -2391,9 +3746,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WalkwaysUseCaseBridge",
-                "printedName": "PoilabsCommon.WalkwaysUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge"
+                "name": "PlacesUseCaseBridge",
+                "printedName": "PoilabsCommon.PlacesUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge"
               },
               {
                 "kind": "TypeNominal",
@@ -2403,8 +3758,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge(im)initWithAuthBase64:",
-            "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeC10authBase64ACSS_tcfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge(im)initWithAuthBase64:",
+            "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeC10authBase64ACSS_tcfc",
             "moduleName": "PoilabsCommon",
             "objc_name": "initWithAuthBase64:",
             "declAttributes": [
@@ -2415,8 +3770,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchWalkways",
-            "printedName": "fetchWalkways(config:completion:)",
+            "name": "fetchPlaces",
+            "printedName": "fetchPlaces(config:language:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2430,9 +3785,15 @@
                 "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
               },
               {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Foundation.NSDictionary?, Foundation.NSError?) -> ()",
+                "printedName": "(PoilabsCommon.PLNPlace?, Foundation.NSError?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2442,18 +3803,18 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Foundation.NSDictionary?, Foundation.NSError?)",
+                    "printedName": "(PoilabsCommon.PLNPlace?, Foundation.NSError?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Foundation.NSDictionary?",
+                        "printedName": "PoilabsCommon.PLNPlace?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "NSDictionary",
-                            "printedName": "Foundation.NSDictionary",
-                            "usr": "c:objc(cs)NSDictionary"
+                            "name": "PLNPlace",
+                            "printedName": "PoilabsCommon.PLNPlace",
+                            "usr": "c:@M@PoilabsCommon@objc(cs)PLNPlace"
                           }
                         ],
                         "usr": "s:Sq"
@@ -2478,10 +3839,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge(im)fetchWalkwaysWithConfig:completion:",
-            "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeC05fetchC06config10completionyAA19PLNNavigationConfigC_ySo12NSDictionaryCSg_So7NSErrorCSgtctF",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge(im)fetchPlacesWithConfig:language:completion:",
+            "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeC05fetchC06config8language10completionyAA19PLNNavigationConfigC_SSyAA8PLNPlaceCSg_So7NSErrorCSgtctF",
             "moduleName": "PoilabsCommon",
-            "objc_name": "fetchWalkwaysWithConfig:completion:",
+            "objc_name": "fetchPlacesWithConfig:language:completion:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -2495,14 +3856,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WalkwaysUseCaseBridge",
-                "printedName": "PoilabsCommon.WalkwaysUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge"
+                "name": "PlacesUseCaseBridge",
+                "printedName": "PoilabsCommon.PlacesUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeCACycfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeCACycfc",
             "moduleName": "PoilabsCommon",
             "overriding": true,
             "implicit": true,
@@ -2516,13 +3877,12 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeC",
+        "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeC",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -2592,16 +3952,6 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -4283,392 +5633,12 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TemplateEndpoint",
-        "printedName": "TemplateEndpoint",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "templateURL",
-            "printedName": "templateURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon16TemplateEndpointV11templateURLSSvp",
-            "mangledName": "$s13PoilabsCommon16TemplateEndpointV11templateURLSSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon16TemplateEndpointV11templateURLSSvg",
-                "mangledName": "$s13PoilabsCommon16TemplateEndpointV11templateURLSSvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "pathValues",
-            "printedName": "pathValues",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvp",
-            "mangledName": "$s13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvg",
-                "mangledName": "$s13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "queryItems",
-            "printedName": "queryItems",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Foundation.URLQueryItem]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Foundation.URLQueryItem]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URLQueryItem",
-                        "printedName": "Foundation.URLQueryItem",
-                        "usr": "s:10Foundation12URLQueryItemV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvp",
-            "mangledName": "$s13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Foundation.URLQueryItem]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Foundation.URLQueryItem]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "URLQueryItem",
-                            "printedName": "Foundation.URLQueryItem",
-                            "usr": "s:10Foundation12URLQueryItemV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvg",
-                "mangledName": "$s13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(templateURL:pathValues:queryItems:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TemplateEndpoint",
-                "printedName": "PoilabsCommon.TemplateEndpoint",
-                "usr": "s:13PoilabsCommon16TemplateEndpointV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Foundation.URLQueryItem]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Foundation.URLQueryItem]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URLQueryItem",
-                        "printedName": "Foundation.URLQueryItem",
-                        "usr": "s:10Foundation12URLQueryItemV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13PoilabsCommon16TemplateEndpointV11templateURL10pathValues10queryItemsACSS_SDyS2SGSay10Foundation12URLQueryItemVGSgtcfc",
-            "mangledName": "$s13PoilabsCommon16TemplateEndpointV11templateURL10pathValues10queryItemsACSS_SDyS2SGSay10Foundation12URLQueryItemVGSgtcfc",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "path",
-            "printedName": "path",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon16TemplateEndpointV4pathSSvp",
-            "mangledName": "$s13PoilabsCommon16TemplateEndpointV4pathSSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon16TemplateEndpointV4pathSSvg",
-                "mangledName": "$s13PoilabsCommon16TemplateEndpointV4pathSSvg",
-                "moduleName": "PoilabsCommon",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "resolvedURL",
-            "printedName": "resolvedURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon16TemplateEndpointV11resolvedURLSSvp",
-            "mangledName": "$s13PoilabsCommon16TemplateEndpointV11resolvedURLSSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon16TemplateEndpointV11resolvedURLSSvg",
-                "mangledName": "$s13PoilabsCommon16TemplateEndpointV11resolvedURLSSvg",
-                "moduleName": "PoilabsCommon",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13PoilabsCommon16TemplateEndpointV",
-        "mangledName": "$s13PoilabsCommon16TemplateEndpointV",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PLEndpoint",
-            "printedName": "PLEndpoint",
-            "usr": "s:13PoilabsCommon10PLEndpointP",
-            "mangledName": "$s13PoilabsCommon10PLEndpointP"
-          }
         ]
       },
       {
@@ -4682,26 +5652,9 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
-        "name": "ChildsUseCaseBridge",
-        "printedName": "ChildsUseCaseBridge",
+        "name": "ConfigUseCaseBridge",
+        "printedName": "ConfigUseCaseBridge",
         "children": [
           {
             "kind": "Constructor",
@@ -4710,9 +5663,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ChildsUseCaseBridge",
-                "printedName": "PoilabsCommon.ChildsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge"
+                "name": "ConfigUseCaseBridge",
+                "printedName": "PoilabsCommon.ConfigUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge"
               },
               {
                 "kind": "TypeNominal",
@@ -4722,8 +5675,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge(im)initWithAuthBase64:",
-            "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeC10authBase64ACSS_tcfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge(im)initWithAuthBase64:",
+            "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeC10authBase64ACSS_tcfc",
             "moduleName": "PoilabsCommon",
             "objc_name": "initWithAuthBase64:",
             "declAttributes": [
@@ -4734,8 +5687,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchChilds",
-            "printedName": "fetchChilds(config:language:completion:)",
+            "name": "fetchConfig",
+            "printedName": "fetchConfig(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4743,21 +5696,9 @@
                 "printedName": "()"
               },
               {
-                "kind": "TypeNominal",
-                "name": "PLNNavigationConfig",
-                "printedName": "PoilabsCommon.PLNNavigationConfig",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "([PoilabsCommon.PLPoi]?, Foundation.NSError?) -> ()",
+                "printedName": "(PoilabsCommon.PLNNavigationConfig?, Foundation.NSError?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4767,26 +5708,18 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "([PoilabsCommon.PLPoi]?, Foundation.NSError?)",
+                    "printedName": "(PoilabsCommon.PLNNavigationConfig?, Foundation.NSError?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "[PoilabsCommon.PLPoi]?",
+                        "printedName": "PoilabsCommon.PLNNavigationConfig?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[PoilabsCommon.PLPoi]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "PLPoi",
-                                "printedName": "PoilabsCommon.PLPoi",
-                                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoi"
-                              }
-                            ],
-                            "usr": "s:Sa"
+                            "name": "PLNNavigationConfig",
+                            "printedName": "PoilabsCommon.PLNNavigationConfig",
+                            "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
                           }
                         ],
                         "usr": "s:Sq"
@@ -4811,10 +5744,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge(im)fetchChildsWithConfig:language:completion:",
-            "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeC05fetchC06config8language10completionyAA19PLNNavigationConfigC_SSySayAA5PLPoiCGSg_So7NSErrorCSgtctF",
+            "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge(im)fetchConfigWithCompletion:",
+            "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeC05fetchC010completionyyAA013PLNNavigationC0CSg_So7NSErrorCSgtc_tF",
             "moduleName": "PoilabsCommon",
-            "objc_name": "fetchChildsWithConfig:language:completion:",
+            "objc_name": "fetchConfigWithCompletion:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -4828,14 +5761,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ChildsUseCaseBridge",
-                "printedName": "PoilabsCommon.ChildsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge"
+                "name": "ConfigUseCaseBridge",
+                "printedName": "PoilabsCommon.ConfigUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeCACycfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeCACycfc",
             "moduleName": "PoilabsCommon",
             "overriding": true,
             "implicit": true,
@@ -4849,8 +5782,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeC",
+        "usr": "c:@M@PoilabsCommon@objc(cs)ConfigUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon19ConfigUseCaseBridgeC",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
           "AccessControl",
@@ -4928,214 +5861,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "StyleDetailsUseCaseBridge",
-        "printedName": "StyleDetailsUseCaseBridge",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "StyleDetailsUseCaseBridge",
-                "printedName": "PoilabsCommon.StyleDetailsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon25StyleDetailsUseCaseBridgeCACycfc",
-            "moduleName": "PoilabsCommon",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "getStyleDetailsWithUrl",
-            "printedName": "getStyleDetailsWithUrl(_:accessToken:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSNumber?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSNumber",
-                            "printedName": "Foundation.NSNumber",
-                            "usr": "c:objc(cs)NSNumber"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSNumber?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSNumber",
-                            "printedName": "Foundation.NSNumber",
-                            "usr": "c:objc(cs)NSNumber"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge(im)getStyleDetailsWithUrl:accessToken:completion:",
-            "mangledName": "$s13PoilabsCommon25StyleDetailsUseCaseBridgeC03getcD7WithUrl_11accessToken10completionySS_SSySo8NSNumberCSg_AISo7NSErrorCSgtctF",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon25StyleDetailsUseCaseBridgeC",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BeaconsUseCaseBridge",
-        "printedName": "BeaconsUseCaseBridge",
+        "name": "WalkwaysUseCaseBridge",
+        "printedName": "WalkwaysUseCaseBridge",
         "children": [
           {
             "kind": "Constructor",
@@ -5144,9 +5871,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "BeaconsUseCaseBridge",
-                "printedName": "PoilabsCommon.BeaconsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge"
+                "name": "WalkwaysUseCaseBridge",
+                "printedName": "PoilabsCommon.WalkwaysUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge"
               },
               {
                 "kind": "TypeNominal",
@@ -5156,8 +5883,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge(im)initWithAuthBase64:",
-            "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeC10authBase64ACSS_tcfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge(im)initWithAuthBase64:",
+            "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeC10authBase64ACSS_tcfc",
             "moduleName": "PoilabsCommon",
             "objc_name": "initWithAuthBase64:",
             "declAttributes": [
@@ -5168,8 +5895,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchBeacons",
-            "printedName": "fetchBeacons(config:completion:)",
+            "name": "fetchWalkways",
+            "printedName": "fetchWalkways(config:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5185,7 +5912,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "([Foundation.NSDictionary], Foundation.NSError?) -> ()",
+                "printedName": "(Foundation.NSDictionary?, Foundation.NSError?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5195,12 +5922,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "([Foundation.NSDictionary], Foundation.NSError?)",
+                    "printedName": "(Foundation.NSDictionary?, Foundation.NSError?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Foundation.NSDictionary]",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSDictionary?",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -5209,7 +5936,7 @@
                             "usr": "c:objc(cs)NSDictionary"
                           }
                         ],
-                        "usr": "s:Sa"
+                        "usr": "s:Sq"
                       },
                       {
                         "kind": "TypeNominal",
@@ -5231,14 +5958,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge(im)fetchBeaconsWithConfig:completion:",
-            "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeC05fetchC06config10completionyAA19PLNNavigationConfigC_ySaySo12NSDictionaryCG_So7NSErrorCSgtctF",
+            "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge(im)fetchWalkwaysWithConfig:completion:",
+            "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeC05fetchC06config10completionyAA19PLNNavigationConfigC_ySo12NSDictionaryCSg_So7NSErrorCSgtctF",
             "moduleName": "PoilabsCommon",
-            "objc_name": "fetchBeaconsWithConfig:completion:",
+            "objc_name": "fetchWalkwaysWithConfig:completion:",
             "declAttributes": [
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5249,14 +5975,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "BeaconsUseCaseBridge",
-                "printedName": "PoilabsCommon.BeaconsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge"
+                "name": "WalkwaysUseCaseBridge",
+                "printedName": "PoilabsCommon.WalkwaysUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeCACycfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeCACycfc",
             "moduleName": "PoilabsCommon",
             "overriding": true,
             "implicit": true,
@@ -5270,8 +5996,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)BeaconsUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon20BeaconsUseCaseBridgeC",
+        "usr": "c:@M@PoilabsCommon@objc(cs)WalkwaysUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon21WalkwaysUseCaseBridgeC",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
           "AccessControl",
@@ -5350,54 +6076,189 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PostSignalsUseCaseBridge",
-        "printedName": "PostSignalsUseCaseBridge",
+        "name": "PLPoiNavigationSegment",
+        "printedName": "PLPoiNavigationSegment",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(authBase64:config:clientData:)",
+            "kind": "Var",
+            "name": "finishId",
+            "printedName": "finishId",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PostSignalsUseCaseBridge",
-                "printedName": "PoilabsCommon.PostSignalsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PLNNavigationConfig",
-                "printedName": "PoilabsCommon.PLNNavigationConfig",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSDictionary",
-                "printedName": "Foundation.NSDictionary",
-                "usr": "c:objc(cs)NSDictionary"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge(im)initWithAuthBase64:config:clientData:",
-            "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeC10authBase646config10clientDataACSS_AA19PLNNavigationConfigCSo12NSDictionaryCtcfc",
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(py)finishId",
+            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC8finishIdSSvp",
             "moduleName": "PoilabsCommon",
-            "objc_name": "initWithAuthBase64:config:clientData:",
             "declAttributes": [
+              "Final",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)finishId",
+                "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC8finishIdSSvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "weight",
+            "printedName": "weight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(py)weight",
+            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC6weightSdvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)weight",
+                "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC6weightSdvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "routeWeight",
+            "printedName": "routeWeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(py)routeWeight",
+            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC11routeWeightSdvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)routeWeight",
+                "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC11routeWeightSdvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLPoiNavigationSegment",
+                "printedName": "PoilabsCommon.PLPoiNavigationSegment",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PoilabsCommon22PLPoiNavigationSegmentC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PoilabsCommon",
+            "implicit": true,
+            "throwing": true,
             "init_kind": "Designated"
           },
           {
             "kind": "Function",
-            "name": "postSignals",
-            "printedName": "postSignals(_:config:)",
+            "name": "encode",
+            "printedName": "encode(to:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5406,76 +6267,53 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Foundation.NSDictionary]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDictionary",
-                    "printedName": "Foundation.NSDictionary",
-                    "usr": "c:objc(cs)NSDictionary"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PLNNavigationConfig",
-                "printedName": "PoilabsCommon.PLNNavigationConfig",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNNavigationConfig"
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge(im)postSignals:config:",
-            "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeC04postD0_6configySaySo12NSDictionaryCG_AA19PLNNavigationConfigCtF",
+            "usr": "s:13PoilabsCommon22PLPoiNavigationSegmentC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC6encode2toys7Encoder_p_tKF",
             "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PostSignalsUseCaseBridge",
-                "printedName": "PoilabsCommon.PostSignalsUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeCACycfc",
-            "moduleName": "PoilabsCommon",
-            "overriding": true,
             "implicit": true,
-            "objc_name": "init",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "Final"
             ],
-            "init_kind": "Designated"
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)PostSignalsUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon24PostSignalsUseCaseBridgeC",
+        "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment",
+        "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
+          "Final",
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -5540,6 +6378,23 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon"
       },
       {
         "kind": "TypeDecl",
@@ -7174,13 +8029,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PLEndpoint",
-        "printedName": "PLEndpoint",
+        "name": "TemplateEndpoint",
+        "printedName": "TemplateEndpoint",
         "children": [
           {
             "kind": "Var",
-            "name": "path",
-            "printedName": "path",
+            "name": "templateURL",
+            "printedName": "templateURL",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7190,10 +8045,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13PoilabsCommon10PLEndpointP4pathSSvp",
-            "mangledName": "$s13PoilabsCommon10PLEndpointP4pathSSvp",
+            "usr": "s:13PoilabsCommon16TemplateEndpointV11templateURLSSvp",
+            "mangledName": "$s13PoilabsCommon16TemplateEndpointV11templateURLSSvp",
             "moduleName": "PoilabsCommon",
-            "protocolReq": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7208,13 +8068,82 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon10PLEndpointP4pathSSvg",
-                "mangledName": "$s13PoilabsCommon10PLEndpointP4pathSSvg",
+                "usr": "s:13PoilabsCommon16TemplateEndpointV11templateURLSSvg",
+                "mangledName": "$s13PoilabsCommon16TemplateEndpointV11templateURLSSvg",
                 "moduleName": "PoilabsCommon",
-                "genericSig": "<τ_0_0 where τ_0_0 : PoilabsCommon.PLEndpoint>",
-                "sugared_genericSig": "<Self where Self : PoilabsCommon.PLEndpoint>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pathValues",
+            "printedName": "pathValues",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvp",
+            "mangledName": "$s13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvg",
+                "mangledName": "$s13PoilabsCommon16TemplateEndpointV10pathValuesSDyS2SGvg",
+                "moduleName": "PoilabsCommon",
+                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -7248,10 +8177,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvp",
-            "mangledName": "$s13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "usr": "s:13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "mangledName": "$s13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvp",
             "moduleName": "PoilabsCommon",
-            "protocolReq": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7282,21 +8216,168 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvg",
-                "mangledName": "$s13PoilabsCommon10PLEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "usr": "s:13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "mangledName": "$s13PoilabsCommon16TemplateEndpointV10queryItemsSay10Foundation12URLQueryItemVGSgvg",
                 "moduleName": "PoilabsCommon",
-                "genericSig": "<τ_0_0 where τ_0_0 : PoilabsCommon.PLEndpoint>",
-                "sugared_genericSig": "<Self where Self : PoilabsCommon.PLEndpoint>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(templateURL:pathValues:queryItems:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TemplateEndpoint",
+                "printedName": "PoilabsCommon.TemplateEndpoint",
+                "usr": "s:13PoilabsCommon16TemplateEndpointV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URLQueryItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLQueryItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLQueryItem",
+                        "printedName": "Foundation.URLQueryItem",
+                        "usr": "s:10Foundation12URLQueryItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PoilabsCommon16TemplateEndpointV11templateURL10pathValues10queryItemsACSS_SDyS2SGSay10Foundation12URLQueryItemVGSgtcfc",
+            "mangledName": "$s13PoilabsCommon16TemplateEndpointV11templateURL10pathValues10queryItemsACSS_SDyS2SGSay10Foundation12URLQueryItemVGSgtcfc",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon16TemplateEndpointV4pathSSvp",
+            "mangledName": "$s13PoilabsCommon16TemplateEndpointV4pathSSvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon16TemplateEndpointV4pathSSvg",
+                "mangledName": "$s13PoilabsCommon16TemplateEndpointV4pathSSvg",
+                "moduleName": "PoilabsCommon",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resolvedURL",
+            "printedName": "resolvedURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PoilabsCommon16TemplateEndpointV11resolvedURLSSvp",
+            "mangledName": "$s13PoilabsCommon16TemplateEndpointV11resolvedURLSSvp",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PoilabsCommon16TemplateEndpointV11resolvedURLSSvg",
+                "mangledName": "$s13PoilabsCommon16TemplateEndpointV11resolvedURLSSvg",
+                "moduleName": "PoilabsCommon",
                 "accessorKind": "get"
               }
             ]
           }
         ],
-        "declKind": "Protocol",
-        "usr": "s:13PoilabsCommon10PLEndpointP",
-        "mangledName": "$s13PoilabsCommon10PLEndpointP",
+        "declKind": "Struct",
+        "usr": "s:13PoilabsCommon16TemplateEndpointV",
+        "mangledName": "$s13PoilabsCommon16TemplateEndpointV",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
           "AccessControl",
@@ -7305,281 +8386,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PLAPIEndpoint",
-        "printedName": "PLAPIEndpoint",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "config",
-            "printedName": "config",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsCommon.PLAPIEndpoint.Type) -> PoilabsCommon.PLAPIEndpoint",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PLAPIEndpoint",
-                    "printedName": "PoilabsCommon.PLAPIEndpoint",
-                    "usr": "s:13PoilabsCommon13PLAPIEndpointO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PoilabsCommon.PLAPIEndpoint.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PLAPIEndpoint",
-                        "printedName": "PoilabsCommon.PLAPIEndpoint",
-                        "usr": "s:13PoilabsCommon13PLAPIEndpointO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13PoilabsCommon13PLAPIEndpointO6configyA2CmF",
-            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO6configyA2CmF",
-            "moduleName": "PoilabsCommon"
-          },
-          {
-            "kind": "Var",
-            "name": "path",
-            "printedName": "path",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon13PLAPIEndpointO4pathSSvp",
-            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO4pathSSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon13PLAPIEndpointO4pathSSvg",
-                "mangledName": "$s13PoilabsCommon13PLAPIEndpointO4pathSSvg",
-                "moduleName": "PoilabsCommon",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "queryItems",
-            "printedName": "queryItems",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Foundation.URLQueryItem]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Foundation.URLQueryItem]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URLQueryItem",
-                        "printedName": "Foundation.URLQueryItem",
-                        "usr": "s:10Foundation12URLQueryItemV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvp",
-            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Foundation.URLQueryItem]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Foundation.URLQueryItem]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "URLQueryItem",
-                            "printedName": "Foundation.URLQueryItem",
-                            "usr": "s:10Foundation12URLQueryItemV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvg",
-                "mangledName": "$s13PoilabsCommon13PLAPIEndpointO10queryItemsSay10Foundation12URLQueryItemVGSgvg",
-                "moduleName": "PoilabsCommon",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PLAPIEndpoint",
-                "printedName": "PoilabsCommon.PLAPIEndpoint",
-                "usr": "s:13PoilabsCommon13PLAPIEndpointO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PLAPIEndpoint",
-                "printedName": "PoilabsCommon.PLAPIEndpoint",
-                "usr": "s:13PoilabsCommon13PLAPIEndpointO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13PoilabsCommon13PLAPIEndpointO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO2eeoiySbAC_ACtFZ",
-            "moduleName": "PoilabsCommon",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon13PLAPIEndpointO9hashValueSivp",
-            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO9hashValueSivp",
-            "moduleName": "PoilabsCommon",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon13PLAPIEndpointO9hashValueSivg",
-                "mangledName": "$s13PoilabsCommon13PLAPIEndpointO9hashValueSivg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13PoilabsCommon13PLAPIEndpointO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s13PoilabsCommon13PLAPIEndpointO4hash4intoys6HasherVz_tF",
-            "moduleName": "PoilabsCommon",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13PoilabsCommon13PLAPIEndpointO",
-        "mangledName": "$s13PoilabsCommon13PLAPIEndpointO",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -7591,20 +8397,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -7626,681 +8418,9 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
-        "name": "NetworkError",
-        "printedName": "NetworkError",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "invalidURL",
-            "printedName": "invalidURL",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsCommon.NetworkError.Type) -> PoilabsCommon.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NetworkError",
-                    "printedName": "PoilabsCommon.NetworkError",
-                    "usr": "s:13PoilabsCommon12NetworkErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PoilabsCommon.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "PoilabsCommon.NetworkError",
-                        "usr": "s:13PoilabsCommon12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13PoilabsCommon12NetworkErrorO10invalidURLyA2CmF",
-            "mangledName": "$s13PoilabsCommon12NetworkErrorO10invalidURLyA2CmF",
-            "moduleName": "PoilabsCommon"
-          },
-          {
-            "kind": "Var",
-            "name": "noData",
-            "printedName": "noData",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsCommon.NetworkError.Type) -> PoilabsCommon.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NetworkError",
-                    "printedName": "PoilabsCommon.NetworkError",
-                    "usr": "s:13PoilabsCommon12NetworkErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PoilabsCommon.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "PoilabsCommon.NetworkError",
-                        "usr": "s:13PoilabsCommon12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13PoilabsCommon12NetworkErrorO6noDatayA2CmF",
-            "mangledName": "$s13PoilabsCommon12NetworkErrorO6noDatayA2CmF",
-            "moduleName": "PoilabsCommon"
-          },
-          {
-            "kind": "Var",
-            "name": "invalidFormat",
-            "printedName": "invalidFormat",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PoilabsCommon.NetworkError.Type) -> PoilabsCommon.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NetworkError",
-                    "printedName": "PoilabsCommon.NetworkError",
-                    "usr": "s:13PoilabsCommon12NetworkErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PoilabsCommon.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "PoilabsCommon.NetworkError",
-                        "usr": "s:13PoilabsCommon12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13PoilabsCommon12NetworkErrorO13invalidFormatyA2CmF",
-            "mangledName": "$s13PoilabsCommon12NetworkErrorO13invalidFormatyA2CmF",
-            "moduleName": "PoilabsCommon"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkError",
-                "printedName": "PoilabsCommon.NetworkError",
-                "usr": "s:13PoilabsCommon12NetworkErrorO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkError",
-                "printedName": "PoilabsCommon.NetworkError",
-                "usr": "s:13PoilabsCommon12NetworkErrorO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13PoilabsCommon12NetworkErrorO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s13PoilabsCommon12NetworkErrorO2eeoiySbAC_ACtFZ",
-            "moduleName": "PoilabsCommon",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon12NetworkErrorO9hashValueSivp",
-            "mangledName": "$s13PoilabsCommon12NetworkErrorO9hashValueSivp",
-            "moduleName": "PoilabsCommon",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon12NetworkErrorO9hashValueSivg",
-                "mangledName": "$s13PoilabsCommon12NetworkErrorO9hashValueSivg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13PoilabsCommon12NetworkErrorO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s13PoilabsCommon12NetworkErrorO4hash4intoys6HasherVz_tF",
-            "moduleName": "PoilabsCommon",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13PoilabsCommon12NetworkErrorO",
-        "mangledName": "$s13PoilabsCommon12NetworkErrorO",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PLNetworkConfiguration",
-        "printedName": "PLNetworkConfiguration",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "authBase64",
-            "printedName": "authBase64",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvp",
-            "mangledName": "$s13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvg",
-                "mangledName": "$s13PoilabsCommon22PLNetworkConfigurationV10authBase64SSvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13PoilabsCommon22PLNetworkConfigurationV",
-        "mangledName": "$s13PoilabsCommon22PLNetworkConfigurationV",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PLPoiNavigationSegment",
-        "printedName": "PLPoiNavigationSegment",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "finishId",
-            "printedName": "finishId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(py)finishId",
-            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC8finishIdSSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)finishId",
-                "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC8finishIdSSvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "weight",
-            "printedName": "weight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(py)weight",
-            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC6weightSdvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)weight",
-                "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC6weightSdvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "routeWeight",
-            "printedName": "routeWeight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(py)routeWeight",
-            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC11routeWeightSdvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)routeWeight",
-                "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC11routeWeightSdvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLPoiNavigationSegment",
-                "printedName": "PoilabsCommon.PLPoiNavigationSegment",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13PoilabsCommon22PLPoiNavigationSegmentC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "PoilabsCommon",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13PoilabsCommon22PLPoiNavigationSegmentC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC6encode2toys7Encoder_p_tKF",
-            "moduleName": "PoilabsCommon",
-            "implicit": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment",
-        "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjCMembers",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PlacesUseCaseBridge",
-        "printedName": "PlacesUseCaseBridge",
+        "name": "ChildsUseCaseBridge",
+        "printedName": "ChildsUseCaseBridge",
         "children": [
           {
             "kind": "Constructor",
@@ -8309,9 +8429,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PlacesUseCaseBridge",
-                "printedName": "PoilabsCommon.PlacesUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge"
+                "name": "ChildsUseCaseBridge",
+                "printedName": "PoilabsCommon.ChildsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge"
               },
               {
                 "kind": "TypeNominal",
@@ -8321,8 +8441,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge(im)initWithAuthBase64:",
-            "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeC10authBase64ACSS_tcfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge(im)initWithAuthBase64:",
+            "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeC10authBase64ACSS_tcfc",
             "moduleName": "PoilabsCommon",
             "objc_name": "initWithAuthBase64:",
             "declAttributes": [
@@ -8333,8 +8453,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchPlaces",
-            "printedName": "fetchPlaces(config:language:completion:)",
+            "name": "fetchChilds",
+            "printedName": "fetchChilds(config:language:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8356,7 +8476,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PoilabsCommon.PLNPlace?, Foundation.NSError?) -> ()",
+                "printedName": "([PoilabsCommon.PLPoi]?, Foundation.NSError?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8366,18 +8486,26 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(PoilabsCommon.PLNPlace?, Foundation.NSError?)",
+                    "printedName": "([PoilabsCommon.PLPoi]?, Foundation.NSError?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "PoilabsCommon.PLNPlace?",
+                        "printedName": "[PoilabsCommon.PLPoi]?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "PLNPlace",
-                            "printedName": "PoilabsCommon.PLNPlace",
-                            "usr": "c:@M@PoilabsCommon@objc(cs)PLNPlace"
+                            "name": "Array",
+                            "printedName": "[PoilabsCommon.PLPoi]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "PLPoi",
+                                "printedName": "PoilabsCommon.PLPoi",
+                                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoi"
+                              }
+                            ],
+                            "usr": "s:Sa"
                           }
                         ],
                         "usr": "s:Sq"
@@ -8402,10 +8530,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge(im)fetchPlacesWithConfig:language:completion:",
-            "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeC05fetchC06config8language10completionyAA19PLNNavigationConfigC_SSyAA8PLNPlaceCSg_So7NSErrorCSgtctF",
+            "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge(im)fetchChildsWithConfig:language:completion:",
+            "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeC05fetchC06config8language10completionyAA19PLNNavigationConfigC_SSySayAA5PLPoiCGSg_So7NSErrorCSgtctF",
             "moduleName": "PoilabsCommon",
-            "objc_name": "fetchPlacesWithConfig:language:completion:",
+            "objc_name": "fetchChildsWithConfig:language:completion:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -8419,14 +8547,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PlacesUseCaseBridge",
-                "printedName": "PoilabsCommon.PlacesUseCaseBridge",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge"
+                "name": "ChildsUseCaseBridge",
+                "printedName": "PoilabsCommon.ChildsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge(im)init",
-            "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeCACycfc",
+            "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeCACycfc",
             "moduleName": "PoilabsCommon",
             "overriding": true,
             "implicit": true,
@@ -8440,14 +8568,220 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)PlacesUseCaseBridge",
-        "mangledName": "$s13PoilabsCommon19PlacesUseCaseBridgeC",
+        "usr": "c:@M@PoilabsCommon@objc(cs)ChildsUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon19ChildsUseCaseBridgeC",
         "moduleName": "PoilabsCommon",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StyleDetailsUseCaseBridge",
+        "printedName": "StyleDetailsUseCaseBridge",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StyleDetailsUseCaseBridge",
+                "printedName": "PoilabsCommon.StyleDetailsUseCaseBridge",
+                "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge(im)init",
+            "mangledName": "$s13PoilabsCommon25StyleDetailsUseCaseBridgeCACycfc",
+            "moduleName": "PoilabsCommon",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getStyleDetailsWithUrl",
+            "printedName": "getStyleDetailsWithUrl(_:accessToken:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSNumber?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSNumber?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge(im)getStyleDetailsWithUrl:accessToken:completion:",
+            "mangledName": "$s13PoilabsCommon25StyleDetailsUseCaseBridgeC03getcD7WithUrl_11accessToken10completionySS_SSySo8NSNumberCSg_AISo7NSErrorCSgtctF",
+            "moduleName": "PoilabsCommon",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PoilabsCommon@objc(cs)StyleDetailsUseCaseBridge",
+        "mangledName": "$s13PoilabsCommon25StyleDetailsUseCaseBridgeC",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -8545,350 +8879,30 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "PLNFacility",
-        "printedName": "PLNFacility",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "pointType",
-            "printedName": "pointType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(py)pointType",
-            "mangledName": "$s13PoilabsCommon11PLNFacilityC9pointTypeSSvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)pointType",
-                "mangledName": "$s13PoilabsCommon11PLNFacilityC9pointTypeSSvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "title",
-            "printedName": "title",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(py)title",
-            "mangledName": "$s13PoilabsCommon11PLNFacilityC5titleSSSgvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)title",
-                "mangledName": "$s13PoilabsCommon11PLNFacilityC5titleSSSgvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iconUrl",
-            "printedName": "iconUrl",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(py)iconUrl",
-            "mangledName": "$s13PoilabsCommon11PLNFacilityC7iconUrlSSSgvp",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)iconUrl",
-                "mangledName": "$s13PoilabsCommon11PLNFacilityC7iconUrlSSSgvg",
-                "moduleName": "PoilabsCommon",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLNFacility",
-                "printedName": "PoilabsCommon.PLNFacility",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility(im)init",
-            "mangledName": "$s13PoilabsCommon11PLNFacilityCACycfc",
-            "moduleName": "PoilabsCommon",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PLNFacility",
-                "printedName": "PoilabsCommon.PLNFacility",
-                "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13PoilabsCommon11PLNFacilityC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13PoilabsCommon11PLNFacilityC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "PoilabsCommon",
-            "declAttributes": [
-              "Required",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@PoilabsCommon@objc(cs)PLNFacility",
-        "mangledName": "$s13PoilabsCommon11PLNFacilityC",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjCMembers",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
         "declKind": "Import",
-        "moduleName": "PoilabsCommon",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "PoilabsCommon"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLFacility.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 6,
+      "value": "\"icon\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Core\/PLNetworkConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 203,
+      "length": 43,
+      "value": "\"https:\/\/navigation-api.poilabs.com\/v3\/nav\""
+    },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Config\/PLNNavigationConfig.swift",
       "kind": "StringLiteral",
@@ -8916,6 +8930,13 @@
       "offset": 1393,
       "length": 7,
       "value": "\"major\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiFilters.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 11,
+      "value": "\"store_ids\""
     },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/Map\/Floor\/PLFloor.swift",
@@ -9009,11 +9030,25 @@
       "value": "\"navigation\""
     },
     {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiProperties.swift",
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 403,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
       "kind": "StringLiteral",
-      "offset": 489,
-      "length": 6,
-      "value": "\"text\""
+      "offset": 429,
+      "length": 19,
+      "value": "\"PLNavigationCache\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 540,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLPlacePositioning.swift",
@@ -9028,6 +9063,41 @@
       "offset": 530,
       "length": 17,
       "value": "\"multilateration\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/Navigation\/PLPoiNavigationSegment.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 338,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
+      "kind": "StringLiteral",
+      "offset": 364,
+      "length": 16,
+      "value": "\"PLNetworkCache\""
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 469,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 489,
+      "length": 6,
+      "value": "\"text\""
     },
     {
       "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLNPlace.swift",
@@ -9112,76 +9182,6 @@
       "offset": 4366,
       "length": 3,
       "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Core\/PLNetworkConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 43,
-      "value": "\"https:\/\/navigation-api.poilabs.com\/v3\/nav\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/Navigation\/PLPoiNavigationSegment.swift",
-      "kind": "StringLiteral",
-      "offset": 341,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 338,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
-      "kind": "StringLiteral",
-      "offset": 364,
-      "length": 16,
-      "value": "\"PLNetworkCache\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLCacheManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 469,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Place\/PLFacility.swift",
-      "kind": "StringLiteral",
-      "offset": 381,
-      "length": 6,
-      "value": "\"icon\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Model\/Poi\/PLPoiFilters.swift",
-      "kind": "StringLiteral",
-      "offset": 269,
-      "length": 11,
-      "value": "\"store_ids\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 403,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
-      "kind": "StringLiteral",
-      "offset": 429,
-      "length": 19,
-      "value": "\"PLNavigationCache\""
-    },
-    {
-      "filePath": "\/Users\/donmezb\/Documents\/poilabs\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Cache\/PLFileCacheManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 540,
-      "length": 4,
-      "value": "true"
     }
   ]
 }

@@ -10,18 +10,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class PLAnnotation : ObjectiveC.NSObject {
-  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
-  @objc final public let poiId: Swift.String
-  @objc final public let floorLevel: Swift.Int
-  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
-  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc public enum PLAnnotationIconAnchor : Swift.Int {
   case center, bottom
   public init?(rawValue: Swift.Int)
@@ -110,6 +98,18 @@ extension PoilabsMapView.PLMapView {
 }
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func hideLayersWithPrefix(_ prefix: Swift.String)
+}
+@objc public class PLAnnotation : ObjectiveC.NSObject {
+  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
+  @objc final public let poiId: Swift.String
+  @objc final public let floorLevel: Swift.Int
+  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
+  @objc public static func coordinateInCoordinateBounds(coordinate: CoreLocation.CLLocationCoordinate2D, swForBounds sw: CoreLocation.CLLocationCoordinate2D, neForBounds ne: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Equatable {}
 extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Hashable {}

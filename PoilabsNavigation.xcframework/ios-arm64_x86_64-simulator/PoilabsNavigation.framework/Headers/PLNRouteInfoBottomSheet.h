@@ -27,7 +27,6 @@ UIScrollViewDelegate>
 
 - (void)addSubviewTo: (UIView *)view;
 - (void)present;
-- (void)dismiss:(BOOL)callHandler ;
 - (instancetype)initWithPoi:(PLPoi *)poi
                   topHeight:(CGFloat)topHeight
                isRestricted:(BOOL) isRectricted
