@@ -55,6 +55,13 @@ extension PoilabsMapView.PLAnnotationManager {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public class PLAnnotation : ObjectiveC.NSObject {
+  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
+  @objc final public let poiId: Swift.String
+  @objc final public let floorLevel: Swift.Int
+  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
+  @objc deinit
+}
 @objc public protocol PLMapViewDelegate {
   @objc func mapViewDidFinishLoading(_ mapView: PoilabsMapView.PLMapView)
   @objc func mapViewDidFollowStateChange(state: PoilabsMapView.PLMapViewFollowState)
@@ -103,13 +110,6 @@ extension PoilabsMapView.PLMapView {
 }
 extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func hideLayersWithPrefix(_ prefix: Swift.String)
-}
-@objc public class PLAnnotation : ObjectiveC.NSObject {
-  @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
-  @objc final public let poiId: Swift.String
-  @objc final public let floorLevel: Swift.Int
-  @objc public init(poiId: Swift.String, coordinate: CoreLocation.CLLocationCoordinate2D, floorLevel: Swift.Int)
-  @objc deinit
 }
 extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Equatable {}
 extension PoilabsMapView.PLAnnotationIconAnchor : Swift.Hashable {}
