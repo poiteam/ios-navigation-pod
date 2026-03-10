@@ -71,6 +71,7 @@ UIScrollViewDelegate>
 @property (strong, nonatomic) UIView *buttonsContainerView;
 @property (nonatomic, assign) BOOL isRestricted;
 @property (nonatomic, assign) BOOL disableButtons;
+@property (nonatomic, assign) BOOL isRouteFound;
 
 @property(nonatomic, assign) int totalMin;
 @property(nonatomic, assign) int totalLength;
@@ -84,6 +85,7 @@ UIScrollViewDelegate>
 -(void)navigateButtonPressed;
 -(void)updateInfoValues;
 -(void)showButtons;
+-(void)setFoundInfo:(BOOL) isRouteFound;
 -(void)setRestrictionInfo:(BOOL) isRestricted;
 -(void)configureRouteSteps:(NSArray<NSDictionary *> *)stepsInfo;
 @end

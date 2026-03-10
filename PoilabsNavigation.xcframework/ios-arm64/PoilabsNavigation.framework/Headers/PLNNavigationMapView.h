@@ -96,6 +96,18 @@
 
 - (IBAction)redAlertButtonTapped:(id)sender;
 
+#pragma mark - Location Selection Tooltip View
+@property (strong, nonatomic) UIView *locationSelectionTooltipBaseView;
+
+@property (strong, nonatomic) UILabel *locationSelectionTooltipLabel;
+
+#pragma mark - Location Selection Bottom Sheet
+@property (strong, nonatomic) UIView *locationSelectionBottomSheet;
+
+- (void)showLocationSelectionTooltip;
+- (void)hideLocationSelectionTooltip;
+- (void)cleanupLocationSelectionTooltip;
+
 #pragma mark - Choose Manual Parking Area
 
 @property (weak, nonatomic) IBOutlet UIView *chooseManualParkingAreaBaseView;
