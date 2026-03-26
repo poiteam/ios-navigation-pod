@@ -8,10 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = "PoilabsNavigation"
-  s.version          = "7.0.4"
+  s.version          = "7.0.5"
   s.summary          = "Poilabs Indoor Navigation Framework"
   s.description      = "PoilabsNavigation is a framework for indoor navigation."
   s.homepage         = "https://github.com/poiteam/ios-navigation-pod"
+  s.readme           = "https://raw.githubusercontent.com/poiteam/ios-navigation-pod/#{s.version}/README.md"
   s.license          = { :type => "Proprietary", :file => "LICENSE" }
   s.author           = { "Emre Kuru" => "emre@poilabs.com" }
 
