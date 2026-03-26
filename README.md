@@ -1,6 +1,6 @@
 # PoilabsNavigation
-[![Version](https://img.shields.io/cocoapods/v/PoilabsNavigation.svg?style=flat)](https://cocoapods.org/pods/PoilabsNavigation)
-[![Platform](https://img.shields.io/cocoapods/p/PoilabsNavigation.svg?style=flat)](https://cocoapods.org/pods/PoilabsNavigation)
+[![Version](assets/badges/cocoapods-version.svg)](https://cocoapods.org/pods/PoilabsNavigation)
+[![Platform](assets/badges/cocoapods-platform.svg)](https://cocoapods.org/pods/PoilabsNavigation)
 
 ## INSTALLATION
 
