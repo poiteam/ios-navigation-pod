@@ -32,6 +32,8 @@ UIScrollViewDelegate>
                isRestricted:(BOOL) isRectricted
                    totalMin:(int) totalMin
                 totalLength:(int) totalLength
+            waitingDuration:(int) waitingDuration
+                warningText:(NSString *) warningText
                  didDismiss:(void (^)(void))didDismiss;
 
 @property (nonatomic, assign) CGFloat selfCornerRadius;
@@ -57,6 +59,7 @@ UIScrollViewDelegate>
 @property(strong, nonatomic) UIView *smallModeContainerView;
 @property(strong, nonatomic) UIView *mainView;
 @property (nonatomic,strong) UILabel *routeInfoLabel;
+@property (nonatomic,strong) UILabel *waitingInfoLabel;
 
 @property(strong, nonatomic) PLNRouteInfoDetailView *routeInfoDetailView;
 
@@ -72,9 +75,11 @@ UIScrollViewDelegate>
 @property (nonatomic, assign) BOOL isRestricted;
 @property (nonatomic, assign) BOOL disableButtons;
 @property (nonatomic, assign) BOOL isRouteFound;
+@property (nonatomic, assign) NSString *warningText;
 
 @property(nonatomic, assign) int totalMin;
 @property(nonatomic, assign) int totalLength;
+@property(nonatomic, assign) int qmsWaitingDuration;
 @property (nonatomic) CGRect originalFrame;
 @property (nonatomic) CGFloat maxHeight;
 
@@ -86,9 +91,8 @@ UIScrollViewDelegate>
 -(void)updateInfoValues;
 -(void)showButtons;
 -(void)setFoundInfo:(BOOL) isRouteFound;
--(void)setRestrictionInfo:(BOOL) isRestricted;
+-(void)setRestrictionInfo:(BOOL) isRestricted warningText: (NSString *) warningText ;
 -(void)configureRouteSteps:(NSArray<NSDictionary *> *)stepsInfo;
 @end
-
 
 

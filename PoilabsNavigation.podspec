@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PoilabsNavigation"
-  s.version          = "7.0.2"
+  s.version          = "7.0.3"
   s.summary          = "Poilabs Indoor Navigation Framework"
   s.description      = "PoilabsNavigation is a framework for indoor navigation."
   s.homepage         = "https://github.com/poiteam/ios-navigation-pod"
@@ -39,4 +39,3 @@ Pod::Spec.new do |s|
   s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
   s.dependency 'PoilabsCore', '1.0.15'
 end
-

@@ -46,6 +46,8 @@
 
 - (PoilabsLocation *)getPoilabsLocation;
 
++ (NSArray<NSDictionary *> *)getRawBeaconData;
+
 @property(strong, nonatomic, nonnull) NSString *sessionId;
 
 + (void)destroySharedInstance;
