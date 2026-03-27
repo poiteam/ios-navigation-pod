@@ -1,5 +1,5 @@
 # PoilabsNavigation
-[CocoaPods 7.0.5](https://cocoapods.org/pods/PoilabsNavigation) | [iOS 14+](https://cocoapods.org/pods/PoilabsNavigation)
+[CocoaPods 7.0.6](https://cocoapods.org/pods/PoilabsNavigation) | [iOS 14+](https://cocoapods.org/pods/PoilabsNavigation)
 
 ## INSTALLATION
 

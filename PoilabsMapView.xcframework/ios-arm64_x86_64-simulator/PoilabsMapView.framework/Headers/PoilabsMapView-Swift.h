@@ -285,7 +285,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
-@import _LocationEssentials;
+@import CoreLocation;
 #endif
 
 #endif
@@ -728,7 +728,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
-@import _LocationEssentials;
+@import CoreLocation;
 #endif
 
 #endif
