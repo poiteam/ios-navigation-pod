@@ -30,7 +30,6 @@
            disableNavButton:(BOOL) disableNavButton
                    totalMin:(int) totalMin
                 totalLength:(int) totalLength
-           waitingDuration:(int) waitingDuration
           completionHandler:(void (^)(void))completionHandler
                  didDismiss:(void (^)(void))didDismiss;
 
@@ -59,7 +58,6 @@
 @property(strong, nonatomic) UIView *smallModeContainerView;
 @property(strong, nonatomic) UIScrollView *scrollView;
 @property (nonatomic,strong) UILabel *routeInfoLabel;
-@property (nonatomic,strong) UILabel *waitingInfoLabel;
 
 @property(strong, nonatomic) PLNPointTagsCollectionView *tagsCollectionView;
 @property(strong, nonatomic) PLNPointInfoDetailView *detailsView;
@@ -68,7 +66,6 @@
 
 @property(nonatomic, assign) int totalMin;
 @property(nonatomic, assign) int totalLength;
-@property(nonatomic, assign) int qmsWaitingDuration;
 @property(nonatomic, assign) bool disableNavButton;
 
 @property (strong, nonatomic) void (^actionHandler)(void);
@@ -76,4 +73,5 @@
 -(void)navigateButtonPressed;
 
 @end
+
 

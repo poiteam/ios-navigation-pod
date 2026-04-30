@@ -46,7 +46,14 @@
 
 - (PoilabsLocation *)getPoilabsLocation;
 
+// Method to get raw beacon data for PostSignalsUseCaseBridge
 + (NSArray<NSDictionary *> *)getRawBeaconData;
+
+// Yeni metodlar - RSSI filtreleme için
+- (NSArray<NSDictionary *> *)getRawBeaconData;
+- (NSArray<NSDictionary *> *)getFilteredBeaconData;
+- (void)applyManualRSSIFilter;
+- (void)addBeaconDataWithUUID:(NSString *)uuid major:(NSString *)major minor:(NSString *)minor rssi:(NSNumber *)rssi;
 
 @property(strong, nonatomic, nonnull) NSString *sessionId;
 
