@@ -41,13 +41,13 @@ import _SwiftConcurrencyShims
   @objc final public let type: Swift.String?
   @objc final public let mapRotateAngle: Swift.Double
   @objc final public var placeId: Swift.String
-  @objc final public var centerPoint: _LocationEssentials.CLLocationCoordinate2D {
+  @objc final public var centerPoint: CoreLocation.CLLocationCoordinate2D {
     @objc get
   }
-  @objc final public var swForBounds: _LocationEssentials.CLLocationCoordinate2D {
+  @objc final public var swForBounds: CoreLocation.CLLocationCoordinate2D {
     @objc get
   }
-  @objc final public var neForBounds: _LocationEssentials.CLLocationCoordinate2D {
+  @objc final public var neForBounds: CoreLocation.CLLocationCoordinate2D {
     @objc get
   }
   @objc final public var zoomLevel: Swift.Double {
@@ -167,14 +167,14 @@ extension PoilabsCommon.PLNPlace {
   @objc final public let title: Swift.String
   @objc final public let placeId: Swift.String?
   @objc final public let tags: [Swift.String]
-  @objc final public var coordinate: _LocationEssentials.CLLocationCoordinate2D {
+  @objc final public var coordinate: CoreLocation.CLLocationCoordinate2D {
     @objc get
   }
   @objc final public var floorLevel: Swift.Int {
     @objc get
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public var shopCenterPoint: _LocationEssentials.CLLocation? {
+  @objc final public var shopCenterPoint: CoreLocation.CLLocation? {
     @objc get
   }
   #endif
