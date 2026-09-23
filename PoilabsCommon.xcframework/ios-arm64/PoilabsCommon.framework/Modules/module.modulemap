@@ -7,5 +7,4 @@ framework module PoilabsCommon {
 
 module PoilabsCommon.Swift {
   header "PoilabsCommon-Swift.h"
-  requires objc
 }

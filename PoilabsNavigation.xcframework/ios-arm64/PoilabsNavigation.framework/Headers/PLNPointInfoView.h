@@ -18,6 +18,7 @@
 @protocol PLNPointInfoViewDelegate <NSObject>
 @optional
 -(void)pointInfoViewDidSelectTagWithTitle:(NSString *)tagTitle;
+-(void)pointInfoViewDidExpandToDetails;
 @end
 
 @interface PLNPointInfoView : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
@@ -65,6 +66,7 @@
 @property(strong, nonatomic) PLNPointInfoDetailView *detailsView;
 
 @property(strong, nonatomic) id<PLNPointInfoViewDelegate> delegate;
+@property(nonatomic, assign) BOOL hasSentPointInfoOpenEvent;
 
 @property(nonatomic, assign) int totalMin;
 @property(nonatomic, assign) int totalLength;

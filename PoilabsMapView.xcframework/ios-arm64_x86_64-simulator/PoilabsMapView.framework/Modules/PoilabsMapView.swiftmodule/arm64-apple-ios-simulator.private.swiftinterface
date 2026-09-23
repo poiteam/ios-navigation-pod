@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PoilabsMapView
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PoilabsMapView
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import CoreLocation
 import Foundation
 import MapboxMaps
@@ -19,9 +19,7 @@ import _SwiftConcurrencyShims
 }
 @objc public enum PLAnnotationIconAnchor : Swift.Int {
   case center, bottom
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -56,9 +54,7 @@ extension PoilabsMapView.PLAnnotationManager {
   @objc dynamic public func removeDashedLines()
 }
 extension PoilabsMapView.PLAnnotationManager {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func addSharedLocationAnnotation(at coordinate: CoreLocation.CLLocationCoordinate2D, image: UIKit.UIImage, title: Swift.String, onNavigatePress: (() -> Swift.Void)?)
-  #endif
   @objc dynamic public func removeSharedLocationAnnotation()
 }
 @_inheritsConvenienceInitializers @objc public class PLMapUtils : ObjectiveC.NSObject {
@@ -77,9 +73,7 @@ extension PoilabsMapView.PLAnnotationManager {
 }
 @objc public enum PLMapViewFollowState : Swift.Int {
   case follow, none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -101,9 +95,7 @@ extension PoilabsMapView.PLMapView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCenterWithoutAnimation(_ coordinate: CoreLocation.CLLocationCoordinate2D, zoomLevel: Swift.Double)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCameraProperties(maxBoundSw sw: CoreLocation.CLLocationCoordinate2D, maxBoundNe ne: CoreLocation.CLLocationCoordinate2D, maxZoom: Swift.Double, minZoom: Swift.Double, navigationZoom: Swift.Double)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func getMapCenterCoordinate() -> CoreLocation.CLLocationCoordinate2D
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCamera(center: CoreLocation.CLLocationCoordinate2D, zoomLevel: Foundation.NSNumber? = nil, bearing: Foundation.NSNumber? = nil, pitch: Foundation.NSNumber? = nil, completion: (() -> Swift.Void)? = nil)
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setCameraThatFits(annotations: [PoilabsMapView.PLAnnotation], forLevel floorLevel: Swift.Int)
 }
 extension PoilabsMapView.PLMapView {

@@ -35,6 +35,13 @@
 
 -(void)postSignals:(NSArray<NSDictionary*> *) signals;
 
+- (void)rememberMapOpenStoreIds:(NSArray<NSString *> *)storeIds;
+- (void)rememberMapOpenSearchKeyword:(NSString *)keyword;
+- (nullable NSArray<NSString *> *)pendingMapOpenStoreIdsForAnalytics;
+- (void)clearPendingMapOpenStoreIds;
+- (nullable NSString *)pendingMapOpenSearchKeywordForAnalytics;
+- (void)clearPendingMapOpenSearchKeyword;
+
 -(NSString *)getFacilityTitleFor:(NSString *)type;
 - (void) getStyleDetailsWithcompletionHandler:(void (^)(double, double))completionHandler;
 

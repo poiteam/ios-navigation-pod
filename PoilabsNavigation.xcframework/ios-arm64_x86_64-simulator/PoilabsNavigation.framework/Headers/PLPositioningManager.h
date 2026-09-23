@@ -37,6 +37,7 @@
 -(void)getFirstLocation;
 
 @property(assign, nonatomic) bool isRouteActive;
+@property(assign, nonatomic) BOOL isMapSessionActive;
 
 @property(strong, nonatomic) NSMutableDictionary<NSNumber*, NSMutableArray<CLLocation*> *> * _Nullable routeCoordinates;
 

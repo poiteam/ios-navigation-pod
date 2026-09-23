@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIView *cardView;
 
 @property (nonatomic) NSInteger selectedSegmentIndex;
+@property (nonatomic, readonly) BOOL lastSelectionChanged;
 @property (nonatomic, weak) id<PLNRouteSelectionViewDelegate> delegate;
 
 // Top section

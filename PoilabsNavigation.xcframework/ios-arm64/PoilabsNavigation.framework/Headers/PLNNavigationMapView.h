@@ -139,6 +139,7 @@
 
 -(void) selectStartPoiForRoute:(PLPoi *)startPoi targetPoi:(PLPoi *)targetPoi;
 -(void)getShowonMapPin:(NSString *)poiId;
+-(void)getShowonMapPin:(NSString *)poiId source:(NSString *)source;
 -(void)showMultiplePins:(NSArray *)storeIds;
 -(void)addSharedLocationPinToCoordinate:(CLLocationCoordinate2D)coordinate floorLevel:(int)floorLevel withIcon:(UIImage*)icon withTitle:(NSString*)title;
 -(void)removeSharedLocationPin;

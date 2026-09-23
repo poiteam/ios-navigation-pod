@@ -20,6 +20,8 @@
 @protocol PLNRouteInfoBottomSheetDelegate <NSObject>
 -(void)startRouteAction;
 -(void)expandAction;
+@optional
+-(void)routeStepsOpenedWithOpenType:(NSString *)openType;
 @end
 
 @interface PLNRouteInfoBottomSheet : UIView<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,
