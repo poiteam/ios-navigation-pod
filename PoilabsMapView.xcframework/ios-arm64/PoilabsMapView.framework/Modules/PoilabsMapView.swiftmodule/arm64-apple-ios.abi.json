@@ -3360,15 +3360,8 @@
     },
     {
       "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationTitleView.swift",
-      "kind": "StringLiteral",
-      "offset": 282,
-      "length": 6,
-      "value": "\"Emre\""
-    },
-    {
-      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Annotation\/SharedLocation\/PLSharedLocationTitleView.swift",
       "kind": "BooleanLiteral",
-      "offset": 348,
+      "offset": 315,
       "length": 5,
       "value": "false"
     },
