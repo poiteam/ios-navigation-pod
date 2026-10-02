@@ -1,18 +1,39 @@
 # PoilabsNavigation
 
-![Version](https://img.shields.io/cocoapods/v/PoilabsNavigation.svg?style=flat)
-![Platform](https://img.shields.io/cocoapods/p/PoilabsNavigation.svg?style=flat)
+![Version](https://img.shields.io/github/v/tag/poiteam/ios-navigation-pod?label=version)
+![Platform](https://img.shields.io/badge/platform-iOS%2014%2B-lightgrey)
 
 **Minimum iOS:** 14.0 | **Swift:** 5.0+
 
 ## INSTALLATION
 
+### Swift Package Manager (recommended)
+
+1. In Xcode, select **File > Add Package Dependencies...**
+2. Enter the repository URL: `https://github.com/poiteam/ios-navigation-pod.git`
+3. Choose **Exact Version** `7.3.1` and add the **PoilabsNavigation** product to your app target.
+
+The package contains everything the SDK needs: PoilabsNavigation, PoilabsMapView, PoilabsCommon and Mapbox Maps 11.18.0. PoilabsPositioning, PoilabsSdkAnalytics and PoilabsCore are resolved automatically. You do not need to add Mapbox separately.
+
+> The first package resolution can take a few minutes because the package contains the Mapbox frameworks.
+
+**Using with PoilabsVdNavigation:** PoilabsNavigation 7.3.1 and PoilabsVdNavigation 7.2.2 use the same dependency versions and can be added to the same app with SPM.
+
+**Notes**
+
+- Use either SPM or CocoaPods for Poilabs SDKs, not both in the same app.
+- The SDK ships its own Mapbox Maps 11.18.0. If your app also adds Mapbox Maps itself, the two copies conflict.
+
 ### CocoaPods
 
-To integrate PoilabsNavigation into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+pod 'PoilabsNavigation', :git => 'https://github.com/poiteam/ios-navigation-pod.git', :tag => '7.3.1'
+```
+
+If you also use PoilabsVdNavigation 7.2.2 in the same app, add PoilabsCore from its git tag as well:
 
 ```ruby
-pod 'PoilabsNavigation'
+pod 'PoilabsCore', :git => 'https://github.com/poiteam/PoilabsCorePod.git', :tag => '1.0.17'
 ```
 
 Then run:
@@ -37,10 +58,10 @@ Set these properties **before** calling `getReadyForStoreMap`:
 
 ```swift
 let settings = PLNNavigationSettings.sharedInstance()
-settings.applicationId = "APPLICATION_ID"         // Required — provided by Poilabs
-settings.applicationSecret = "APPLICATION_SECRET_KEY" // Required — provided by Poilabs
-settings.navigationUniqueIdentifier = "UNIQUE_ID" // Required — unique per app user
-settings.applicationLanguage = "en"                // "tr" or "en", default: "tr"
+settings?.applicationId = "APPLICATION_ID"         // Required — provided by Poilabs
+settings?.applicationSecret = "APPLICATION_SECRET_KEY" // Required — provided by Poilabs
+settings?.navigationUniqueIdentifier = "UNIQUE_ID" // Required — unique per app user
+settings?.applicationLanguage = "en"                // en, tr, hr, ar, de, ru, pl — default: "tr"
 ```
 
 **Optional settings:**
@@ -110,7 +131,7 @@ self.currentCarrier?.showMultiplePins(["store_id1", "store_id2", "store_id3"])
 After `poilabsNavigationReadyForRouting` is called:
 
 ```swift
-self.currentCarrier?.navigateWithStoreIdTo("store_id")
+self.currentCarrier?.navigateWithStoreId(to: "store_id")
 ```
 
 If the user's location is available, the route starts from their current position. Otherwise the user is prompted to select a start location.
