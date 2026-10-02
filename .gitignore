@@ -1,1 +1,4 @@
 .idea/
+.build/
+.swiftpm/
+Package.resolved

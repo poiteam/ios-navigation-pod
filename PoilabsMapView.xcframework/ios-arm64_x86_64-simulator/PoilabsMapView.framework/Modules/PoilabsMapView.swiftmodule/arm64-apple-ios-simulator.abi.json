@@ -3583,6 +3583,41 @@
       "value": "\"en\""
     },
     {
+      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 766,
+      "length": 28,
+      "value": "\"PoilabsNavigationResources\""
+    },
+    {
+      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 952,
+      "length": 8,
+      "value": "\"bundle\""
+    },
+    {
+      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 8,
+      "value": "\"bundle\""
+    },
+    {
+      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "Array",
+      "offset": 1154,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1250,
+      "length": 8,
+      "value": "\"bundle\""
+    },
+    {
       "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsMapView\/PoilabsMapView\/Map\/PLMapView.swift",
       "kind": "IntegerLiteral",
       "offset": 631,

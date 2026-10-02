@@ -31,12 +31,12 @@ Pod::Spec.new do |s|
     'Turf.xcframework'
   ]
 
-  s.resources = 'PoilabsNavigationResources.bundle'
+  s.resources = 'Sources/PoilabsNavigationResources/PoilabsNavigationResources.bundle'
 
   # Optional: Silence modulemap warnings
   s.module_map = nil
 
   s.dependency 'PoilabsPositioning', '1.2.0'
-  s.dependency 'PoilabsSdkAnalytics', '~> 1.0.15'
-  s.dependency 'PoilabsCore', '1.0.15'
+  s.dependency 'PoilabsSdkAnalytics', '1.0.15'
+  s.dependency 'PoilabsCore', '~> 1.0.15'
 end
