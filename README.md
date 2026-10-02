@@ -7,41 +7,29 @@
 
 ## INSTALLATION
 
-### Swift Package Manager (recommended)
+PoilabsNavigation is distributed with Swift Package Manager. CocoaPods is no longer supported; new versions are not published there.
+
+### Swift Package Manager
 
 1. In Xcode, select **File > Add Package Dependencies...**
 2. Enter the repository URL: `https://github.com/poiteam/ios-navigation-pod.git`
 3. Choose **Exact Version** `7.3.1` and add the **PoilabsNavigation** product to your app target.
 
-The package contains everything the SDK needs: PoilabsNavigation, PoilabsMapView, PoilabsCommon and Mapbox Maps 11.18.0. PoilabsPositioning, PoilabsSdkAnalytics and PoilabsCore are resolved automatically. You do not need to add Mapbox separately.
+The package contains everything the SDK needs: PoilabsNavigation, PoilabsMapView, PoilabsCommon and Mapbox Maps 11.18.0. PoilabsPositioning, PoilabsSdkAnalytics and PoilabsCore are resolved automatically. You do not need to add Mapbox or any other dependency yourself.
 
 > The first package resolution can take a few minutes because the package contains the Mapbox frameworks.
 
-**Using with PoilabsVdNavigation:** PoilabsNavigation 7.3.1 and PoilabsVdNavigation 7.2.2 use the same dependency versions and can be added to the same app with SPM.
+**Using with PoilabsVdNavigation:** PoilabsNavigation 7.3.1 and PoilabsVdNavigation 7.2.2 use the same dependency versions. Add both packages to the same app with SPM; nothing else is needed.
 
-**Notes**
+**Note:** The SDK ships its own Mapbox Maps 11.18.0. If your app also adds Mapbox Maps itself, the two copies conflict.
 
-- Use either SPM or CocoaPods for Poilabs SDKs, not both in the same app.
-- The SDK ships its own Mapbox Maps 11.18.0. If your app also adds Mapbox Maps itself, the two copies conflict.
+### Migrating from CocoaPods
 
-### CocoaPods
+1. Remove `pod 'PoilabsNavigation'` from your `Podfile`, together with any `PoilabsCore`, `PoilabsPositioning` or `PoilabsSdkAnalytics` lines.
+2. Run `pod install` (or `pod deintegrate` if no other pods remain).
+3. Add the package with Swift Package Manager as described above.
 
-```ruby
-pod 'PoilabsNavigation', :git => 'https://github.com/poiteam/ios-navigation-pod.git', :tag => '7.3.1'
-```
-
-If you also use PoilabsVdNavigation 7.2.2 in the same app, add PoilabsCore from its git tag as well:
-
-```ruby
-pod 'PoilabsCore', :git => 'https://github.com/poiteam/PoilabsCorePod.git', :tag => '1.0.17'
-```
-
-Then run:
-
-```bash
-$ pod install
-$ open YourApp.xcworkspace
-```
+Do not keep the SDK in your `Podfile` while it is added with SPM; the same frameworks would be embedded twice.
 
 ## PRE-REQUIREMENTS
 
