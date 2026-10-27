@@ -4337,8 +4337,37 @@
             "usr": "s:13PoilabsCommon22PLPoiNavigationSegmentC4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PoilabsCommon",
-            "implicit": true,
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
             "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PLPoiNavigationSegment",
+                "printedName": "PoilabsCommon.PLPoiNavigationSegment",
+                "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PoilabsCommon@objc(cs)PLPoiNavigationSegment(im)init",
+            "mangledName": "$s13PoilabsCommon22PLPoiNavigationSegmentCACycfc",
+            "moduleName": "PoilabsCommon",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -8980,6 +9009,33 @@
             "mangledName": "$ss16SendableMetatypeP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon"
       },
       {
         "kind": "Import",

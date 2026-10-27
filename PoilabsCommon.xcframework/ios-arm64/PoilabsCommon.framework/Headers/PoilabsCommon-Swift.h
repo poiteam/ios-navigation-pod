@@ -546,6 +546,8 @@ SWIFT_CLASS("_TtC13PoilabsCommon22PLPoiNavigationSegment")
 @property (nonatomic, readonly, copy) NSString * _Nonnull finishId;
 @property (nonatomic, readonly) double weight;
 @property (nonatomic, readonly) double routeWeight;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC13PoilabsCommon19PlacesUseCaseBridge")
