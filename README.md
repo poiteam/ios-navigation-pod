@@ -19,7 +19,7 @@ The package contains everything the SDK needs: PoilabsNavigation, PoilabsMapView
 
 > The first package resolution can take a few minutes because the package contains the Mapbox frameworks.
 
-**Using with PoilabsVdNavigation:** PoilabsNavigation 7.3.3 and PoilabsVdNavigation 7.2.2 use the same dependency versions. Add both packages to the same app with SPM; nothing else is needed.
+**Using with PoilabsVdNavigation:** PoilabsNavigation 7.3.3 and PoilabsVdNavigation 7.3.0 use the same dependency versions. Add both packages to the same app with SPM; nothing else is needed.
 
 **Note:** The SDK ships its own Mapbox Maps 11.18.0. If your app also adds Mapbox Maps itself, the two copies conflict.
 
