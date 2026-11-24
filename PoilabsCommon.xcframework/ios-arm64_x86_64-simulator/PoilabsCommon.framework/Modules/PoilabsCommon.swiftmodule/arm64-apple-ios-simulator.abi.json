@@ -8730,6 +8730,23 @@
       },
       {
         "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PoilabsCommon"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9351,6 +9368,13 @@
       "offset": 203,
       "length": 43,
       "value": "\"https:\/\/navigation-api.poilabs.com\/v3\/nav\""
+    },
+    {
+      "filePath": "\/Users\/muhammeteminbaytar\/Poi Ios Project\/ios-navigation\/PoilabsCommon\/PoilabsCommon\/Network\/Service\/PLHTTPSession.swift",
+      "kind": "Dictionary",
+      "offset": 825,
+      "length": 3,
+      "value": "[]"
     }
   ]
 }
